@@ -1,8 +1,10 @@
-# Jade Zhao
+# 赵郎溪 · zhao-langxi
 
-**Informatics @ IU Luddy** · **ServeIT Clinic** · **SWE** · **May 2027**
+**Jade Zhao** · she/her · Informatics @ IU Luddy · ServeIT · Looking for SWE roles · May 2027
 
-I work on the unglamorous parts of systems everyone else skips ... the handoff after the demo, the clause nobody reads until it matters, the profile that has to feel real. Same instinct from a family restaurant: a system either survives contact with a real person or it doesn't.
+I learned how systems work in a family Chinese restaurant and in commercial property management. The lesson stuck: build for the person depending on it. Same instinct now as website team lead at ServeIT Clinic ... accessible sites for Bloomington nonprofits without a developer on call. WCAG from day one.
+
+First-gen · Hudson and Holland Scholar · Madrid Spring 2026.
 
 ## Repos
 
@@ -16,6 +18,9 @@ I work on the unglamorous parts of systems everyone else skips ... the handoff a
 ## Elsewhere
 
 - Portfolio · [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/)
+- IU page · [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/)
+- Resume · [jlzhao.pages.iu.edu/resume.pdf](https://jlzhao.pages.iu.edu/resume.pdf)
 - LinkedIn · [linkedin.com/in/jadexzhao](https://linkedin.com/in/jadexzhao)
+- Instagram · [@zhao.langxi](https://instagram.com/zhao.langxi)
 - ServeIT Clinic · [serveit.luddy.indiana.edu](https://serveit.luddy.indiana.edu/)
 - Code · [github.com/jadexzhao](https://github.com/jadexzhao)
