@@ -1,10 +1,8 @@
 # 赵郎溪 · zhao-langxi
 
-**Jade Zhao** · she/her · Informatics @ IU Luddy · ServeIT · Looking for SWE roles · May 2027
+**Jade Zhao** · she/her · first-gen Hudson & Holland Scholar · Informatics @ IU Luddy · ServeIT · Looking for SWE roles · May 2027
 
 I learned how systems work in a family Chinese restaurant and in commercial property management. The lesson stuck: build for the person depending on it. Same instinct now as website team lead at ServeIT Clinic ... accessible sites for Bloomington nonprofits without a developer on call. WCAG from day one.
-
-First-gen · Hudson and Holland Scholar · Madrid Spring 2026.
 
 ## Repos
 
@@ -18,6 +16,7 @@ First-gen · Hudson and Holland Scholar · Madrid Spring 2026.
 ## Elsewhere
 
 - Portfolio · [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/)
+- Classroom / FASE MAP · [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/)
 - IU page · [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/)
 - Resume · [jlzhao.pages.iu.edu/resume.pdf](https://jlzhao.pages.iu.edu/resume.pdf)
 - LinkedIn · [linkedin.com/in/jadexzhao](https://linkedin.com/in/jadexzhao)
