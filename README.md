@@ -1,8 +1,8 @@
 # 赵郎溪 · zhao-langxi
 
-**Jade Zhao** · she/her · first-gen Hudson & Holland Scholar · Informatics @ IU Luddy · ServeIT · Looking for SWE roles · May 2027
+**Jade Zhao** · she/her · First-Generation College Student · Hudson and Holland Scholar (Full Merit) · B.S. Informatics, Business Minor @ IU Luddy · Looking for SWE roles · Expected May 2027
 
-I learned how systems work in a family Chinese restaurant and in commercial property management. The lesson stuck: build for the person depending on it. Same instinct now as website team lead at ServeIT Clinic ... accessible sites for Bloomington nonprofits without a developer on call. WCAG from day one.
+I learned how systems work in a family Chinese restaurant and in commercial property management. The lesson stuck: build for the person depending on it. Same instinct now as **Website Team Lead** at Serve IT Clinic ... WCAG 2.1 sites and Python/PostgreSQL ETL for Bloomington partners without in-house developers. Founded ServeAI (PIT-UN).
 
 ## Repos
 
