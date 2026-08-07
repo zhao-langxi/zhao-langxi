@@ -8,6 +8,13 @@ I learned how systems work in a family Chinese restaurant and in commercial prop
 
 ## Why I Do This
 
+### Being Jade
+
+Being Jade was never one thing at once. It was the kid drinking library air like it was oxygen and gagging on eggs at the same breakfast table. It was a Chinese American girl in Greenfield being driven forty-five minutes into rooms that weren’t built with her in mind, and then making herself indispensable in every one of them anyway. It was getting cyberbullied online and deciding, somehow, that the internet was still worth loving. It was standing in rooms as a POC founder who also happens to be the one writing the code, watching people’s assumptions catch up half a beat too slow. It was crying over a client problem at midnight and still showing up the next morning. It was being first-gen and watching “congratulations” and “now you owe” arrive in the same breath.
+
+Being Jade was rarely comfortable and almost never quiet. It was figuring things out in real time, in public, without a blueprint, because nobody handed you one and waiting for someone to wasn’t an option.
+
+### The Library
 
 I am a Chinese American woman who grew up in Greenfield, Indiana, and if you asked me to point to where this all started, I’d take you to the downtown Indianapolis library.
 
@@ -64,6 +71,10 @@ By the time people met me on campus, I was in what felt like a million clubs at 
 I was cyberbullied when I was younger, back when the internet still felt like something adults hadn’t figured out yet. I think that’s part of why I love tech the way I do, in a way most people don’t realize when they meet me now. The same screens that hurt me were also the first place I learned I could build something back, that a website or a piece of code doesn’t care where you’re from or what anyone said about you online, it just does what you tell it to do.
 
 There are things adults don’t really want to talk to kids about, and what to do when the internet turns on you is one of them. Nobody sat me down and explained it. I had to figure that part out myself too, the same way I’ve had to figure out most things on this list.
+
+### The Thread
+
+Being Jade was rarely comfortable and almost never quiet. The chapters above are how that felt in practice.
 
 That’s the thread that runs through everything I do now: a library that taught me to be endlessly curious, a mom who fed me things I hated because she believed in what I could become, a robotics team that showed me how things actually work, a pandemic that forced me to prove it to myself, rooms that told me I didn’t belong before I proved otherwise, a screen that once hurt me and then taught me how to build, and the slow work of learning that taking care of myself was never optional. I don’t build things because it’s a career path. I build things because I’ve watched what happens when the people you love are counting on you to figure it out, and because somewhere, a younger version of me is still watching to see if it’s possible.
 
