@@ -11,7 +11,11 @@
   <meta property="og:description" content="Chinese American Informatics student from Greenfield, Indiana; learned systems in a family restaurant, taught herself web and POS tools during the pandemic, now building accessible public-interest tech and documenting systems friction for outsiders.">
   <meta property="og:url" content="https://zhao-langxi.github.io/zhao-langxi/about.html">
   <meta property="og:image" content="https://zhao-langxi.github.io/zhao-langxi/assets/zhao-langxi-fishing.webp">
-  <link rel="icon" href="/zhao-langxi/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/zhao-langxi/favicon.ico" sizes="any">
+  <link rel="icon" href="/zhao-langxi/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/zhao-langxi/assets/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/zhao-langxi/assets/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/zhao-langxi/assets/favicon-fishing.webp" type="image/webp" sizes="192x192">
 
   <meta name="theme-color" content="#990000">
   <!-- Rivet Design System (Indiana University) -->
@@ -39,17 +43,29 @@
       <p class="jz-eyebrow">Origin · canonical</p>
       <h1>Why I Do This</h1>
       <p class="jz-hero__lede">Being Jade was never one thing at once ... library air and eggs at the same table, the Greenfield drive, rooms that didn’t see me, AI as recognition, Handshake and campus rooms, screens that hurt then taught me to build, and figuring it out without a blueprint.</p>
-      <p class="jz-hero__byline">Jade Zhao · Indiana University · Luddy School of Informatics, Computing, and Engineering</p>
-      <figure class="jz-hero__photo">
-        <img
-          src="/zhao-langxi/assets/zhao-langxi-fishing.webp"
-          alt="zhao-langxi laughing on a boat, holding a fishing rod with a fish on the line over blue water"
-          width="787"
-          height="1400"
-          decoding="async"
-          fetchpriority="high"
-        >
-      </figure>
+      <p class="jz-hero__byline">Jade Zhao · 21 · Indiana University · Luddy School of Informatics, Computing, and Engineering</p>
+      <div class="jz-hero__photos">
+        <figure class="jz-hero__photo">
+          <img
+            src="/zhao-langxi/assets/zhao-langxi-fishing.webp"
+            alt="zhao-langxi laughing on a boat, holding a fishing rod with a fish on the line over blue water"
+            width="787"
+            height="1400"
+            decoding="async"
+            fetchpriority="high"
+          >
+        </figure>
+        <figure class="jz-hero__photo jz-hero__photo--alt">
+          <img
+            src="/zhao-langxi/assets/zhao-langxi-birthday.webp"
+            alt="zhao-langxi in a black dress holding pink lilies and white flowers in front of a rose-gold Happy Birthday backdrop"
+            width="900"
+            height="1200"
+            decoding="async"
+            loading="lazy"
+          >
+        </figure>
+      </div>
     </div>
   </header>
 
@@ -59,8 +75,51 @@
     <section class="jz-chapter" aria-labelledby="ch-being-jade">
       <h2 id="ch-being-jade" class="jz-chapter__label">Being Jade</h2>
       <p>Being Jade was never one thing at once. It was the kid drinking library air like it was oxygen and gagging on eggs at the same breakfast table. It was a Chinese American girl in Greenfield being driven forty-five minutes into rooms that weren’t built with her in mind, and then making herself indispensable in every one of them anyway. It was getting cyberbullied online and deciding, somehow, that the internet was still worth loving. It was standing in rooms as a POC founder who also happens to be the one writing the code, watching people’s assumptions catch up half a beat too slow. It was crying over a client problem at midnight and still showing up the next morning. It was being first-gen and watching “congratulations” and “now you owe” arrive in the same breath.</p>
-      <p>Being Jade was rarely comfortable and almost never quiet. It was figuring things out in real time, in public, without a blueprint, because nobody handed you one and waiting for someone to wasn’t an option.</p>
+      <p>I’m 21 now, and Being Jade is still rarely comfortable and almost never quiet. It is figuring things out in real time, in public, without a blueprint, because nobody handed you one and waiting for someone to wasn’t an option.</p>
     </section>
+
+    <div class="jz-story-strip" role="group" aria-label="Photos from the story">
+      <figure>
+        <img
+          src="/zhao-langxi/assets/zhao-langxi-robotics.webp"
+          alt="zhao-langxi with her middle-school robotics team gathered around a competition robot on a gym floor"
+          width="825"
+          height="1100"
+          loading="lazy"
+          decoding="async"
+        >
+      </figure>
+      <figure>
+        <img
+          src="/zhao-langxi/assets/zhao-langxi-cones.webp"
+          alt="zhao-langxi and two teammates holding up a tall stack of yellow cones at a robotics competition"
+          width="825"
+          height="1100"
+          loading="lazy"
+          decoding="async"
+        >
+      </figure>
+      <figure>
+        <img
+          src="/zhao-langxi/assets/yuri.webp"
+          alt="Yuri, a white dog in a red harness, standing on a paved path and looking to the side"
+          width="142"
+          height="189"
+          loading="lazy"
+          decoding="async"
+        >
+      </figure>
+      <figure>
+        <img
+          src="/zhao-langxi/assets/baymax.webp"
+          alt="Younger zhao-langxi standing beside a large white Baymax figure"
+          width="196"
+          height="261"
+          loading="lazy"
+          decoding="async"
+        >
+      </figure>
+    </div>
 
     <section class="jz-chapter" aria-labelledby="ch-library">
       <h2 id="ch-library" class="jz-chapter__label">The Library</h2>
@@ -119,11 +178,13 @@
     <section class="jz-chapter" aria-labelledby="ch-ai">
       <h2 id="ch-ai" class="jz-chapter__label">Recognition</h2>
       <p>When I first found out about AI (Artificial Intelligence) in a way that actually mattered to me, the feeling wasn’t excitement and it wasn’t fear. It was recognition. It felt like watching the rest of the world catch up to something I’d already been doing my whole life: paying attention to systems, figuring out how something works, and then building the piece that was missing. AI didn’t feel like a new frontier to me. It felt like the automation I learned about in middle school robotics, grown up, wearing a new name.</p>
+      <p>I want AI to not be scary. I want to be the truth when people start talking about it like it’s magic, or like it’s a threat that only experts get to name. And I do not want a man to overwrite me ... not my voice, not my work, not the version of this story that gets told.</p>
     </section>
 
     <section class="jz-chapter" aria-labelledby="ch-map">
       <h2 id="ch-map" class="jz-chapter__label">Putting Myself on the Map</h2>
       <p>I want to put myself on the map. Not because I need the credit, but because I want a younger Jade, somewhere out there right now, to look up and see someone who looks like her already standing there. I want her to know she doesn’t have to wait for permission. I loved this work before it was AI (Artificial Intelligence) that made it exciting to everyone else. I loved it when it was just a middle schooler wiring together a robot in an empty classroom, and I want that kind of love, the kind that exists before anyone is watching, to count for something.</p>
+      <p>Solo is part of that too. Alone, I can go where I need to go, and I don’t have to shrink the destination to fit a room that wasn’t built for me.</p>
     </section>
 
     <section class="jz-chapter" aria-labelledby="ch-unseen">
@@ -131,6 +192,7 @@
       <p>It hasn’t always felt that way. I worked somewhere once, and I’ll leave the name out of this, where I felt unseen and unheard. My work didn’t seem to matter in the room, no matter how good it was. There were men there who talked about me like I was just a girl, like that was the whole of what I had to offer. I remember sitting through it and understanding, maybe for the first time, that being good at something doesn’t automatically mean people will see you doing it.</p>
       <p>I felt something similar around business majors, who had a way of making me feel like I didn’t belong in rooms I had every right to be in, like my kind of smart wasn’t the kind that counted. It stuck with me longer than I wanted it to.</p>
       <p>Eventually, people around me started pushing me toward grad school, telling me that was where I’d finally get the credibility the workplace hadn’t given me. I understood where it came from. As a first-generation college student, every step past a bachelor’s degree already felt like walking into a room nobody in my family had walked into before me, and the idea of taking on more loans to get there wasn’t a small thing to consider. But I kept coming back to the same thought: if the rooms weren’t going to make space for me, I would build my own way into them.</p>
+      <p>That’s also why I do so much of this alone. Solo is how I get anywhere I want ... everything.</p>
     </section>
 
     <section class="jz-chapter" aria-labelledby="ch-consulting">
@@ -147,7 +209,7 @@
 
     <section class="jz-chapter" aria-labelledby="ch-campus">
       <h2 id="ch-campus" class="jz-chapter__label">Campus Life</h2>
-      <p>IU (Indiana University) kept handing me more rooms than I expected. I built a following of 150K+ students as a Handshake content creator. I found my way into ACG (Appature Partners) and connected with the Kelley MSIS (Master of Science in Information Systems) program. I worked for the IU Office of Student Life, and I worked in what was IU’s Office of DEI (Diversity, Equity, Inclusion) before it was dissolved, which taught me firsthand what it looks like when an institution tries, imperfectly, to build the kind of space a first-gen kid like me needed, and how much of that work is never really finished.</p>
+      <p>IU (Indiana University) kept handing me more rooms than I expected. I built a following of 150K+ students as a Handshake content creator. I worked for the IU Office of Student Life, and I worked in what was IU’s Office of DEI (Diversity, Equity, Inclusion) before it was dissolved, which taught me firsthand what it looks like when an institution tries, imperfectly, to build the kind of space a first-gen kid like me needed, and how much of that work is never really finished.</p>
       <p>Not every room let me in. I didn’t get into a sorority during recruitment, and it stung more than I expected it to. It made me question, for a minute, whether belonging was something handed to you or something you had to build yourself. I already knew the answer. I’d just needed the reminder.</p>
       <p>By the time people met me on campus, I was in what felt like a million clubs at once ... Intentionally Omitted. Somewhere along the way people started asking how I managed to be everywhere at once. The honest answer goes back further than college.</p>
     </section>

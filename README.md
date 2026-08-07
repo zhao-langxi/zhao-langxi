@@ -12,7 +12,7 @@ I learned how systems work in a family Chinese restaurant and in commercial prop
 
 Being Jade was never one thing at once. It was the kid drinking library air like it was oxygen and gagging on eggs at the same breakfast table. It was a Chinese American girl in Greenfield being driven forty-five minutes into rooms that weren’t built with her in mind, and then making herself indispensable in every one of them anyway. It was getting cyberbullied online and deciding, somehow, that the internet was still worth loving. It was standing in rooms as a POC founder who also happens to be the one writing the code, watching people’s assumptions catch up half a beat too slow. It was crying over a client problem at midnight and still showing up the next morning. It was being first-gen and watching “congratulations” and “now you owe” arrive in the same breath.
 
-Being Jade was rarely comfortable and almost never quiet. It was figuring things out in real time, in public, without a blueprint, because nobody handed you one and waiting for someone to wasn’t an option.
+I’m 21 now, and Being Jade is still rarely comfortable and almost never quiet. It is figuring things out in real time, in public, without a blueprint, because nobody handed you one and waiting for someone to wasn’t an option.
 
 ### The Library
 
@@ -46,6 +46,10 @@ That’s how I’ve come to see engineering: not as a set of tools, but as a for
 
 When I first found out about AI (Artificial Intelligence) in a way that actually mattered to me, the feeling wasn’t excitement and it wasn’t fear. It was recognition. It felt like watching the rest of the world catch up to something I’d already been doing my whole life: paying attention to systems, figuring out how something works, and then building the piece that was missing. AI didn’t feel like a new frontier to me. It felt like the automation I learned about in middle school robotics, grown up, wearing a new name.
 
+I want AI to not be scary. I want to be the truth when people start talking about it like it’s magic, or like it’s a threat that only experts get to name. And I do not want a man to overwrite me ... not my voice, not my work, not the version of this story that gets told.
+
+I want AI to not be scary. I want to be the truth when people start talking about it like it’s magic, or like it’s a threat that only experts get to name. And I do not want a man to overwrite me ... not my voice, not my work, not the version of this story that gets told.
+
 I want to put myself on the map. Not because I need the credit, but because I want a younger Jade, somewhere out there right now, to look up and see someone who looks like her already standing there. I want her to know she doesn’t have to wait for permission. I loved this work before it was AI (Artificial Intelligence) that made it exciting to everyone else. I loved it when it was just a middle schooler wiring together a robot in an empty classroom, and I want that kind of love, the kind that exists before anyone is watching, to count for something.
 
 It hasn’t always felt that way. I worked somewhere once, and I’ll leave the name out of this, where I felt unseen and unheard. My work didn’t seem to matter in the room, no matter how good it was. There were men there who talked about me like I was just a girl, like that was the whole of what I had to offer. I remember sitting through it and understanding, maybe for the first time, that being good at something doesn’t automatically mean people will see you doing it.
@@ -53,6 +57,8 @@ It hasn’t always felt that way. I worked somewhere once, and I’ll leave the 
 I felt something similar around business majors, who had a way of making me feel like I didn’t belong in rooms I had every right to be in, like my kind of smart wasn’t the kind that counted. It stuck with me longer than I wanted it to.
 
 Eventually, people around me started pushing me toward grad school, telling me that was where I’d finally get the credibility the workplace hadn’t given me. I understood where it came from. As a first-generation college student, every step past a bachelor’s degree already felt like walking into a room nobody in my family had walked into before me, and the idea of taking on more loans to get there wasn’t a small thing to consider. But I kept coming back to the same thought: if the rooms weren’t going to make space for me, I would build my own way into them.
+
+That’s also why I do so much of this alone. Solo is how I get anywhere I want ... everything.
 
 Founding Jade🪴 didn’t feel like a triumph the whole way through. There were nights consulting made me cry, sitting with a problem I couldn’t fully solve for a client and feeling like I was failing people who had trusted me. Nobody tells you that building something is going to ask you to hold pieces of yourself you didn’t know you’d have to hold.
 
@@ -62,7 +68,7 @@ Somewhere in the middle of all of it, I decided mental health had to be a priori
 
 A lot of that college version of me was built in unglamorous rooms too. I grew up in a small town, and even now I can trace pieces of myself back to the local coffee shop where I’d study, the local Chinese buffet my family went to on the nights nobody wanted to cook, the ordinary corners of a small town that don’t show up on any resume but shaped how I see community anyway. If a bagel can have everything on it, I figure I’m allowed to be made up of all of it too.
 
-IU (Indiana University) kept handing me more rooms than I expected. I built a following of 150K+ students as a Handshake content creator. I found my way into ACG (Appature Partners) and connected with the Kelley MSIS (Master of Science in Information Systems) program. I worked for the IU Office of Student Life, and I worked in what was IU’s Office of DEI (Diversity, Equity, Inclusion) before it was dissolved, which taught me firsthand what it looks like when an institution tries, imperfectly, to build the kind of space a first-gen kid like me needed, and how much of that work is never really finished.
+IU (Indiana University) kept handing me more rooms than I expected. I built a following of 150K+ students as a Handshake content creator. I worked for the IU Office of Student Life, and I worked in what was IU’s Office of DEI (Diversity, Equity, Inclusion) before it was dissolved, which taught me firsthand what it looks like when an institution tries, imperfectly, to build the kind of space a first-gen kid like me needed, and how much of that work is never really finished.
 
 Not every room let me in. I didn’t get into a sorority during recruitment, and it stung more than I expected it to. It made me question, for a minute, whether belonging was something handed to you or something you had to build yourself. I already knew the answer. I’d just needed the reminder.
 
