@@ -375,6 +375,15 @@ select:focus-visible {
   margin: 0 0 0.65rem;
 }
 
+.hero-h1 {
+  font-family: var(--jz-serif);
+  font-weight: 600;
+  font-size: clamp(1.35rem, 3.2vw, 1.85rem);
+  line-height: 1.2;
+  color: var(--jz-ink);
+  margin: 0 0 0.85rem;
+}
+
 .hero-energy-line {
   display: flex;
   align-items: baseline;

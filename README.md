@@ -4,6 +4,8 @@
 
 **Jade Zhao** · she/her · First-Generation College Student · Hudson and Holland Scholar (Full Merit) · B.S. Informatics, Business Minor @ IU Luddy · Looking for SWE roles · Expected May 2027
 
+**SEO note (honest):** Technical SEO, accessibility, and clear Informatics keyword strategy are maximized on the Pages site (titles, metas, JSON-LD, sitemap, skip links). Nobody can guarantee a #1 ranking for “informatics” — search results depend on authority, competition, and Google, not only on-page tags.
+
 I learned how systems work in a family Chinese restaurant and in commercial property management. The lesson stuck: build for the person depending on it. Same instinct now as **Website Team Lead** at Serve IT Clinic ... WCAG 2.1 sites and Python/PostgreSQL ETL for Bloomington partners without in-house developers. Founded ServeAI (PIT-UN).
 
 ## Why I Do This
