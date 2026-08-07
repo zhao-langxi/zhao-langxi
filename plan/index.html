@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pick a seat · tiny IU / Informatics plan · Jade Zhao</title>
+  <meta name="description" content="Pick a seat for a tiny IU / Informatics plan. Static mailto form to jlzhao@iu.edu — no database.">
+  <link rel="canonical" href="https://zhao-langxi.github.io/zhao-langxi/plan/">
+  <meta property="og:title" content="Pick a seat · Jade Zhao">
+  <meta property="og:description" content="One short note. A tiny IU / Informatics plan. Mailto only — no database.">
+  <meta property="og:url" content="https://zhao-langxi.github.io/zhao-langxi/plan/">
+  <meta property="og:image" content="https://zhao-langxi.github.io/zhao-langxi/assets/sunflower.webp">
+  <link rel="icon" href="/zhao-langxi/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/zhao-langxi/css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <nav class="site-jump" aria-label="Site">
+    <a href="/zhao-langxi/">home</a>
+    <a href="/zhao-langxi/research/temporary-outsiders.html">research</a>
+    <a href="/zhao-langxi/work/serveit.html">serveit</a>
+    <a href="/zhao-langxi/work/serve-ai.html">serve-ai</a>
+    <a href="/zhao-langxi/notes/">notes</a>
+    <a href="/zhao-langxi/plan/" aria-current="page">plan</a>
+  </nav>
+
+  <main id="main" class="wrap">
+    <header class="page-header">
+      <p class="eyebrow">Static · mailto only</p>
+      <h1>Pick a seat</h1>
+      <p class="lede">One tap energy, same as the classroom site ... a tiny IU / Informatics plan. Opens your mail app to <a href="mailto:jlzhao@iu.edu">jlzhao@iu.edu</a>. No database for v1.</p>
+    </header>
+
+    <form class="plan-form" data-plan-form>
+      <label>
+        Your name
+        <input type="text" name="name" autocomplete="name" required>
+      </label>
+      <label>
+        Seat
+        <select name="seat" required>
+          <option value="">Choose one</option>
+          <option value="freshman">Freshman / just starting</option>
+          <option value="transfer">Transfer / switching in</option>
+          <option value="informatics">Informatics path check</option>
+          <option value="serveit">ServeIT / clinic curious</option>
+          <option value="research">Research note feedback</option>
+          <option value="other">Other / open</option>
+        </select>
+      </label>
+      <label>
+        Note
+        <textarea name="note" rows="6" placeholder="What do you want a tiny plan about?" required></textarea>
+      </label>
+      <button type="submit">Open email draft</button>
+    </form>
+
+    <div class="note">
+      <p>
+        Prefer the classroom picker?
+        <a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a>
+        has the full cookie-classroom plan flow.
+      </p>
+    </div>
+
+    <footer class="site-footer">
+      <nav aria-label="Elsewhere">
+        <a href="/zhao-langxi/">home</a>
+        <a href="https://matchaxmoxie.github.io/matchaxmoxie/">classroom</a>
+        <a href="mailto:jlzhao@iu.edu">jlzhao@iu.edu</a>
+      </nav>
+    </footer>
+  </main>
+  <script src="/zhao-langxi/js/main.js" defer></script>
+</body>
+</html>

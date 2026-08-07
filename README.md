@@ -1,5 +1,7 @@
 # 赵郎溪 · zhao-langxi
 
+**Site:** [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) · research + portfolio (Pages from `main` root)
+
 **Jade Zhao** · she/her · First-Generation College Student · Hudson and Holland Scholar (Full Merit) · B.S. Informatics, Business Minor @ IU Luddy · Looking for SWE roles · Expected May 2027
 
 I learned how systems work in a family Chinese restaurant and in commercial property management. The lesson stuck: build for the person depending on it. Same instinct now as **Website Team Lead** at Serve IT Clinic ... WCAG 2.1 sites and Python/PostgreSQL ETL for Bloomington partners without in-house developers. Founded ServeAI (PIT-UN).
