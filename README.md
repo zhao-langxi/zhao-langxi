@@ -6,6 +6,12 @@
 
 I learned how systems work in a family Chinese restaurant and in commercial property management. The lesson stuck: build for the person depending on it. Same instinct now as **Website Team Lead** at Serve IT Clinic ... WCAG 2.1 sites and Python/PostgreSQL ETL for Bloomington partners without in-house developers. Founded ServeAI (PIT-UN).
 
+## Where I come from
+
+I’m a Chinese American woman who grew up in Greenfield, Indiana. My mom drove me to downtown Indianapolis; I fell in love with the library there ... learned to read, and worked through what was hardest. She made me two hard-boiled eggs every day before work. I hated the sulfur aftertaste; as an adult I realized she wanted me to grow in height and in brain power. In middle school I signed up for robotics and learned automata.
+
+I come from wanting tools and systems that other people can remake ... not just admire. That is Scratch spirit, **not Scratch Team, and not MIT**. Same instinct in Madrid as a temporary outsider, and in ServeIT handoffs. Not a new model or benchmark win ... friction as a first-class design input. Public, reproducible, pre-slop. Engineering is for everyone.
+
 ## Throughline · systems friction
 
 Systems friction in public and civic digital services systematically disadvantages outsiders (non-native speakers, new arrivals, first-time users); treating this friction as a first-class design requirement ... rather than a post-launch accessibility fix ... produces more accountable AI and digital public services.
