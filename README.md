@@ -8,17 +8,22 @@ I learned how systems work in a family Chinese restaurant and in commercial prop
 
 ## Why I Do This
 
+
 I am a Chinese American woman who grew up in Greenfield, Indiana, and if you asked me to point to where this all started, I’d take you to the downtown Indianapolis library.
 
 My mom used to drive me there when I was little ... all the way from Greenfield, Indiana to Indianapolis, before school, for those library trips. She worked her butt off for me. I remember walking in and just falling in love with the place: the rows of books, the quiet, the sense that anything I wanted to know was sitting on a shelf waiting for me. That library is where I learned to read, and it’s where I first understood that curiosity could be a place you physically went to.
 
 Every day before work, my mom made me two hard-boiled eggs. I hated them. I hated the sulfur smell, the aftertaste, the way they sat in my stomach all morning. It wasn’t until I was an adult that I realized what she was actually doing: she believed those eggs would help me grow taller and think sharper. It was never really about the eggs. It was about a mom who worked her butt off trying to build her kid up, one unglamorous breakfast at a time, and I didn’t have the language to appreciate it until years later.
 
+She taught me other things too, quieter ones. She taught me how to budget, and she taught me how to negotiate, how to advocate for myself instead of waiting for someone else to do it for me. Those lessons didn’t come with a robotics kit or a library card, but they’ve shaped how I show up in every room just as much as the technical skills did.
+
 That same “figure it out and build something” instinct followed me into middle school, when I joined Girls Who Code and my school’s robotics team. Those rooms taught me the same lesson the camps later would: this work was not reserved for a certain kind of person. It was an open invitation. That’s where I first learned about automation, how a set of rules and mechanisms could take on a task and just run it. It was the first time I saw engineering not as an abstract subject in a textbook, but as something I could actually put my hands on.
 
 I chased that feeling every summer after that, doing STEM camps at Cathedral and at Park Tudor. Somewhere in the middle of all those camps, it clicked for me: engineering wasn’t a club for a certain kind of person. It was for everyone, including a Chinese American kid from Greenfield who grew up on library trips and hard-boiled eggs. Movies like *Hidden Figures*, *October Sky*, and *Contact* made that feel even more real ... seeing people who looked like they’d been written out of the story actually be the reason the story worked.
 
 At Cathedral I kept going. I took AP Computer Science Principles as a freshman, and I’m still glad my Asian American CS teacher believed in me. I followed it with AP Computer Science A in Java, honors classes, and robotics honors. Every time I was given tools and a real problem, I used them. Engineering kept proving it was for everyone.
+
+None of that happened on its own. My mom drove me from Greenfield into Indianapolis every single school day, from 6th grade all the way through high school, first to St. Richard’s Episcopal School and then to Cathedral. That’s not a short drive to make twice a day for years. I don’t think I understood the size of that sacrifice until I was old enough to drive myself somewhere and realized how much of my life had been handed to me through the front seat of her car.
 
 When it came time to pick colleges, I just knew IU (Indiana University) was for me. It felt mutual. I pursued IU because it pursued me back.
 
@@ -29,6 +34,8 @@ That’s when I stepped in. I didn’t know anything about running a business on
 My research and practice have shaped me just as much as anything I ever built by hand. Documenting systems friction as an outsider in Madrid, handing off accessible builds at ServeIT and ServeAI, and staying in public-interest work taught me that engineering isn’t really about the technology. It’s about who gets seen by it and who doesn’t. Every form, every handoff, every system has someone standing behind it who is either being served or being ignored, and I decided a long time ago which side of that line I wanted to build on.
 
 That’s how I’ve come to see engineering: not as a set of tools, but as a form of paying attention. It’s asking who this is for, who gets left out of the room when it’s built, and then making sure the answer is different this time.
+
+When I first found out about AI (Artificial Intelligence) in a way that actually mattered to me, the feeling wasn’t excitement and it wasn’t fear. It was recognition. It felt like watching the rest of the world catch up to something I’d already been doing my whole life: paying attention to systems, figuring out how something works, and then building the piece that was missing. AI didn’t feel like a new frontier to me. It felt like the automation I learned about in middle school robotics, grown up, wearing a new name.
 
 I want to put myself on the map. Not because I need the credit, but because I want a younger Jade, somewhere out there right now, to look up and see someone who looks like her already standing there. I want her to know she doesn’t have to wait for permission. I loved this work before it was AI (Artificial Intelligence) that made it exciting to everyone else. I loved it when it was just a middle schooler wiring together a robot in an empty classroom, and I want that kind of love, the kind that exists before anyone is watching, to count for something.
 
