@@ -58,7 +58,7 @@ I felt something similar around business majors, who had a way of making me feel
 
 Eventually, people around me started pushing me toward grad school, telling me that was where I’d finally get the credibility the workplace hadn’t given me. I understood where it came from. As a first-generation college student, every step past a bachelor’s degree already felt like walking into a room nobody in my family had walked into before me, and the idea of taking on more loans to get there wasn’t a small thing to consider. But I kept coming back to the same thought: if the rooms weren’t going to make space for me, I would build my own way into them.
 
-That’s also why I do so much of this alone. Solo is how I get anywhere I want ... everything.
+That’s also why I do so much of this alone. Solo is how I get anywhere I want ... everything. Not because help is a weakness, but because waiting for someone else to open the door has never been how I got anywhere that mattered.
 
 Founding Jade🪴 didn’t feel like a triumph the whole way through. There were nights consulting made me cry, sitting with a problem I couldn’t fully solve for a client and feeling like I was failing people who had trusted me. Nobody tells you that building something is going to ask you to hold pieces of yourself you didn’t know you’d have to hold.
 
