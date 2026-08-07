@@ -4,7 +4,7 @@
 
 **Jade Zhao** · she/her · First-Generation College Student · Hudson and Holland Scholar (Full Merit) · B.S. Informatics, Business Minor @ IU Luddy · Looking for SWE roles · Expected May 2027
 
-**SEO note (honest):** Technical SEO, accessibility, and clear Informatics keyword strategy are maximized on the Pages site (titles, metas, JSON-LD, sitemap, skip links). Nobody can guarantee a #1 ranking for “informatics” ... search results depend on authority, competition, and Google, not only on-page tags.
+**SEO note (honest):** Technical SEO, accessibility, and clear Informatics keyword strategy are maximised on the Pages site (titles, metas, JSON-LD, sitemap, skip links). Nobody can guarantee a #1 ranking for “informatics” ... search results depend on authority, competition, and Google, not only on-page tags.
 
 I learned how systems work in a family Chinese restaurant and in commercial property management. The lesson stuck: build for the person depending on it. Same instinct now as **Website Team Lead** at Serve IT Clinic ... WCAG 2.1 sites and Python/PostgreSQL ETL for Bloomington (Indiana) partners without in-house developers. Founded ServeAI (PIT-UN).
 
@@ -22,7 +22,7 @@ I am a Chinese American woman who grew up in Greenfield, Indiana, and if you ask
 
 My mom used to drive me there when I was little ... all the way from Greenfield, Indiana to Indianapolis, before school, for those library trips. She worked her butt off for me. I remember walking in and just falling in love with the place: the rows of books, the quiet, the sense that anything I wanted to know was sitting on a shelf waiting for me. That library is where I learned to read, and it’s where I first understood that curiosity could be a place you physically went to.
 
-Every day before work, my mom made me two hard-boiled eggs. I hated them. I hated the sulfur smell, the aftertaste, the way they sat in my stomach all morning. It wasn’t until I was an adult that I realized what she was actually doing: she believed those eggs would help me grow taller and think sharper. It was never really about the eggs. It was about a mom who worked her butt off trying to build her kid up, one unglamorous breakfast at a time, and I didn’t have the language to appreciate it until years later.
+Every day before work, my mom made me two hard-boiled eggs. I hated them. I hated the sulphur smell, the aftertaste, the way they sat in my stomach all morning. It wasn’t until I was an adult that I realised what she was actually doing: she believed those eggs would help me grow taller and think sharper. It was never really about the eggs. It was about a mom who worked her butt off trying to build her kid up, one unglamorous breakfast at a time, and I didn’t have the language to appreciate it until years later.
 
 She taught me other things too, quieter ones. She taught me how to budget, and she taught me how to negotiate, how to advocate for myself instead of waiting for someone else to do it for me. Those lessons didn’t come with a robotics kit or a library card, but they’ve shaped how I show up in every room just as much as the technical skills did.
 
@@ -34,7 +34,7 @@ At Cathedral High School in Indianapolis I kept going. I took AP (US Advanced Pl
 
 I was also part of Cathedral’s iSquad for all four years I was there. iSquad was the school’s student-led tech support team for teachers and students in the iPad 1:1 programme (one device per student).
 
-None of that happened on its own. My mom drove me from Greenfield into Indianapolis every single school day, from 6th grade all the way through high school, first to St. Richard’s Episcopal School and then to Cathedral. That’s not a short drive to make twice a day for years. I don’t think I understood the size of that sacrifice until I was old enough to drive myself somewhere and realized how much of my life had been handed to me through the front seat of her car.
+None of that happened on its own. My mom drove me from Greenfield into Indianapolis every single school day, from 6th grade all the way through high school, first to St. Richard’s Episcopal School and then to Cathedral. That’s not a short drive to make twice a day for years. I don’t think I understood the size of that sacrifice until I was old enough to drive myself somewhere and realised how much of my life had been handed to me through the front seat of her car.
 
 When it came time to pick colleges, I just knew IU (Indiana University) was for me. It felt mutual. I pursued IU because it pursued me back.
 
@@ -66,7 +66,7 @@ Part of what made it harder was doing that work in rooms that were mostly white,
 
 Somewhere in the middle of all of it, I decided mental health had to be a priority, not an afterthought I’d deal with once everything else was handled. I started treating it with the same seriousness I’d give to physical health, because burnout doesn’t announce itself ... it just slowly takes things from you until you notice they’re gone. I don’t think enough people talk honestly about how harmful the constant performance on AI and LinkedIn can be to that. There’s a version of hustle culture living on those platforms that tells you rest is falling behind, and I’ve felt that pressure firsthand. Stress isn’t just uncomfortable ... it’s genuinely bad for you, and I stopped being willing to treat it like the cost of doing business.
 
-A lot of that college version of me was built in unglamorous rooms too. I grew up in a small town, and even now I can trace pieces of myself back to the local coffee shop where I’d study, the local Chinese buffet my family went to on the nights nobody wanted to cook, the ordinary corners of a small town that don’t show up on any resume but shaped how I see community anyway. If a bagel can have everything on it, I figure I’m allowed to be made up of all of it too.
+A lot of that college version of me was built in unglamorous rooms too. I grew up in a small town, and even now I can trace pieces of myself back to the local coffee shop where I’d study, the local Chinese buffet my family went to on the nights nobody wanted to cook, the ordinary corners of a small town that don’t show up on any CV but shaped how I see community anyway. If a bagel can have everything on it, I figure I’m allowed to be made up of all of it too.
 
 IU kept handing me more rooms than I expected. I built a following of 150K+ students as a Handshake (US campus jobs platform) content creator. I worked for the IU Office of Student Life, and I worked in what was IU’s Office of DEI (Diversity, Equity, Inclusion) before it was dissolved, which taught me firsthand what it looks like when an institution tries, imperfectly, to build the kind of space a first-gen kid like me needed, and how much of that work is never really finished.
 
@@ -76,7 +76,7 @@ Not every room let me in. I didn’t get into a sorority during recruitment (US 
 
 By the time people met me on campus, I was in what felt like a million clubs at once ... **Intentionally Omitted.** Somewhere along the way people started asking how I managed to be everywhere at once. The honest answer goes back further than college.
 
-I was cyberbullied when I was younger, back when the internet still felt like something adults hadn’t figured out yet. I think that’s part of why I love tech the way I do, in a way most people don’t realize when they meet me now. The same screens that hurt me were also the first place I learned I could build something back, that a website or a piece of code doesn’t care where you’re from or what anyone said about you online, it just does what you tell it to do.
+I was cyberbullied when I was younger, back when the internet still felt like something adults hadn’t figured out yet. I think that’s part of why I love tech the way I do, in a way most people don’t realise when they meet me now. The same screens that hurt me were also the first place I learned I could build something back, that a website or a piece of code doesn’t care where you’re from or what anyone said about you online, it just does what you tell it to do.
 
 There are things adults don’t really want to talk to kids about, and what to do when the internet turns on you is one of them. Nobody sat me down and explained it. I had to figure that part out myself too, the same way I’ve had to figure out most things on this list.
 
@@ -114,7 +114,7 @@ Working notes: [madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethic
 - Portfolio · [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/)
 - Classroom / FASE MAP · [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/)
 - IU page · [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/)
-- Resume · [jlzhao.pages.iu.edu/resume.pdf](https://jlzhao.pages.iu.edu/resume.pdf)
+- CV · [jlzhao.pages.iu.edu/resume.pdf](https://jlzhao.pages.iu.edu/resume.pdf)
 - LinkedIn · [linkedin.com/in/jadexzhao](https://linkedin.com/in/jadexzhao)
 - Instagram · [@zhao.langxi](https://instagram.com/zhao.langxi)
 - ServeIT Clinic · [serveit.luddy.indiana.edu](https://serveit.luddy.indiana.edu/)

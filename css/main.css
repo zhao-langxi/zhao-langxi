@@ -648,7 +648,13 @@ select:focus-visible {
   }
 
   .jz-story-strip__wide {
-    grid-column: 2 / 4;
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1100px) {
+  .jz-story-strip {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
 
