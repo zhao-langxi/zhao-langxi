@@ -70,9 +70,11 @@ A lot of that college version of me was built in unglamorous rooms too. I grew u
 
 IU (Indiana University) kept handing me more rooms than I expected. I built a following of 150K+ students as a Handshake content creator. I worked for the IU Office of Student Life, and I worked in what was IU’s Office of DEI (Diversity, Equity, Inclusion) before it was dissolved, which taught me firsthand what it looks like when an institution tries, imperfectly, to build the kind of space a first-gen kid like me needed, and how much of that work is never really finished.
 
+I was part of the IU Leadership Conference, and Dr. Mimi was important to me in that stretch of campus.
+
 Not every room let me in. I didn’t get into a sorority during recruitment, and it stung more than I expected it to. It made me question, for a minute, whether belonging was something handed to you or something you had to build yourself. I already knew the answer. I’d just needed the reminder.
 
-By the time people met me on campus, I was in what felt like a million clubs at once ... Intentionally Omitted. Somewhere along the way people started asking how I managed to be everywhere at once. The honest answer goes back further than college.
+By the time people met me on campus, I was in what felt like a million clubs at once ... **Intentionally Omitted.** Somewhere along the way people started asking how I managed to be everywhere at once. The honest answer goes back further than college.
 
 I was cyberbullied when I was younger, back when the internet still felt like something adults hadn’t figured out yet. I think that’s part of why I love tech the way I do, in a way most people don’t realize when they meet me now. The same screens that hurt me were also the first place I learned I could build something back, that a website or a piece of code doesn’t care where you’re from or what anyone said about you online, it just does what you tell it to do.
 
