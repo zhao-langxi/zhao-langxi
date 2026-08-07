@@ -4,14 +4,28 @@
 
 I learned how systems work in a family Chinese restaurant and in commercial property management. The lesson stuck: build for the person depending on it. Same instinct now as **Website Team Lead** at Serve IT Clinic ... WCAG 2.1 sites and Python/PostgreSQL ETL for Bloomington partners without in-house developers. Founded ServeAI (PIT-UN).
 
+## Throughline · systems friction
+
+Systems friction in public and civic digital services systematically disadvantages outsiders (non-native speakers, new arrivals, first-time users); treating this friction as a first-class design requirement ... rather than a post-launch accessibility fix ... produces more accountable AI and digital public services.
+
+Working notes: [madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethics) (personal research · MIT). Clinic accessibility guides: [serveit-accessibility](https://github.com/zhao-langxi/serveit-accessibility). Serve-AI project page: [serveit.luddy.indiana.edu/serve-ai](https://serveit.luddy.indiana.edu/serve-ai/index.html) (materials **CC BY-SA 4.0**; primary IU repo [github.iu.edu/serveit-dev/SERVE-AI](https://github.iu.edu/serveit-dev/SERVE-AI) may require IU login).
+
 ## Repos
 
 | Repo | What it is |
 |------|------------|
-| [**serveit-accessibility**](https://github.com/zhao-langxi/serveit-accessibility) | WCAG baselines, pre-ship checklists, and Cascade/Rivet notes for [ServeIT Clinic](https://serveit.luddy.indiana.edu/) builds |
+| [**serveit-accessibility**](https://github.com/zhao-langxi/serveit-accessibility) | Public WCAG / Cascade / Rivet guides extending ServeIT Clinic practice; related to Serve-AI (CC BY-SA 4.0) |
 | [**local-digital**](https://github.com/zhao-langxi/local-digital) | Local community digital work ... nonprofit web, civic tech, and handoffs that outlast a semester |
-| [**madrid-ai-ethics**](https://github.com/zhao-langxi/madrid-ai-ethics) | Spring 2026 Madrid notes ... systems friction, civic access, and public-interest tech from the outside |
+| [**madrid-ai-ethics**](https://github.com/zhao-langxi/madrid-ai-ethics) | Spring 2026 Madrid research notes ... systems friction, civic access, outsider patterns (MIT · not Serve-AI materials) |
 | [**lease-precision**](https://github.com/zhao-langxi/lease-precision) | Commercial lease process notes ... clause-level precision for operators, not legal advice |
+
+## Licensing
+
+| What | License | Notes |
+|------|---------|-------|
+| **Serve-AI** project materials | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | Credit Serve-AI / ServeIT Clinic (IU Luddy). Public page: [serve-ai](https://serveit.luddy.indiana.edu/serve-ai/index.html). Primary repo: [SERVE-AI](https://github.iu.edu/serveit-dev/SERVE-AI) (IU login may be required). This profile README is **not** the Serve-AI primary. |
+| [serveit-accessibility](https://github.com/zhao-langxi/serveit-accessibility) | CC BY-SA 4.0 | Jade’s public extension / clinic guides; credit Serve-AI upstream where materials derive from the project |
+| [madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethics) | MIT | Personal research notes · practice bridge to ServeIT/Serve-AI only · **not** Serve-AI licensed by default |
 
 ## Elsewhere
 
@@ -22,4 +36,5 @@ I learned how systems work in a family Chinese restaurant and in commercial prop
 - LinkedIn · [linkedin.com/in/jadexzhao](https://linkedin.com/in/jadexzhao)
 - Instagram · [@zhao.langxi](https://instagram.com/zhao.langxi)
 - ServeIT Clinic · [serveit.luddy.indiana.edu](https://serveit.luddy.indiana.edu/)
+- Serve-AI · [serveit.luddy.indiana.edu/serve-ai](https://serveit.luddy.indiana.edu/serve-ai/index.html)
 - Code · [github.com/jadexzhao](https://github.com/jadexzhao)
