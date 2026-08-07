@@ -209,8 +209,71 @@ select:focus-visible {
 
 .hero-visual img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center 18%;
+}
+
+.about-hero-photo,
+.about-alt-photo {
+  margin: 1.25rem 0 0;
+  border: 3px solid var(--dusk);
+  background: var(--gold-soft);
+  box-shadow: 6px 6px 0 rgba(31, 22, 48, 0.12);
+  overflow: hidden;
+  max-width: 22rem;
+}
+
+.about-hero-photo img,
+.about-alt-photo img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.about-alt-photo {
+  max-width: 18rem;
+}
+
+.story-strip-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 720px) {
+  .story-strip-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.story-strip-grid li {
+  border: 3px solid var(--dusk);
+  background: var(--chalk-dust);
+  box-shadow: 4px 4px 0 rgba(31, 22, 48, 0.1);
+  overflow: hidden;
+}
+
+.story-strip-grid img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-cta-wrap {
+  margin: 1.5rem 0 2rem;
+}
+
+.hp-field {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .hero-brand-line {

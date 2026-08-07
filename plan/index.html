@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pick a seat · tiny IU / Informatics plan · Jade Zhao</title>
-  <meta name="description" content="Pick a seat for a tiny IU / Informatics plan. Static mailto form to jlzhao@iu.edu — no database.">
+  <meta name="description" content="Pick a seat for a tiny IU / Informatics plan. Sends via Formspree to Jade Zhao.">
   <link rel="canonical" href="https://zhao-langxi.github.io/zhao-langxi/plan/">
   <meta property="og:title" content="Pick a seat · Jade Zhao">
-  <meta property="og:description" content="One short note. A tiny IU / Informatics plan. Mailto only — no database.">
+  <meta property="og:description" content="One short note. A tiny IU / Informatics plan.">
   <meta property="og:url" content="https://zhao-langxi.github.io/zhao-langxi/plan/">
-  <meta property="og:image" content="https://zhao-langxi.github.io/zhao-langxi/assets/sunflower.webp">
+  <meta property="og:image" content="https://zhao-langxi.github.io/zhao-langxi/assets/zhao-langxi-fishing.webp">
   <link rel="icon" href="/zhao-langxi/assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,19 +30,32 @@
 
   <main id="main" class="wrap">
     <header class="page-header">
-      <p class="eyebrow">Static · mailto only</p>
+      <p class="eyebrow">Formspree · no database</p>
       <h1>Pick a seat</h1>
-      <p class="lede">One tap energy, same as the classroom site ... a tiny IU / Informatics plan. Opens your mail app to <a href="mailto:jlzhao@iu.edu">jlzhao@iu.edu</a>. No database for v1.</p>
+      <p class="lede">One tap energy, same as the classroom site ... a tiny IU / Informatics plan. Sends to Jade. Prefer email? <a href="mailto:jlzhao@iu.edu">jlzhao@iu.edu</a>.</p>
     </header>
 
-    <form class="plan-form" data-plan-form>
-      <label>
+    <form
+      class="plan-form"
+      action="https://formspree.io/f/xvgzwnrw"
+      method="POST"
+      data-plan-form
+    >
+      <input type="hidden" name="_subject" value="IU / Informatics plan seat · zhao-langxi">
+      <input type="hidden" name="_next" value="https://zhao-langxi.github.io/zhao-langxi/plan/thanks.html">
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp-field" aria-hidden="true">
+
+      <label for="plan-name">
         Your name
-        <input type="text" name="name" autocomplete="name" required>
+        <input id="plan-name" type="text" name="name" autocomplete="name" required>
       </label>
-      <label>
+      <label for="plan-email">
+        Email
+        <input id="plan-email" type="email" name="email" autocomplete="email" required>
+      </label>
+      <label for="plan-seat">
         Seat
-        <select name="seat" required>
+        <select id="plan-seat" name="seat" required>
           <option value="">Choose one</option>
           <option value="freshman">Freshman / just starting</option>
           <option value="transfer">Transfer / switching in</option>
@@ -52,11 +65,11 @@
           <option value="other">Other / open</option>
         </select>
       </label>
-      <label>
+      <label for="plan-note">
         Note
-        <textarea name="note" rows="6" placeholder="What do you want a tiny plan about?" required></textarea>
+        <textarea id="plan-note" name="message" rows="6" placeholder="What do you want a tiny plan about?" required></textarea>
       </label>
-      <button type="submit">Open email draft</button>
+      <button type="submit">Send note</button>
     </form>
 
     <div class="note">
@@ -75,6 +88,5 @@
       </nav>
     </footer>
   </main>
-  <script src="/zhao-langxi/js/main.js" defer></script>
 </body>
 </html>
