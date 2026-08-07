@@ -23,6 +23,8 @@ I chased that feeling every summer after that, doing STEM camps at Cathedral and
 
 At Cathedral I kept going. I took AP Computer Science Principles as a freshman, and I’m still glad my Asian American CS teacher believed in me. I followed it with AP Computer Science A in Java, honors classes, and robotics honors. Every time I was given tools and a real problem, I used them. Engineering kept proving it was for everyone.
 
+I was also part of Cathedral’s iSquad for all four years I was there. iSquad was Cathedral High School’s student-led tech support team for teachers and students in the school’s iPad 1:1 program.
+
 None of that happened on its own. My mom drove me from Greenfield into Indianapolis every single school day, from 6th grade all the way through high school, first to St. Richard’s Episcopal School and then to Cathedral. That’s not a short drive to make twice a day for years. I don’t think I understood the size of that sacrifice until I was old enough to drive myself somewhere and realized how much of my life had been handed to me through the front seat of her car.
 
 When it came time to pick colleges, I just knew IU (Indiana University) was for me. It felt mutual. I pursued IU because it pursued me back.
