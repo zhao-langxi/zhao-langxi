@@ -606,8 +606,15 @@ select:focus-visible {
 }
 
 .jz-chapter-photos--single {
-  max-width: 12rem;
+  max-width: 18rem;
   grid-template-columns: minmax(0, 1fr);
+}
+
+.jz-chapter-photos--single img {
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  background: var(--jz-paper-dim);
 }
 
 .jz-chapter-photos figure {
@@ -642,7 +649,7 @@ select:focus-visible {
   }
 
   .jz-chapter-photos--single {
-    max-width: 14rem;
+    max-width: 22rem;
     grid-template-columns: minmax(0, 1fr);
   }
 }
