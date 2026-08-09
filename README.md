@@ -14,7 +14,7 @@ I learned how systems work in a family Chinese restaurant. During the pandemic I
 | surface | job |
 |---------|-----|
 | [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) | resume / narrative hub |
-| [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) | research + personal essay · code / writing |
+| [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) | independent notes + personal essay · code / writing |
 | [jadexzhao](https://jadexzhao.github.io/jadexzhao/) | technical proof · ships |
 | [matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) | live FASE MAP process + cookie classroom |
 
@@ -33,6 +33,8 @@ I learned how systems work in a family Chinese restaurant. During the pandemic I
 | [madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethics) | Independent personal research notes · Madrid systems friction (MIT) |
 | [local-digital](https://github.com/zhao-langxi/local-digital) | Independent notes on clinic community digital handoffs (MIT) |
 | [Quackr](https://github.com/zhao-langxi/Quackr) | Local dating-app prototype · self-tested gate only |
+
+**On the site (plain-language first):** [temporary outsiders](https://zhao-langxi.github.io/zhao-langxi/research/temporary-outsiders.html) · [when websites assume you belong](https://zhao-langxi.github.io/zhao-langxi/research/systems-friction.html) · [websites staff can keep alive](https://zhao-langxi.github.io/zhao-langxi/research/staff-maintainable.html)
 
 Independent notes above are Jade’s own writeups ... not IU-endorsed research and not peer-reviewed publications. Serve-AI / ServeIT Clinic materials stay CC BY-SA with project credit.
 

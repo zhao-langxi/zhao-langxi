@@ -300,6 +300,31 @@ select:focus-visible {
   background: var(--jz-paper-dim);
 }
 
+/* Plain-language writeup landings ... slightly larger type, comfortable measure */
+.note-landing .page-header .lede,
+.note-landing .prose {
+  max-width: 38rem;
+}
+
+.note-landing .prose {
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.note-landing .prose p + p {
+  margin-top: 1.15rem;
+}
+
+.note-landing .cta-row {
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.note-landing .cta {
+  font-size: 1.05rem;
+  padding: 0.85rem 1.25rem;
+}
+
 .site-footer,
 .jz-footer {
   margin-top: 3rem;
