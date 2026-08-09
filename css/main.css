@@ -325,6 +325,54 @@ select:focus-visible {
   padding: 0.85rem 1.25rem;
 }
 
+/* In-page PDF reader ... full wrap width, tall enough to read on desktop */
+.pdf-embed {
+  margin-top: 2.25rem;
+  max-width: min(100%, 52rem);
+}
+
+.pdf-embed > h2 {
+  margin-bottom: 0.5rem;
+}
+
+.pdf-embed > p {
+  margin: 0 0 0.85rem;
+  max-width: 38rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--jz-ink-muted);
+}
+
+.pdf-embed-actions {
+  margin: 0 0 0.85rem;
+}
+
+.pdf-embed-actions a {
+  font-weight: 600;
+  color: var(--jz-crimson-deep);
+}
+
+.pdf-embed-frame {
+  display: block;
+  width: 100%;
+  height: min(85vh, 56rem);
+  min-height: 28rem;
+  border: 1px solid var(--jz-line);
+  background: #fff;
+}
+
+.pdf-embed-fallback {
+  margin: 0.85rem 0 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .pdf-embed-frame {
+    height: 70vh;
+    min-height: 22rem;
+  }
+}
+
 .site-footer,
 .jz-footer {
   margin-top: 3rem;
