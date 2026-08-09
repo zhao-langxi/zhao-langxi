@@ -1,8 +1,24 @@
 # 赵郎溪 · zhao-langxi
 
-**Site:** [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) · research + portfolio (Pages from `main` root)
+**Job of this site:** research + personal essay (Pages) · code / writing. IU crimson / Fraunces here on purpose ... same person as matchaxmoxie, different room.
+
+**Front door (hub):** [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) ... resume / narrative. Start there if you only want one link.
+
+**Site:** [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) · Pages from `main` root
 
 **Jade Zhao** · she/her · First-Generation College Student · Hudson and Holland Scholar (Full Merit) · B.S. Informatics, Business Minor @ IU Luddy · Looking for SWE roles · Expected May 2027
+
+**Name note:** GitHub / Pages **zhao-langxi** = code / writing. Instagram [@zhao.langxi](https://instagram.com/zhao.langxi) = photos / behind-the-scenes. Same Chinese name; different jobs. Not a merge.
+
+## where to look
+
+| surface | job |
+|---------|-----|
+| [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) | resume / narrative hub |
+| [jadexzhao](https://jadexzhao.github.io/jadexzhao/) | technical proof · ships |
+| [matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) | live FASE MAP process + cookie classroom |
+| **this site** | research + personal essay · code / writing |
+| Instagram [@zhao.langxi](https://instagram.com/zhao.langxi) | photos / behind-the-scenes |
 
 **SEO note (honest):** Technical SEO, accessibility, and clear Informatics keyword strategy are maximised on the Pages site (titles, metas, JSON-LD, sitemap, skip links). Nobody can guarantee a #1 ranking for “informatics” ... search results depend on authority, competition, and Google, not only on-page tags.
 
@@ -111,12 +127,12 @@ Working notes: [madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethic
 
 ## Elsewhere
 
-- Portfolio · [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/)
+- Hub · [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) (resume / narrative)
+- Portfolio · [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/) (technical proof)
 - Classroom / FASE MAP · [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/)
-- IU page · [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/)
 - CV · [jlzhao.pages.iu.edu/resume.pdf](https://jlzhao.pages.iu.edu/resume.pdf)
 - LinkedIn · [linkedin.com/in/jadexzhao](https://linkedin.com/in/jadexzhao)
-- Instagram · [@zhao.langxi](https://instagram.com/zhao.langxi)
+- Instagram · [@zhao.langxi](https://instagram.com/zhao.langxi) (photos / behind-the-scenes)
 - ServeIT Clinic · [serveit.luddy.indiana.edu](https://serveit.luddy.indiana.edu/)
 - Serve-AI · [serveit.luddy.indiana.edu/serve-ai](https://serveit.luddy.indiana.edu/serve-ai/index.html)
-- Code · [github.com/jadexzhao](https://github.com/jadexzhao)
+- Ships · [github.com/jadexzhao](https://github.com/jadexzhao)
