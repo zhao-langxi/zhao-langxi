@@ -36,6 +36,6 @@ I learned how systems work in a family Chinese restaurant. During the pandemic I
 
 **On the site (plain-language first):** [temporary outsiders](https://zhao-langxi.github.io/zhao-langxi/research/temporary-outsiders.html) · [when websites assume you belong](https://zhao-langxi.github.io/zhao-langxi/research/systems-friction.html) · [websites staff can keep alive](https://zhao-langxi.github.io/zhao-langxi/research/staff-maintainable.html)
 
-Independent notes above are Jade’s own writeups ... not IU-endorsed research and not peer-reviewed publications. Serve-AI / ServeIT Clinic materials stay CC BY-SA with project credit.
+Independent notes above are Jade’s own writeups ... not IU-endorsed research and not peer-reviewed publications. They include fuller detail on systems friction / staff handoffs and a grounded long-horizon AI discussion (capability growth ≠ automatic inclusion; no invented market forecasts). Serve-AI / ServeIT Clinic materials stay CC BY-SA with project credit. Drafting on those notes was AI-assisted; accountability remains with Jade Zhao.
 
 Instagram [@zhao.langxi](https://instagram.com/zhao.langxi) · photos / behind-the-scenes · same Chinese name, different job.
