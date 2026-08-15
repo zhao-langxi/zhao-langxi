@@ -124,9 +124,13 @@ select:focus-visible,
   max-width: none;
   margin: 0;
   padding: 0.35rem 1rem;
-  background: var(--jz-paper);
+  /* SOLID opaque Rivet paper ... never glass */
+  background: #ffffff;
+  background-color: var(--iu-white, var(--jz-paper, #ffffff));
   border-bottom: 1px solid var(--jz-line);
   backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  opacity: 1;
 }
 
 .site-jump a,
@@ -177,9 +181,11 @@ select:focus-visible,
   margin: 0 auto;
   padding: 1rem 1.5rem 0;
   position: static;
-  background: transparent;
+  background: #ffffff;
+  background-color: var(--iu-white, var(--jz-paper, #ffffff));
   border-bottom: none;
   backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 /* -- Shared page shell -- */
@@ -1024,3 +1030,15 @@ select:focus-visible,
 .theme-zhao-langxi .site-switcher a{color:var(--iu-gray-900);min-height:44px;display:inline-flex;align-items:center;font-weight:600}
 .theme-zhao-langxi .site-switcher a:hover{color:var(--iu-crimson)}
 .theme-zhao-langxi .jz-hero__photos{max-width:16rem;grid-template-columns:1fr}
+
+
+/* HARD RULE: no clear / glass / see-through navbars */
+.site-jump,
+.jz-site-jump,
+.theme-zhao-langxi .site-jump {
+  background: #ffffff !important;
+  background-color: var(--iu-white, var(--jz-paper, #ffffff)) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  opacity: 1 !important;
+}
