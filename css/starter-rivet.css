@@ -1,0 +1,158 @@
+/* ============================================
+   zhao-langxi — research + personal essay
+   Deliberately aligned to IU's own institutional
+   look (Rivet / Cascade / WCMS conventions), not
+   a custom brand palette like the other three
+   sites. This site should read as "IU-adjacent,"
+   not "matcha brand."
+   ============================================ */
+
+:root {
+  /* IU Rivet-adjacent neutrals — crimson used sparingly,
+     as IU brand guidelines intend, not as a theme color */
+  --iu-crimson:   #990000;
+  --iu-black:     #1a1a1a;
+  --iu-gray-900:  #333333;
+  --iu-gray-600:  #5c5c5c;
+  --iu-gray-300:  #cfcfcf;
+  --iu-gray-100:  #f4f4f4;
+  --iu-white:     #ffffff;
+  --rule:         var(--iu-gray-300);
+
+  --font-display: Georgia, 'Times New Roman', serif; /* Rivet default serif */
+  --font-body:    Arial, Helvetica, sans-serif;       /* Rivet default sans */
+
+  --step--1: 0.85rem;
+  --step-0:  1rem;
+  --step-1:  1.2rem;
+  --step-2:  1.5rem;
+  --step-3:  1.9rem;
+
+  --radius: 2px; /* IU sites run near-square corners, not rounded */
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--iu-white);
+  color: var(--iu-gray-900);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  color: var(--iu-black);
+  margin: 0 0 0.5em;
+  line-height: 1.2;
+}
+
+h1 { font-size: var(--step-3); border-bottom: 3px solid var(--iu-crimson); padding-bottom: 10px; }
+h2 { font-size: var(--step-2); }
+h3 { font-size: var(--step-1); }
+
+p { margin: 0 0 1em; color: var(--iu-gray-900); max-width: 68ch; }
+
+a { color: var(--iu-crimson); text-decoration: underline; }
+a:hover { color: var(--iu-black); }
+
+.wrap { max-width: 800px; margin: 0 auto; padding: 48px 24px 80px; }
+
+.rows { display: flex; flex-direction: column; }
+
+.row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+@media (max-width: 600px) {
+  .row { grid-template-columns: 1fr; gap: 2px; }
+}
+
+.disclaimer {
+  background: var(--iu-gray-100);
+  border-left: 3px solid var(--iu-gray-600);
+  padding: 16px 18px;
+  font-size: var(--step--1);
+  color: var(--iu-gray-600);
+  margin: 24px 0;
+}
+
+/* ---------- footer: standard IU institutional footer pattern ---------- */
+/* three-tier: crimson identity bar, link columns, fine-print legal line —
+   matches the pattern used across IU's own Pages / WCMS sites */
+
+footer {
+  margin-top: 72px;
+  border-top: 4px solid var(--iu-crimson);
+  padding-top: 28px;
+  background: var(--iu-gray-100);
+  padding: 32px 24px;
+}
+
+footer .footer-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer .footer-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 640px) {
+  footer .footer-columns { grid-template-columns: 1fr; }
+}
+
+footer h4 {
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--iu-gray-600);
+  margin: 0 0 10px;
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li { margin-bottom: 6px; }
+
+footer a {
+  font-size: var(--step--1);
+  color: var(--iu-gray-900);
+  text-decoration: none;
+}
+
+footer a:hover { color: var(--iu-crimson); text-decoration: underline; }
+
+footer .footer-legal {
+  border-top: 1px solid var(--iu-gray-300);
+  padding-top: 16px;
+  font-size: 0.78rem;
+  color: var(--iu-gray-600);
+}
+
+footer .footer-legal p { margin: 0 0 4px; max-width: none; color: inherit; }
+
+/* ---------- accessibility floor ---------- */
+
+a:focus-visible {
+  outline: 2px solid var(--iu-crimson);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

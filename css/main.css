@@ -1,6 +1,8 @@
-/* zhao-langxi · essays / Rivet-adjacent
-   Shared tokens + register-essay.css. IU WCMS crimson. WCAG AA. */
+/* zhao-langxi · Rivet live stack
+   overall-style-system → starter-rivet (Jade exact) → essay extras */
 
+@import url("overall-style-system.css");
+@import url("starter-rivet.css");
 @import url("register-essay.css");
 
 *,
@@ -628,7 +630,7 @@ select:focus-visible,
   display: block;
   padding: 1.1rem 1.15rem;
   border: 1px solid var(--jz-line);
-  background: rgba(238, 233, 224, 0.85);
+  background: var(--iu-gray-100);
   text-decoration: none;
   color: inherit;
   transition: border-color 160ms ease, background-color 160ms ease;
@@ -713,7 +715,7 @@ select:focus-visible,
 .jz-hero__photo {
   margin: 0;
   max-width: none;
-  border: 1px solid var(--ocean-blue, var(--jz-crimson));
+  border: 1px solid var(--iu-crimson);
   box-shadow: none;
   background: var(--jz-paper-dim);
   overflow: hidden;
@@ -736,8 +738,8 @@ select:focus-visible,
   padding: 0.45rem 0.65rem;
   font-size: 0.85rem;
   line-height: 1.4;
-  color: var(--ocean-deep, var(--jz-crimson-deep));
-  background: var(--sky-pale, var(--jz-paper-dim));
+  color: var(--iu-gray-900);
+  background: var(--iu-gray-100);
 }
 
 .jz-hero__photo--alt img {
@@ -781,7 +783,7 @@ select:focus-visible,
 .jz-chapter-photos figure {
   margin: 0;
   background: var(--jz-paper-dim);
-  border: 1px solid var(--ocean-blue, var(--jz-crimson));
+  border: 1px solid var(--iu-crimson);
   box-shadow: none;
   overflow: hidden;
 }
@@ -791,8 +793,8 @@ select:focus-visible,
   padding: 0.45rem 0.65rem;
   font-size: 0.85rem;
   line-height: 1.4;
-  color: var(--ocean-deep, var(--jz-crimson-deep));
-  background: var(--sky-pale, var(--jz-paper-dim));
+  color: var(--iu-gray-900);
+  background: var(--iu-gray-100);
 }
 
 .jz-chapter-photos img {
@@ -1017,3 +1019,8 @@ select:focus-visible,
     to { opacity: 1; transform: none; }
   }
 }
+
+.theme-zhao-langxi .site-switcher{margin:0 0 1rem;padding-top:.75rem;border-top:1px solid var(--iu-gray-300)}
+.theme-zhao-langxi .site-switcher a{color:var(--iu-gray-900);min-height:44px;display:inline-flex;align-items:center;font-weight:600}
+.theme-zhao-langxi .site-switcher a:hover{color:var(--iu-crimson)}
+.theme-zhao-langxi .jz-hero__photos{max-width:16rem;grid-template-columns:1fr}
