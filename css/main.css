@@ -1,9 +1,9 @@
 /* zhao-langxi · Rivet live stack
    overall-style-system → starter-rivet (Jade exact) → essay extras */
 
-@import url("overall-style-system.css");
-@import url("starter-rivet.css");
-@import url("register-essay.css");
+@import url("overall-style-system.css?v=20260814-navfix3");
+@import url("starter-rivet.css?v=20260814-navfix3");
+@import url("register-essay.css?v=20260814-navfix3");
 
 *,
 *::before,
@@ -13,12 +13,16 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  /* Set BOTH axes: a lone overflow-x:clip makes overflow-y compute to
+     auto, turning body into a scrollport and breaking sticky stacking. */
   overflow-x: clip;
+  overflow-y: scroll;
 }
 
 body,
 body.jz-body {
   overflow-x: clip;
+  overflow-y: visible;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -45,12 +49,13 @@ body,
 body.jz-body {
   margin: 0;
   min-height: 100vh;
-  color: var(--jz-ink);
+  color: var(--jz-ink, #1a1a1a);
   font-family: var(--jz-sans);
   font-size: 1.0625rem;
   line-height: 1.7;
-  background: var(--jz-paper);
-  background-color: var(--jz-paper);
+  /* Literal fallbacks ... circular token bugs must never leave body clear */
+  background: #ffffff;
+  background-color: var(--jz-paper, var(--iu-white, #ffffff));
   -webkit-font-smoothing: antialiased;
 }
 
@@ -111,12 +116,16 @@ select:focus-visible,
   font-weight: 500;
 }
 
-/* -- Site nav (shared) -- */
+/* -- Site nav (shared) --
+   Sticky must win stacking over essay content. `.jz-thread` and
+   scroll animations use transform / compositing; without a high
+   z-index + content containment, body copy paints over the nav. */
 .site-jump,
 .jz-site-jump {
   position: sticky;
   top: 0;
-  z-index: 90;
+  z-index: 1000;
+  isolation: isolate;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -146,21 +155,25 @@ select:focus-visible,
   text-decoration: none;
   color: var(--jz-crimson-deep);
   white-space: nowrap;
+  box-shadow: none;
 }
 
 .site-jump a:hover,
 .jz-site-jump a:hover {
   text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
   color: var(--jz-crimson);
 }
 
 .site-jump a[aria-current="page"],
 .jz-site-jump a[aria-current="page"] {
-  color: var(--jz-ink);
+  color: var(--jz-ink, #1a1a1a);
   text-decoration: underline;
-  text-decoration-color: var(--jz-gold);
-  text-underline-offset: 0.35em;
-  text-decoration-thickness: 2px;
+  text-decoration-color: #b7935a;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+  background-image: none;
 }
 
 .site-jump-sep {
@@ -759,11 +772,22 @@ select:focus-visible,
   }
 }
 
+/* Keep page content in a stacking context below sticky nav */
+.jz-hero,
+.jz-story,
+.wrap,
+main {
+  position: relative;
+  z-index: 0;
+}
+
 .jz-story {
   max-width: var(--jz-max);
   margin: 0 auto;
   padding: 0 1.5rem 4rem;
   position: relative;
+  z-index: 0;
+  isolation: isolate;
 }
 
 .jz-chapter-photos {
@@ -847,25 +871,29 @@ select:focus-visible,
   max-height: none;
 }
 
+/* Draw the thread with clip-path, not transform ... transform
+   creates a compositor layer that was painting over sticky nav. */
 .jz-thread {
   position: absolute;
   left: 1.5rem;
   top: 0;
   bottom: 0;
+  z-index: 0;
   width: 2px;
   background: linear-gradient(180deg, var(--jz-crimson) 0%, var(--jz-gold) 100%);
-  transform-origin: top;
-  transform: scaleY(0);
+  clip-path: inset(0 0 100% 0);
+  pointer-events: none;
 }
 
 .jz-thread.jz-thread--drawn {
-  transform: scaleY(1);
-  transition: transform 1.4s ease;
+  clip-path: inset(0 0 0 0);
+  transition: clip-path 1.4s ease;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .jz-thread {
-    transform: scaleY(1);
+    clip-path: inset(0 0 0 0);
+    transition: none;
   }
 }
 
@@ -1032,10 +1060,21 @@ select:focus-visible,
 .theme-zhao-langxi .jz-hero__photos{max-width:16rem;grid-template-columns:1fr}
 
 
-/* HARD RULE: no clear / glass / see-through navbars */
+/* HARD RULE: no clear / glass / see-through navbars; always above content */
 .site-jump,
-.jz-site-jump,
 .theme-zhao-langxi .site-jump {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  isolation: isolate;
+  background: #ffffff !important;
+  background-color: var(--iu-white, var(--jz-paper, #ffffff)) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  opacity: 1 !important;
+}
+
+.jz-site-jump {
   background: #ffffff !important;
   background-color: var(--iu-white, var(--jz-paper, #ffffff)) !important;
   backdrop-filter: none !important;

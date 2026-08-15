@@ -1,27 +1,32 @@
 /**
  * Register: essay · zhao-langxi
  * Rivet-adjacent crimson / paper / gold. Not a custom ocean or lily theme.
+ *
+ * IMPORTANT: jz-* tokens use literal hex (or one-way aliases from
+ * brand-tokens). Never re-alias --paper/--ink/--gold back to --jz-*,
+ * or the cycle invalidates both and body paint / gold underlines die.
  */
 
-@import url("brand-tokens.css");
+@import url("brand-tokens.css?v=20260814-navfix3");
 
 :root {
-  --jz-paper: var(--paper);
-  --jz-paper-dim: var(--paper-dim);
-  --jz-ink: var(--ink);
+  --jz-paper: #ffffff;
+  --jz-paper-dim: #f4f4f4;
+  --jz-ink: #1a1a1a;
   --jz-ink-soft: #3d3935;
-  --jz-ink-muted: var(--mute);
-  --jz-crimson: var(--crimson);
-  --jz-crimson-deep: var(--crimson-deep);
-  --jz-gold: var(--gold);
-  --jz-line: var(--rule);
-  --jz-serif: var(--font-display);
-  --jz-sans: var(--font-body);
-  --jz-sc: var(--font-sc);
+  --jz-ink-muted: #5c5c5c;
+  --jz-crimson: #990000;
+  --jz-crimson-deep: #6d0000;
+  --jz-gold: #b7935a;
+  --jz-line: #cfcfcf;
+  --jz-serif: Georgia, "Times New Roman", serif;
+  --jz-sans: Arial, Helvetica, sans-serif;
+  --jz-sc: "Noto Serif SC", "Songti SC", "SimSun", serif;
   --jz-max: 42rem;
   --jz-wide: 56rem;
   --jz-space: clamp(1rem, 3vw, 1.75rem);
 
+  /* One-way aliases for older selectors ... do not point back at jz-* */
   --ink: var(--jz-ink);
   --ink-muted: var(--jz-ink-soft);
   --ink-soft: var(--jz-ink-muted);
