@@ -1,5 +1,5 @@
 /* zhao-langxi · essay / ocean fishing
-   Shared tokens + register-essay.css. Not Rivet institutional. WCAG AA. */
+   Shared tokens + register-essay.css. Rivet / IU WCMS adjacent (crimson). WCAG AA. */
 
 @import url("register-essay.css");
 
@@ -11,6 +11,12 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
+}
+
+body,
+body.jz-body {
+  overflow-x: clip;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -376,9 +382,13 @@ select:focus-visible,
 
 .site-footer a,
 .jz-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: var(--jz-crimson-deep);
   font-weight: 600;
   text-decoration: none;
+  touch-action: manipulation;
 }
 
 .site-footer a:hover,
@@ -490,6 +500,12 @@ select:focus-visible,
 
 .claim.currently-line {
   margin-bottom: 1.5rem;
+}
+
+.look-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .look-table {

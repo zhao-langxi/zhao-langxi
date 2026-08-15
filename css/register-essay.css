@@ -1,25 +1,19 @@
 /**
- * Register: essay / ocean fishing · zhao-langxi
- * Personal essay + BTS site. Not IU-institutional Rivet. AA-readable ocean.
- *
- * Paper: gear-white / deck-white
- * Accent / links: ocean-blue / ocean-deep (AA)
- * Frame: ocean-blue border, ocean-deep soft shadow
- * Caption: ocean-deep on sky-pale
+ * Register: essay · zhao-langxi
+ * Rivet-adjacent crimson / paper / gold. Not a custom ocean or lily theme.
  */
 
 @import url("brand-tokens.css");
 
 :root {
-  --jz-paper: var(--gear-white);
-  --jz-paper-dim: var(--deck-white);
+  --jz-paper: var(--paper);
+  --jz-paper-dim: var(--paper-dim);
   --jz-ink: var(--ink);
-  --jz-ink-soft: #2a3f4d;
+  --jz-ink-soft: #3d3935;
   --jz-ink-muted: var(--mute);
-  /* Accent aliases (--jz-crimson*) kept for main.css; map to ocean */
-  --jz-crimson: var(--ocean-blue);
-  --jz-crimson-deep: var(--ocean-deep);
-  --jz-gold: var(--joy-ink);
+  --jz-crimson: var(--crimson);
+  --jz-crimson-deep: var(--crimson-deep);
+  --jz-gold: var(--gold);
   --jz-line: var(--rule);
   --jz-serif: var(--font-display);
   --jz-sans: var(--font-body);
@@ -28,7 +22,6 @@
   --jz-wide: 56rem;
   --jz-space: clamp(1rem, 3vw, 1.75rem);
 
-  /* Shared aliases used by main.css */
   --ink: var(--jz-ink);
   --ink-muted: var(--jz-ink-soft);
   --ink-soft: var(--jz-ink-muted);
@@ -38,8 +31,8 @@
   --accent-deep: var(--jz-crimson-deep);
   --gold: var(--jz-gold);
   --line: var(--jz-line);
-  --focus: var(--jz-crimson-deep);
-  --focus-ring: var(--jz-crimson-deep);
+  --focus: var(--jz-gold);
+  --focus-ring: var(--jz-gold);
   --max: var(--jz-max);
   --wide: var(--jz-wide);
   --space: var(--jz-space);

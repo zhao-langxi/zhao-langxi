@@ -1,10 +1,19 @@
 # 赵郎溪 · zhao-langxi
 
-**This repo:** research notes + personal essay / BTS (ocean fishing room).
+**This repo:** research notes + personal essay / BTS.
 
 CV hub: [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) · live site: [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/)
 
-Palette: ocean fishing (`css/brand-tokens.css`) ... gear-white / deck-white paper, ocean-blue / ocean-deep accents (AA).
+**Look:** Rivet / Cascade / IU WCMS adjacent (crimson `#990000`, paper `#fbfaf8`, gold `#b7935a`). Not a custom ocean or lily theme. Tokens in `css/brand-tokens.css` stay institutional.
+
+## Four-site map
+
+| Site | Job | Look |
+|------|-----|------|
+| [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) | CV hub | Professional slate/sage |
+| [jadexzhao](https://jadexzhao.github.io/jadexzhao/) | Shipped builds | Matcha · Fraunces italic |
+| [matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) | Classroom / MAP | Ocean campus |
+| **This site** | Essay / research | Rivet crimson |
 
 ## on the site
 
