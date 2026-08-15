@@ -1,5 +1,5 @@
-/* zhao-langxi · essay / ocean fishing
-   Shared tokens + register-essay.css. Rivet / IU WCMS adjacent (crimson). WCAG AA. */
+/* zhao-langxi · essays / Rivet-adjacent
+   Shared tokens + register-essay.css. IU WCMS crimson. WCAG AA. */
 
 @import url("register-essay.css");
 
@@ -363,25 +363,26 @@ select:focus-visible,
   font-size: 0.9rem;
   color: var(--jz-ink-muted);
   text-align: left;
+  max-width: var(--jz-max);
 }
 
 .footer-sign {
-  margin: 0 0 0.45rem;
+  margin: 0 0 0.35rem;
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--jz-ink);
 }
 
-.site-footer nav,
-.jz-footer nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem 1.25rem;
-  margin-bottom: 0.75rem;
+.footer-links {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--jz-ink-muted);
 }
 
 .site-footer a,
-.jz-footer a {
+.jz-footer a,
+.footer-links a {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
@@ -392,14 +393,16 @@ select:focus-visible,
 }
 
 .site-footer a:hover,
-.jz-footer a:hover {
+.jz-footer a:hover,
+.footer-links a:hover {
   text-decoration: underline;
 }
 
 .jz-footer {
-  max-width: var(--jz-max);
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 2rem 1.5rem 4rem 4.5rem;
+  box-sizing: border-box;
 }
 
 /* -- Home hero -- */
@@ -420,7 +423,7 @@ select:focus-visible,
 }
 
 .hero-visual {
-  border: 1px solid var(--ocean-blue, var(--jz-crimson));
+  border: 1px solid var(--jz-crimson);
   box-shadow: none;
   background: var(--jz-paper-dim);
   overflow: hidden;
@@ -440,7 +443,15 @@ select:focus-visible,
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--jz-crimson-deep);
-  margin: 0 0 0.65rem;
+  margin: 0 0 0.45rem;
+}
+
+.hero-for {
+  margin: 0 0 0.55rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--jz-ink-soft);
+  max-width: 36ch;
 }
 
 .hero-h1 {
@@ -587,8 +598,8 @@ select:focus-visible,
 }
 
 .cta:hover {
-  background: #16384c;
-  border-color: #16384c;
+  background: var(--jz-crimson);
+  border-color: var(--jz-crimson);
   color: #fff;
 }
 
@@ -956,8 +967,8 @@ select:focus-visible,
 }
 
 .plan-form button:hover {
-  background: #16384c;
-  border-color: #16384c;
+  background: var(--jz-crimson);
+  border-color: var(--jz-crimson);
 }
 
 @media (max-width: 40em) {
@@ -975,5 +986,34 @@ select:focus-visible,
 
   .jz-footer {
     padding-left: 1.5rem;
+  }
+}
+
+
+/* -- Calm engagement (prefers-reduced-motion safe) -- */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-visual {
+    animation: jz-settle 0.7s ease both;
+  }
+
+  .hero-text {
+    animation: jz-rise 0.55s ease 0.08s both;
+  }
+
+  .section {
+    animation: jz-rise 0.5s ease both;
+  }
+
+  .section:nth-of-type(2) { animation-delay: 0.12s; }
+  .section:nth-of-type(3) { animation-delay: 0.18s; }
+
+  @keyframes jz-settle {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: none; }
+  }
+
+  @keyframes jz-rise {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: none; }
   }
 }
