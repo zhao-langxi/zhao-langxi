@@ -1,7 +1,11 @@
 # 赵郎溪 · zhao-langxi
 
 **Jade Zhao** · IU Luddy Informatics · Expected May 2027  
-zhao-langxi · <span lang="zh-Hans">赵郎溪</span> · matcha energy
+zhao-langxi · <span lang="zh-Hans">赵郎溪</span> · ocean fishing
+
+**Site theme:** ocean fishing palette (`css/brand-tokens.css`) ... paper gear-white / deck-white, accent ocean-blue / ocean-deep (AA), photo frames ocean-blue + ocean-deep shadow, captions ocean-deep on sky-pale.
+
+**Four-site photo / palette assignment:** IU Pages = lemonade / straw (IMG_7197) · jadexzhao = powder blue / garden · matchaxmoxie = lily pink / charcoal · zhao-langxi = ocean fishing
 
 IU Luddy Informatics student building accessible public-interest tech. Temporary high-agency outsiders function as high-signal sensors for civic digital systems; the friction they encounter isolates design assumptions about local knowledge, sequencing, and belonging.
 

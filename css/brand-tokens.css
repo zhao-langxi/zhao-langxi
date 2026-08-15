@@ -1,16 +1,32 @@
 /**
- * Vendored copy of jadexzhao/briefcase/brand-tokens.css
- * Sync from source when tokens change.
- * CDN: https://cdn.jsdelivr.net/gh/jadexzhao/jadexzhao@main/briefcase/brand-tokens.css
+ * Vendored tokens for zhao-langxi (personal essay / BTS).
+ * Ocean fishing palette is the site theme; shared type + a11y chrome stay.
+ *
+ * Four-site photo / palette assignment (local note):
+ *   IU Pages     = lemonade / straw (IMG_7197)
+ *   jadexzhao    = powder blue / garden
+ *   matchaxmoxie = lily pink / charcoal
+ *   zhao-langxi  = ocean fishing
  */
 
 :root {
-  --matcha-deep: #3f5b3f;
-  --matcha-mid: #6f8f6a;
-  --matcha-pale: #eef1e6;
-  --cream: #faf8f2;
-  --clay: #b3714f;
-  --clay-ink: #8a563c;
+  /* Ocean fishing (zhao-langxi theme) */
+  --ocean-blue: #3f7fa3;
+  --ocean-deep: #1e4a63;
+  --sky-pale: #a8d0e0;
+  --gear-white: #eee9e0;
+  --deck-white: #d9d5c9;
+  --joy-warm: #d9906a;
+  /* Joy as small text needs AA; decorative --joy-warm stays for chrome */
+  --joy-ink: #8f5338;
+
+  /* Legacy aliases kept so older comments / shared snippets still resolve */
+  --matcha-deep: var(--ocean-deep);
+  --matcha-mid: var(--ocean-blue);
+  --matcha-pale: var(--deck-white);
+  --cream: var(--gear-white);
+  --clay: var(--joy-warm);
+  --clay-ink: var(--joy-ink);
 
   --navy: #0c447c;
   --crimson: #990000;
@@ -18,16 +34,17 @@
   --blue: #378ADD;
   --blue-ink: #2a6fad;
 
-  --ink: #23291f;
-  --mute: #4a5248;
+  /* AA-safe body ink on gear-white / deck-white */
+  --ink: #152833;
+  --mute: #3d5361;
 
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Source Sans 3", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-sc: "Noto Serif SC", "Songti SC", "SimSun", serif;
   --radius: 10px;
-  --rule: rgba(63, 91, 63, 0.18);
+  --rule: rgba(30, 74, 99, 0.2);
 
-  --focus-ring: var(--crimson);
+  --focus-ring: var(--ocean-deep);
   --focus-ring-width: 3px;
   --focus-ring-offset: 3px;
   --tap: 44px;

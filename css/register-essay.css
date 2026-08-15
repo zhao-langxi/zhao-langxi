@@ -1,20 +1,25 @@
 /**
- * Register: essay / matcha energy · zhao-langxi
- * Personal essay site. Not IU-institutional Rivet. AA-readable matcha.
+ * Register: essay / ocean fishing · zhao-langxi
+ * Personal essay + BTS site. Not IU-institutional Rivet. AA-readable ocean.
+ *
+ * Paper: gear-white / deck-white
+ * Accent / links: ocean-blue / ocean-deep (AA)
+ * Frame: ocean-blue border, ocean-deep soft shadow
+ * Caption: ocean-deep on sky-pale
  */
 
 @import url("brand-tokens.css");
 
 :root {
-  /* Essay paper = cream; chrome uses matcha + clay, crimson for IU pride accents only */
-  --jz-paper: var(--cream);
-  --jz-paper-dim: var(--matcha-pale);
+  --jz-paper: var(--gear-white);
+  --jz-paper-dim: var(--deck-white);
   --jz-ink: var(--ink);
-  --jz-ink-soft: #3d453c;
+  --jz-ink-soft: #2a3f4d;
   --jz-ink-muted: var(--mute);
-  --jz-crimson: var(--matcha-deep);
-  --jz-crimson-deep: #2f4530;
-  --jz-gold: var(--clay-ink);
+  /* Accent aliases (--jz-crimson*) kept for main.css; map to ocean */
+  --jz-crimson: var(--ocean-blue);
+  --jz-crimson-deep: var(--ocean-deep);
+  --jz-gold: var(--joy-ink);
   --jz-line: var(--rule);
   --jz-serif: var(--font-display);
   --jz-sans: var(--font-body);

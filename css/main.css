@@ -1,4 +1,4 @@
-/* zhao-langxi · essay / matcha energy
+/* zhao-langxi · essay / ocean fishing
    Shared tokens + register-essay.css. Not Rivet institutional. WCAG AA. */
 
 @import url("register-essay.css");
@@ -87,7 +87,7 @@ select:focus-visible,
   top: auto;
   z-index: 200;
   padding: 0.75rem 1.25rem;
-  background: var(--jz-crimson);
+  background: var(--jz-crimson-deep);
   color: #fff;
   text-decoration: none;
   border-radius: 0 0 4px 0;
@@ -117,7 +117,7 @@ select:focus-visible,
   max-width: none;
   margin: 0;
   padding: 0.35rem 1rem;
-  background: rgba(251, 250, 248, 0.94);
+  background: rgba(238, 233, 224, 0.94);
   border-bottom: 1px solid var(--jz-line);
   backdrop-filter: blur(8px);
 }
@@ -203,7 +203,7 @@ select:focus-visible,
   letter-spacing: 0.14em;
   text-transform: uppercase;
   font-size: 0.75rem;
-  color: var(--jz-crimson);
+  color: var(--jz-crimson-deep);
   margin: 0 0 0.75rem;
 }
 
@@ -402,7 +402,8 @@ select:focus-visible,
 }
 
 .hero-visual {
-  border: 1px solid var(--jz-line);
+  border: 2px solid var(--ocean-blue, var(--jz-crimson));
+  box-shadow: 0 8px 22px rgba(30, 74, 99, 0.18);
   background: var(--jz-paper-dim);
   overflow: hidden;
   max-width: 22rem;
@@ -420,7 +421,7 @@ select:focus-visible,
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--jz-crimson);
+  color: var(--jz-crimson-deep);
   margin: 0 0 0.65rem;
 }
 
@@ -552,17 +553,18 @@ select:focus-visible,
   justify-content: center;
   min-height: 48px;
   padding: 0.55rem 1.1rem;
-  border: 1px solid var(--jz-crimson);
-  background: var(--jz-crimson);
+  border: 1px solid var(--jz-crimson-deep);
+  background: var(--jz-crimson-deep);
   color: #fff;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.02em;
-  transition: background-color 160ms ease, color 160ms ease;
+  transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
 }
 
 .cta:hover {
-  background: var(--jz-crimson-deep);
+  background: #16384c;
+  border-color: #16384c;
   color: #fff;
 }
 
@@ -591,7 +593,7 @@ select:focus-visible,
   display: block;
   padding: 1.1rem 1.15rem;
   border: 1px solid var(--jz-line);
-  background: rgba(251, 250, 248, 0.85);
+  background: rgba(238, 233, 224, 0.85);
   text-decoration: none;
   color: inherit;
   transition: border-color 160ms ease, background-color 160ms ease;
@@ -635,7 +637,7 @@ select:focus-visible,
   letter-spacing: 0.14em;
   text-transform: uppercase;
   font-size: 0.75rem;
-  color: var(--jz-crimson);
+  color: var(--jz-crimson-deep);
   margin: 0 0 1rem;
 }
 
@@ -676,6 +678,10 @@ select:focus-visible,
 .jz-hero__photo {
   margin: 0;
   max-width: none;
+  border: 2px solid var(--ocean-blue, var(--jz-crimson));
+  box-shadow: 0 8px 22px rgba(30, 74, 99, 0.18);
+  background: var(--jz-paper-dim);
+  overflow: hidden;
 }
 
 .jz-hero__photo img {
@@ -685,8 +691,18 @@ select:focus-visible,
   aspect-ratio: 3 / 4;
   object-fit: cover;
   object-position: center 18%;
-  border-radius: 2px;
+  border-radius: 0;
   opacity: 1;
+}
+
+.jz-hero__photo figcaption,
+.hero-visual figcaption {
+  margin: 0;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--ocean-deep, var(--jz-crimson-deep));
+  background: var(--sky-pale, var(--jz-paper-dim));
 }
 
 .jz-hero__photo--alt img {
@@ -730,8 +746,18 @@ select:focus-visible,
 .jz-chapter-photos figure {
   margin: 0;
   background: var(--jz-paper-dim);
-  border: 1px solid var(--jz-line);
+  border: 2px solid var(--ocean-blue, var(--jz-crimson));
+  box-shadow: 0 8px 22px rgba(30, 74, 99, 0.18);
   overflow: hidden;
+}
+
+.jz-chapter-photos figcaption {
+  margin: 0;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--ocean-deep, var(--jz-crimson-deep));
+  background: var(--sky-pale, var(--jz-paper-dim));
 }
 
 .jz-chapter-photos img {
@@ -897,8 +923,8 @@ select:focus-visible,
 
 .plan-form button {
   min-height: 48px;
-  border: 1px solid var(--jz-crimson);
-  background: var(--jz-crimson);
+  border: 1px solid var(--jz-crimson-deep);
+  background: var(--jz-crimson-deep);
   color: #fff;
   font: inherit;
   font-weight: 600;
@@ -906,7 +932,8 @@ select:focus-visible,
 }
 
 .plan-form button:hover {
-  background: var(--jz-crimson-deep);
+  background: #16384c;
+  border-color: #16384c;
 }
 
 @media (max-width: 40em) {
