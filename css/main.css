@@ -503,6 +503,67 @@ select:focus-visible {
   max-width: 38rem;
 }
 
+.claim.currently-line {
+  margin-bottom: 1.5rem;
+}
+
+.look-table {
+  width: 100%;
+  max-width: var(--jz-wide);
+  border-collapse: collapse;
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.look-table th,
+.look-table td {
+  padding: 0.55rem 0.65rem 0.55rem 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--jz-line);
+}
+
+.look-table th {
+  font-family: var(--jz-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--jz-ink-muted);
+}
+
+.look-table td:first-child {
+  white-space: nowrap;
+  padding-right: 1.25rem;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .look-table td:first-child {
+    white-space: normal;
+  }
+}
+
+.link-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  max-width: var(--jz-max);
+}
+
+.link-list li + li {
+  margin-top: 0.35rem;
+}
+
+.plain-links {
+  margin: 0 0 1rem;
+  max-width: var(--jz-max);
+  line-height: 1.7;
+}
+
+.disclaimer {
+  max-width: var(--jz-max);
+}
+
 .cta-row {
   display: flex;
   flex-wrap: wrap;
