@@ -1,0 +1,44 @@
+/**
+ * Register: essay / matcha energy · zhao-langxi
+ * Personal essay site. Not IU-institutional Rivet. AA-readable matcha.
+ */
+
+@import url("brand-tokens.css");
+
+:root {
+  /* Essay paper = cream; chrome uses matcha + clay, crimson for IU pride accents only */
+  --jz-paper: var(--cream);
+  --jz-paper-dim: var(--matcha-pale);
+  --jz-ink: var(--ink);
+  --jz-ink-soft: #3d453c;
+  --jz-ink-muted: var(--mute);
+  --jz-crimson: var(--matcha-deep);
+  --jz-crimson-deep: #2f4530;
+  --jz-gold: var(--clay-ink);
+  --jz-line: var(--rule);
+  --jz-serif: var(--font-display);
+  --jz-sans: var(--font-body);
+  --jz-sc: var(--font-sc);
+  --jz-max: 42rem;
+  --jz-wide: 56rem;
+  --jz-space: clamp(1rem, 3vw, 1.75rem);
+
+  /* Shared aliases used by main.css */
+  --ink: var(--jz-ink);
+  --ink-muted: var(--jz-ink-soft);
+  --ink-soft: var(--jz-ink-muted);
+  --paper: var(--jz-paper);
+  --paper-dim: var(--jz-paper-dim);
+  --accent: var(--jz-crimson);
+  --accent-deep: var(--jz-crimson-deep);
+  --gold: var(--jz-gold);
+  --line: var(--jz-line);
+  --focus: var(--jz-crimson-deep);
+  --focus-ring: var(--jz-crimson-deep);
+  --max: var(--jz-max);
+  --wide: var(--jz-wide);
+  --space: var(--jz-space);
+  --font-sans: var(--jz-sans);
+  --font-display: var(--jz-serif);
+  --radius: 4px;
+}

@@ -1,40 +1,7 @@
-/* zhao-langxi · Rivet foundation + jz custom layer
-   Locked tokens: IU crimson / paper / Fraunces + Source Sans 3 */
+/* zhao-langxi · essay / matcha energy
+   Shared tokens + register-essay.css. Not Rivet institutional. WCAG AA. */
 
-:root {
-  --jz-crimson: #990000;
-  --jz-crimson-deep: #6d0000;
-  --jz-ink: #221f1d;
-  --jz-paper: #fbfaf8;
-  --jz-paper-dim: #f1efeb;
-  --jz-gold: #b7935a;
-  --jz-line: rgba(34, 31, 29, 0.12);
-  --jz-ink-soft: #4a4542;
-  --jz-ink-muted: #6b6560;
-  --jz-serif: "Fraunces", Georgia, serif;
-  --jz-sans: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --jz-sc: "Noto Serif SC", "Fraunces", Georgia, serif;
-  --jz-max: 42rem;
-  --jz-wide: 56rem;
-  --jz-space: clamp(1rem, 3vw, 1.75rem);
-
-  /* Aliases used by shared page chrome */
-  --ink: var(--jz-ink);
-  --ink-muted: var(--jz-ink-soft);
-  --ink-soft: var(--jz-ink-muted);
-  --paper: var(--jz-paper);
-  --paper-dim: var(--jz-paper-dim);
-  --accent: var(--jz-crimson);
-  --accent-deep: var(--jz-crimson-deep);
-  --gold: var(--jz-gold);
-  --line: var(--jz-line);
-  --focus: var(--jz-gold);
-  --max: var(--jz-max);
-  --wide: var(--jz-wide);
-  --space: var(--jz-space);
-  --font-sans: var(--jz-sans);
-  --font-display: var(--jz-serif);
-}
+@import url("register-essay.css");
 
 *,
 *::before,
@@ -95,14 +62,22 @@ a:hover {
   color: var(--jz-crimson);
 }
 
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
-select:focus-visible {
-  outline: 3px solid var(--jz-gold);
-  outline-offset: 2px;
+select:focus-visible,
+.site-jump a:focus-visible,
+.jz-site-jump a:focus-visible,
+.cta:focus-visible,
+.card:focus-visible {
+  outline: var(--focus-ring-width, 3px) solid var(--focus-ring, var(--jz-crimson-deep));
+  outline-offset: var(--focus-ring-offset, 3px);
 }
 
 .skip-link,
@@ -129,7 +104,7 @@ select:focus-visible {
   font-weight: 500;
 }
 
-/* —— Site nav (shared) —— */
+/* -- Site nav (shared) -- */
 .site-jump,
 .jz-site-jump {
   position: sticky;
@@ -185,7 +160,8 @@ select:focus-visible {
 }
 
 .site-jump-soft {
-  opacity: 0.9;
+  opacity: 1;
+  color: var(--jz-crimson-deep);
 }
 
 .jz-site-jump {
@@ -199,7 +175,7 @@ select:focus-visible {
   backdrop-filter: none;
 }
 
-/* —— Shared page shell —— */
+/* -- Shared page shell -- */
 .wrap {
   width: min(100% - 2rem, var(--jz-wide));
   margin-inline: auto;
@@ -408,7 +384,7 @@ select:focus-visible {
   padding: 2rem 1.5rem 4rem 4.5rem;
 }
 
-/* —— Home hero —— */
+/* -- Home hero -- */
 .hero {
   display: grid;
   gap: 1.75rem;
@@ -529,7 +505,7 @@ select:focus-visible {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--jz-ink-muted);
+  color: var(--jz-ink-soft);
 }
 
 .look-table td:first-child {
@@ -641,7 +617,7 @@ select:focus-visible {
   margin: 0;
 }
 
-/* —— About essay —— */
+/* -- About essay -- */
 .jz-hero {
   padding: 3.5rem 1.5rem 3rem;
   border-bottom: 1px solid var(--jz-line);
@@ -861,7 +837,7 @@ select:focus-visible {
 
 .jz-chapter p {
   font-size: 1.0625rem;
-  color: #302c29;
+  color: var(--jz-ink);
   margin: 0 0 1.15rem;
 }
 
@@ -879,7 +855,7 @@ select:focus-visible {
   line-height: 1.6;
 }
 
-/* —— Plan form —— */
+/* -- Plan form -- */
 .hp-field {
   position: absolute;
   left: -10000px;
