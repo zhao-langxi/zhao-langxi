@@ -83,32 +83,82 @@ a:hover { color: var(--iu-black); }
   margin: 24px 0;
 }
 
-/* ---------- footer: standard IU institutional footer pattern ---------- */
-/* three-tier: crimson identity bar, link columns, fine-print legal line —
-   matches the pattern used across IU's own Pages / WCMS sites */
+/* ---------- skip link + top nav ---------- */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--iu-crimson);
+  color: #fff;
+  padding: 10px 16px;
+  z-index: 100;
+}
+
+.skip-link:focus { left: 12px; top: 12px; }
+
+.site-nav {
+  border-bottom: 1px solid var(--rule);
+  padding: 16px 24px;
+}
+
+.site-nav .wrap {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--iu-gray-900);
+  font-size: var(--step--1);
+}
+
+.site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--iu-crimson); }
+
+.site-nav .identity-marks {
+  font-size: var(--step--1);
+  color: var(--iu-gray-600);
+  display: flex;
+  gap: 14px;
+}
+
+/* ---------- footer: matches the real content structure ----------
+   Essays column · Elsewhere column · "this room" tagline ·
+   cross-site switcher row · independent-notes disclaimer ·
+   name sign-off. Not a generic three-column dump — this is the
+   actual footer content, styled. */
 
 footer {
   margin-top: 72px;
   border-top: 4px solid var(--iu-crimson);
-  padding-top: 28px;
   background: var(--iu-gray-100);
-  padding: 32px 24px;
+  padding: 40px 24px 32px;
 }
 
-footer .footer-inner {
-  max-width: 800px;
-  margin: 0 auto;
-}
+footer .footer-inner { max-width: 800px; margin: 0 auto; }
 
 footer .footer-columns {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-bottom: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 28px;
 }
 
-@media (max-width: 640px) {
-  footer .footer-columns { grid-template-columns: 1fr; }
+@media (max-width: 560px) {
+  footer .footer-columns { grid-template-columns: 1fr; gap: 20px; }
 }
 
 footer h4 {
@@ -121,12 +171,7 @@ footer h4 {
   font-weight: 700;
 }
 
-footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
+footer ul { list-style: none; margin: 0; padding: 0; }
 footer li { margin-bottom: 6px; }
 
 footer a {
@@ -137,14 +182,49 @@ footer a {
 
 footer a:hover { color: var(--iu-crimson); text-decoration: underline; }
 
-footer .footer-legal {
+/* "This room · Essays · research · BTS · 赵郎溪 · zhao-langxi" —
+   the tagline that names which of the four sites this is */
+footer .footer-tagline {
+  font-size: var(--step--1);
+  color: var(--iu-gray-600);
   border-top: 1px solid var(--iu-gray-300);
   padding-top: 16px;
-  font-size: 0.78rem;
-  color: var(--iu-gray-600);
+  margin-bottom: 14px;
 }
 
-footer .footer-legal p { margin: 0 0 4px; max-width: none; color: inherit; }
+/* the four-site switcher row: IU Pages · jadexzhao · matchaxmoxie · zhao-langxi */
+footer .site-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-bottom: 16px;
+}
+
+footer .site-switcher a { font-weight: 600; }
+
+footer .site-switcher .current {
+  color: var(--iu-crimson);
+  pointer-events: none;
+}
+
+/* "Independent notes ... not IU-endorsed research and not
+   peer-reviewed publications." — the disclaimer line, kept
+   quiet but legible, not buried */
+footer .footer-legal {
+  font-size: 0.78rem;
+  color: var(--iu-gray-600);
+  font-style: italic;
+  margin-bottom: 14px;
+}
+
+footer .footer-legal p { margin: 0; max-width: none; color: inherit; }
+
+/* "赵郎溪 · Jade Zhao" sign-off */
+footer .footer-signoff {
+  font-size: var(--step--1);
+  color: var(--iu-black);
+  font-weight: 600;
+}
 
 /* ---------- accessibility floor ---------- */
 
