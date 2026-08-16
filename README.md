@@ -6,7 +6,7 @@ CV hub: [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) · live site: [zhao-
 
 **Look:** Rivet / Cascade / IU WCMS adjacent (crimson `#990000`, paper `#fbfaf8`, gold `#b7935a`). Not a custom ocean or lily theme. Tokens in `css/brand-tokens.css` stay institutional.
 
-Law-adjacent notebooks: [lease-precision](https://github.com/zhao-langxi/lease-precision) (commercial lease review) and [madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethics) (systems friction + public-service AI ethics). Pointer: [AI and law](https://zhao-langxi.github.io/zhao-langxi/notes/ai-and-law.html).
+Law-adjacent notebooks: [lease-precision](https://github.com/zhao-langxi/lease-precision) (commercial lease review) and [madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethics) (systems friction + public-service AI ethics). Not legal advice. Not an EU AI Act project. Pointer: [AI and law](https://zhao-langxi.github.io/zhao-langxi/notes/ai-and-law.html).
 
 ## Four-site map
 
@@ -32,7 +32,7 @@ Independent notes are Jade’s own write-ups ... not IU-endorsed research and no
 |------|------------|
 | [serveit-accessibility](https://github.com/zhao-langxi/serveit-accessibility) | WCAG / Cascade / Rivet clinic guides (CC BY-SA 4.0) |
 | [madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethics) | Madrid systems-friction + public-service AI ethics notes (MIT). Not an EU AI Act project. |
-| [lease-precision](https://github.com/zhao-langxi/lease-precision) | Commercial retail lease review and operator handoffs (MIT) |
+| [lease-precision](https://github.com/zhao-langxi/lease-precision) | Commercial retail lease review and operator handoffs (MIT). Not legal advice. |
 | [local-digital](https://github.com/zhao-langxi/local-digital) | Clinic community digital handovers (MIT) |
 
 Photos / behind-the-scenes: Instagram [@zhao.langxi](https://instagram.com/zhao.langxi). Technical ships: [jadexzhao](https://jadexzhao.github.io/jadexzhao/). Classroom: [matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/).
