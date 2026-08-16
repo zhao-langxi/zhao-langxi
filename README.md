@@ -6,7 +6,7 @@ CV hub: [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) · live site: [zhao-
 
 **Look:** Rivet / Cascade / IU WCMS adjacent (crimson `#990000`, paper `#fbfaf8`, gold `#b7935a`). Not a custom ocean or lily theme. Tokens in `css/brand-tokens.css` stay institutional.
 
-Law-adjacent notebooks: [lease-precision](https://github.com/zhao-langxi/lease-precision) (Lease Precision · commercial real estate document support · Dec 2017 to present · not legal advice) and [madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethics) (systems friction + public-service AI ethics). Not an EU AI Act project. Pointer: [AI and law](https://zhao-langxi.github.io/zhao-langxi/notes/ai-and-law.html).
+Law-adjacent notebooks: [lease-precision](https://github.com/zhao-langxi/lease-precision) (Lease Precision · commercial real estate document support · Dec 2017 to present · not legal advice) and [madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethics) (systems friction + public-service AI ethics). Not an EU AI Act project. Interested in where legal, technical, and business concerns meet (Solutions Engineering, Solutions Architecture, Strategy Consulting, and technical GTM). Pointer: [AI and law](https://zhao-langxi.github.io/zhao-langxi/notes/ai-and-law.html).
 
 ## Four-site map
 
