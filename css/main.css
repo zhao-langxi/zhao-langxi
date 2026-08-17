@@ -22,13 +22,14 @@
   --font-display: Georgia, 'Times New Roman', serif; /* Rivet default serif */
   --font-body:    Arial, Helvetica, sans-serif;       /* Rivet default sans */
 
-  --step--1: 0.85rem;
+  --step--1: 0.875rem; /* 14px captions; GOV.UK body floor is 16 */
   --step-0:  1rem;
   --step-1:  1.2rem;
   --step-2:  1.5rem;
   --step-3:  1.9rem;
 
   --radius: 2px; /* IU sites run near-square corners, not rounded */
+  --tap: 44px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -44,7 +45,7 @@ body {
   color: var(--iu-gray-900);
   font-family: var(--font-body);
   font-size: var(--step-0);
-  line-height: 1.55;
+  line-height: 1.6; /* ~25px on 16px · GOV.UK 19/25 habit, institutional 16 */
 }
 
 h1, h2, h3 {
@@ -63,7 +64,7 @@ p { margin: 0 0 1em; color: var(--iu-gray-900); max-width: 68ch; }
 a { color: var(--iu-crimson); text-decoration: underline; }
 a:hover { color: var(--iu-black); }
 
-.wrap { max-width: 800px; margin: 0 auto; padding: 36px 24px 72px; }
+.wrap { max-width: 800px; margin: 0 auto; padding: 40px 24px 80px; }
 
 .rows { display: flex; flex-direction: column; }
 
@@ -108,8 +109,8 @@ a:hover { color: var(--iu-black); }
 .skip-link:focus,
 .skip-link:focus-visible {
   top: 12px;
-  outline: 2px solid #ffffff;
-  outline-offset: 2px;
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
 }
 
 .site-nav {
@@ -204,6 +205,9 @@ footer a {
   font-size: var(--step--1);
   color: var(--iu-gray-900);
   text-decoration: none;
+  min-height: var(--tap);
+  display: inline-flex;
+  align-items: center;
 }
 
 footer a:hover { color: var(--iu-crimson); text-decoration: underline; }
@@ -237,7 +241,7 @@ footer .site-switcher .current {
    peer-reviewed publications." — the disclaimer line, kept
    quiet but legible, not buried */
 footer .footer-legal {
-  font-size: 0.78rem;
+  font-size: 0.875rem;
   color: var(--iu-gray-600);
   font-style: italic;
   margin-bottom: 14px;
@@ -256,9 +260,19 @@ footer .footer-signoff {
 
 a:focus-visible,
 .cta:focus-visible,
-.site-nav a:focus-visible {
-  outline: 2px solid var(--iu-crimson);
-  outline-offset: 2px;
+.site-nav a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--iu-crimson);
+  outline-offset: 3px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+#main,
+#main-content {
+  scroll-margin-top: 4.25rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
