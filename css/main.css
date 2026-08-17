@@ -13,7 +13,7 @@
   --iu-crimson:   #990000;
   --iu-black:     #1a1a1a;
   --iu-gray-900:  #333333;
-  --iu-gray-600:  #5c5c5c;
+  --iu-gray-600:  #4c5a69; /* Rivet black-400 · metadata still AA on white */
   --iu-gray-300:  #cfcfcf;
   --iu-gray-100:  #f4f4f4;
   --iu-white:     #ffffff;
@@ -64,7 +64,7 @@ p { margin: 0 0 1em; color: var(--iu-gray-900); max-width: 68ch; }
 a { color: var(--iu-crimson); text-decoration: underline; }
 a:hover { color: var(--iu-black); }
 
-.wrap { max-width: 800px; margin: 0 auto; padding: 40px 24px 80px; }
+.wrap { max-width: 38rem; margin: 0 auto; padding: 40px 24px 80px; }
 
 .rows { display: flex; flex-direction: column; }
 
@@ -119,8 +119,8 @@ a:hover { color: var(--iu-black); }
   z-index: 90;
   border-bottom: 1px solid var(--rule);
   padding: 8px 24px;
-  background: #ffffff;
-  background-color: #ffffff;
+  background: #f8f9fa; /* Rivet black-000 · reads as a bar on white */
+  background-color: #f8f9fa;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   opacity: 1;
@@ -175,7 +175,7 @@ footer {
   padding: 40px 24px 32px;
 }
 
-footer .footer-inner { max-width: 800px; margin: 0 auto; }
+footer .footer-inner { max-width: 38rem; margin: 0 auto; }
 
 footer .footer-columns {
   display: grid;
@@ -299,7 +299,7 @@ img {
 }
 
 figure {
-  margin: 0 0 1.5em;
+  margin: 1.25rem 0 2rem;
 }
 
 figure img {
@@ -309,8 +309,8 @@ figure img {
   border-radius: var(--radius);
 }
 
-.lede { font-size: var(--step-1); color: var(--iu-gray-900); max-width: 68ch; }
-.byline { font-size: var(--step--1); color: var(--iu-gray-600); margin-bottom: 1.5em; }
+.lede { font-size: var(--step-1); color: var(--iu-gray-900); max-width: 62ch; }
+.byline { font-size: var(--step--1); color: var(--iu-gray-600); margin-bottom: 1.75em; }
 .eyebrow { font-size: var(--step--1); color: var(--iu-gray-600); text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 0.75em; }
 
 .section { margin: 2.5rem 0; }
@@ -384,8 +384,8 @@ section.chapter + section.chapter {
 /* HARD RULE: solid white nav · never glass · never text over the bar */
 .site-nav,
 .site-nav .wrap {
-  background: #ffffff;
-  background-color: #ffffff;
+  background: #f8f9fa;
+  background-color: #f8f9fa;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   opacity: 1;
