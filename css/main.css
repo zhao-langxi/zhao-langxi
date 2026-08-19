@@ -126,6 +126,14 @@ a:hover { color: var(--iu-black); }
   opacity: 1;
 }
 
+.site-nav .nav-credential {
+  flex: 1 1 100%;
+  order: -1;
+  font-size: var(--step--1);
+  color: var(--iu-gray-600);
+  margin: 0;
+}
+
 .site-nav .wrap {
   padding: 0;
   display: flex;
