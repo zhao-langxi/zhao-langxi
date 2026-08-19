@@ -1,4 +1,4 @@
-# 赵郎溪 · zhao-langxi
+# 赵郎溪 · zhao-langxi · she/her
 
 **Informatics @ Indiana University · Luddy HIEP Scholar · Expected May 2027**
 
