@@ -8,8 +8,8 @@
    ============================================ */
 
 :root {
-  /* IU Rivet-adjacent neutrals — crimson used sparingly,
-     as IU brand guidelines intend, not as a theme color */
+  /* IU Rivet-adjacent neutrals ... crimson used sparingly,
+     as IU brand guidelines intend, not as a theme colour */
   --iu-crimson:   #990000;
   --iu-black:     #1a1a1a;
   --iu-gray-900:  #333333;
@@ -19,24 +19,45 @@
   --iu-white:     #ffffff;
   --rule:         var(--iu-gray-300);
 
-  --font-display: Georgia, 'Times New Roman', serif; /* Rivet default serif */
-  --font-body:    Arial, Helvetica, sans-serif;       /* Rivet default sans */
+  --font-display: Georgia, 'Times New Roman', serif;
+  --font-body:    Arial, Helvetica, sans-serif;
 
-  --step--1: 0.875rem; /* 14px captions; GOV.UK body floor is 16 */
+  /* fluid type · body stays at 16px floor */
+  --step--1: 0.875rem;
   --step-0:  1rem;
-  --step-1:  1.2rem;
-  --step-2:  1.5rem;
-  --step-3:  1.9rem;
+  --step-1:  clamp(1.0625rem, 1.02rem + 0.2vw, 1.2rem);
+  --step-2:  clamp(1.25rem, 1.12rem + 0.55vw, 1.5rem);
+  --step-3:  clamp(1.55rem, 1.28rem + 1.1vw, 1.95rem);
 
-  --radius: 2px; /* IU sites run near-square corners, not rounded */
+  /* logical spacing scale */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs:  0.75rem;
+  --space-s:   1rem;
+  --space-m:   1.5rem;
+  --space-l:   clamp(1.75rem, 1.4rem + 1.5vw, 2.75rem);
+  --space-xl:  clamp(2.5rem, 1.9rem + 2.6vw, 4rem);
+
+  --shell: 38rem;
+  --gutter: clamp(16px, 4vw, 24px);
+  --nav-h: 3.25rem;
+
+  --radius: 2px;
   --tap: 44px;
+
+  --dur: 150ms;
+  --ease: ease;
+
+  color-scheme: light;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 4.25rem;
+  scroll-padding-top: calc(var(--nav-h) + 0.5rem);
+  scrollbar-gutter: stable;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -53,18 +74,28 @@ h1, h2, h3 {
   color: var(--iu-black);
   margin: 0 0 0.5em;
   line-height: 1.2;
+  text-wrap: balance;
 }
 
 h1 { font-size: var(--step-3); border-bottom: 3px solid var(--iu-crimson); padding-bottom: 10px; }
 h2 { font-size: var(--step-2); }
 h3 { font-size: var(--step-1); }
 
-p { margin: 0 0 1em; color: var(--iu-gray-900); max-width: 68ch; }
+p {
+  margin: 0 0 1em;
+  color: var(--iu-gray-900);
+  max-width: 68ch;
+  text-wrap: pretty;
+}
 
 a { color: var(--iu-crimson); text-decoration: underline; }
 a:hover { color: var(--iu-black); }
 
-.wrap { max-width: 38rem; margin: 0 auto; padding: 40px 24px 80px; }
+.wrap {
+  max-width: var(--shell);
+  margin-inline: auto;
+  padding: var(--space-l) var(--gutter) var(--space-xl);
+}
 
 .rows { display: flex; flex-direction: column; }
 
@@ -323,6 +354,23 @@ figure img {
 
 .section { margin: 2.5rem 0; }
 
+.section-read { margin-top: 2rem; }
+
+.read-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  max-width: 68ch;
+}
+
+.read-list li {
+  margin-bottom: 0.65em;
+  color: var(--iu-gray-900);
+}
+
+.read-list a {
+  font-weight: 600;
+}
+
 .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin: 1.25rem 0 0; }
 .cta {
   display: inline-flex;
@@ -368,6 +416,19 @@ figure img {
 }
 
 .hero { margin-bottom: 2rem; }
+
+@media (min-width: 720px) {
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(200px, 280px) 1fr;
+    gap: 28px;
+    align-items: start;
+  }
+
+  .hero-visual { margin: 0; }
+  .hero-visual img { max-width: 100%; }
+}
+
 .hero-visual { margin: 0 0 1.25rem; }
 .hero-visual img {
   max-width: 280px;
