@@ -1,5 +1,7 @@
 # 赵郎溪 · zhao-langxi
 
+**Informatics @ Indiana University · Luddy HIEP Scholar**
+
 **This repo:** research notes + personal essay / BTS.
 
 Live site: [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) · CV hub: [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) · [resume (PDF)](https://jlzhao.pages.iu.edu/resume.pdf)
