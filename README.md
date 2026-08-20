@@ -51,3 +51,14 @@ With gratitude for Miriam "Mimi" Attenoukon ... Hudson & Holland mentorship that
 ---
 
 Casual build: [duck-farm](https://jadexzhao.github.io/jadexzhao/duck-farm/) · Photos: [@zhao.langxi](https://instagram.com/zhao.langxi)
+
+---
+
+## Primary handles
+
+| | |
+|---|---|
+| **Primary GitHub** | [github.com/zhao-langxi](https://github.com/zhao-langxi) |
+| **Portfolio code repo** | [jadexzhao/jadexzhao](https://github.com/jadexzhao/jadexzhao) |
+| **LinkedIn** | [linkedin.com/in/jadexzhao](https://www.linkedin.com/in/jadexzhao/) |
+| **Instagram** | [@zhao.langxi](https://instagram.com/zhao.langxi) |
