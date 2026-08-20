@@ -295,6 +295,48 @@ footer .footer-signoff {
   font-weight: 600;
 }
 
+/* ── door easter eggs ─────────────────────────────────────── */
+
+.egg-fishing {
+  cursor: default;
+}
+
+.door-egg-toast {
+  position: fixed;
+  inset-inline: 1rem;
+  inset-block-end: calc(1.25rem + env(safe-area-inset-bottom, 0px));
+  z-index: 9999;
+  margin: 0;
+  padding: 0.65rem 1rem;
+  max-width: 28rem;
+  font-size: var(--step--1);
+  color: var(--iu-black);
+  background: #fff;
+  border: 1px solid var(--iu-crimson);
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.1);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+
+.door-egg-toast.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.door-egg-toast a {
+  color: var(--iu-crimson);
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .door-egg-toast {
+    transform: none;
+    transition: none;
+  }
+}
+
 /* ---------- accessibility floor ---------- */
 
 a:focus-visible,
