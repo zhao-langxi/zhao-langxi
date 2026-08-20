@@ -35,7 +35,7 @@ With gratitude for Miriam "Mimi" Attenoukon ... Hudson & Holland mentorship that
 | **[serveit-accessibility](https://github.com/zhao-langxi/serveit-accessibility)** | WCAG 2.1, Cascade, and Rivet clinic guides ... CC BY-SA 4.0 public extension |
 | **[prohealth-informatics](https://github.com/zhao-langxi/prohealth-informatics)** | Undergrad research role scaffold ... methods and process framing only, no dataset |
 | **[Quackr](https://github.com/zhao-langxi/Quackr)** | Personal dating-app prototype ... local-first, self-tested, not a launch |
-| **[Stealth](https://github.com/zhao-langxi/Stealth)** | Reserved placeholder ... honest boundary on what stays private |
+| **[Stealth](https://github.com/zhao-langxi/Stealth)** | I named it first. The files never followed. |
 
 ---
 
