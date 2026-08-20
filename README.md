@@ -2,57 +2,52 @@
 
 **Informatics @ Indiana University · Luddy HIEP Scholar · Expected May 2027**
 
-**This repo:** research notes + personal essay / BTS (GitHub Pages site source).
-
-Live site: [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) · CV hub: [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) · [resume (PDF)](https://jlzhao.pages.iu.edu/resume.pdf)
-
-Casual build: [duck-farm](https://jadexzhao.github.io/jadexzhao/duck-farm/) · Photos: [@zhao.langxi](https://instagram.com/zhao.langxi)
+This GitHub profile is the **essay and research door**: independent notes, process BTS, and law-adjacent notebooks for readers who want the thinking behind the work. Shipped code and clinic proof live on [jadexzhao](https://jadexzhao.github.io/jadexzhao/); the recruiter narrative lives on [IU Pages](https://jlzhao.pages.iu.edu/).
 
 ---
 
-## AI and law
+## Start here
 
-The law-adjacent thread, and why two notebooks sit beside the essays:
-
-- [lease-precision](https://github.com/zhao-langxi/lease-precision) ... Lease Precision · commercial real estate document support · Dec 2017 to present. Lease redlining, contract review, CRE compliance. Public process notes for commercial retail leases: CAM, SNDA, estoppel, personal guaranties, pay-without-setoff, and operator handoffs that include the landlord property manager. Employer omitted. Not legal advice.
-- [madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethics) ... systems friction + public-service AI ethics. Not an EU AI Act project.
-
-Short pointer page: [AI and law](https://zhao-langxi.github.io/zhao-langxi/notes/ai-and-law.html). Interested in where legal, technical, and business concerns meet (Solutions Engineering, Solutions Architecture, Strategy Consulting, and technical GTM).
-
----
-
-## on the site
-
-- [Notes](https://zhao-langxi.github.io/zhao-langxi/notes/) · short reads
-- [temporary outsiders](https://zhao-langxi.github.io/zhao-langxi/research/temporary-outsiders.html)
-- [when websites assume you belong](https://zhao-langxi.github.io/zhao-langxi/research/systems-friction.html)
-- [websites staff can keep alive](https://zhao-langxi.github.io/zhao-langxi/research/staff-maintainable.html)
-- [ServeIT](https://zhao-langxi.github.io/zhao-langxi/work/serveit.html) · [Serve-AI](https://zhao-langxi.github.io/zhao-langxi/work/serve-ai.html)
-- Origin essay: [Why I Do This](https://zhao-langxi.github.io/zhao-langxi/about.html)
+| | |
+|---|---|
+| **Live site** | [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) |
+| **AI and law (pointer)** | [notes/ai-and-law.html](https://zhao-langxi.github.io/zhao-langxi/notes/ai-and-law.html) |
+| **Temporary outsiders** | [research/temporary-outsiders.html](https://zhao-langxi.github.io/zhao-langxi/research/temporary-outsiders.html) |
+| **When websites assume you belong** | [research/systems-friction.html](https://zhao-langxi.github.io/zhao-langxi/research/systems-friction.html) |
+| **Websites staff can keep alive** | [research/staff-maintainable.html](https://zhao-langxi.github.io/zhao-langxi/research/staff-maintainable.html) |
+| **Why I Do This** | [about.html](https://zhao-langxi.github.io/zhao-langxi/about.html) |
+| **Resume (PDF)** | [jlzhao.pages.iu.edu/resume.pdf](https://jlzhao.pages.iu.edu/resume.pdf) |
 
 Independent notes are Jade's own write-ups ... not IU-endorsed research and not peer-reviewed. Serve-AI / ServeIT clinic materials stay CC BY-SA with project credit. Drafting was AI-assisted; accountability remains with Jade Zhao.
 
-**Look:** Rivet / Cascade / IU WCMS adjacent ... crimson `#990000` on white, Rivet default type (Georgia serif display, Arial body). Not a custom ocean or lily theme. Tokens live in the `css/main.css` Rivet `:root`; `css/brand-tokens.css` is deliberately empty so nothing competes with it.
+With gratitude for Miriam "Mimi" Attenoukon ... Hudson & Holland mentorship that connected first-gen scholars to paths not obvious from a syllabus. Full tribute on [jadexzhao](https://jadexzhao.github.io/jadexzhao/).
 
 ---
 
-## public repos (8)
+## Public repos (8)
 
-| Repo | What it is |
-|------|------------|
-| **zhao-langxi** (this repo) | Essays + research notes site (GitHub Pages) |
-| [madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethics) | Systems friction + public-service AI ethics · MIT · Spring 2026 Madrid notebook |
-| [lease-precision](https://github.com/zhao-langxi/lease-precision) | Commercial lease redlining + CRE compliance process notes · MIT · not legal advice |
-| [local-digital](https://github.com/zhao-langxi/local-digital) | ServeIT community digital handoffs · MIT |
-| [serveit-accessibility](https://github.com/zhao-langxi/serveit-accessibility) | WCAG / Cascade / Rivet clinic guides · CC BY-SA 4.0 |
-| [Quackr](https://github.com/zhao-langxi/Quackr) | Personal dating-app prototype · local-first · not a launch |
-| [prohealth-informatics](https://github.com/zhao-langxi/prohealth-informatics) | Public-safe undergrad research role scaffold · methods only · no dataset |
-| [Stealth](https://github.com/zhao-langxi/Stealth) | Private placeholder · not a product or hiring artifact |
+| Repo | One line |
+|------|----------|
+| **[zhao-langxi](https://github.com/zhao-langxi/zhao-langxi)** (this repo) | GitHub Pages source for essays, research notes, and reading order |
+| **[madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethics)** | Spring 2026 Madrid notebook on systems friction and public-service AI ethics ... not an EU AI Act project |
+| **[lease-precision](https://github.com/zhao-langxi/lease-precision)** | Commercial lease process notes: clause review, operator handoffs, CRE compliance patterns ... not legal advice |
+| **[local-digital](https://github.com/zhao-langxi/local-digital)** | ServeIT community digital handoffs and project summaries that outlast a clinic semester |
+| **[serveit-accessibility](https://github.com/zhao-langxi/serveit-accessibility)** | WCAG 2.1, Cascade, and Rivet clinic guides ... CC BY-SA 4.0 public extension |
+| **[prohealth-informatics](https://github.com/zhao-langxi/prohealth-informatics)** | Undergrad research role scaffold ... methods and process framing only, no dataset |
+| **[Quackr](https://github.com/zhao-langxi/Quackr)** | Personal dating-app prototype ... local-first, self-tested, not a launch |
+| **[Stealth](https://github.com/zhao-langxi/Stealth)** | Reserved placeholder ... honest boundary on what stays private |
 
 ---
 
-## other doors
+## Four doors (one person, four audiences)
 
-- Technical ships → [jadexzhao](https://jadexzhao.github.io/jadexzhao/)
-- Classroom / FASE MAP → [matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/)
-- Photos / behind the scenes → Instagram [@zhao.langxi](https://instagram.com/zhao.langxi)
+| Door | For whom | URL |
+|------|----------|-----|
+| **IU Pages** | Recruiters · hiring managers | [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) |
+| **jadexzhao** | Technical peers · shipped proof | [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/) |
+| **matchaxmoxie** | Students · FASE MAP classroom | [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) |
+| **zhao-langxi** | Readers · essays and research BTS | [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) |
+
+---
+
+Casual build: [duck-farm](https://jadexzhao.github.io/jadexzhao/duck-farm/) · Photos: [@zhao.langxi](https://instagram.com/zhao.langxi)
