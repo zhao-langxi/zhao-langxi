@@ -11,6 +11,7 @@ This GitHub profile is the **essay and research door**: independent notes, proce
 | | |
 |---|---|
 | **Live site** | [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) |
+| **小猫钓鱼** | [notes/xiao-mao-diao-yu.html](https://zhao-langxi.github.io/zhao-langxi/notes/xiao-mao-diao-yu.html) |
 | **AI and law (pointer)** | [notes/ai-and-law.html](https://zhao-langxi.github.io/zhao-langxi/notes/ai-and-law.html) |
 | **Temporary outsiders** | [research/temporary-outsiders.html](https://zhao-langxi.github.io/zhao-langxi/research/temporary-outsiders.html) |
 | **When websites assume you belong** | [research/systems-friction.html](https://zhao-langxi.github.io/zhao-langxi/research/systems-friction.html) |
