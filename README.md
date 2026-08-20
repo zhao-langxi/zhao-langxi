@@ -2,21 +2,13 @@
 
 **Informatics @ Indiana University · Luddy HIEP Scholar · Expected May 2027**
 
-This GitHub profile is the **essay and research door**: independent notes, process BTS, and law-adjacent notebooks for readers who want the thinking behind the work. Shipped code and clinic proof live on [jadexzhao](https://jadexzhao.github.io/jadexzhao/); the recruiter narrative lives on [IU Pages](https://jlzhao.pages.iu.edu/).
-
----
-
-## Start here
+This GitHub profile is the **essay and research door**. The reading order lives on the [live site](https://zhao-langxi.github.io/zhao-langxi/). Shipped code lives on [jadexzhao](https://jadexzhao.github.io/jadexzhao/). The recruiter narrative lives on [IU Pages](https://jlzhao.pages.iu.edu/).
 
 | | |
 |---|---|
 | **Live site** | [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) |
-| **小猫钓鱼** | [notes/xiao-mao-diao-yu.html](https://zhao-langxi.github.io/zhao-langxi/notes/xiao-mao-diao-yu.html) |
-| **AI and law (pointer)** | [notes/ai-and-law.html](https://zhao-langxi.github.io/zhao-langxi/notes/ai-and-law.html) |
-| **Temporary outsiders** | [research/temporary-outsiders.html](https://zhao-langxi.github.io/zhao-langxi/research/temporary-outsiders.html) |
-| **When websites assume you belong** | [research/systems-friction.html](https://zhao-langxi.github.io/zhao-langxi/research/systems-friction.html) |
-| **Websites staff can keep alive** | [research/staff-maintainable.html](https://zhao-langxi.github.io/zhao-langxi/research/staff-maintainable.html) |
 | **Why I Do This** | [about.html](https://zhao-langxi.github.io/zhao-langxi/about.html) |
+| **小猫钓鱼** | [notes/xiao-mao-diao-yu.html](https://zhao-langxi.github.io/zhao-langxi/notes/xiao-mao-diao-yu.html) |
 | **Resume (PDF)** | [jlzhao.pages.iu.edu/resume.pdf](https://jlzhao.pages.iu.edu/resume.pdf) |
 
 Independent notes are Jade's own write-ups ... not IU-endorsed research and not peer-reviewed. Serve-AI / ServeIT clinic materials stay CC BY-SA with project credit. Drafting was AI-assisted; accountability remains with Jade Zhao.
