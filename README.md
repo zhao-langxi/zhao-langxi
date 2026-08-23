@@ -53,5 +53,5 @@ Casual build: [duck-farm](https://jadexzhao.github.io/jadexzhao/duck-farm/) · P
 |---|---|
 | **Primary GitHub** | [github.com/zhao-langxi](https://github.com/zhao-langxi) |
 | **Portfolio code repo** | [jadexzhao/jadexzhao](https://github.com/jadexzhao/jadexzhao) |
-| **LinkedIn** | [linkedin.com/in/jadexzhao](https://www.linkedin.com/in/jadexzhao/) |
+| **LinkedIn** | [linkedin.com/in/zhao-langxi](https://www.linkedin.com/in/zhao-langxi/) |
 | **Instagram** | [@zhao.langxi](https://instagram.com/zhao.langxi) |
