@@ -13,17 +13,18 @@ This GitHub profile is the **essay and research door**. The reading order lives 
 
 Independent notes are Jade's own write-ups ... not IU-endorsed research and not peer-reviewed. Serve-AI / ServeIT clinic materials stay CC BY-SA with project credit. Drafting was AI-assisted; accountability remains with Jade Zhao.
 
+Current campus applied work also includes Luddy LINK Digital Humans Project Lead (February 2025 to present): digital humans as AI-driven virtual personas for business use cases. Luddy LINK is Luddy's applied-project programme.
+
 With gratitude for Miriam "Mimi" Attenoukon ... Hudson & Holland mentorship that connected first-gen scholars to paths not obvious from a syllabus. Full tribute on [jadexzhao](https://jadexzhao.github.io/jadexzhao/).
 
 ---
 
-## Public repos (8)
+## Public repos (7)
 
 | Repo | One line |
 |------|----------|
 | **[zhao-langxi](https://github.com/zhao-langxi/zhao-langxi)** (this repo) | GitHub Pages source for essays, research notes, and reading order |
 | **[madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethics)** | Spring 2026 Madrid notebook on systems friction and public-service AI ethics ... not an EU AI Act project |
-| **[lease-precision](https://github.com/zhao-langxi/lease-precision)** | Commercial lease process notes: clause review, operator handoffs, CRE compliance patterns ... not legal advice |
 | **[local-digital](https://github.com/zhao-langxi/local-digital)** | ServeIT community digital handoffs and project summaries that outlast a clinic semester |
 | **[serveit-accessibility](https://github.com/zhao-langxi/serveit-accessibility)** | WCAG 2.1, Cascade, and Rivet clinic guides ... CC BY-SA 4.0 public extension |
 | **[prohealth-informatics](https://github.com/zhao-langxi/prohealth-informatics)** | Undergrad research role scaffold ... methods and process framing only, no dataset |
