@@ -4,6 +4,8 @@
 
 This GitHub profile is the **essay and research door**. The reading order lives on the [live site](https://zhao-langxi.github.io/zhao-langxi/). Shipped code lives on [jadexzhao](https://jadexzhao.github.io/jadexzhao/). The recruiter narrative lives on [IU Pages](https://jlzhao.pages.iu.edu/). Same public name on [LinkedIn](https://www.linkedin.com/in/zhao-langxi/) and [Instagram](https://instagram.com/zhao.langxi).
 
+Focus: the work that keeps systems usable after the visible part is finished ... reliable handoffs, maintainable public-interest tech, and systems friction for temporary outsiders.
+
 | | |
 |---|---|
 | **Live site** | [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) |
