@@ -1,10 +1,10 @@
 # 赵郎溪 · zhao-langxi · she/her
 
-**Informatics @ Indiana University · Luddy HIEP Scholar · Expected May 2027**
+**Informatics (Business and Society) @ Indiana University · HHSP Platinum Scholar · Expected May 2027**
 
 This GitHub profile is the **essay and research door**. The reading order lives on the [live site](https://zhao-langxi.github.io/zhao-langxi/). Shipped code lives on [jadexzhao](https://jadexzhao.github.io/jadexzhao/). The recruiter narrative lives on [IU Pages](https://jlzhao.pages.iu.edu/). Same public name on [LinkedIn](https://www.linkedin.com/in/zhao-langxi/) and [Instagram](https://instagram.com/zhao.langxi).
 
-Focus: the work that keeps systems usable after the visible part is finished ... reliable handoffs, maintainable public-interest tech, and systems friction for temporary outsiders.
+Focus: the work that keeps systems usable after the visible part is finished ... reliable handoffs, maintainable builds for partners without in-house engineering support, and clear technical communication. Serve IT web lead · MAP Coordinator within FASE · family restaurant throughline. Looking toward SWE roles in databases, internal systems, IT, and ETL.
 
 | | |
 |---|---|
