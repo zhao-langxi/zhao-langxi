@@ -4,7 +4,7 @@
 
 This GitHub profile is the **essay and research door**. The reading order lives on the [live site](https://zhao-langxi.github.io/zhao-langxi/). Shipped code lives on [jadexzhao](https://jadexzhao.github.io/jadexzhao/). The recruiter narrative lives on [IU Pages](https://jlzhao.pages.iu.edu/). Same public name on [LinkedIn](https://www.linkedin.com/in/zhao-langxi/) and [Instagram](https://instagram.com/zhao.langxi).
 
-Focus: the work that keeps systems usable after the visible part is finished ... reliable handoffs, maintainable builds for partners without in-house engineering support, and clear technical communication. Serve IT web lead · MAP Coordinator within FASE · family restaurant throughline. Looking toward SWE roles in databases, internal systems, IT, and ETL.
+Focus: the unglamorous part. Reliable handoffs, maintainable web builds for partners without in-house engineering support, and technical communication that prefers accuracy over polish. Serve IT web lead · MAP Coordinator within FASE · family restaurant throughline. Looking for a software engineering role after May 2027, especially near databases, internal information systems, IT teams, and ETL pipelines. Warm UK LinkedIn About (paste-ready): [jadexzhao/briefcase/linkedin-about-warm-uk.md](https://github.com/jadexzhao/jadexzhao/blob/main/briefcase/linkedin-about-warm-uk.md).
 
 | | |
 |---|---|
