@@ -4,7 +4,9 @@
 
 This GitHub profile is the **essay and research door**. The reading order lives on the [live site](https://zhao-langxi.github.io/zhao-langxi/). Shipped code lives on [jadexzhao](https://jadexzhao.github.io/jadexzhao/). The recruiter narrative lives on [IU Pages](https://jlzhao.pages.iu.edu/). Same public name on [LinkedIn](https://www.linkedin.com/in/zhao-langxi/) and [Instagram](https://instagram.com/zhao.langxi).
 
-Focus: the unglamorous part. Reliable handoffs, maintainable web builds for partners without in-house engineering support, and technical communication that prefers accuracy over polish. Serve IT web lead · MAP Coordinator within FASE · family restaurant throughline. Looking for a software engineering role after May 2027, especially near databases, internal information systems, IT teams, and ETL pipelines. Warm UK LinkedIn About (paste-ready): [jadexzhao/briefcase/linkedin-about-warm-uk.md](https://github.com/jadexzhao/jadexzhao/blob/main/briefcase/linkedin-about-warm-uk.md).
+I grew up in my family’s Chinese restaurant, where I learned that technology should solve real problems. I study Informatics at IU Bloomington and build accessible technology for nonprofits and community organisations. My long-term ambition is to open a duck farm.
+
+Focus: the unglamorous part. Reliable handoffs, maintainable web builds for partners without in-house engineering support, and technical communication that prefers accuracy over polish. Serve IT Website Team Lead · Luddy LINK Digital Humans Project Lead (separate roles) · MAP Coordinator within FASE. Looking for a software engineering role after May 2027, especially near databases, internal information systems, IT teams, and ETL pipelines. Warm UK LinkedIn About (paste-ready): [jadexzhao/briefcase/linkedin-about-warm-uk.md](https://github.com/jadexzhao/jadexzhao/blob/main/briefcase/linkedin-about-warm-uk.md).
 
 | | |
 |---|---|
@@ -15,7 +17,7 @@ Focus: the unglamorous part. Reliable handoffs, maintainable web builds for part
 
 Independent notes are Jade's own write-ups ... not IU-endorsed research and not peer-reviewed. Serve-AI / ServeIT clinic materials stay CC BY-SA with project credit. Drafting was AI-assisted; accountability remains with Jade Zhao.
 
-Current campus applied work also includes Luddy LINK Digital Humans Project Lead (February 2025 to present): digital humans as AI-driven virtual personas for business use cases. Luddy LINK is Luddy's applied-project programme.
+Current campus applied work also includes Luddy LINK Digital Humans Project Lead (February 2025 to present): digital humans as AI-driven virtual personas for business use cases. Luddy LINK is Luddy's applied-project programme, separate from ServeIT Website Team Lead.
 
 With gratitude for Miriam "Mimi" Attenoukon ... Hudson & Holland mentorship that connected first-gen scholars to paths not obvious from a syllabus. Full tribute on [jadexzhao](https://jadexzhao.github.io/jadexzhao/).
 
