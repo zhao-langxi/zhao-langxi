@@ -23,12 +23,13 @@ With gratitude for Miriam "Mimi" Attenoukon ... Hudson & Holland mentorship that
 
 ---
 
-## Public repos (7)
+## Public repos (8)
 
 | Repo | One line |
 |------|----------|
 | **[zhao-langxi](https://github.com/zhao-langxi/zhao-langxi)** (this repo) | GitHub Pages source for essays, research notes, and reading order |
 | **[madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethics)** | Spring 2026 Madrid notebook on systems friction and public-service AI ethics ... not an EU AI Act project |
+| **[lease-precision](https://github.com/zhao-langxi/lease-precision)** | Public-safe commercial lease process notes ... clause precision, not legal advice |
 | **[local-digital](https://github.com/zhao-langxi/local-digital)** | ServeIT community digital handoffs and project summaries that outlast a clinic semester |
 | **[serveit-accessibility](https://github.com/zhao-langxi/serveit-accessibility)** | WCAG 2.1, Cascade, and Rivet clinic guides ... CC BY-SA 4.0 public extension |
 | **[prohealth-informatics](https://github.com/zhao-langxi/prohealth-informatics)** | Undergrad research role scaffold ... methods and process framing only, no dataset |
