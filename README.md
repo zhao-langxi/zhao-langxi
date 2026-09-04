@@ -6,7 +6,7 @@ This GitHub profile is the **essay and research door**. The reading order lives 
 
 I grew up in my family’s Chinese restaurant, where I learned that technology should solve real problems. I study Informatics at IU Bloomington and build accessible technology for nonprofits and community organisations. My long-term ambition is to open a duck farm.
 
-Focus: the unglamorous part. Reliable handoffs, maintainable web builds for partners without in-house engineering support, and technical communication that prefers accuracy over polish. Serve IT Website Team Lead · Luddy LINK Digital Humans Project Lead (separate roles) · MAP Coordinator within FASE. Looking for a software engineering role after May 2027, especially near databases, internal information systems, IT teams, and ETL pipelines. Warm UK LinkedIn About (paste-ready): [jadexzhao/briefcase/linkedin-about-warm-uk.md](https://github.com/jadexzhao/jadexzhao/blob/main/briefcase/linkedin-about-warm-uk.md).
+Focus: the unglamorous part. Reliable handoffs, maintainable web builds for partners without in-house engineering support, and technical communication that prefers accuracy over polish. Serve IT Website Team Lead · Luddy LINK Digital Humans Project Lead (separate roles) · STEM MAP Coordinator / MAP Coordinator within FASE. Looking for a software engineering role after May 2027, especially near databases, internal information systems, IT teams, and ETL pipelines. Warm UK LinkedIn About (paste-ready): [jadexzhao/briefcase/linkedin-about-warm-uk.md](https://github.com/jadexzhao/jadexzhao/blob/main/briefcase/linkedin-about-warm-uk.md).
 
 | | |
 |---|---|
