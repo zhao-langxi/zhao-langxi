@@ -13,7 +13,7 @@ As Digital Humans Project Lead at Luddy LINK, I study how AI-driven virtual pers
 | **Live site** | [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) |
 | **Why I Do This** | [about.html](https://zhao-langxi.github.io/zhao-langxi/about.html) |
 | **小猫钓鱼** | [notes/xiao-mao-diao-yu.html](https://zhao-langxi.github.io/zhao-langxi/notes/xiao-mao-diao-yu.html) |
-| **Resume (PDF)** | [jlzhao.pages.iu.edu/resume.pdf](https://jlzhao.pages.iu.edu/resume.pdf) · [GitHub Pages mirror](https://jadexzhao.github.io/jadexzhao/resume.pdf) |
+| **Resume (PDF)** | [jlzhao.pages.iu.edu/cv.pdf](https://jlzhao.pages.iu.edu/cv.pdf) |
 
 Independent notes are Jade's own write-ups ... not IU-endorsed research and not peer-reviewed. Serve-AI / ServeIT clinic materials stay CC BY-SA with project credit. Drafting was AI-assisted; accountability remains with Jade Zhao.
 
