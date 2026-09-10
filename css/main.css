@@ -411,18 +411,20 @@ figure.figure-photo img {
 
 .photo-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
   gap: 12px;
   margin: 1.5rem 0 0;
+  min-inline-size: 0;
 }
 
 .photo-row figure {
   margin: 0;
+  min-inline-size: 0;
 }
 
 .photo-row img {
   width: 100%;
-  max-width: none;
+  max-width: 100%;
   height: auto;
   object-fit: contain;
   border: 1px solid var(--rule);
@@ -556,8 +558,20 @@ section.chapter + section.chapter {
 }
 
 @media (max-width: 600px) {
+  html {
+    overflow-x: clip;
+  }
+
+  body {
+    overflow-x: clip;
+  }
+
   .site-nav { padding: 4px 16px; }
   .wrap { padding: 24px 16px 56px; }
   .cta-row { flex-direction: column; }
   .cta { width: 100%; }
+
+  .photo-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }

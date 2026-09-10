@@ -6,7 +6,7 @@ This GitHub profile is the **essay and research door**. The reading order lives 
 
 I care about the systems that have to keep working after the demo ends. My long-term ambition is to open a duck farm. Looking for a software engineering role after May 2027, especially near databases, internal information systems, IT teams, and ETL pipelines.
 
-As Digital Humans Project Lead at Luddy LINK, I study how AI-driven virtual personas might work in business. The same question shows up under other titles: Web Developer (NSF), User Experience Designer (IUB Undergraduate Education), and Business Technologist (PIT-UN). Restaurant Kid in Greenfield. STEM MAP Coordinator / MAP Coordinator within FASE · Programme Assistant with HHSP · Serve IT Website Team Lead. Warm UK LinkedIn About (paste-ready): [jadexzhao/briefcase/linkedin-about-warm-uk.md](https://github.com/jadexzhao/jadexzhao/blob/main/briefcase/linkedin-about-warm-uk.md).
+As Digital Humans Project Lead at Luddy LINK, I study how AI-driven virtual personas might work in business. The same question shows up under other titles: Web Developer (NSF), User Experience Designer (IUB Undergraduate Education), and Business Technologist (PIT-UN). Restaurant Kid in Greenfield. STEM Peer Mentor / MAP Coordinator within FASE · Programme Assistant with HHSP · Serve IT Website Team Lead. Warm UK LinkedIn About (paste-ready): [jadexzhao/briefcase/linkedin-about-warm-uk.md](https://github.com/jadexzhao/jadexzhao/blob/main/briefcase/linkedin-about-warm-uk.md).
 
 | | |
 |---|---|
