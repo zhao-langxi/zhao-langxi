@@ -1,23 +1,22 @@
 # 赵郎溪 · zhao-langxi · she/her
 
-**Informatics (Business and Society) @ Indiana University · HHSP Platinum Scholar · Expected May 2027**
+**Digital Humans Project Lead at Luddy LINK · Informatics (Business and Society) @ Indiana University · HHSP Platinum Scholar · Expected May 2027**
 
-This GitHub profile is the **essay and research door**. The reading order lives on the [live site](https://zhao-langxi.github.io/zhao-langxi/). Shipped code lives on [jadexzhao](https://jadexzhao.github.io/jadexzhao/). The recruiter narrative lives on [IU Pages](https://jlzhao.pages.iu.edu/). Same public name on [LinkedIn](https://www.linkedin.com/in/zhao-langxi/) and [Instagram](https://instagram.com/zhao.langxi).
+This GitHub profile is the **essay / research / lead-notes door**. Pitch order on the [live site](https://zhao-langxi.github.io/zhao-langxi/): profile → [Digital Humans case study](https://zhao-langxi.github.io/zhao-langxi/work/digital-humans.html) → contact. Shipped code lives on [jadexzhao](https://jadexzhao.github.io/jadexzhao/). The recruiter narrative lives on [IU Pages](https://jlzhao.pages.iu.edu/). Same public name on [LinkedIn](https://www.linkedin.com/in/zhao-langxi/) and [Instagram](https://instagram.com/zhao.langxi).
 
-I care about the systems that have to keep working after the demo ends. My long-term ambition is to open a duck farm. Looking for a software engineering role after May 2027, especially near databases, internal information systems, IT teams, and ETL pipelines.
-
-As Digital Humans Project Lead at Luddy LINK, I study how AI-driven virtual personas might work in business. The same question shows up under other titles: Web Developer (NSF), User Experience Designer (IUB Undergraduate Education), and Business Technologist (PIT-UN). Restaurant Kid in Greenfield. STEM Peer Mentor / MAP Coordinator within FASE · Programme Assistant with HHSP · Serve IT Website Team Lead. Warm UK LinkedIn About (paste-ready): [jadexzhao/briefcase/linkedin-about-warm-uk.md](https://github.com/jadexzhao/jadexzhao/blob/main/briefcase/linkedin-about-warm-uk.md).
+I lead Digital Humans work at Luddy LINK: AI-driven virtual personas for business workflows. Core question: when an AI system looks and communicates like a person, what makes people trust it, use it, and keep using it? Seeking software engineering after May 2027 sits under that lead ... databases, internal information systems, IT, and ETL.
 
 | | |
 |---|---|
 | **Live site** | [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) |
-| **Why I Do This** | [about.html](https://zhao-langxi.github.io/zhao-langxi/about.html) |
+| **Digital Humans** | [work/digital-humans.html](https://zhao-langxi.github.io/zhao-langxi/work/digital-humans.html) |
+| **Professional profile** | [about.html](https://zhao-langxi.github.io/zhao-langxi/about.html) |
 | **小猫钓鱼** | [notes/xiao-mao-diao-yu.html](https://zhao-langxi.github.io/zhao-langxi/notes/xiao-mao-diao-yu.html) |
 | **Resume (PDF)** | [jlzhao.pages.iu.edu/cv.pdf](https://jlzhao.pages.iu.edu/cv.pdf) |
 
 Independent notes are Jade's own write-ups ... not IU-endorsed research and not peer-reviewed. Serve-AI / ServeIT clinic materials stay CC BY-SA with project credit. Drafting was AI-assisted; accountability remains with Jade Zhao.
 
-Current framing leads with Luddy LINK Digital Humans Project Lead (February 2025 to present): digital humans as AI-driven virtual personas for business use cases. LinkedIn titles thread: Web Developer (NSF), User Experience Designer (IUB), Business Technologist (PIT-UN), Restaurant Kid. Luddy LINK is Luddy's applied-project programme, separate from ServeIT Website Team Lead.
+Current framing leads with Luddy LINK Digital Humans Project Lead (February 2025 to present). Secondary threads: Serve IT Website Team Lead, NSF / UE / PIT-UN titles, Restaurant Kid, STEM Peer Mentor / MAP Coordinator within FASE, HHSP Programme Assistant. Luddy LINK is separate from ServeIT.
 
 With gratitude for Miriam "Mimi" Attenoukon ... Hudson & Holland mentorship that connected first-gen scholars to paths not obvious from a syllabus. Full tribute on [jadexzhao](https://jadexzhao.github.io/jadexzhao/).
 
