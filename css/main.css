@@ -514,16 +514,21 @@ body.page-home main.wrap {
 
 .home-gap {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
-  gap: 0.65rem;
-  margin: 1.25rem 0 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 1rem;
 }
 
 .home-gap-card {
   background: var(--iu-gray-100);
   border: 1px solid var(--rule);
   border-radius: var(--radius);
-  padding: 0.75rem 0.85rem;
+  padding: 1rem 1.05rem;
+}
+
+.home-gap-card--rate {
+  border-color: var(--iu-gray-300);
+  background: var(--iu-white);
 }
 
 .home-gap-value {
@@ -531,12 +536,12 @@ body.page-home main.wrap {
   font-size: 1.35rem;
   font-weight: 700;
   color: var(--iu-black);
-  line-height: 1.15;
-  margin: 0 0 0.25rem;
+  line-height: 1.2;
+  margin: 0 0 0.35rem;
 }
 
 .home-gap-label {
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.45rem;
   font-size: var(--step--1);
   font-weight: 600;
   color: var(--iu-gray-900);
@@ -546,13 +551,15 @@ body.page-home main.wrap {
   margin: 0;
   font-size: var(--step--1);
   color: var(--iu-gray-600);
-  line-height: 1.4;
+  line-height: 1.5;
+  max-width: none;
 }
 
 .home-gap-foot {
-  margin: 0.5rem 0 0;
+  margin: 0.75rem 0 0;
   font-size: var(--step--1);
   color: var(--iu-gray-600);
+  max-width: 68ch;
 }
 
 @media (min-width: 720px) {
@@ -1098,20 +1105,43 @@ section.chapter + section.chapter {
   color: var(--rs-muted);
 }
 
+.rs-section-intro {
+  margin: -0.35rem 0 0.85rem;
+  font-size: var(--step--1);
+  color: var(--rs-muted);
+  max-width: 62ch;
+}
+
+.rs-support-list {
+  margin: 0 0 1.75rem;
+  padding-left: 1.25rem;
+  max-width: 62ch;
+  color: var(--rs-ink);
+  line-height: 1.55;
+}
+
+.rs-support-list li {
+  margin-bottom: 0.55rem;
+}
+
 .rs-gap-strip,
 .rs-support-strip {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
-  gap: 0.65rem;
-  margin: 0 0 1.35rem;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+  margin: 0 0 1.75rem;
 }
 
 .rs-gap,
 .rs-support {
-  background: var(--rs-surface);
+  background: var(--iu-white);
   border: 1px solid var(--rs-rule);
   border-radius: var(--radius);
-  padding: 0.75rem 0.85rem;
+  padding: 1rem 1.05rem;
+}
+
+.lede--follow {
+  margin-top: -0.35rem;
 }
 
 .rs-gap-value,
