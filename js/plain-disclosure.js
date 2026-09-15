@@ -1,5 +1,5 @@
 /**
- * Plain Disclosure · shared demo logic for zhao-langxi + jadexzhao
+ * Plain Disclosure · four-question privacy worksheet
  */
 (function () {
   "use strict";
@@ -8,33 +8,30 @@
     a: {
       text: "We collect your name, university email, and course selections to personalise your dashboard and send service notices. Data is stored on university systems and retained while you are enrolled. We do not sell personal data. Dashboard personalisation is optional. You may request corrections through the help desk.",
       out: {
-        what: "name + email + course selections",
-        why: "dashboard personalisation + service notices",
-        where: "uni systems while you're enrolled; not sold",
-        no: "personalisation optional; corrections via help desk",
-        gap: false,
+        what: "Name, university email, and course selections.",
+        why: "Dashboard personalisation and service notices.",
+        where: "University systems while you are enrolled. Not sold.",
+        no: "Personalisation is optional. Corrections through the help desk.",
         marks: ["personalise", "retained", "optional"]
       }
     },
     b: {
       text: "We may collect information to improve services and communicate with users as needed. Data is handled according to university policy.",
       out: {
-        what: "\"information\" ... too vague",
-        why: "improve / communicate ... fuzzy",
-        where: "\"university policy\" ... fuzzy",
-        no: "missing ... blurb never says",
-        gap: true,
+        what: "\"Information\" ... too vague.",
+        why: "Improve / communicate ... fuzzy.",
+        where: "\"University policy\" ... fuzzy.",
+        no: "Missing ... blurb never says.",
         marks: ["may collect", "as needed", "university policy"]
       }
     },
     c: {
       text: "We collect your name and email for account setup and store it on university systems while you are enrolled.",
       out: {
-        what: "name + email",
-        why: "account setup",
-        where: "uni systems while you're enrolled",
-        no: "missing ... blurb never says",
-        gap: true,
+        what: "Name and email.",
+        why: "Account setup.",
+        where: "University systems while you are enrolled.",
+        no: "Missing ... blurb never says.",
         marks: ["account setup", "while you are enrolled"]
       }
     }
@@ -49,24 +46,29 @@
 
   var confusedOn = false;
 
+  function isGap(text) {
+    return /missing|too vague|fuzzy/i.test(text);
+  }
+
+  function setSlot(name, text) {
+    var el = document.querySelector('[data-slot="' + name + '"]');
+    if (!el) return;
+    el.textContent = text;
+    el.parentElement.classList.toggle("gap", isGap(text));
+  }
+
   function fillSource(key) {
     sourceEl.value = samples[key].text;
     render(samples[key].out, samples[key].text);
   }
 
   function render(out, text) {
-    var what = document.querySelector('[data-slot="what"]');
-    var why = document.querySelector('[data-slot="why"]');
-    var where = document.querySelector('[data-slot="where"]');
-    var noEl = document.querySelector('[data-slot="no"]');
-    if (!what || !why || !where || !noEl) return;
-    what.textContent = out.what;
-    why.textContent = out.why;
-    where.textContent = out.where;
-    noEl.textContent = out.no;
-    noEl.parentElement.classList.toggle("gap", !!out.gap || /missing/i.test(out.no));
+    setSlot("what", out.what);
+    setSlot("why", out.why);
+    setSlot("where", out.where);
+    setSlot("no", out.no);
 
-    if (confusedOn && out.marks && sourceView) {
+    if (confusedOn && out.marks && out.marks.length && sourceView) {
       var html = text;
       out.marks.forEach(function (m) {
         html = html.replace(m, "<mark class=\"pd-confused\">" + m + "</mark>");
@@ -91,14 +93,20 @@
     }
     var low = t.toLowerCase();
     var out = {
-      what: /name|email|data|information/.test(low) ? "some data is mentioned ... check the wording" : "missing ... blurb never says",
-      why: /for |to /.test(low) ? "a purpose is hinted ... may still be fuzzy" : "missing ... blurb never says",
-      where: /store|stored|system|share|third/.test(low) ? "storage/sharing hinted ... check detail" : "missing ... blurb never says",
-      no: /optional|opt out|delete|correct|refus/.test(low) ? "some choice language appears" : "missing ... blurb never says",
-      gap: true,
+      what: /name|email|data|information/.test(low)
+        ? "Some data is mentioned ... check the wording."
+        : "Missing ... blurb never says.",
+      why: /\bfor |\bto [a-z]{4,}/.test(low)
+        ? "A purpose is hinted ... may still be fuzzy."
+        : "Missing ... blurb never says.",
+      where: /store|stored|system|share|third/.test(low)
+        ? "Storage or sharing is hinted ... check the detail."
+        : "Missing ... blurb never says.",
+      no: /optional|opt out|delete|correct|refus/.test(low)
+        ? "Some choice language appears."
+        : "Missing ... blurb never says.",
       marks: []
     };
-    out.gap = /missing/.test(out.no);
     render(out, t);
   }
 

@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
   <title>Plain Disclosure · four questions before Agree · Jade Zhao</title>
-  <meta name="description" content="Most people skip the terms. This worksheet forces a privacy blurb to answer four questions: what they take, why, where it goes, what if you say no. Jade Zhao · zhao-langxi.">
+  <meta name="description" content="A privacy worksheet: what they take, why, where it goes, and what happens if you say no. Jade Zhao · zhao-langxi.">
   <link rel="canonical" href="https://zhao-langxi.github.io/zhao-langxi/work/plain-disclosure.html">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="zhao-langxi · Jade Zhao">
   <meta property="og:title" content="Plain Disclosure · Jade Zhao">
-      <meta property="og:description" content="Paste a privacy blurb. Get four plain answers before Agree.">
-      <meta property="og:url" content="https://zhao-langxi.github.io/zhao-langxi/work/plain-disclosure.html">
-      <meta property="og:image" content="https://zhao-langxi.github.io/zhao-langxi/assets/fishing-catch.jpg">
-      <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:title" content="Plain Disclosure · zhao-langxi">
-      <meta name="twitter:description" content="Four questions before Agree. Privacy worksheet from IUB Undergraduate Education UX.">
+  <meta property="og:description" content="Four questions before Agree. Paste a privacy blurb and see what it actually says.">
+  <meta property="og:url" content="https://zhao-langxi.github.io/zhao-langxi/work/plain-disclosure.html">
+  <meta property="og:image" content="https://zhao-langxi.github.io/zhao-langxi/assets/fishing-catch.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Plain Disclosure · zhao-langxi">
+  <meta name="twitter:description" content="Four questions before Agree. From IUB Undergraduate Education UX to Digital Humans disclosure.">
   <meta name="twitter:image" content="https://zhao-langxi.github.io/zhao-langxi/assets/fishing-catch.jpg">
   <link rel="icon" href="/zhao-langxi/favicon.ico?v=20260915-face" sizes="any">
   <link rel="icon" type="image/svg+xml" href="/zhao-langxi/favicon.svg?v=20260915-face">
@@ -27,8 +27,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&text=%E8%B5%B5%E9%83%8E%E6%BA%AA%E9%BE%99%E5%87%A4%E5%87%B0&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/zhao-langxi/css/main.css?v=20260915-lean">
+  <link rel="stylesheet" href="/zhao-langxi/css/plain-disclosure.css?v=20260915-pd">
 </head>
-<body class="page-case">
+<body class="page-pd">
   <a class="skip-link" href="#main">Skip to main content</a>
   <nav class="site-nav" aria-label="Site">
     <div class="wrap">
@@ -37,37 +38,32 @@
         <li><a href="/zhao-langxi/">home</a></li>
         <li><a href="/zhao-langxi/about.html">about</a></li>
         <li><a href="/zhao-langxi/work/digital-humans.html">digital humans</a></li>
-        <li><a href="/zhao-langxi/research/">research</a></li>
+        <li><a href="/zhao-langxi/research/" aria-current="page">research</a></li>
       </ul>
     </div>
   </nav>
 
-  <main id="main" class="wrap wrap--case" tabindex="-1">
-    <header class="page-header case-header">
+  <main id="main" class="wrap wrap--pd" tabindex="-1">
+    <header class="page-header">
       <p class="eyebrow">Privacy worksheet</p>
       <h1>Plain Disclosure</h1>
       <p class="lede">
         Most people skip the terms.
-        This worksheet forces a privacy blurb to answer four questions before Agree:
-        what they take, why, where it goes, what if you say no.
+        This worksheet makes a privacy blurb answer four questions before Agree:
+        what they take, why, where it goes, and what happens if you say no.
       </p>
-
-      <div class="status-row" role="group" aria-label="tool status">
-        <span class="status-pill"><span class="dot" aria-hidden="true"></span> status <strong>shipped</strong></span>
-        <span class="status-pill">origin <strong>IUB Undergraduate Education UX</strong></span>
-        <span class="status-pill">dates <strong>Aug 2025 to Dec 2025</strong></span>
-      </div>
-
-      <nav class="action-bar" aria-label="Quick links">
-        <a href="#demo">Try the demo</a>
-        <a href="/zhao-langxi/work/research-stats.html?theme=privacy">Privacy stats</a>
-      </nav>
+      <p>
+        About <strong>91%</strong> of people consent without reading
+        <a class="fact-source" href="https://www.businessinsider.com/deloitte-study-91-percent-agree-terms-of-service-without-reading-2017-11" rel="noopener noreferrer">(Deloitte, 2017)</a>.
+        Even after reading, about <strong>55%</strong> still fail to comprehend the privacy content
+        <a class="fact-source" href="https://doi.org/10.1109/ACCESS.2021.3130086" rel="noopener noreferrer">(IEEE Access, 2021)</a>.
+      </p>
     </header>
 
     <article class="prose">
-      <h2 id="demo">Demo</h2>
+      <h2 id="demo">Worksheet</h2>
       <p>
-        Pick a sample, or edit the text. Run the four questions.
+        Pick a sample, or paste your own. Run the four questions.
         If the blurb cannot answer a slot, the answer says
         <em>missing ... blurb never says</em>.
       </p>
@@ -77,9 +73,9 @@
           <h3 id="source-h">The blurb</h3>
           <label class="pd-label" for="sample">Sample</label>
           <select id="sample" class="pd-select" aria-label="Pick a sample blurb">
-            <option value="a">ok-ish campus blurb</option>
-            <option value="b">vague blurb</option>
-            <option value="c">no opt-out</option>
+            <option value="a">Campus blurb</option>
+            <option value="b">Vague blurb</option>
+            <option value="c">No opt-out</option>
           </select>
           <label class="pd-label" for="source">Or edit the text</label>
           <textarea id="source" class="pd-textarea" spellcheck="false"></textarea>
@@ -87,38 +83,38 @@
             <button type="button" class="cta" id="run">Run the four questions</button>
             <button type="button" class="cta secondary" id="confused" aria-pressed="false">Still confused</button>
           </div>
-          <div id="sourceView" class="pd-source-view note" aria-live="polite"></div>
+          <div id="sourceView" class="pd-source-view" aria-live="polite"></div>
         </section>
 
         <section aria-labelledby="out-h">
           <h3 id="out-h">Answers</h3>
           <ol class="pd-answers" id="answers">
             <li>
-              <span class="pd-q">1. what do they take</span>
-              <p class="pd-a" data-slot="what">...</p>
+              <span class="pd-q">What they take</span>
+              <p class="pd-a" data-slot="what"></p>
             </li>
             <li>
-              <span class="pd-q">2. why</span>
-              <p class="pd-a" data-slot="why">...</p>
+              <span class="pd-q">Why</span>
+              <p class="pd-a" data-slot="why"></p>
             </li>
             <li>
-              <span class="pd-q">3. where it goes</span>
-              <p class="pd-a" data-slot="where">...</p>
+              <span class="pd-q">Where it goes</span>
+              <p class="pd-a" data-slot="where"></p>
             </li>
             <li>
-              <span class="pd-q">4. if you say no</span>
-              <p class="pd-a" data-slot="no">...</p>
+              <span class="pd-q">If you say no</span>
+              <p class="pd-a" data-slot="no"></p>
             </li>
           </ol>
         </section>
       </div>
 
-      <h2>Origin</h2>
+      <h2 id="origin">How I got here</h2>
       <p>
-        Built after UX work at IUB Undergraduate Education (Aug 2025 to Dec 2025).
-        The point was never a prettier policy. It was whether someone could tell what was collected, why, where it went, and what happened if they said no.
-        Related case:
-        <a href="/zhao-langxi/work/digital-humans.html">Digital Humans</a>.
+        UX work at IUB Undergraduate Education, August 2025 to December 2025.
+        The same disclosure question now sits in
+        <a href="/zhao-langxi/work/digital-humans.html">Digital Humans</a>:
+        when an AI system looks and talks like a person, people still need to know what is taken, and what happens if they say no.
       </p>
     </article>
   </main>
@@ -175,6 +171,6 @@
     </div>
   </footer>
   <script src="/zhao-langxi/js/eggs.js?v=20260819-eggs" defer></script>
-  <script src="/zhao-langxi/js/plain-disclosure.js?v=20260914-pd" defer></script>
+  <script src="/zhao-langxi/js/plain-disclosure.js?v=20260915-pd2" defer></script>
 </body>
 </html>
