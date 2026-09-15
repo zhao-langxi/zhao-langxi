@@ -1,0 +1,102 @@
+/* Plain Disclosure demo · Rivet / Cascade tokens */
+.pd-work {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: var(--space-m) var(--space-l);
+  margin: var(--space-m) 0 var(--space-l);
+  padding: var(--space-m) 0;
+  border-top: 2px solid var(--iu-black);
+  border-bottom: 1px solid var(--rule);
+}
+@media (max-width: 760px) {
+  .pd-work { grid-template-columns: 1fr; }
+}
+.pd-label {
+  display: block;
+  margin: 0.75rem 0 0.35rem;
+  font-size: var(--step--1);
+  color: var(--iu-gray-600);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+.pd-label:first-child { margin-top: 0; }
+.pd-select,
+.pd-textarea,
+.pd-work .cta {
+  border-radius: var(--radius);
+}
+.pd-select {
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  min-height: var(--tap);
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--iu-black);
+  background: var(--iu-white);
+  color: var(--iu-gray-900);
+  font: inherit;
+}
+.pd-textarea {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  padding: 0.65rem 0.7rem;
+  border: 1px solid var(--iu-black);
+  background: var(--iu-white);
+  color: var(--iu-gray-900);
+  font: inherit;
+  line-height: 1.5;
+  resize: vertical;
+}
+.pd-select:focus,
+.pd-textarea:focus,
+.pd-work .cta:focus-visible {
+  outline: 2px solid var(--iu-crimson);
+  outline-offset: 2px;
+}
+.pd-tools { margin-top: 0.85rem; }
+.pd-work .cta {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.pd-source-view {
+  display: none;
+  margin-top: 0.85rem;
+  white-space: pre-wrap;
+}
+.pd-source-view.on { display: block; }
+.pd-answers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pd-answers li {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.pd-q {
+  font-size: var(--step--1);
+  color: var(--iu-gray-600);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+}
+.pd-a {
+  margin: 0;
+  color: var(--iu-gray-900);
+  max-width: none;
+}
+.pd-answers li.gap .pd-a {
+  color: var(--iu-crimson);
+  font-style: italic;
+}
+mark.pd-confused {
+  background: #f6e5e5;
+  color: inherit;
+  padding: 0 0.1em;
+}

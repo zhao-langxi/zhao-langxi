@@ -26,112 +26,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&text=%E8%B5%B5%E9%83%8E%E6%BA%AA%E9%BE%99%E5%87%A4%E5%87%B0&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/zhao-langxi/css/main.css?v=20260914-audit">
-  <style>
-    /* Worksheet module only ... square edges, sits inside site chrome */
-    .pd-work {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 1.25rem 1.5rem;
-      margin: 1.25rem 0;
-      padding: 1rem 0;
-      border-top: 2px solid var(--ink, #1a1a1a);
-      border-bottom: 2px solid var(--ink, #1a1a1a);
-    }
-    @media (max-width: 760px) {
-      .pd-work { grid-template-columns: 1fr; }
-    }
-    .pd-work label {
-      display: block;
-      font-family: var(--font-mono, ui-monospace, "Courier New", monospace);
-      font-size: 0.78rem;
-      color: var(--muted, #555);
-      margin: 0 0 0.35rem;
-    }
-    .pd-work textarea,
-    .pd-work select,
-    .pd-work button {
-      font: inherit;
-      border-radius: 0;
-    }
-    .pd-work textarea {
-      width: 100%;
-      min-height: 12rem;
-      padding: 0.65rem 0.7rem;
-      border: 1px solid var(--ink, #1a1a1a);
-      background: #fff;
-      color: var(--ink, #1a1a1a);
-      resize: vertical;
-    }
-    .pd-tools {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin: 0.6rem 0 0;
-    }
-    .pd-work select {
-      border: 1px solid var(--ink, #1a1a1a);
-      background: #fff;
-      padding: 0.35rem 0.45rem;
-    }
-    .pd-work button {
-      border: 1px solid var(--ink, #1a1a1a);
-      background: #f3e9e9;
-      color: var(--ink, #1a1a1a);
-      padding: 0.4rem 0.7rem;
-      cursor: pointer;
-    }
-    .pd-work button.primary {
-      background: #990000;
-      color: #fff;
-    }
-    .pd-answers {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    .pd-answers li {
-      display: grid;
-      grid-template-columns: 9.5rem 1fr;
-      gap: 0.75rem;
-      padding: 0.7rem 0;
-      border-bottom: 1px dotted #c9b6ae;
-    }
-    .pd-q {
-      font-family: var(--font-mono, ui-monospace, "Courier New", monospace);
-      font-size: 0.78rem;
-      color: var(--muted, #555);
-    }
-    .pd-a { margin: 0; font-size: 1.02rem; }
-    .pd-answers li.gap .pd-a {
-      color: #8b1e3f;
-      font-style: italic;
-    }
-    .pd-source-view {
-      display: none;
-      margin-top: 0.75rem;
-      padding: 0.65rem 0.7rem;
-      border: 1px solid var(--ink, #1a1a1a);
-      background: #fff;
-      white-space: pre-wrap;
-    }
-    .pd-source-view.on { display: block; }
-    mark.pd-confused {
-      background: #f3d6df;
-      color: inherit;
-      padding: 0 0.1em;
-    }
-    .pd-foot {
-      margin-top: 1.25rem;
-      font-size: 0.88rem;
-      color: var(--muted, #555);
-      max-width: 42em;
-    }
-  </style>
+  <link rel="stylesheet" href="/zhao-langxi/css/main.css?v=20260914-pd">
 </head>
-<body>
+<body class="page-case">
   <a class="skip-link" href="#main">Skip to main content</a>
-      <nav class="site-nav" aria-label="Site">
+          <nav class="site-nav" aria-label="Site">
     <div class="wrap">
       <p class="nav-credential">Digital Humans Project Lead @ Luddy · Informatics · expected May 2027</p>
       <ul>
@@ -140,41 +39,77 @@
         <li><a href="/zhao-langxi/work/digital-humans.html">digital humans</a></li>
         <li><a href="/zhao-langxi/research/">research</a></li>
       </ul>
+      <div class="identity-marks" aria-label="Other sites">
+        <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer"><span class="sc" lang="zh-Hans">龙</span> · dragon</a>
+        <a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer"><span class="sc" lang="zh-Hans">凤凰</span> · classroom</a>
+      </div>
     </div>
   </nav>
 
-  <main id="main" class="wrap">
-    <header class="page-header">
-      <p class="eyebrow">UX desk tool · privacy clarity · secondary on this door</p>
+  <main id="main" class="wrap wrap--case" tabindex="-1">
+    <header class="page-header case-header">
+      <p class="eyebrow">UX desk tool · privacy clarity</p>
       <h1>Plain Disclosure</h1>
       <p class="lede">
         Most people do not read the terms. Even when they do, a lot still do not get it.
         This worksheet forces a blurb to answer four questions before anyone clicks Agree.
-        Built after UX work at IUB Undergraduate Education (Aug 2025 to Dec 2025).
       </p>
+
+      <div class="status-row" role="group" aria-label="tool status">
+        <span class="status-pill"><span class="dot" aria-hidden="true"></span> status <strong>shipped</strong></span>
+        <span class="status-pill">origin <strong>UE UX desk</strong></span>
+        <span class="status-pill">dates <strong>Aug 2025 to Dec 2025</strong></span>
+        <span class="status-pill">door <strong>zhao-langxi · Rivet</strong></span>
+      </div>
+
+      <div class="lede fact-block">
+        <p>
+          <b>Published context (not personal metrics):</b>
+          about <strong>55%</strong> missed privacy-policy meaning in an IEEE Access 2021 study;
+          <strong>91%</strong> / <strong>97%</strong> skip terms (Deloitte, 2017);
+          only <strong>20%</strong> say providers are very clear (Deloitte Connected Consumer, 2025);
+          <strong>82%</strong> abandoned a brand over data use (Thales, 2025).
+          Full board:
+          <a href="/zhao-langxi/work/research-stats.html?theme=privacy">research stats · privacy</a>.
+        </p>
+      </div>
+
+      <nav class="action-bar" aria-label="Quick links">
+        <a href="#demo">Try the demo</a>
+        <a href="/zhao-langxi/work/research-stats.html">Research stats</a>
+        <a href="https://matchaxmoxie.github.io/matchaxmoxie/campus-roles.html#ux" rel="noopener noreferrer">Campus roles · UX</a>
+        <a href="https://jlzhao.pages.iu.edu/cv.pdf" rel="noopener noreferrer">Resume (PDF)</a>
+      </nav>
     </header>
 
     <article class="prose">
+      <h2 id="demo">Demo</h2>
+      <p>
+        Pick a sample, or edit the text. Run the four questions.
+        If the blurb cannot answer a slot, the answer says
+        <em>missing ... blurb never says</em>.
+      </p>
+
       <div class="pd-work">
         <section aria-labelledby="source-h">
-          <h2 id="source-h">The blurb</h2>
-          <label for="sample">Sample</label>
-          <select id="sample" aria-label="Pick a sample blurb">
+          <h3 id="source-h">The blurb</h3>
+          <label class="pd-label" for="sample">Sample</label>
+          <select id="sample" class="pd-select" aria-label="Pick a sample blurb">
             <option value="a">ok-ish campus blurb</option>
             <option value="b">vague blurb</option>
             <option value="c">no opt-out</option>
           </select>
-          <label for="source" style="margin-top:0.75rem">Or edit the text</label>
-          <textarea id="source" spellcheck="false"></textarea>
-          <div class="pd-tools">
-            <button type="button" class="primary" id="run">Run the four questions</button>
-            <button type="button" id="confused" aria-pressed="false">Still confused</button>
+          <label class="pd-label" for="source">Or edit the text</label>
+          <textarea id="source" class="pd-textarea" spellcheck="false"></textarea>
+          <div class="cta-row pd-tools">
+            <button type="button" class="cta" id="run">Run the four questions</button>
+            <button type="button" class="cta secondary" id="confused" aria-pressed="false">Still confused</button>
           </div>
-          <div id="sourceView" class="pd-source-view" aria-live="polite"></div>
+          <div id="sourceView" class="pd-source-view note" aria-live="polite"></div>
         </section>
 
         <section aria-labelledby="out-h">
-          <h2 id="out-h">Answers</h2>
+          <h3 id="out-h">Answers</h3>
           <ol class="pd-answers" id="answers">
             <li>
               <span class="pd-q">1. what do they take</span>
@@ -198,25 +133,20 @@
 
       <h2>How I got here</h2>
       <p>
-        The UE desk was never about a prettier policy. It was whether someone could tell what was collected, why, where it went, and what happened if they said no.
-        Market research is published context only ... not personal metrics. Related board:
-        <a href="/zhao-langxi/work/research-stats.html?theme=privacy">research stats · privacy</a>.
-        Portfolio copy:
-        <a href="https://jadexzhao.github.io/jadexzhao/plain-disclosure.html" rel="noopener noreferrer">jadexzhao/plain-disclosure</a>.
+        Built after UX work at IUB Undergraduate Education.
+        The point was never a prettier policy. It was whether someone could tell what was collected, why, where it went, and what happened if they said no.
       </p>
-
-      <p class="pd-foot">
-        Footnotes: IEEE Access 2021 ... about 55% missed the meaning even when few said the text was hard;
-        Deloitte 2017 ... 91% skip terms, 97% ages 18 to 34;
-        Deloitte 2025 Connected Consumer ... only 20% say providers are very clear;
-        Thales 2025 ... 82% left a brand over data use.
-      </p>
+      <div class="note">
+        <p>
+          Independent desk tool on this door ... not IU-endorsed software and not a clinical study.
+        </p>
+      </div>
     </article>
   </main>
 
   <footer>
     <div class="footer-inner">
-              <div class="footer-columns">
+      <div class="footer-columns">
         <div>
           <h4>On this door</h4>
           <ul>
@@ -266,109 +196,6 @@
     </div>
   </footer>
   <script src="/zhao-langxi/js/eggs.js?v=20260819-eggs" defer></script>
-  <script>
-    (function () {
-      var samples = {
-        a: {
-          text: "We collect your name, university email, and course selections to personalise your dashboard and send service notices. Data is stored on university systems and retained while you are enrolled. We do not sell personal data. Dashboard personalisation is optional. You may request corrections through the help desk.",
-          out: {
-            what: "name + email + course selections",
-            why: "dashboard personalisation + service notices",
-            where: "uni systems while you're enrolled; not sold",
-            no: "personalisation optional; corrections via help desk",
-            gap: false,
-            marks: ["personalise", "retained", "optional"]
-          }
-        },
-        b: {
-          text: "We may collect information to improve services and communicate with users as needed. Data is handled according to university policy.",
-          out: {
-            what: "\"information\" ... too vague",
-            why: "improve / communicate ... fuzzy",
-            where: "\"university policy\" ... fuzzy",
-            no: "missing ... blurb never says",
-            gap: true,
-            marks: ["may collect", "as needed", "university policy"]
-          }
-        },
-        c: {
-          text: "We collect your name and email for account setup and store it on university systems while you are enrolled.",
-          out: {
-            what: "name + email",
-            why: "account setup",
-            where: "uni systems while you're enrolled",
-            no: "missing ... blurb never says",
-            gap: true,
-            marks: ["account setup", "while you are enrolled"]
-          }
-        }
-      };
-
-      var sampleEl = document.getElementById("sample");
-      var sourceEl = document.getElementById("source");
-      var sourceView = document.getElementById("sourceView");
-      var confusedBtn = document.getElementById("confused");
-      var confusedOn = false;
-
-      function fillSource(key) {
-        sourceEl.value = samples[key].text;
-        render(samples[key].out, samples[key].text);
-      }
-
-      function render(out, text) {
-        document.querySelector('[data-slot="what"]').textContent = out.what;
-        document.querySelector('[data-slot="why"]').textContent = out.why;
-        document.querySelector('[data-slot="where"]').textContent = out.where;
-        var noEl = document.querySelector('[data-slot="no"]');
-        noEl.textContent = out.no;
-        noEl.parentElement.classList.toggle("gap", !!out.gap || /missing/i.test(out.no));
-
-        if (confusedOn && out.marks) {
-          var html = text;
-          out.marks.forEach(function (m) {
-            html = html.replace(m, "<mark class=\"pd-confused\">" + m + "</mark>");
-          });
-          sourceView.innerHTML = html;
-          sourceView.classList.add("on");
-        } else {
-          sourceView.classList.remove("on");
-          sourceView.textContent = "";
-        }
-      }
-
-      function runCustom() {
-        var t = sourceEl.value.trim();
-        var mapped = null;
-        Object.keys(samples).forEach(function (k) {
-          if (samples[k].text === t) mapped = samples[k];
-        });
-        if (mapped) {
-          render(mapped.out, mapped.text);
-          return;
-        }
-        var low = t.toLowerCase();
-        var out = {
-          what: /name|email|data|information/.test(low) ? "some data is mentioned ... check the wording" : "missing ... blurb never says",
-          why: /for |to /.test(low) ? "a purpose is hinted ... may still be fuzzy" : "missing ... blurb never says",
-          where: /store|stored|system|share|third/.test(low) ? "storage/sharing hinted ... check detail" : "missing ... blurb never says",
-          no: /optional|opt out|delete|correct|refus/.test(low) ? "some choice language appears" : "missing ... blurb never says",
-          gap: true,
-          marks: []
-        };
-        out.gap = /missing/.test(out.no);
-        render(out, t);
-      }
-
-      sampleEl.addEventListener("change", function () { fillSource(sampleEl.value); });
-      document.getElementById("run").addEventListener("click", runCustom);
-      confusedBtn.addEventListener("click", function () {
-        confusedOn = !confusedOn;
-        confusedBtn.setAttribute("aria-pressed", confusedOn ? "true" : "false");
-        runCustom();
-      });
-
-      fillSource("a");
-    })();
-  </script>
+  <script src="/zhao-langxi/js/plain-disclosure.js?v=20260914-pd" defer></script>
 </body>
 </html>

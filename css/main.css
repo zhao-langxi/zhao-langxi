@@ -214,11 +214,11 @@ footer {
   padding: 40px 24px 32px;
 }
 
-footer .footer-inner { max-width: 38rem; margin: 0 auto; }
+footer .footer-inner { max-width: 52rem; margin: 0 auto; }
 
 footer .footer-columns {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 32px;
   margin-bottom: 28px;
 }
