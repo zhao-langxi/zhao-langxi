@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research Stats · One-Pager · Jade Zhao</title>
+  <style>
+    :root {
+      --ink: #1a1a18;
+      --muted: #5a5a54;
+      --rule: #d4d0c8;
+      --accent: #0c447c;
+      --wash: #f7f5f0;
+      --ok: #1e5c3a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 22px 28px 28px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 10.5pt;
+      line-height: 1.4;
+      color: var(--ink);
+      background: #fff;
+      max-width: 680px;
+    }
+    h1 {
+      font-size: 16pt;
+      margin: 0 0 2px;
+      color: var(--accent);
+    }
+    .meta {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 8.5pt;
+      color: var(--muted);
+      margin: 0 0 12px;
+    }
+    h2 {
+      font-size: 11pt;
+      margin: 14px 0 6px;
+      color: var(--accent);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 2px;
+    }
+    p, li { margin: 0 0 6px; }
+    ul { margin: 0 0 8px; padding-left: 1.2em; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 9pt;
+      margin: 0 0 10px;
+    }
+    th, td {
+      border: 1px solid var(--rule);
+      padding: 4px 6px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: var(--wash);
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 8pt;
+    }
+    .kpi { font-weight: 700; color: var(--ok); }
+    .path {
+      font-family: "SF Mono", Menlo, Consolas, monospace;
+      font-size: 8pt;
+    }
+    .banner {
+      background: var(--wash);
+      border-left: 3px solid var(--accent);
+      padding: 8px 12px;
+      margin: 0 0 12px;
+      font-size: 9.5pt;
+    }
+    .cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .quote {
+      border-left: 2px solid var(--ok);
+      padding: 4px 0 4px 10px;
+      margin: 6px 0 0;
+      font-style: italic;
+      font-size: 9.5pt;
+    }
+    @media print {
+      body { padding: 10mm 12mm; max-width: none; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Research Stats · one-pager</h1>
+  <p class="meta">Jade Zhao · zhao-langxi · 14 September 2026 · PDF handoff (no design-tool login)</p>
+
+  <div class="banner">
+    Interactive board that turns <strong>15 CV market-research stats</strong> into how/why shipping cards across <strong>5 themes</strong>. Market % = published inputs. Product KPIs and gap analysis = hers.
+  </div>
+
+  <h2>Shipped</h2>
+  <ul>
+    <li>15 cards · 5 themes (Digital Humans, Privacy, UX, Nonprofit, Restaurant)</li>
+    <li>Every card: What · Why it matters · What to build</li>
+    <li>Interactions: theme filters · multi-select (max 3) · cluster stepper · project lock · notes</li>
+    <li class="path">zhao-langxi/work/research-stats.html + js/research-stats.js</li>
+  </ul>
+
+  <div class="cols">
+    <div>
+      <h2>Product KPIs</h2>
+      <table>
+        <tr><th>KPI</th><th>Value</th></tr>
+        <tr><td>Layer coverage</td><td class="kpi">100%</td></tr>
+        <tr><td>Action throughput</td><td class="kpi">100%</td></tr>
+        <tr><td>Theme share</td><td>20% each</td></tr>
+        <tr><td>Inbound linking</td><td>20%</td></tr>
+        <tr><td>Pages live URL</td><td>404 (not deployed)</td></tr>
+      </table>
+    </div>
+    <div>
+      <h2>Her simulations</h2>
+      <table>
+        <tr><th>Analysis</th><th>Result</th></tr>
+        <tr><td>Adoption vs scale (72 − 5)</td><td class="kpi">67 pp</td></tr>
+        <tr><td>Clarity deficit (100 − 20)</td><td>80 pp</td></tr>
+        <tr><td>Nonprofit strategy (92 − 7)</td><td>85 pp</td></tr>
+        <tr><td>Top priority (dh-5)</td><td class="kpi">95.0</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <h2>Inputs vs hers (quick)</h2>
+  <table>
+    <tr><th>Market inputs (not hers)</th><th>Product / analysis (hers)</th></tr>
+    <tr>
+      <td>72%, 5%, 20% clarity, 92%/7%, 99% vs 69% social/web ... citations only</td>
+      <td>15 cards, 100% layers, 67 pp gap analysis, priority scores with documented formula</td>
+    </tr>
+  </table>
+
+  <h2>Open locally</h2>
+  <p class="path">cd ~/Documents/zhao-langxi && python3 -m http.server 8080<br>
+  → http://localhost:8080/work/research-stats.html</p>
+  <p>Future Pages (404 until deploy): <span class="path">https://zhao-langxi.github.io/zhao-langxi/work/research-stats.html</span></p>
+
+  <h2>Next build (first)</h2>
+  <p><strong>Digital Humans:</strong> disclosure + override pattern library for a demo, plus a short “after the demo” handoff note. Driven by the 67 pp adoption-scale gap.</p>
+
+  <div class="quote">Shipped research board covering 15 stats across 5 themes (100% layer coverage); ran gap analysis on published inputs (72% vs 5% = 67 pp) to prioritise Digital Humans how/why work.</div>
+
+</body>
+</html>

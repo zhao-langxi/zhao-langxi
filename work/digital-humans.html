@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&text=%E8%B5%B5%E9%83%8E%E6%BA%AA%E9%BE%99%E5%87%A4%E5%87%B0&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/zhao-langxi/css/main.css?v=20260914-dh">
+  <link rel="stylesheet" href="/zhao-langxi/css/main.css?v=20260914-audit">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -57,9 +57,9 @@
         <li><a href="/zhao-langxi/">home</a></li>
         <li><a href="/zhao-langxi/about.html">about</a></li>
         <li><a href="/zhao-langxi/work/digital-humans.html" aria-current="page">digital humans</a></li>
+        <li><a href="/zhao-langxi/work/research-stats.html">research stats</a></li>
         <li><a href="/zhao-langxi/research/temporary-outsiders.html">research</a></li>
         <li><a href="/zhao-langxi/notes/">notes</a></li>
-        <li><a href="/zhao-langxi/plan/">plan</a></li>
       </ul>
       <div class="identity-marks" aria-label="Other sites">
         <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer"><span class="sc" lang="zh-Hans">龙</span> · dragon</a>
@@ -83,18 +83,27 @@
 
       <div class="lede fact-block">
         <p>
-          <b>Why this work matters outside the lab:</b>
-          In 2024, <strong>13.5%</strong> of EU enterprises with 10 or more employees used AI technologies (up from 8.0% in 2023).
-          <a class="fact-source" href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20250123-3" rel="noopener noreferrer">(Source: Eurostat)</a>
-          Gartner reported that <strong>85%</strong> of customer service leaders will explore or pilot a customer-facing conversational generative AI solution in 2025.
-          <a class="fact-source" href="https://www.gartner.com/en/newsroom/press-releases/2024-12-09-gartner-survey-reveals-85-percent-of-customer-service-leaders-will-explore-or-pilot-customer-facing-conversational-genai-in-2025" rel="noopener noreferrer">(Source: Gartner)</a>
-          In the US, <strong>half</strong> of adults say the increased use of AI in daily life makes them feel more concerned than excited (June 2025 survey).
-          <a class="fact-source" href="https://www.pewresearch.org/short-reads/2026/03/12/key-findings-about-how-americans-view-artificial-intelligence/" rel="noopener noreferrer">(Source: Pew Research Center)</a>
+          <b>Market context (published figures, not personal metrics):</b>
+          <strong>72%</strong> of businesses use generative AI, up from 37% in 2023
+          <a class="fact-source" href="/zhao-langxi/work/research-stats.html?theme=digital-humans&amp;stat=dh-72">(McKinsey, 2025)</a>.
+          Only <strong>5%</strong> of enterprises integrate AI at scale
+          <a class="fact-source" href="/zhao-langxi/work/research-stats.html?theme=digital-humans&amp;stat=dh-5">(MIT, 2025)</a>
+          ... a <strong>67 percentage-point</strong> gap on those inputs.
+          <strong>51%</strong> report negative AI consequences, led by inaccuracy
+          <a class="fact-source" href="/zhao-langxi/work/research-stats.html?theme=digital-humans&amp;stat=dh-51">(Master of Code, 2026)</a>.
+          Supporting: <strong>13.5%</strong> of EU enterprises (10+) used AI in 2024
+          <a class="fact-source" href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20250123-3" rel="noopener noreferrer">(Eurostat)</a>;
+          <strong>85%</strong> of customer service leaders plan conversational generative AI pilots in 2025
+          <a class="fact-source" href="https://www.gartner.com/en/newsroom/press-releases/2024-12-09-gartner-survey-reveals-85-percent-of-customer-service-leaders-will-explore-or-pilot-customer-facing-conversational-genai-in-2025" rel="noopener noreferrer">(Gartner)</a>;
+          <strong>half</strong> of US adults feel more concerned than excited about AI in daily life
+          <a class="fact-source" href="https://www.pewresearch.org/short-reads/2026/03/12/key-findings-about-how-americans-view-artificial-intelligence/" rel="noopener noreferrer">(Pew Research Center)</a>.
           Adoption is rising. Trust is not automatic. That gap is the point of this lead work.
+          Full board: <a href="/zhao-langxi/work/research-stats.html">research stats</a>.
         </p>
       </div>
 
       <nav class="action-bar" aria-label="Quick links">
+        <a href="/zhao-langxi/work/research-stats.html">Research stats board</a>
         <a href="/zhao-langxi/about.html">Professional profile</a>
         <a href="https://jlzhao.pages.iu.edu/cv.pdf" rel="noopener noreferrer">Resume (PDF)</a>
         <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">Shipped code · jadexzhao</a>
@@ -177,13 +186,12 @@
 
       <h3>2. The challenge</h3>
       <p>
-        Enterprise AI use is climbing in Europe, and customer-service leaders are racing toward conversational
-        generative AI
-        (<a class="fact-source" href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20250123-3" rel="noopener noreferrer">Source: Eurostat</a>;
-        <a class="fact-source" href="https://www.gartner.com/en/newsroom/press-releases/2024-12-09-gartner-survey-reveals-85-percent-of-customer-service-leaders-will-explore-or-pilot-customer-facing-conversational-genai-in-2025" rel="noopener noreferrer">Source: Gartner</a>).
-        At the same time, US public concern about AI in daily life remains high
-        (<a class="fact-source" href="https://www.pewresearch.org/short-reads/2026/03/12/key-findings-about-how-americans-view-artificial-intelligence/" rel="noopener noreferrer">Source: Pew Research Center</a>).
-        The challenge is adoption with accountability ... not just another interface that looks friendly.
+        Generative AI use is widespread, and at-scale integration remains rare
+        (<a class="fact-source" href="/zhao-langxi/work/research-stats.html?theme=digital-humans">McKinsey 2025 · MIT 2025 · research stats</a>).
+        Customer-service leaders are racing toward conversational generative AI while public concern stays high
+        (<a class="fact-source" href="https://www.gartner.com/en/newsroom/press-releases/2024-12-09-gartner-survey-reveals-85-percent-of-customer-service-leaders-will-explore-or-pilot-customer-facing-conversational-genai-in-2025" rel="noopener noreferrer">Gartner</a>;
+        <a class="fact-source" href="https://www.pewresearch.org/short-reads/2026/03/12/key-findings-about-how-americans-view-artificial-intelligence/" rel="noopener noreferrer">Pew Research Center</a>).
+        The challenge is adoption with accountability ... not another interface that only looks friendly.
       </p>
 
       <h3>3. Process now underway</h3>
@@ -218,7 +226,7 @@
         employee workflows, not sci-fi personas.
       </p>
       <div class="artifact-slot" role="note">
-        <p class="artifact-slot-label">Placeholder · Figure P1</p>
+        <p class="artifact-slot-label">Planned · Figure P1</p>
         <p class="artifact-slot-body">Research-question one-pager / framing memo ... public-safe excerpt forthcoming.</p>
       </div>
 
@@ -243,7 +251,7 @@
       <h3>Process → intended outcome</h3>
       <p>
         Framing + workflow map + trust / disclosure checklist → clearer Digital Humans lead story and
-        public-safe artifacts. Placeholders below until those land.
+        public-safe artifacts. Planned slots below until those land.
       </p>
     </section>
 
@@ -291,13 +299,26 @@
       <p class="part-label">05 · Deliverables / Artifacts</p>
       <h2 id="deliverables-heading">Deliverables / Artifacts</h2>
       <p>
-        Public placeholders only. No private lab data, no clinical framing, no invented screenshots of
+        What is public stays honest. No private lab data, no clinical framing, no invented screenshots of
         unpublished systems.
       </p>
 
       <figure class="artifact-figure">
         <div class="artifact-slot">
-          <p class="artifact-slot-label">Figure 1 · Placeholder</p>
+          <p class="artifact-slot-label">Shipped · research stats board</p>
+          <p class="artifact-slot-body">
+            Interactive market-context board: 15 published stats · 5 themes · what / why / what-to-build on every card.
+            Gap analysis on published inputs (67 pp adoption-to-scale; 80 pp clarity deficit).
+            <a href="/zhao-langxi/work/research-stats.html">Open research stats</a>
+            · <a href="/zhao-langxi/work/research-stats-handoffs/one-pager.html">one-pager</a>.
+          </p>
+        </div>
+        <figcaption class="figure-caption">Figure 0. Research stats board · shipped artifact</figcaption>
+      </figure>
+
+      <figure class="artifact-figure">
+        <div class="artifact-slot">
+          <p class="artifact-slot-label">Figure 1 · Planned</p>
           <p class="artifact-slot-body">Digital Humans problem / research-question one-pager ... forthcoming when public-safe.</p>
         </div>
         <figcaption class="figure-caption">Figure 1. Framing memo · planned</figcaption>
@@ -305,7 +326,7 @@
 
       <figure class="artifact-figure">
         <div class="artifact-slot">
-          <p class="artifact-slot-label">Figure 2 · Placeholder</p>
+          <p class="artifact-slot-label">Figure 2 · Planned</p>
           <p class="artifact-slot-body">Business workflow touchpoint map (customer or employee path) · planned.</p>
         </div>
         <figcaption class="figure-caption">Figure 2. Workflow map · planned</figcaption>
@@ -313,7 +334,7 @@
 
       <figure class="artifact-figure">
         <div class="artifact-slot">
-          <p class="artifact-slot-label">Figure 3 · Placeholder</p>
+          <p class="artifact-slot-label">Figure 3 · Planned</p>
           <p class="artifact-slot-body">Trust / disclosure checklist for person-like AI interfaces · planned.</p>
         </div>
         <figcaption class="figure-caption">Figure 3. Trust and disclosure checklist · planned</figcaption>
@@ -321,17 +342,17 @@
 
       <figure class="artifact-figure">
         <div class="artifact-slot">
-          <p class="artifact-slot-label">Figure 4 · Placeholder</p>
+          <p class="artifact-slot-label">Figure 4 · Planned</p>
           <p class="artifact-slot-body">Prototype or demo stills ... only if and when they are cleared for public portfolio use.</p>
         </div>
-        <figcaption class="figure-caption">Figure 4. Prototype visuals · placeholder</figcaption>
+        <figcaption class="figure-caption">Figure 4. Prototype visuals · planned</figcaption>
       </figure>
 
       <h3>Before / after</h3>
       <p><strong>N/A for now.</strong> Lead / research track. No before-after product ship claimed here.</p>
 
       <h3>Testimonials</h3>
-      <p><strong>Placeholder only.</strong> No quote published yet.</p>
+      <p>No quote published yet.</p>
 
       <h3>Related shipped proof</h3>
       <p>
@@ -340,6 +361,8 @@
         (pointer, not a mirror). Clinic accessibility practice:
         <a href="/zhao-langxi/work/serveit.html">Serve IT</a> ·
         <a href="/zhao-langxi/work/serve-ai.html">Serve-AI</a>.
+        Market-context figures:
+        <a href="/zhao-langxi/work/research-stats.html">research stats</a>.
       </p>
     </section>
 
