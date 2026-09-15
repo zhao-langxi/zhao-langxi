@@ -1,4 +1,4 @@
-/* Plain Disclosure worksheet · Rivet crimson / Georgia / Arial */
+/* Plain Disclosure worksheet - Rivet crimson / Georgia / Arial */
 
 .wrap--pd {
   max-width: 54rem;
@@ -120,6 +120,10 @@
 .pd-answers li:first-child { padding-top: 0; }
 .pd-answers li:last-child { border-bottom: 0; }
 
+.pd-answers.is-fresh .pd-a {
+  background: #f6e5e5;
+}
+
 .pd-q {
   font-size: var(--step--1);
   color: var(--iu-gray-600);
@@ -140,6 +144,7 @@
   font-family: var(--font-display);
   font-size: var(--step-1);
   line-height: 1.4;
+  transition: background-color 0.45s ease;
 }
 
 .pd-answers li.gap .pd-a {

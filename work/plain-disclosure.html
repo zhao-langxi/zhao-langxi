@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
-  <title>Plain Disclosure · four questions before Agree · Jade Zhao</title>
-  <meta name="description" content="A privacy worksheet: what they take, why, where it goes, and what happens if you say no. Jade Zhao · zhao-langxi.">
+  <title>Plain Disclosure - four questions before Agree - Jade Zhao</title>
+  <meta name="description" content="A privacy worksheet: what they take, why, where it goes, and what happens if you say no. Jade Zhao - zhao-langxi.">
   <link rel="canonical" href="https://zhao-langxi.github.io/zhao-langxi/work/plain-disclosure.html">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="zhao-langxi · Jade Zhao">
-  <meta property="og:title" content="Plain Disclosure · Jade Zhao">
+  <meta property="og:title" content="Plain Disclosure - Jade Zhao">
   <meta property="og:description" content="Four questions before Agree. Paste a privacy blurb and see what it actually says.">
   <meta property="og:url" content="https://zhao-langxi.github.io/zhao-langxi/work/plain-disclosure.html">
   <meta property="og:image" content="https://zhao-langxi.github.io/zhao-langxi/assets/fishing-catch.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Plain Disclosure · zhao-langxi">
+  <meta name="twitter:title" content="Plain Disclosure - zhao-langxi">
   <meta name="twitter:description" content="Four questions before Agree. From IUB Undergraduate Education UX to Digital Humans disclosure.">
   <meta name="twitter:image" content="https://zhao-langxi.github.io/zhao-langxi/assets/fishing-catch.jpg">
   <link rel="icon" href="/zhao-langxi/favicon.ico?v=20260915-face" sizes="any">
@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&text=%E8%B5%B5%E9%83%8E%E6%BA%AA%E9%BE%99%E5%87%A4%E5%87%B0&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/zhao-langxi/css/main.css?v=20260915-lean">
-  <link rel="stylesheet" href="/zhao-langxi/css/plain-disclosure.css?v=20260915-pd">
+  <link rel="stylesheet" href="../css/plain-disclosure.css?v=20260915-pd3">
 </head>
 <body class="page-pd">
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -80,7 +80,7 @@
           <label class="pd-label" for="source">Or edit the text</label>
           <textarea id="source" class="pd-textarea" spellcheck="false"></textarea>
           <div class="cta-row pd-tools">
-            <button type="button" class="cta" id="run">Run the four questions</button>
+            <button type="button" class="cta" id="pd-run">Run the four questions</button>
             <button type="button" class="cta secondary" id="confused" aria-pressed="false">Still confused</button>
           </div>
           <div id="sourceView" class="pd-source-view" aria-live="polite"></div>
@@ -88,7 +88,7 @@
 
         <section aria-labelledby="out-h">
           <h3 id="out-h">Answers</h3>
-          <ol class="pd-answers" id="answers">
+          <ol class="pd-answers" id="answers" aria-live="polite">
             <li>
               <span class="pd-q">What they take</span>
               <p class="pd-a" data-slot="what"></p>
@@ -171,6 +171,6 @@
     </div>
   </footer>
   <script src="/zhao-langxi/js/eggs.js?v=20260819-eggs" defer></script>
-  <script src="/zhao-langxi/js/plain-disclosure.js?v=20260915-pd2" defer></script>
+  <script src="../js/plain-disclosure.js?v=20260915-pd3" defer></script>
 </body>
 </html>
