@@ -48,7 +48,7 @@ With gratitude for Miriam "Mimi" Attenoukon ... Hudson & Holland mentorship that
 
 ---
 
-Casual build: [duck-farm](https://jadexzhao.github.io/jadexzhao/duck-farm/) · Photos: [@zhao.langxi](https://instagram.com/zhao.langxi)
+Casual build: [duck-farm](https://jadexzhao.github.io/jadexzhao/duck-farm/) is a creative throughline I test myself ... no operating farm, no acreage, no product launch. Photos: [@zhao.langxi](https://instagram.com/zhao.langxi)
 
 ---
 

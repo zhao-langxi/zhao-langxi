@@ -79,6 +79,24 @@
       keywords: "negative consequences inaccuracy trust disclosure mckinsey"
     },
     {
+      id: "dh-art50",
+      theme: "digital-humans",
+      themeLabel: "Digital Humans",
+      category: "Disclosure",
+      categoryTone: "teal",
+      value: "Art. 50",
+      claim: "EU AI Act transparency duties apply from 2 August 2026",
+      what: "Article 50 of Regulation (EU) 2024/1689 requires that people be informed when they interact with an AI system, unless it is obvious from context. Those transparency obligations apply from 2 August 2026.",
+      citation: "EU AI Act, Art. 50",
+      role: "Digital Humans Project Lead",
+      roleHref: "/zhao-langxi/work/digital-humans.html",
+      whyMatters:
+        "If the interface looks and talks like a person, disclosure is a product requirement and, in the EU, a legal one. Decorative small print is not enough.",
+      whatToDo:
+        "Treat disclosure, human handoff, and obvious labelling as design work. Cite EUR-Lex for the regulation and keep vendor marketing out of the legal claim.",
+      keywords: "eu ai act article 50 transparency disclosure digital humans"
+    },
+    {
       id: "pr-20",
       theme: "privacy",
       themeLabel: "Privacy",
