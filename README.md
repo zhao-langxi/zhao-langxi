@@ -2,7 +2,7 @@
 
 **Digital Humans Project Lead at Luddy LINK · Informatics (Business and Society) @ Indiana University · HHSP Platinum Scholar · Expected May 2027**
 
-This GitHub profile is the **essay / research / lead-notes door**. Pitch order on the [live site](https://zhao-langxi.github.io/zhao-langxi/): profile → [Digital Humans case study](https://zhao-langxi.github.io/zhao-langxi/work/digital-humans.html) → contact. Shipped code lives on [jadexzhao](https://jadexzhao.github.io/jadexzhao/). The recruiter narrative lives on [IU Pages](https://jlzhao.pages.iu.edu/). Same public name on [LinkedIn](https://www.linkedin.com/in/zhao-langxi/) and [Instagram](https://instagram.com/zhao.langxi).
+This GitHub profile is the **essay / research / lead-notes door**. Pitch order on the [live site](https://zhao-langxi.github.io/zhao-langxi/): profile → [Digital Humans case study](https://zhao-langxi.github.io/zhao-langxi/work/digital-humans.html) → contact. Shipped code lives on [jadexzhao](https://jadexzhao.github.io/jadexzhao/). Handshake influencer narrative lives on [IU Pages](https://jlzhao.pages.iu.edu/) ... then Handshake content creator intersecting Digital Humans. Same public name on [LinkedIn](https://www.linkedin.com/in/zhao-langxi/) and [Instagram](https://instagram.com/zhao.langxi).
 
 I lead Digital Humans work at Luddy LINK, which places students on applied technology projects at IU Luddy: AI-driven virtual personas for business workflows. Core question: when an AI system looks and communicates like a person, what makes people trust it, use it, and keep using it? Seeking software engineering after May 2027 sits under that lead ... databases, internal information systems, IT, and ETL.
 
@@ -33,7 +33,7 @@ With gratitude for Miriam "Mimi" Attenoukon ... Hudson & Holland mentorship that
 | **[serveit-accessibility](https://github.com/zhao-langxi/serveit-accessibility)** | WCAG 2.1, Cascade, and Rivet clinic guides ... CC BY-SA 4.0 public extension |
 | **[prohealth-informatics](https://github.com/zhao-langxi/prohealth-informatics)** | Undergrad research role scaffold ... methods and process framing only, no dataset |
 | **[Quackr](https://github.com/zhao-langxi/Quackr)** | Personal dating-app prototype ... local-first, self-tested, not a launch |
-| **[Stealth](https://github.com/zhao-langxi/Stealth)** | I named it first. The files never followed. |
+| **[Stealth](https://github.com/zhao-langxi/Stealth)** | Public JavaScript foresight notebook, not a product. Digital Humans is among the predictions. |
 
 ---
 
@@ -41,7 +41,7 @@ With gratitude for Miriam "Mimi" Attenoukon ... Hudson & Holland mentorship that
 
 | Door | For whom | URL |
 |------|----------|-----|
-| **IU Pages** | Recruiters · hiring managers | [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) |
+| **IU Pages** | Handshake influencer × Digital Humans narrative | [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) |
 | **jadexzhao** | Technical peers · shipped proof | [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/) |
 | **matchaxmoxie** | Students · FASE MAP classroom | [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) |
 | **zhao-langxi** | Readers · essays and research BTS | [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) |
