@@ -157,3 +157,126 @@ mark.pd-confused {
   color: inherit;
   padding: 0 0.12em;
 }
+
+/* Cookie banner · GOV.UK / ICO pattern, IU crimson */
+
+.pd-banner {
+  margin: var(--space-m) 0 var(--space-l);
+  padding: 1.1rem 1.15rem 1.2rem;
+  border: 1px solid var(--iu-black);
+  border-left: 4px solid var(--iu-crimson);
+  background: var(--iu-gray-100);
+}
+
+.pd-banner h3 {
+  margin: 0 0 0.4rem;
+}
+
+.pd-banner > p {
+  margin-bottom: 0.85rem;
+}
+
+.pd-banner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pd-banner .cta {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  min-height: var(--tap);
+}
+
+.pd-options {
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--rule);
+}
+
+.pd-opt {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.75rem;
+  align-items: start;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.pd-opt p {
+  margin: 0.25rem 0 0;
+  font-size: var(--step--1);
+  color: var(--iu-gray-600);
+}
+
+.pd-opt-state {
+  font-weight: 700;
+  color: var(--iu-crimson);
+  margin: 0;
+}
+
+.pd-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--step--1);
+  font-weight: 700;
+  min-height: var(--tap);
+}
+
+.pd-set {
+  margin-top: 0.9rem;
+  font-size: var(--step--1);
+}
+
+.pd-set table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pd-set th,
+.pd-set td {
+  text-align: left;
+  padding: 0.4rem 0.5rem 0.4rem 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+.pd-map {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0 1.25rem;
+  font-size: var(--step-0);
+}
+
+.pd-map th,
+.pd-map td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.65rem 0.75rem 0.65rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.pd-map th {
+  font-family: var(--font-display);
+  color: var(--iu-black);
+  border-bottom: 2px solid var(--iu-crimson);
+}
+
+@media (max-width: 600px) {
+  .pd-opt {
+    grid-template-columns: 1fr;
+  }
+
+  .pd-map th,
+  .pd-map td {
+    display: block;
+    padding-right: 0;
+  }
+
+  .pd-map th:nth-child(2) {
+    border-bottom: 1px solid var(--rule);
+    margin-top: 0.5rem;
+  }
+}
