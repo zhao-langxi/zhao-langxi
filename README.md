@@ -4,7 +4,7 @@
 
 This GitHub profile is the **essay / research / lead-notes door**. Pitch order on the [live site](https://zhao-langxi.github.io/zhao-langxi/): profile → [Digital Humans case study](https://zhao-langxi.github.io/zhao-langxi/work/digital-humans.html) → contact. Shipped code lives on [jadexzhao](https://jadexzhao.github.io/jadexzhao/). The recruiter narrative lives on [IU Pages](https://jlzhao.pages.iu.edu/). Same public name on [LinkedIn](https://www.linkedin.com/in/zhao-langxi/) and [Instagram](https://instagram.com/zhao.langxi).
 
-I lead Digital Humans work at Luddy LINK: AI-driven virtual personas for business workflows. Core question: when an AI system looks and communicates like a person, what makes people trust it, use it, and keep using it? Seeking software engineering after May 2027 sits under that lead ... databases, internal information systems, IT, and ETL.
+I lead Digital Humans work at Luddy LINK, which places students on applied technology projects at IU Luddy: AI-driven virtual personas for business workflows. Core question: when an AI system looks and communicates like a person, what makes people trust it, use it, and keep using it? Seeking software engineering after May 2027 sits under that lead ... databases, internal information systems, IT, and ETL.
 
 | | |
 |---|---|

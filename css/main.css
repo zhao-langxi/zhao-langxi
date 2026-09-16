@@ -720,6 +720,19 @@ section.chapter + section.chapter {
   max-width: 68ch;
 }
 .skill-list li { margin-bottom: 0.35em; }
+.source-list {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+  max-width: 68ch;
+  font-size: var(--step--1);
+}
+.source-list li { margin-bottom: 0.55em; }
+.case-facts {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+  max-width: 68ch;
+}
+.case-facts > li { margin-bottom: 0.85em; }
 .chapter + .eyebrow { margin-top: 2rem; }
 
 /* ——— CV research stats board ——— */

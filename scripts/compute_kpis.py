@@ -202,8 +202,8 @@ def compute(root: Path) -> dict[str, object]:
                 "used as project inputs. They are citations, not Jade's personal metrics."
             ),
             "example_citations_on_cv": [
-                "72% generative AI adoption (McKinsey, 2025)",
-                "5% at-scale enterprise integration (MIT, 2025)",
+                "72% organisational AI use in at least one function (McKinsey, 2024)",
+                "5% of custom enterprise AI tools reach production (MIT NANDA, 2025)",
             ],
         },
         "resume_ready_line": (
@@ -211,8 +211,8 @@ def compute(root: Path) -> dict[str, object]:
             f"{len(theme_ids)} themes, with {len(named_patterns)} interaction patterns "
             f"(theme filters, multi-select clustering, cluster stepper, project lock, "
             f"localStorage notes) for how/why analysis; synthesised published market "
-            f"research (72% generative AI adoption vs 5% at-scale integration) as "
-            f"project inputs (McKinsey, 2025; MIT, 2025)."
+            f"research (72% organisational AI use vs 5% custom tools in production) as "
+            f"project inputs (McKinsey, 2024; MIT NANDA, 2025)."
         ),
     }
     return report

@@ -30,17 +30,17 @@
       themeLabel: "Digital Humans",
       category: "Adoption",
       categoryTone: "amber",
-      value: "72% / 37%",
-      claim: "of businesses use generative AI, up from 37% in 2023",
-      what: "72% of businesses use generative AI, up from 37% in 2023 (McKinsey, 2025).",
-      citation: "McKinsey, 2025",
+      value: "72%",
+      claim: "of organisations use AI in at least one business function",
+      what: "72% of organisations reported using AI in at least one business function (McKinsey, early 2024).",
+      citation: "McKinsey, 2024",
       role: "Digital Humans Project Lead",
       roleHref: "/zhao-langxi/work/digital-humans.html",
       whyMatters:
         "Adoption is the backdrop, not the proof. Person-like interfaces still fail on trust, disclosure, and post-demo usefulness. Core question: when AI looks and communicates like a person, what makes people trust it, use it, and keep using it?",
       whatToDo:
         "Cite this as market context for Digital Humans case studies and hire copy. Lead with trust, disclosure, and operational fit ... not another pilot slide.",
-      keywords: "adoption generative AI business mckinsey scale digital humans"
+      keywords: "adoption AI business mckinsey scale digital humans"
     },
     {
       id: "dh-5",
@@ -49,16 +49,16 @@
       category: "Scale gap",
       categoryTone: "violet",
       value: "5%",
-      claim: "of enterprises integrate AI at scale",
-      what: "Only 5% of enterprises integrate AI at scale (MIT, 2025).",
-      citation: "MIT, 2025",
+      claim: "of custom enterprise AI tools reach production",
+      what: "Only about 5% of custom enterprise AI tools reach production (MIT NANDA, 2025).",
+      citation: "MIT NANDA, 2025",
       role: "Digital Humans Project Lead",
       roleHref: "/zhao-langxi/work/digital-humans.html",
       whyMatters:
-        "Wide use is not deep integration. The pilot-to-scale gap is where human-centered business technology either sticks or dies. That is the unglamorous handoff after the demo.",
+        "Wide use is not deep integration. The pilot-to-production gap is where human-centered business technology either sticks or dies. That is the unglamorous handoff after the demo.",
       whatToDo:
         "Frame next project work around operational fit: oversight, handoffs, and whether staff can keep the system without a specialist on retainer. Essay and case study angles live here.",
-      keywords: "enterprise scale mit integration handoff"
+      keywords: "enterprise scale mit nanda production handoff"
     },
     {
       id: "dh-51",
@@ -67,16 +67,16 @@
       category: "Trust & perception",
       categoryTone: "teal",
       value: "51%",
-      claim: "report negative AI consequences, led by inaccuracy",
-      what: "51% report negative AI consequences, led by inaccuracy (Master of Code, 2026).",
-      citation: "Master of Code, 2026",
+      claim: "report at least one negative AI consequence, led by inaccuracy",
+      what: "51% of respondents from organisations using AI reported at least one negative consequence, most often inaccuracy (McKinsey, 2025). Master of Code (2026) repeats the figure in an industry roundup.",
+      citation: "McKinsey, 2025",
       role: "Digital Humans Project Lead",
       roleHref: "/zhao-langxi/work/digital-humans.html",
       whyMatters:
         "Failure modes are already visible. Accuracy and expectation-setting sit next to anthropomorphism. Looking human raises the bar for honesty, not lowers it.",
       whatToDo:
         "Design for visible uncertainty, clear disclosure, and easy override. Build demos that show recovery from wrong answers, not only fluent ones.",
-      keywords: "negative consequences inaccuracy trust disclosure"
+      keywords: "negative consequences inaccuracy trust disclosure mckinsey"
     },
     {
       id: "pr-20",
