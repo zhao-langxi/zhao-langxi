@@ -1,1 +1,67 @@
-/* Neutralized: tokens live in css/main.css Rivet :root. No gold / paper aliases. */
+/* zhao-langxi tokens · Rivet 2 / IU Cascades (Site Builder) adjacent
+   Official refs: https://rivet.iu.edu/design-tokens/
+   Cascades = IU WCMS (Cascade CMS) + Site Builder, which sits on Rivet.
+   BentonSans is IU-licensed; we keep the Rivet fallback stack, not a hotlink.
+   Crimson is an accent only. No matcha. No cafe palette. */
+
+:root {
+  /* Rivet colour tokens */
+  --rvt-crimson-500: #990000;
+  --rvt-crimson-600: #800000;
+  --rvt-black-000:   #f8f9fa;
+  --rvt-black-100:   #e2e7e9;
+  --rvt-black-200:   #a0abb4;
+  --rvt-black-300:   #75838f;
+  --rvt-black-400:   #4c5a69;
+  --rvt-black-500:   #243142;
+  --rvt-black-600:   #182534;
+  --rvt-black-700:   #0e1825;
+  --rvt-blue-500:    #006298;
+  --rvt-blue-600:    #004f80;
+
+  /* Site aliases */
+  --iu-crimson:   var(--rvt-crimson-500);
+  --iu-navy:      var(--rvt-black-500);
+  --iu-navy-deep: var(--rvt-black-600);
+  --iu-blue:      var(--rvt-blue-500);
+  --iu-blue-hover:var(--rvt-blue-600);
+  --iu-black:     var(--rvt-black-500);
+  --iu-gray-900:  var(--rvt-black-500);
+  --iu-gray-600:  var(--rvt-black-400);
+  --iu-gray-300:  var(--rvt-black-200);
+  --iu-gray-100:  var(--rvt-black-000);
+  --iu-cream:     #f4f1ea;
+  --iu-white:     #ffffff;
+  --rule:         var(--rvt-black-100);
+
+  --font-ui: 'BentonSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-display: 'GeorgiaPro', Georgia, 'Times New Roman', Times, serif;
+  --font-body:    'GeorgiaPro', Georgia, 'Times New Roman', Times, serif;
+
+  /* Rivet type scale (major second, rounded) */
+  --step--1: 0.875rem;
+  --step-0:  1rem;
+  --step-1:  1.125rem;
+  --step-2:  1.625rem;
+  --step-3:  clamp(1.625rem, 1.35rem + 1.1vw, 2rem);
+
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs:  0.75rem;
+  --space-s:   1rem;
+  --space-m:   1.5rem;
+  --space-l:   clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem);
+  --space-xl:  clamp(2.5rem, 1.9rem + 2.6vw, 4rem);
+
+  --shell: 38rem;
+  --gutter: clamp(16px, 4vw, 24px);
+  --nav-h: 3.5rem;
+
+  --radius: 0.125rem;
+  --tap: 44px;
+
+  --dur: 150ms;
+  --ease: ease;
+
+  color-scheme: light;
+}
