@@ -22,12 +22,10 @@
     var target = href.replace(/\/$/, "");
     if (target === path) return true;
     if (target === "/zhao-langxi/research") {
-      return (
-        path === "/zhao-langxi/research" ||
-        path.indexOf("/zhao-langxi/research/") === 0 ||
-        path === "/zhao-langxi/notes" ||
-        path.indexOf("/zhao-langxi/notes/") === 0
-      );
+      return path === "/zhao-langxi/research" || path.indexOf("/zhao-langxi/research/") === 0;
+    }
+    if (target === "/zhao-langxi/notes") {
+      return path === "/zhao-langxi/notes" || path.indexOf("/zhao-langxi/notes/") === 0;
     }
     return false;
   }

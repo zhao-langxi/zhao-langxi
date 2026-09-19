@@ -1,19 +1,21 @@
-/* zhao-langxi tokens · IU career website look
-   Sampled from careers.iu.edu (HR / campus career chrome).
-   Inspired by, not official IU CSS. No Rivet link blue.
+/* zhao-langxi tokens · IU Bloomington campus look
+   Sampled from bloomington.iu.edu / campus limestone (Sample Gates energy).
+   Inspired by, not official IU CSS. No Rivet link blue. No career-job-board chrome.
    BentonSans is IU-licensed; we keep a campus sans fallback, not a hotlink. */
 
 :root {
   --iu-crimson:      #990000;
-  --iu-crimson-deep: #800000;
-  --iu-cream:        #ededea;
-  --iu-white:        #ffffff;
+  --iu-crimson-deep: #7a0000;
+  --iu-cream:        #f3efe6;
+  --iu-limestone:    #e6dfd1;
+  --iu-limestone-deep: #c9bfad;
+  --iu-white:        #fffcf7;
   --iu-charcoal:     #1a1a1a;
   --iu-ink:          #1a1a1a;
   /* Footer sits on cream with charcoal type. Do not store white-on-black here. */
-  --iu-footer:       #ededea;
-  --iu-muted:        #444746;
-  --iu-rule-hex:     #d8d6d2;
+  --iu-footer:       #f3efe6;
+  --iu-muted:        #3f3c37;
+  --iu-rule-hex:     #c9bfad;
 
   /* Site aliases (older rules still say navy / blue) */
   --iu-navy:       var(--iu-charcoal);
@@ -23,15 +25,15 @@
   --iu-black:      var(--iu-charcoal);
   --iu-gray-900:   var(--iu-charcoal);
   --iu-gray-600:   var(--iu-muted);
-  --iu-gray-300:   #b8b6b2;
-  --iu-gray-100:   #f8f7f5;
+  --iu-gray-300:   #b8b09f;
+  --iu-gray-100:   var(--iu-limestone);
   --rule:          var(--iu-rule-hex);
 
   --rvt-crimson-500: var(--iu-crimson);
   --rvt-crimson-600: var(--iu-crimson-deep);
   --rvt-black-000:   var(--iu-gray-100);
-  --rvt-black-100:   #e8e6e1;
-  --rvt-black-200:   #b8b6b2;
+  --rvt-black-100:   var(--iu-limestone);
+  --rvt-black-200:   var(--iu-gray-300);
   --rvt-black-300:   #6e6c68;
   --rvt-black-400:   var(--iu-muted);
   --rvt-black-500:   var(--iu-charcoal);
@@ -66,6 +68,11 @@
 
   --dur: 150ms;
   --ease: ease;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
 
   color-scheme: light;
 }

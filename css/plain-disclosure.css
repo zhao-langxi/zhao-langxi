@@ -1,4 +1,4 @@
-/* Plain Disclosure worksheet ... inherits career-site tokens from main.css */
+/* Plain Disclosure worksheet ... inherits Bloomington campus tokens from main.css */
 
 .wrap--pd {
   max-width: 54rem;
@@ -70,8 +70,8 @@
 .pd-select:focus,
 .pd-textarea:focus,
 .pd-work .cta:focus-visible {
-  outline: 2px solid var(--iu-crimson);
-  outline-offset: 2px;
+  outline: 3px solid var(--iu-crimson);
+  outline-offset: 3px;
 }
 
 .pd-tools { margin-top: 0.9rem; }
