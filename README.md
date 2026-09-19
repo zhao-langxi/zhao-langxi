@@ -1,8 +1,10 @@
 # 赵郎溪 · zhao-langxi · she/her
 
-I write the notes I wish existed before the demo.
+xiao mao diao yu 🌊🐈‍⬛🎣🐧☔️✨ pov reformed ipad kid
 
-This GitHub is the **reader door**: essays, research notes, and process writing. Shipped code lives on [jadexzhao](https://github.com/jadexzhao). Classroom guides live on [matchaxmoxie](https://github.com/matchaxmoxie).
+That line is the GitHub bio. I quote it once. The prose version is [小猫钓鱼](https://zhao-langxi.github.io/zhao-langxi/notes/xiao-mao-diao-yu.html).
+
+I write the notes I wish existed before the demo. This GitHub is the **reader door**: essays, research notes, and process writing. Shipped code lives on [jadexzhao](https://github.com/jadexzhao). Classroom guides live on [matchaxmoxie](https://github.com/matchaxmoxie).
 
 **Digital Humans Project Lead at Luddy LINK.** Informatics student at IU (Indiana University) Luddy. Hudson & Holland Scholar. May 2027.
 
@@ -14,7 +16,7 @@ Independent notes are my own write-ups. Not IU-endorsed research. Not peer-revie
 
 1. **[Digital Humans case](https://zhao-langxi.github.io/zhao-langxi/work/digital-humans.html)** ... AI-driven virtual personas, trust, disclosure, adoption
 2. **[AI and law](https://zhao-langxi.github.io/zhao-langxi/notes/ai-and-law.html)** ... lease-precision thinking and public-service AI ethics
-3. **[小猫钓鱼](https://zhao-langxi.github.io/zhao-langxi/notes/xiao-mao-diao-yu.html)** ... how I pay attention
+3. **[小猫钓鱼](https://zhao-langxi.github.io/zhao-langxi/notes/xiao-mao-diao-yu.html)** ... the bio line, and how I pay attention
 4. **[Serve-AI](https://zhao-langxi.github.io/zhao-langxi/work/serve-ai.html)** ... PIT-UN, CC BY-SA 4.0. Distinct from ServeIT
 
 Live site: [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/)
