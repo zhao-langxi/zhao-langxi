@@ -10,13 +10,14 @@
   --iu-white:        #ffffff;
   --iu-charcoal:     #1a1a1a;
   --iu-ink:          #1a1a1a;
-  --iu-footer:       #000000;
+  /* Footer sits on cream with charcoal type. Do not store white-on-black here. */
+  --iu-footer:       #ededea;
   --iu-muted:        #444746;
   --iu-rule-hex:     #d8d6d2;
 
   /* Site aliases (older rules still say navy / blue) */
   --iu-navy:       var(--iu-charcoal);
-  --iu-navy-deep:  var(--iu-footer);
+  --iu-navy-deep:  var(--iu-charcoal);
   --iu-blue:       var(--iu-crimson);
   --iu-blue-hover: var(--iu-crimson-deep);
   --iu-black:      var(--iu-charcoal);
@@ -34,12 +35,13 @@
   --rvt-black-300:   #6e6c68;
   --rvt-black-400:   var(--iu-muted);
   --rvt-black-500:   var(--iu-charcoal);
-  --rvt-black-600:   var(--iu-footer);
-  --rvt-black-700:   var(--iu-footer);
+  --rvt-black-600:   var(--iu-charcoal);
+  --rvt-black-700:   var(--iu-charcoal);
 
   --font-ui: 'BentonSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --font-display: Georgia, 'Times New Roman', Times, serif;
   --font-body:    Georgia, 'Times New Roman', Times, serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
   --step--1: 0.875rem;
   --step-0:  1rem;

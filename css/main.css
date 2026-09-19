@@ -126,35 +126,53 @@ main.wrap {
 }
 
 .site-nav .nav-credential {
-  flex: 1 1 100%;
-  order: -1;
-  font-size: var(--step--1);
+  flex: 0 1 auto;
+  order: 1;
+  margin: 0 0 0 auto;
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
   color: var(--iu-muted);
-  margin: 0;
 }
+
+.site-nav .nav-mark {
+  font-family: var(--font-display);
+  font-size: var(--step-0);
+  font-weight: 700;
+  color: var(--iu-charcoal);
+  text-decoration: none;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.site-nav .nav-mark:hover { color: var(--iu-crimson); }
 
 .site-nav .wrap {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px 18px;
 }
 
 .site-nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 4px 18px;
   margin: 0;
   padding: 0;
+  order: 0;
 }
 
 .site-nav a {
   text-decoration: none;
+  text-transform: capitalize;
   color: var(--iu-charcoal);
   font-size: var(--step--1);
+  font-weight: 600;
   min-height: 44px;
   display: inline-flex;
   align-items: center;
@@ -173,18 +191,18 @@ main.wrap {
   gap: 14px;
 }
 
-/* ---------- footer: matches the real content structure ----------
-   Essays column · Elsewhere column · "this room" tagline ·
-   cross-site switcher row · independent-notes disclaimer ·
-   name sign-off. Not a generic three-column dump — this is the
-   actual footer content, styled. */
+/* ---------- footer: cream strip, charcoal type (WCAG AA) ----------
+   Dark-footer leftovers (#fff links, #000000 bar) read as ghost type
+   on this cream page. Keep IU career chrome: crimson rule, cream
+   ground, charcoal ink. No Rivet blue. */
 
 footer {
-  margin-top: 72px;
+  margin-top: 4rem;
   border-top: 3px solid var(--iu-crimson);
-  background: var(--iu-footer);
-  color: var(--iu-cream);
-  padding: 40px 24px 32px;
+  background: var(--iu-cream);
+  background-color: var(--iu-cream);
+  color: var(--iu-charcoal);
+  padding: 2.5rem 1.5rem 2rem;
   font-family: var(--font-ui);
 }
 
@@ -193,72 +211,76 @@ footer .footer-inner { max-width: 52rem; margin: 0 auto; }
 footer .footer-columns {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 32px;
-  margin-bottom: 28px;
+  gap: 2rem;
+  margin-bottom: 1.75rem;
 }
 
 @media (max-width: 560px) {
-  footer .footer-columns { grid-template-columns: 1fr; gap: 20px; }
+  footer .footer-columns { grid-template-columns: 1fr; gap: 1.35rem; }
 }
 
 footer h4 {
-  font-size: var(--step--1);
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--iu-cream);
-  margin: 0 0 10px;
+  letter-spacing: 0.06em;
+  color: var(--iu-charcoal);
+  margin: 0 0 0.65rem;
   font-family: var(--font-ui);
   font-weight: 700;
 }
 
 footer ul { list-style: none; margin: 0; padding: 0; }
-footer li { margin-bottom: 6px; }
+footer li { margin-bottom: 0.15rem; }
 
 footer a {
   font-size: var(--step--1);
-  color: var(--iu-white);
+  color: var(--iu-charcoal);
   text-decoration: none;
   min-height: var(--tap);
   display: inline-flex;
   align-items: center;
 }
 
-footer a:hover { color: var(--iu-cream); text-decoration: underline; }
-
-/* "This room · Essays · research · BTS · 赵郎溪 · zhao-langxi" —
-   the tagline that names which of the four sites this is */
-footer .footer-tagline {
-  font-size: var(--step--1);
-  color: var(--iu-cream);
-  border-top: 1px solid #5a5854;
-  padding-top: 16px;
-  margin-bottom: 14px;
+footer a:hover {
+  color: var(--iu-crimson);
+  text-decoration: underline;
 }
 
-/* the four-site switcher row: IU Pages · jadexzhao · matchaxmoxie · zhao-langxi */
+footer a:focus-visible {
+  outline: 3px solid var(--iu-crimson);
+  outline-offset: 3px;
+}
+
+footer .footer-tagline {
+  font-size: var(--step--1);
+  color: var(--iu-charcoal);
+  border-top: 1px solid var(--rule);
+  padding-top: 1rem;
+  margin-bottom: 0.85rem;
+}
+
 footer .site-switcher {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px 16px;
-  margin-bottom: 16px;
+  gap: 0.35rem 1rem;
+  margin-bottom: 1rem;
 }
 
 footer .site-switcher a { font-weight: 600; }
 
 footer .site-switcher .current {
-  color: var(--iu-white);
+  color: var(--iu-charcoal);
   box-shadow: inset 0 -2px 0 var(--iu-crimson);
   pointer-events: none;
 }
 
-/* "Independent notes ... not IU-endorsed research and not
-   peer-reviewed publications." — the disclaimer line, kept
-   quiet but legible, not buried */
 footer .footer-legal {
   font-size: 0.875rem;
-  color: #b8b6b2;
+  color: var(--iu-muted);
   font-style: italic;
-  margin-bottom: 14px;
+  margin: 0 0 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
 }
 
 footer .footer-legal p { margin: 0; max-width: none; color: inherit; }
@@ -268,10 +290,9 @@ footer .footer-credit {
   margin-top: 0.5em;
 }
 
-/* "赵郎溪 · Jade Zhao" sign-off */
 footer .footer-signoff {
   font-size: var(--step--1);
-  color: var(--iu-white);
+  color: var(--iu-charcoal);
   font-weight: 600;
 }
 
@@ -511,7 +532,178 @@ figure.figure-photo figcaption {
 .hero { margin-bottom: 2rem; }
 
 body.page-home main.wrap {
-  max-width: 54rem;
+  max-width: 56rem;
+}
+
+body.page-home .hero {
+  display: grid;
+  gap: 1.75rem;
+  margin-bottom: 2.25rem;
+}
+
+body.page-home .hero-text { min-width: 0; }
+
+body.page-home .hero-visual img {
+  max-height: 22rem;
+  object-fit: cover;
+  object-position: center top;
+}
+
+body.page-home .claim {
+  font-size: var(--step-1);
+  line-height: 1.55;
+  max-width: 62ch;
+}
+
+.repo-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 1.15rem;
+  margin: 0 0 2.25rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--font-ui);
+  font-size: var(--step--1);
+}
+
+.repo-bar-name {
+  font-weight: 700;
+  color: var(--iu-charcoal);
+}
+
+.repo-bar a {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--iu-charcoal);
+  text-decoration: none;
+}
+
+.repo-bar a:hover {
+  color: var(--iu-crimson);
+  text-decoration: underline;
+}
+
+.repo-bar-note {
+  margin: 0;
+  max-width: none;
+  color: var(--iu-muted);
+}
+
+.essay-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.essay-list > li {
+  margin: 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.essay-list a {
+  display: grid;
+  grid-template-columns: 6.25rem minmax(0, 1fr);
+  gap: 0.35rem 1.25rem;
+  padding: 1.05rem 0;
+  text-decoration: none;
+  color: inherit;
+  min-height: var(--tap);
+  align-items: start;
+}
+
+.essay-kicker {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--iu-muted);
+  padding-top: 0.35rem;
+}
+
+.essay-title {
+  margin: 0 0 0.2rem;
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  line-height: 1.25;
+  color: var(--iu-charcoal);
+}
+
+.essay-dek {
+  margin: 0 0 0.25rem;
+  font-size: var(--step--1);
+  color: var(--iu-muted);
+  max-width: 62ch;
+}
+
+.essay-path {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--iu-muted);
+}
+
+.essay-list a:hover .essay-title { color: var(--iu-crimson); }
+
+.field-note {
+  margin: 2.25rem 0 0;
+  padding: 1.15rem 1.2rem;
+  background: var(--iu-gray-100);
+  border-left: 3px solid var(--iu-crimson);
+}
+
+.field-note h2 { font-size: var(--step-1); margin-bottom: 0.4em; }
+.field-note p { margin: 0; max-width: 68ch; }
+
+.water-closer {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+
+.water-closer img {
+  width: 100%;
+  max-width: 22rem;
+  height: auto;
+  border: 1px solid var(--rule);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 0;
+}
+
+a.card {
+  display: block;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--rule);
+  background: var(--iu-gray-100);
+  text-decoration: none;
+  color: inherit;
+  min-height: var(--tap);
+}
+
+a.card:hover { border-color: var(--iu-crimson); }
+a.card h3 {
+  margin: 0 0 0.35rem;
+  font-size: var(--step-1);
+}
+a.card p {
+  margin: 0;
+  font-size: var(--step--1);
+  color: var(--iu-muted);
+  max-width: none;
+}
+
+@media (max-width: 600px) {
+  .site-nav .nav-credential { display: none; }
+  .essay-list a { grid-template-columns: 1fr; gap: 0.2rem; }
+  .essay-kicker { padding-top: 0; }
 }
 
 .home-gap {
@@ -573,6 +765,15 @@ body.page-home main.wrap {
   }
 
   .hero-visual { margin: 0; }
+
+  body.page-home .hero {
+    grid-template-columns: minmax(18rem, 1.3fr) minmax(13rem, 0.7fr);
+  }
+
+  body.page-home .water-closer {
+    grid-template-columns: minmax(12rem, 16rem) minmax(0, 1fr);
+    align-items: start;
+  }
 }
 
 .hero-visual { margin: 0 0 1.25rem; }
