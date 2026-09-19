@@ -1,62 +1,36 @@
 # 赵郎溪 · zhao-langxi · she/her
 
-**Digital Humans Project Lead at Luddy LINK · Informatics (Business and Society) @ Indiana University · HHSP Platinum Scholar · Expected May 2027**
+I write the notes I wish existed before the demo.
 
-This GitHub profile is the **essay / research / lead-notes door**. Pitch order on the [live site](https://zhao-langxi.github.io/zhao-langxi/): profile → [Digital Humans case study](https://zhao-langxi.github.io/zhao-langxi/work/digital-humans.html) → contact. Shipped code lives on [jadexzhao](https://jadexzhao.github.io/jadexzhao/). Handshake influencer narrative lives on [IU Pages](https://jlzhao.pages.iu.edu/) ... then Handshake content creator intersecting Digital Humans. Same public name on [LinkedIn](https://www.linkedin.com/in/zhao-langxi/) and [Instagram](https://instagram.com/zhao.langxi).
+This GitHub is the **reader door**: essays, research notes, and process writing. Shipped code lives on [jadexzhao](https://github.com/jadexzhao). Classroom guides live on [matchaxmoxie](https://github.com/matchaxmoxie).
 
-I lead Digital Humans work at Luddy LINK, which places students on applied technology projects at IU Luddy: AI-driven virtual personas for business workflows. Core question: when an AI system looks and communicates like a person, what makes people trust it, use it, and keep using it? Seeking software engineering after May 2027 sits under that lead ... databases, internal information systems, IT, and ETL.
+**Digital Humans Project Lead at Luddy LINK.** Informatics student at IU (Indiana University) Luddy. Hudson & Holland Scholar. May 2027.
 
-| | |
-|---|---|
-| **Live site** | [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) |
-| **Digital Humans** | [work/digital-humans.html](https://zhao-langxi.github.io/zhao-langxi/work/digital-humans.html) |
-| **Professional profile** | [about.html](https://zhao-langxi.github.io/zhao-langxi/about.html) |
-| **小猫钓鱼** | [notes/xiao-mao-diao-yu.html](https://zhao-langxi.github.io/zhao-langxi/notes/xiao-mao-diao-yu.html) |
-| **Resume (PDF)** | [jlzhao.pages.iu.edu/cv.pdf](https://jlzhao.pages.iu.edu/cv.pdf) |
+When an AI system looks and communicates like a person, what makes people trust it, use it, and keep using it? I treat Digital Humans as useful business interfaces, not avatar demos.
 
-Independent notes are Jade's own write-ups ... not IU-endorsed research and not peer-reviewed. Serve-AI / ServeIT clinic materials stay CC BY-SA with project credit. Drafting was AI-assisted; accountability remains with Jade Zhao.
+Independent notes are my own write-ups. Not IU-endorsed research. Not peer-reviewed.
 
-Current framing leads with Luddy LINK Digital Humans Project Lead (February 2025 to present). Secondary threads: Serve IT Website Team Lead, NSF / UE / PIT-UN titles, Restaurant Kid, STEM Peer Mentor / MAP Coordinator within FASE, HHSP Programme Assistant. Luddy LINK is separate from ServeIT.
+## Reading order
 
-With gratitude for Miriam "Mimi" Attenoukon ... Hudson & Holland mentorship that connected first-gen scholars to paths not obvious from a syllabus. Full tribute on [jadexzhao](https://jadexzhao.github.io/jadexzhao/).
+1. **[Digital Humans case](https://zhao-langxi.github.io/zhao-langxi/work/digital-humans.html)** ... AI-driven virtual personas, trust, disclosure, adoption
+2. **[AI and law](https://zhao-langxi.github.io/zhao-langxi/notes/ai-and-law.html)** ... lease-precision thinking and public-service AI ethics
+3. **[小猫钓鱼](https://zhao-langxi.github.io/zhao-langxi/notes/xiao-mao-diao-yu.html)** ... how I pay attention
+4. **[Serve-AI](https://zhao-langxi.github.io/zhao-langxi/work/serve-ai.html)** ... PIT-UN, CC BY-SA 4.0. Distinct from ServeIT
 
----
+Live site: [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/)
 
-## Public repos (8)
+## Notebooks here
 
-| Repo | One line |
-|------|----------|
-| **[zhao-langxi](https://github.com/zhao-langxi/zhao-langxi)** (this repo) | GitHub Pages source for essays, research notes, and reading order |
-| **[madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethics)** | Spring 2026 Madrid notebook on systems friction and public-service AI ethics ... not an EU AI Act project |
-| **[lease-precision](https://github.com/zhao-langxi/lease-precision)** | Public-safe commercial lease process notes ... clause precision, not legal advice |
-| **[local-digital](https://github.com/zhao-langxi/local-digital)** | ServeIT community digital handoffs and project summaries that outlast a clinic semester |
-| **[serveit-accessibility](https://github.com/zhao-langxi/serveit-accessibility)** | WCAG 2.1, Cascade, and Rivet clinic guides ... CC BY-SA 4.0 public extension |
-| **[prohealth-informatics](https://github.com/zhao-langxi/prohealth-informatics)** | Undergrad research role scaffold ... methods and process framing only, no dataset |
-| **[Quackr](https://github.com/zhao-langxi/Quackr)** | Personal dating-app prototype ... local-first, self-tested, not a launch |
-| **[Stealth](https://github.com/zhao-langxi/Stealth)** | Public JavaScript foresight notebook, not a product. Digital Humans is among the predictions. |
+- [madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethics) ... Spring 2026 Madrid notes on systems friction and public-service AI ethics
+- [lease-precision](https://github.com/zhao-langxi/lease-precision) ... commercial lease process notes. Clause precision, not legal advice
+- [serveit-accessibility](https://github.com/zhao-langxi/serveit-accessibility) ... WCAG 2.1 clinic guides, CC BY-SA 4.0
+- [local-digital](https://github.com/zhao-langxi/local-digital) ... community digital handoffs that have to outlast a clinic semester
 
----
+## Four doors
 
-## Four doors (one person, four audiences)
+- Narrative hub → [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/)
+- Proof → [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/)
+- Classroom → [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/)
+- Notes (this site) → [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/)
 
-| Door | For whom | URL |
-|------|----------|-----|
-| **IU Pages** | Handshake influencer × Digital Humans narrative | [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) |
-| **jadexzhao** | Technical peers · shipped proof | [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/) |
-| **matchaxmoxie** | Students · FASE MAP classroom | [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) |
-| **zhao-langxi** | Readers · essays and research BTS | [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) |
-
----
-
-Casual build: [duck-farm](https://jadexzhao.github.io/jadexzhao/duck-farm/) is a creative throughline I test myself ... no operating farm, no acreage, no product launch. Photos: [@zhao.langxi](https://instagram.com/zhao.langxi)
-
----
-
-## Primary handles
-
-| | |
-|---|---|
-| **Primary GitHub** | [github.com/zhao-langxi](https://github.com/zhao-langxi) |
-| **Portfolio code repo** | [jadexzhao/jadexzhao](https://github.com/jadexzhao/jadexzhao) |
-| **LinkedIn** | [linkedin.com/in/zhao-langxi](https://www.linkedin.com/in/zhao-langxi/) |
-| **Instagram** | [@zhao.langxi](https://instagram.com/zhao.langxi) |
+[jlzhao@iu.edu](mailto:jlzhao@iu.edu) · [LinkedIn](https://www.linkedin.com/in/zhao-langxi/) · [@zhao.langxi](https://instagram.com/zhao.langxi)
