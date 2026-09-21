@@ -1,79 +1,24 @@
-/* zhao-langxi tokens · IU Bloomington / Rivet-aligned
-   Values from rivet.iu.edu design tokens (crimson, black scale, serif/sans stacks).
-   BentonSans is IU-licensed; keep the Rivet fallback stack without hotlinking it. */
-
+/* zhao-langxi · IU Bloomington / Rivet tokens */
 :root {
-  /* Rivet crimson */
-  --iu-crimson:      #990000;
+  --iu-crimson: #990000;
   --iu-crimson-deep: #800000;
+  --iu-page: #f7f7f7;
+  --iu-limestone: #f8f9fa;
+  --iu-rule: #e2e7e9;
+  --iu-white: #ffffff;
+  --iu-ink: #243142;
+  --iu-muted: #4c5a69;
 
-  /* Rivet black scale (page + rules + ink) */
-  --iu-page:         #f7f7f7;
-  --iu-cream:        var(--iu-page);
-  --iu-limestone:    #f8f9fa;
-  --iu-limestone-deep: #e2e7e9;
-  --iu-white:        #ffffff;
-  --iu-charcoal:     #243142;
-  --iu-ink:          #243142;
-  --iu-footer:       #f8f9fa;
-  --iu-muted:        #4c5a69;
-  --iu-rule-hex:     #e2e7e9;
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-body: Georgia, "Times New Roman", Times, serif;
+  --font-sc: "Noto Serif SC", "Songti SC", "SimSun", Georgia, serif;
 
-  /* Site aliases */
-  --iu-navy:       var(--iu-charcoal);
-  --iu-navy-deep:  #182534;
-  --iu-blue:       var(--iu-crimson);
-  --iu-blue-hover: var(--iu-crimson-deep);
-  --iu-black:      var(--iu-charcoal);
-  --iu-gray-900:   var(--iu-charcoal);
-  --iu-gray-600:   var(--iu-muted);
-  --iu-gray-300:   #a0abb4;
-  --iu-gray-100:   var(--iu-limestone);
-  --rule:          var(--iu-rule-hex);
-
-  --rvt-crimson-500: #990000;
-  --rvt-crimson-600: #800000;
-  --rvt-black-000:   #f8f9fa;
-  --rvt-black-100:   #e2e7e9;
-  --rvt-black-200:   #a0abb4;
-  --rvt-black-300:   #75838f;
-  --rvt-black-400:   #4c5a69;
-  --rvt-black-500:   #243142;
-  --rvt-black-600:   #182534;
-  --rvt-black-700:   #0e1825;
-
-  --font-ui: 'BentonSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --font-display: 'GeorgiaPro', Georgia, 'Times New Roman', Times, serif;
-  --font-body:    'GeorgiaPro', Georgia, 'Times New Roman', Times, serif;
-  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
-
-  /* Rivet-ish type steps (16px base, calm display scale) */
-  --step--1: 0.875rem;
-  --step-0:  1rem;
-  --step-1:  1.125rem;
-  --step-2:  1.5rem;
-  --step-3:  clamp(1.5rem, 1.28rem + 0.95vw, 1.875rem);
-
-  /* Rivet spacing scale · 0.25rem steps */
-  --space-3xs: 0.25rem;
-  --space-2xs: 0.5rem;
-  --space-xs:  0.75rem;
-  --space-s:   1rem;
-  --space-m:   1.5rem;
-  --space-l:   clamp(1.5rem, 1.25rem + 1.1vw, 2.25rem);
-  --space-xl:  clamp(2.25rem, 1.75rem + 2vw, 3.5rem);
-
-  --shell: 44rem;
-  --shell-wide: 54rem;
-  --gutter: clamp(1rem, 3.2vw, 1.75rem);
+  --shell: 42rem;
+  --gutter: clamp(1rem, 3.5vw, 1.75rem);
   --nav-h: 3.5rem;
-
   --radius: 0.125rem;
   --tap: 44px;
-  --shadow-subtle: 0 0.125rem 0.25rem rgb(36 49 66 / 0.06);
-  --shadow-card: 0 0.125rem 0.375rem rgb(36 49 66 / 0.06);
-
-  --dur: 150ms;
+  --dur: 160ms;
   --ease: ease;
 
   --safe-top: env(safe-area-inset-top, 0px);

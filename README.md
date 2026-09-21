@@ -1,40 +1,18 @@
-# 赵郎溪 · zhao-langxi · she/her
+# zhao-langxi
 
-xiao mao diao yu 🌊🐈‍⬛🎣🐧☔️✨ pov reformed ipad kid
+Public essay door for Jade Zhao.
 
-That line is the GitHub bio. I quote it once. The prose version is [小猫钓鱼](https://zhao-langxi.github.io/zhao-langxi/notes/xiao-mao-diao-yu.html).
+Live: https://zhao-langxi.github.io/zhao-langxi/
 
-I write the notes I wish existed before the demo. This GitHub is the **reader door**: essays, research notes, and process writing. Shipped code lives on [jadexzhao](https://github.com/jadexzhao). Classroom guides live on [matchaxmoxie](https://github.com/matchaxmoxie).
+## Pages
 
-**Digital Humans Project Lead at Luddy LINK.** Informatics student at IU (Indiana University) Luddy. Hudson & Holland Scholar. May 2027.
+- Home: `/`
+- The question: `/question.html` (Digital Humans as a question in progress)
+- About: `/about.html`
 
-Looking human is not the product. Digital Humans earn a place when they help people in ordinary weeks of work ... including for small organisations. Trust is built in the handoff and the Tuesday question, not the demo.
+## Elsewhere
 
-Independent notes are my own write-ups. Not IU-endorsed research. Not peer-reviewed.
+- Shipped code: https://jadexzhao.github.io/jadexzhao/
+- Campus classroom: https://matchaxmoxie.github.io/matchaxmoxie/
 
-## Reading order
-
-1. **[Digital Humans for small businesses](https://zhao-langxi.github.io/zhao-langxi/research/digital-humans-small-business.html)** ... external reader framing: what they are, why a small organisation might care, trust, disclosure, useful versus demo
-2. **[Digital Humans case](https://zhao-langxi.github.io/zhao-langxi/work/digital-humans.html)** ... AI-driven virtual personas, field sources, adoption
-3. **[Plain Disclosure](https://zhao-langxi.github.io/zhao-langxi/work/plain-disclosure.html)** ... four questions before Agree
-4. **[AI and law](https://zhao-langxi.github.io/zhao-langxi/notes/ai-and-law.html)** ... lease-precision thinking and public-service AI ethics
-5. **[小猫钓鱼](https://zhao-langxi.github.io/zhao-langxi/notes/xiao-mao-diao-yu.html)** ... the bio line, and how I pay attention
-6. **[Serve-AI](https://zhao-langxi.github.io/zhao-langxi/work/serve-ai.html)** ... PIT-UN, CC BY-SA 4.0. Distinct from ServeIT
-
-Live site: [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/)
-
-## Notebooks here
-
-- [madrid-ai-ethics](https://github.com/zhao-langxi/madrid-ai-ethics) ... Spring 2026 Madrid notes on systems friction and public-service AI ethics
-- [lease-precision](https://github.com/zhao-langxi/lease-precision) ... commercial lease process notes. Clause precision, not legal advice
-- [serveit-accessibility](https://github.com/zhao-langxi/serveit-accessibility) ... WCAG 2.1 clinic guides, CC BY-SA 4.0
-- [local-digital](https://github.com/zhao-langxi/local-digital) ... community digital handoffs that have to outlast a clinic semester
-
-## Four doors
-
-- Narrative hub → [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/)
-- Proof → [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/)
-- Classroom → [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/)
-- Notes (this site) → [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/)
-
-[jlzhao@iu.edu](mailto:jlzhao@iu.edu) · [LinkedIn](https://www.linkedin.com/in/zhao-langxi/) · [@zhao.langxi](https://instagram.com/zhao.langxi)
+Independent notes. Not IU-endorsed research. Not peer-reviewed.
