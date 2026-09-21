@@ -63,7 +63,7 @@ p {
   text-wrap: pretty;
 }
 
-a { color: var(--iu-crimson); text-decoration: underline; }
+a { color: var(--iu-crimson); text-decoration: underline; text-underline-offset: 0.15em; transition: color var(--dur) var(--ease); }
 a:hover { color: var(--iu-crimson-deep); }
 
 .wrap {
@@ -190,7 +190,8 @@ body.page-home main.wrap {
   color: var(--iu-charcoal);
 }
 
-.site-nav .wrap {
+.site-nav .wrap,
+.site-nav .nav-inner {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -203,7 +204,8 @@ body.page-home main.wrap {
   min-width: 0;
 }
 
-.site-nav ul {
+.site-nav ul,
+.site-nav .nav-links {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -227,6 +229,11 @@ body.page-home main.wrap {
   display: inline-flex;
   align-items: center;
   padding-inline: 0.05rem;
+  transition: color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+
+.site-nav .nav-mark {
+  transition: color var(--dur) var(--ease);
 }
 
 .site-nav a:hover { color: var(--iu-crimson); text-decoration: none; }
@@ -257,7 +264,8 @@ footer {
 
 footer .footer-inner { max-width: var(--shell-wide); margin: 0 auto; }
 
-footer .footer-columns {
+footer .footer-columns,
+footer .footer-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.75rem 2rem;
@@ -265,7 +273,8 @@ footer .footer-columns {
 }
 
 @media (max-width: 560px) {
-  footer .footer-columns { grid-template-columns: 1fr; gap: 1.35rem; }
+  footer .footer-columns,
+  footer .footer-grid { grid-template-columns: 1fr; gap: 1.35rem; }
 }
 
 footer h2,
@@ -295,6 +304,7 @@ footer a {
   align-items: center;
   overflow-wrap: anywhere;
   max-width: 100%;
+  transition: color var(--dur) var(--ease);
 }
 
 footer a:hover {
@@ -415,7 +425,32 @@ button:focus-visible {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  * { transition: none !important; animation: none !important; }
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Calm reveal · project-in-progress door, not a product launch splash */
+.reveal {
+  opacity: 0;
+  transform: translateY(0.55rem);
+  transition: opacity 480ms var(--ease), transform 480ms var(--ease);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.site-nav.is-scrolled {
+  box-shadow: 0 0.125rem 0.5rem rgb(36 49 66 / 0.08);
 }
 
 .site-nav .identity-marks a {
@@ -545,6 +580,7 @@ figure.figure-photo figcaption {
   font-weight: 700;
   letter-spacing: 0.01em;
   line-height: 1.2;
+  transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease), color var(--dur) var(--ease);
 }
 .cta:hover,
 .cta:focus-visible { background: var(--iu-crimson-deep); border-color: var(--iu-crimson-deep); color: var(--iu-white); }
@@ -674,11 +710,12 @@ body.page-home .claim {
   color: inherit;
   min-height: var(--tap);
   align-items: start;
-  transition: background-color var(--dur) var(--ease);
+  transition: background-color var(--dur) var(--ease), padding-inline-start var(--dur) var(--ease);
 }
 
 .essay-list a:hover {
   background: var(--iu-limestone);
+  padding-inline-start: 0.35rem;
 }
 
 .essay-kicker {
@@ -1023,7 +1060,7 @@ section.chapter + section.chapter {
 .case-facts > li { margin-bottom: 0.85em; }
 .chapter + .eyebrow { margin-top: 2rem; }
 
-/* ——— CV research stats board ——— */
+/* CV research stats board */
 .wrap--stats { max-width: 72rem; }
 .stats-throughline {
   margin: 0 0 var(--space-l);
