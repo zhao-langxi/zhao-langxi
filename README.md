@@ -8,16 +8,18 @@ I write the notes I wish existed before the demo. This GitHub is the **reader do
 
 **Digital Humans Project Lead at Luddy LINK.** Informatics student at IU (Indiana University) Luddy. Hudson & Holland Scholar. May 2027.
 
-When an AI system looks and communicates like a person, what makes people trust it, use it, and keep using it? I treat Digital Humans as useful business interfaces, not avatar demos.
+When an AI system looks and communicates like a person, what makes people trust it, use it, and keep using it? I treat Digital Humans as useful business interfaces, including for small businesses, not avatar demos.
 
 Independent notes are my own write-ups. Not IU-endorsed research. Not peer-reviewed.
 
 ## Reading order
 
-1. **[Digital Humans case](https://zhao-langxi.github.io/zhao-langxi/work/digital-humans.html)** ... AI-driven virtual personas, trust, disclosure, adoption
-2. **[AI and law](https://zhao-langxi.github.io/zhao-langxi/notes/ai-and-law.html)** ... lease-precision thinking and public-service AI ethics
-3. **[小猫钓鱼](https://zhao-langxi.github.io/zhao-langxi/notes/xiao-mao-diao-yu.html)** ... the bio line, and how I pay attention
-4. **[Serve-AI](https://zhao-langxi.github.io/zhao-langxi/work/serve-ai.html)** ... PIT-UN, CC BY-SA 4.0. Distinct from ServeIT
+1. **[Digital Humans for small businesses](https://zhao-langxi.github.io/zhao-langxi/research/digital-humans-small-business.html)** ... external reader framing: what they are, why a small organisation might care, trust, disclosure, useful versus demo
+2. **[Digital Humans case](https://zhao-langxi.github.io/zhao-langxi/work/digital-humans.html)** ... AI-driven virtual personas, field sources, adoption
+3. **[Plain Disclosure](https://zhao-langxi.github.io/zhao-langxi/work/plain-disclosure.html)** ... four questions before Agree
+4. **[AI and law](https://zhao-langxi.github.io/zhao-langxi/notes/ai-and-law.html)** ... lease-precision thinking and public-service AI ethics
+5. **[小猫钓鱼](https://zhao-langxi.github.io/zhao-langxi/notes/xiao-mao-diao-yu.html)** ... the bio line, and how I pay attention
+6. **[Serve-AI](https://zhao-langxi.github.io/zhao-langxi/work/serve-ai.html)** ... PIT-UN, CC BY-SA 4.0. Distinct from ServeIT
 
 Live site: [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/)
 
