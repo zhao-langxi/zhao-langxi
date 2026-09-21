@@ -1,48 +1,50 @@
-/* zhao-langxi tokens · IU Bloomington campus look
-   Sampled from bloomington.iu.edu / campus limestone (Sample Gates energy).
-   Inspired by, not official IU CSS. No Rivet link blue. No career-job-board chrome.
-   BentonSans is IU-licensed; we keep a campus sans fallback, not a hotlink. */
+/* zhao-langxi tokens · IU Bloomington / Rivet-aligned
+   Values from rivet.iu.edu design tokens (crimson, black scale, serif/sans stacks).
+   BentonSans is IU-licensed; keep the Rivet fallback stack without hotlinking it. */
 
 :root {
+  /* Rivet crimson */
   --iu-crimson:      #990000;
-  --iu-crimson-deep: #7a0000;
-  --iu-cream:        #f3efe6;
-  --iu-limestone:    #e6dfd1;
-  --iu-limestone-deep: #c9bfad;
-  --iu-white:        #fffcf7;
-  --iu-charcoal:     #1a1a1a;
-  --iu-ink:          #1a1a1a;
-  /* Footer sits on cream with charcoal type. Do not store white-on-black here. */
-  --iu-footer:       #f3efe6;
-  --iu-muted:        #3f3c37;
-  --iu-rule-hex:     #c9bfad;
+  --iu-crimson-deep: #800000;
 
-  /* Site aliases (older rules still say navy / blue) */
+  /* Rivet black scale (page + rules + ink) */
+  --iu-page:         #f7f7f7;
+  --iu-cream:        var(--iu-page);
+  --iu-limestone:    #f8f9fa;
+  --iu-limestone-deep: #e2e7e9;
+  --iu-white:        #ffffff;
+  --iu-charcoal:     #243142;
+  --iu-ink:          #243142;
+  --iu-footer:       #f8f9fa;
+  --iu-muted:        #4c5a69;
+  --iu-rule-hex:     #e2e7e9;
+
+  /* Site aliases */
   --iu-navy:       var(--iu-charcoal);
-  --iu-navy-deep:  var(--iu-charcoal);
+  --iu-navy-deep:  #182534;
   --iu-blue:       var(--iu-crimson);
   --iu-blue-hover: var(--iu-crimson-deep);
   --iu-black:      var(--iu-charcoal);
   --iu-gray-900:   var(--iu-charcoal);
   --iu-gray-600:   var(--iu-muted);
-  --iu-gray-300:   #b8b09f;
+  --iu-gray-300:   #a0abb4;
   --iu-gray-100:   var(--iu-limestone);
   --rule:          var(--iu-rule-hex);
 
-  --rvt-crimson-500: var(--iu-crimson);
-  --rvt-crimson-600: var(--iu-crimson-deep);
-  --rvt-black-000:   var(--iu-gray-100);
-  --rvt-black-100:   var(--iu-limestone);
-  --rvt-black-200:   var(--iu-gray-300);
-  --rvt-black-300:   #6e6c68;
-  --rvt-black-400:   var(--iu-muted);
-  --rvt-black-500:   var(--iu-charcoal);
-  --rvt-black-600:   var(--iu-charcoal);
-  --rvt-black-700:   var(--iu-charcoal);
+  --rvt-crimson-500: #990000;
+  --rvt-crimson-600: #800000;
+  --rvt-black-000:   #f8f9fa;
+  --rvt-black-100:   #e2e7e9;
+  --rvt-black-200:   #a0abb4;
+  --rvt-black-300:   #75838f;
+  --rvt-black-400:   #4c5a69;
+  --rvt-black-500:   #243142;
+  --rvt-black-600:   #182534;
+  --rvt-black-700:   #0e1825;
 
   --font-ui: 'BentonSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --font-display: Georgia, 'Times New Roman', Times, serif;
-  --font-body:    Georgia, 'Times New Roman', Times, serif;
+  --font-display: 'GeorgiaPro', Georgia, 'Times New Roman', Times, serif;
+  --font-body:    'GeorgiaPro', Georgia, 'Times New Roman', Times, serif;
   --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
   --step--1: 0.875rem;
@@ -59,12 +61,14 @@
   --space-l:   clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem);
   --space-xl:  clamp(2.5rem, 1.9rem + 2.6vw, 4rem);
 
-  --shell: 38rem;
-  --gutter: clamp(16px, 4vw, 24px);
-  --nav-h: 3.5rem;
+  --shell: 42rem;
+  --gutter: clamp(1rem, 3.5vw, 1.5rem);
+  --nav-h: 3.75rem;
 
   --radius: 0.125rem;
   --tap: 44px;
+  --shadow-subtle: 0 0.1875rem 0.375rem rgb(36 49 66 / 0.07);
+  --shadow-card: 0 0.25rem 0.5rem rgb(36 49 66 / 0.08);
 
   --dur: 150ms;
   --ease: ease;

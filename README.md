@@ -8,7 +8,7 @@ I write the notes I wish existed before the demo. This GitHub is the **reader do
 
 **Digital Humans Project Lead at Luddy LINK.** Informatics student at IU (Indiana University) Luddy. Hudson & Holland Scholar. May 2027.
 
-When an AI system looks and communicates like a person, what makes people trust it, use it, and keep using it? I treat Digital Humans as useful business interfaces, including for small businesses, not avatar demos.
+Looking human is not the product. Digital Humans earn a place when they help people in ordinary weeks of work ... including for small organisations. Trust is built in the handoff and the Tuesday question, not the demo.
 
 Independent notes are my own write-ups. Not IU-endorsed research. Not peer-reviewed.
 
