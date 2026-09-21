@@ -301,6 +301,16 @@ p { margin: 0 0 1em; max-width: 65ch; text-wrap: pretty; }
 }
 .prose li { margin-bottom: 0.45em; }
 
+.photo-block {
+  margin: 1.75rem 0 0;
+  max-width: 28rem;
+}
+.photo-block img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--iu-rule);
+}
+
 /* ---------- footer ---------- */
 
 .site-footer {
