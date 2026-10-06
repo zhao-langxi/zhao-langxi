@@ -9,8 +9,9 @@ Voice lock (2026-10-04)
 - No invented metrics; no clinical / IRB framing; no em dash; no AI product names
 
 CSS
-- Yellow #FFC629 · Outfit UI · Georgia body for essays
-- main.css?v=20261004-whitney
+- Yellow accent · Outfit UI · Georgia body for essays
+- main.css?v=20261006-polish
+- Origin line includes New Palestine restaurant
 
 1st-person taste calls
 - Keep or soften “Respect is.”
