@@ -156,6 +156,23 @@ p { margin: 0 0 1em; max-width: 65ch; text-wrap: pretty; }
   max-width: var(--shell);
   margin: 0 auto;
   padding: clamp(2rem, 3vw, 4.5rem) max(var(--gutter), var(--safe-left)) clamp(3rem, 5vw, 6rem) max(var(--gutter), var(--safe-right));
+  min-width: 0;
+}
+
+.section,
+.hero,
+.prose,
+#thesis,
+#origin,
+#essays {
+  scroll-margin-top: calc(var(--nav-h, 4.5rem) + var(--safe-top, 0px) + 0.75rem);
+}
+
+.claim,
+.lede,
+.byline,
+.prose p {
+  overflow-wrap: break-word;
 }
 
 .eyebrow {
