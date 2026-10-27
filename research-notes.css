@@ -1,22 +1,21 @@
-/* Shared visual system for the four research pages.
-   Colours, type, and components follow the live Figma research journal
-   (site class tokens and component rules). That journal has no essay
-   reading view, so long titles use the section scale rather than the
-   homepage display size. */
+/* Shared visual system · zhao-langxi (reader / Rivet tone, jadexzhao garden palette).
+   Accent and wash aligned with author GitHub avatar (powder blue / cream), not matchaxmoxie matcha. */
 
 :root {
-  color: #182019;
-  background: #f1f0e9;
+  color: #1c1c1c;
+  background: #f6efe3;
   font-synthesis: none;
 }
 
 .site {
-  --bg: #f1f0e9;
-  --ink: #182019;
-  --muted: #61685e;
-  --accent: #bd4c2c;
-  --paper: #fbfaf5;
-  --line: #c9c9be;
+  --bg: #f6efe3;
+  --ink: #1c1c1c;
+  --muted: #3d4a52;
+  --accent: #4a90c4;
+  --link: #0d4f78;
+  --paper: #ffffff;
+  --line: #c3d4de;
+  --caption: #4a6b3d;
   min-height: 100vh;
   margin: 0;
   color: var(--ink);
@@ -235,11 +234,31 @@ main > header:has(img) {
   align-items: start;
 }
 
-main > header img {
+main > header img,
+.author-avatar {
   width: 100%;
+  max-width: 7.5rem;
   height: auto;
+  aspect-ratio: 1;
   background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 6px;
   object-fit: cover;
+  object-position: center center;
+}
+
+.home .header-intro {
+  display: grid;
+  grid-template-columns: 7.5rem minmax(0, 1fr);
+  gap: 1.25rem 1.5rem;
+  align-items: start;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 36rem) {
+  .home .header-intro {
+    grid-template-columns: 1fr;
+  }
 }
 
 article {
@@ -277,7 +296,7 @@ article p {
 }
 
 article a {
-  color: var(--accent);
+  color: var(--link);
   font-weight: 700;
   text-underline-offset: 4px;
 }
@@ -676,6 +695,65 @@ article > p:last-child a:not(:first-child):hover {
   article > p:last-child a:hover {
     transform: none;
   }
+}
+
+.featured-essay {
+  margin: 1rem 0 0;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--accent);
+  background: var(--paper);
+}
+
+.featured-essay h3 {
+  margin: 0.35rem 0 0.6rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+}
+
+.essay-frontmatter,
+.theme-bridge {
+  margin: 1rem 0 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  font-size: 0.98rem;
+}
+
+.workflow-details {
+  margin: 1.25rem 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.workflow-details summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--link);
+}
+
+.resource-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resource-list > li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.resource-list h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+  border: none;
+  padding: 0;
+}
+
+.resource-list h2 a {
+  color: var(--link);
 }
 
 /* Homepage · essay publication index */

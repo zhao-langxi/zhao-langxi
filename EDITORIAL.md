@@ -1,6 +1,6 @@
 # zhao-langxi · editorial charter
 
-**Status:** Independent, open-source publication (licences proposed ... confirm before public release).  
+**Status:** Independent public publication. Formal open licences (MIT code · CC BY 4.0 writing) proposed ... confirm before claiming “open source.”  
 **Live site:** https://zhao-langxi.github.io/zhao-langxi/
 
 ## What this is
