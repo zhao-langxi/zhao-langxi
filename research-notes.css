@@ -677,3 +677,192 @@ article > p:last-child a:not(:first-child):hover {
     transform: none;
   }
 }
+
+/* Homepage · essay publication index */
+.home main > header h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+}
+
+.section-kicker {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.theme-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.theme-tags li {
+  border: 1px solid var(--line);
+  padding: 0.35rem 0.75rem;
+  background: var(--paper);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.theme-tags li:first-child {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.essay-index {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: essay;
+}
+
+.essay-index-item {
+  counter-increment: essay;
+  margin-bottom: 0;
+  border-top: 1px solid var(--line);
+}
+
+.essay-index-item a {
+  display: block;
+  padding: 1.5rem 0 1.75rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.essay-index-item a:hover .essay-title {
+  color: var(--accent);
+}
+
+.essay-kicker {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.essay-title {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.essay-dek {
+  display: block;
+  max-width: 42rem;
+  margin-bottom: 0.65rem;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.essay-date {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.essay-framing {
+  display: block;
+  max-width: 42rem;
+  margin-top: 0.35rem;
+  font-size: 0.88rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.direction-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.direction-list li {
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.direction-list h3 {
+  margin: 0 0 0.35rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.direction-list p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.direction-list.numbered {
+  counter-reset: direction;
+  list-style: none;
+  padding: 0;
+}
+
+.direction-list.numbered > li {
+  counter-increment: direction;
+  padding-left: 2.5rem;
+  position: relative;
+}
+
+.guiding-question {
+  max-width: 42rem;
+  margin: 1.5rem 0;
+  padding: 0 0 0 1.25rem;
+  border-left: 5px solid var(--accent);
+}
+
+.guiding-question p {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  line-height: 1.45;
+}
+
+.direction-list.numbered > li::before {
+  content: counter(direction, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.related-reading {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.related-reading h2 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+  font-size: 1.35rem;
+}
+
+.related-reading ul {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+}
+
+.related-reading .next-essay {
+  margin: 0;
+  font-size: 0.95rem;
+}
