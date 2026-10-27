@@ -55,11 +55,11 @@ Digital Humans and screen-bound concierge writing **stays**. It is the earlier c
 
 ## Immediate order
 
-1. Homepage restored and themes clear.  
-2. Review three existing essays (`editorial/essay-reviews.md`).  
+1. Homepage, About, essay bridges, research hub ... **shipped** 26 Oct 2026 (`64ad77c`).  
+2. Review three existing essays (`editorial/essay-reviews.md`) before silent body rewrites.  
 3. Draft one evidence-backed flagship (working title: *The right to interrupt*).  
 4. Publish notes + bibliography alongside the essay.  
-5. Push to GitHub only when you approve licences and diff.
+5. Do not claim open licences until Jade approves MIT / CC BY 4.0 files.
 
 ## Boundaries
 

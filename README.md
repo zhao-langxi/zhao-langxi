@@ -11,6 +11,8 @@
 
 Static HTML at repo root (GitHub Pages project site `/zhao-langxi/`). Not a framework app.
 
+**Job:** What Jade thinks about (HRI, agency, everyday machines). Ships live on jadexzhao; coursework on matchaxmoxie.
+
 **Licences:** Public site; formal MIT / CC BY 4.0 files not yet confirmed. Do not describe the publication as openly licensed until Jade approves.
 
 ## Before you publish

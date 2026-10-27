@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for reading zhao-langxi. This is an open publication; process transparency matters.
+Thank you for reading zhao-langxi. This is a public independent publication. Formal reuse licences are **pending** author approval (see README).
 
 ## Ways to help
 
