@@ -1,5 +1,7 @@
 # Evidence labels
 
+Reader page: [research/evidence-labels.html](./evidence-labels.html).
+
 Use in every essay and research note.
 
 | Label | Meaning |

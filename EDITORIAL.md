@@ -1,6 +1,8 @@
 # zhao-langxi · editorial charter
 
-**Status:** Independent public publication. Formal open licences (MIT code · CC BY 4.0 writing) proposed ... confirm before claiming “open source.”  
+**Front door (October 2026):** student life / come to IU. Digital Humans and HRI essays are **on hiatus** in `archive.html`. This charter still describes the parked writing.
+
+**Status:** Independent public site. Formal open licences (MIT code · CC BY 4.0 writing) proposed ... confirm before claiming “open source.”  
 **Live site:** https://zhao-langxi.github.io/zhao-langxi/
 
 ## What this is

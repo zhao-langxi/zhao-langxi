@@ -1,0 +1,52 @@
+---
+import Layout from "../layouts/Base.astro";
+import { base } from "../lib/site";
+---
+<Layout
+  title="Writing, on hiatus"
+  description="Older zhao-langxi essays on human-robot interaction and Digital Humans. Parked while this door is a come-to-IU student-life site."
+  canonical="https://zhao-langxi.github.io/zhao-langxi/archive.html"
+  current="archive"
+>
+  <main id="main" tabindex="-1">
+    <header>
+      <p>Archive · not the front door right now</p>
+      <h1>Writing, on hiatus</h1>
+      <p>
+        Digital Humans and the human-robot interaction essays are paused, not erased.
+        This door is student life first. Come back here if you want the older questions.
+      </p>
+    </header>
+    <article>
+      <ol class="essay-index">
+        <li class="essay-index-item">
+          <a href={`${base}question.html`}>
+            <span class="essay-kicker">Human First · English · draft</span>
+            <span class="essay-title">The concierge question</span>
+            <span class="essay-dek">Trust, disclosure, and human control when an intelligent layer mediates choices.</span>
+          </a>
+        </li>
+        <li class="essay-index-item">
+          <a href={`${base}places.html`}>
+            <span class="essay-kicker">Robots in the Wild · English</span>
+            <span class="essay-title">Places and evidence</span>
+            <span class="essay-dek">Public catalogues and face-forward machines as institutional design, not proof of trust.</span>
+          </a>
+        </li>
+        <li class="essay-index-item">
+          <a href={`${base}web-and-social-2027.html`}>
+            <span class="essay-kicker">Human First · 中文</span>
+            <span class="essay-title">网页与社交 · 2027</span>
+            <span class="essay-dek">When drafts are cheap, judgment, handoffs, and accessibility still belong to people.</span>
+          </a>
+        </li>
+      </ol>
+      <ul class="proof-list">
+        <li><a href={`${base}research.html`}>Research hub</a></li>
+        <li><a href={`${base}research/evidence-labels.html`}>Evidence labels</a></li>
+        <li><a href={`${base}research/bibliography.html`}>Open bibliography</a></li>
+      </ul>
+      <p><a href={base}>← Home</a></p>
+    </article>
+  </main>
+</Layout>

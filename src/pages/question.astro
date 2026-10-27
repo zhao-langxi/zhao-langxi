@@ -11,8 +11,27 @@ if (!main) throw new Error("legacy-html/question.html is missing a main element"
   title="The concierge question · AI and human choice · Jade Zhao"
   description="A working research note on private AI concierges, agent-to-agent first passes, consent, explainable choices, and human control. The AI filters friction. People keep the final say."
   canonical="https://zhao-langxi.github.io/zhao-langxi/question.html"
+  current="essays"
   ogTitle="The concierge question · AI and human choice · Jade Zhao"
   ogDescription="A working note on private AI concierges, agent-to-agent first passes, consent, explainable choices, and human control."
 >
   <Fragment set:html={main} />
+  <script is:inline>
+    (function () {
+      var form = document.getElementById("concierge-form");
+      var status = document.getElementById("sanctuary-state");
+      if (!form || !status) return;
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var field = form.querySelector("textarea");
+        var text = field && field.value ? field.value.trim() : "";
+        status.textContent = text
+          ? "Held on this device only. Nothing was sent."
+          : "Write something first, or sit with the prompt.";
+      });
+      form.addEventListener("reset", function () {
+        status.textContent = "Ready when you are. No microphone required.";
+      });
+    })();
+  </script>
 </Layout>

@@ -1,96 +1,107 @@
 ---
 import Layout from "../layouts/Base.astro";
-
-const base = import.meta.env.BASE_URL;
+import { base } from "../lib/site";
 ---
 <Layout
-  title="赵郎溪 · zhao-langxi · HRI essays"
-  description="Independent publication on human-robot interaction and everyday life with intelligent machines. Essays and research notes by Jade Zhao (赵郎溪)."
+  title="赵郎溪 · come to IU"
+  description="The original story of @zhao.langxi, then things you can do as an Indiana University student ... on campus, across Indiana, and in Spain."
   canonical="https://zhao-langxi.github.io/zhao-langxi/"
   current="home"
   bodyClass="home"
+  ogTitle="zhao-langxi · come to IU"
+  ogDescription="xiao mao diao yu. A social-butterfly guide to IU, Indiana, and Spain, starting from the original Instagram story."
 >
   <main id="main" tabindex="-1">
     <header>
-      <p>Independent publication · human-robot interaction</p>
-      <h1>What changes when intelligent machines share our spaces?</h1>
+      <img
+        class="hero-photo"
+        src={`${base}assets/fishing.jpg`}
+        alt="Jade Zhao on a boat, holding a fishing rod, open water behind her."
+        width="960"
+        height="540"
+        decoding="async"
+      />
+      <p>赵郎溪 · @zhao.langxi · come to IU</p>
+      <h1>xiao mao diao yu</h1>
       <blockquote class="guiding-question">
-        <p>We keep asking what robots will be capable of doing. What should we be asking about the people who will have to live alongside them?</p>
+        <p>Little cat, fishing. Reformed iPad kid. Then Bloomington stopped feeling like a visit.</p>
       </blockquote>
       <p>
-        I write from human-centred design and technology, not as a robotics engineer.
-        Essays use evidence labels so readers can see what is observed, reported, or interpreted.
+        This is the social-butterfly door. Things you can actually do as an Indiana University (IU) student ...
+        on campus, around Indiana, and in Spain when a semester takes you there.
       </p>
       <p class="section-kicker">
-        <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a> (work) ·
-        <a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a> (coursework) ·
-        <a href={`${base}about.html`}>About this publication</a>
+        Photos and days live on
+        <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">Instagram @zhao.langxi</a>.
+        Ships live on <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>.
+        Classroom notes live on
+        <a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a>.
       </p>
     </header>
     <article>
-      <section id="featured" aria-labelledby="featured-heading">
-        <h2 id="featured-heading">Featured essay · in progress</h2>
-        <div class="featured-essay">
-          <p class="essay-kicker">Human First · planned</p>
-          <h3><em>The right to interrupt</em></h3>
-          <p>Human control should mean more than an emergency stop. When a robot enters a workplace, museum or shared public space, who gets to tell it to stop? What happens when a person cannot move out of its way, does not understand its intentions, or needs human assistance?</p>
-          <p class="meta">Outline and reading list: <a href={`${base}editorial/flagship-plan.md`}>editorial/flagship-plan.md</a>. The essay will publish here when drafted and reviewed.</p>
-        </div>
+      <section id="story" aria-labelledby="story-heading">
+        <h2 id="story-heading">The original story</h2>
+        <p>
+          <span lang="zh-Hans">赵郎溪</span> is the name I wanted to grow into. On Instagram it is
+          <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">@zhao.langxi</a>.
+          The bio is still the true one: <em>xiao mao diao yu</em> ... little cat fishing ...
+          <em>pov reformed ipad kid</em>. The fishing photo is not a brand exercise. It is me, on a boat,
+          before anyone asked for a résumé line.
+        </p>
+        <p>
+          I am Jade Zhao. Chinese American. I grew up in a family Chinese restaurant in central Indiana
+          (Greenfield, Indiana). Mum drove Greenfield into Indianapolis so I could reach libraries, camps,
+          and classrooms that did not exist on our street. A system either survives a real customer or it
+          does not. That is still how I read a room.
+        </p>
+        <p>
+          IU felt mutual. I came. The campus kept me. Sample Gates stopped being a postcard. Teter Hall,
+          room 102, became the infinite sleepover ... new names in the group chat, a roommate who turns into
+          your Sunday person, a squirrel winning against a peanut-butter jar. Then Bloomington stopped
+          feeling like a place I was visiting.
+        </p>
+        <p>
+          I host get-togethers. I take the picture anyway. I go home when I can. I cheer at a game because
+          I actually care about the score now, not just the outfit. If you are deciding whether to come to
+          IU, this door is for you. Not a brochure. A map of days that already happened.
+        </p>
       </section>
-      <section id="essays" aria-labelledby="essays-heading">
-        <h2 id="essays-heading">Recent writing</h2>
+
+      <section id="doors" aria-labelledby="doors-heading">
+        <h2 id="doors-heading">Where you can go</h2>
         <ol class="essay-index">
           <li class="essay-index-item">
-            <a href={`${base}question.html`}>
-              <span class="essay-kicker">Human First · English · draft</span>
-              <span class="essay-title">The concierge question</span>
-              <span class="essay-dek">Trust, disclosure, and human control when an intelligent layer mediates choices.</span>
-              <time class="essay-date" datetime="2026-10">Last updated October 2026</time>
+            <a href={`${base}iu.html`}>
+              <span class="essay-kicker">Campus · Bloomington</span>
+              <span class="essay-title">IU</span>
+              <span class="essay-dek">Welcome Week, 900+ organisations, Little 500, IUDM, Sample Gates, and the ordinary Tuesdays in between.</span>
             </a>
           </li>
           <li class="essay-index-item">
-            <a href={`${base}places.html`}>
-              <span class="essay-kicker">Robots in the Wild · English</span>
-              <span class="essay-title">Places and evidence</span>
-              <span class="essay-dek">Public catalogues and face-forward machines as institutional design, not proof of trust.</span>
-              <time class="essay-date" datetime="2026-09-28">Last updated 28 September 2026</time>
+            <a href={`${base}indiana.html`}>
+              <span class="essay-kicker">College town · home weekends</span>
+              <span class="essay-title">Indiana</span>
+              <span class="essay-dek">Kirkwood, Lake Monroe, College Mall, and the drive home to the restaurant.</span>
             </a>
           </li>
           <li class="essay-index-item">
-            <a href={`${base}web-and-social-2027.html`}>
-              <span class="essay-kicker">Human First · 中文</span>
-              <span class="essay-title">网页与社交 · 2027</span>
-              <span class="essay-dek">When drafts are cheap, judgment, handoffs, and accessibility still belong to people.</span>
-              <time class="essay-date" datetime="2026-10">Last updated October 2026</time>
+            <a href={`${base}spain.html`}>
+              <span class="essay-kicker">Study abroad · Spring 2026</span>
+              <span class="essay-title">Spain</span>
+              <span class="essay-dek">Universidad Complutense de Madrid, then Segovia, Cáceres, Trujillo, Tenerife.</span>
             </a>
           </li>
         </ol>
       </section>
-      <section id="themes" aria-labelledby="themes-heading">
-        <h2 id="themes-heading">Explore by theme</h2>
-        <ul class="direction-list">
-          <li>
-            <h3>Human First</h3>
-            <p>Consent, trust, accessibility, interruption, responsibility, and the boundaries of automation.</p>
-          </li>
-          <li>
-            <h3>Robots in the Wild</h3>
-            <p>Robots in museums, hospitals, workplaces, and public space ... using published evidence, not implied fieldwork.</p>
-          </li>
-          <li>
-            <h3>After the Demo</h3>
-            <p>What a demonstration proves, what it hides, and what would need to happen for everyday reliability.</p>
-          </li>
-        </ul>
-      </section>
-      <section id="research" aria-labelledby="research-heading">
-        <h2 id="research-heading">Research and methods</h2>
-        <p>Bibliography, evidence standards, and notes that sit behind the essays.</p>
-        <ul class="proof-list">
-          <li><a href={`${base}research/evidence-labels.md`}>How to read evidence labels</a></li>
-          <li><a href={`${base}research.html`}>Research hub</a></li>
-          <li><a href={`${base}editorial.html`}>Editorial roadmap</a> (for collaborators)</li>
-        </ul>
+
+      <section id="hiatus" aria-labelledby="hiatus-heading">
+        <h2 id="hiatus-heading">Digital Humans, on hiatus</h2>
+        <p>
+          The older essays on human-robot interaction and Digital Humans are parked, not deleted.
+          This door is student life first. If you came for the hire story, that lives on
+          <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>.
+        </p>
+        <p><a href={`${base}archive.html`}>Writing archive</a></p>
       </section>
     </article>
   </main>

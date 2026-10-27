@@ -8,7 +8,7 @@
 **Recipe before draft:**
 
 1. One documented deployment or product (named, linked).  
-2. One cited HRI or adjacent source.  
+2. One cited HRI or adjacent source. Candidates already in the bibliography: Banerjee et al. 2018 (interruptibility-aware robots), Babel et al. CHI 2024 (elevator queue), Hetherington et al. 2021 (yielding cues).  
 3. One original question.  
 4. End on **Open question**.
 

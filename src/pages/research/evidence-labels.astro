@@ -1,0 +1,47 @@
+---
+import Layout from "../../layouts/Base.astro";
+import { base } from "../../lib/site";
+---
+<Layout
+  title="Evidence labels"
+  description="How zhao-langxi marks Observed, Reported, Interpreted, and Open question in every essay."
+  canonical="https://zhao-langxi.github.io/zhao-langxi/research/evidence-labels.html"
+  current="research"
+>
+  <main id="main" tabindex="-1">
+    <header>
+      <p>Research and methods</p>
+      <h1>Evidence labels</h1>
+      <p>Use these in every essay and research note so a reader can see what kind of claim they are looking at.</p>
+    </header>
+    <article>
+      <ul class="resource-list">
+        <li>
+          <h2>Observed</h2>
+          <p>Something I personally witnessed or documented, with the date and surface named when it matters.</p>
+        </li>
+        <li>
+          <h2>Reported</h2>
+          <p>A claim supported by a linked source. Paraphrased, not treated as my own fieldwork.</p>
+        </li>
+        <li>
+          <h2>Interpreted</h2>
+          <p>My analysis. If the source disappeared, this part should still read as mine.</p>
+        </li>
+        <li>
+          <h2>Open question</h2>
+          <p>Not established yet. The useful ending of a note is often here, not in a slogan.</p>
+        </li>
+      </ul>
+      <p class="essay-framing">
+        Example: <strong>[Reported]</strong> a Smart LAB listing describes a digital-human customer-service tool.
+        <strong>[Interpreted]</strong> that is evidence of what an institution published, not proof that users trust the face.
+        <strong>[Open question]</strong> whether anyone comes back after the first answer.
+      </p>
+      <p>
+        <a href={`${base}research.html`}>Research hub</a> ·
+        <a href={base}>Home</a>
+      </p>
+    </article>
+  </main>
+</Layout>

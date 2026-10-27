@@ -1,18 +1,17 @@
 ---
 import Layout from "../layouts/Base.astro";
-
-const base = import.meta.env.BASE_URL;
+import { base } from "../lib/site";
 ---
 <Layout
   title="About"
-  description="Who writes zhao-langxi, why these human-robot interaction questions matter, how evidence is labelled, and where to find professional work."
+  description="Jade Zhao, 赵郎溪, Indiana University student. The person behind @zhao.langxi, and why this door is a come-to-IU map right now."
   canonical="https://zhao-langxi.github.io/zhao-langxi/about.html"
   current="about"
 >
   <main id="main" tabindex="-1">
     <header>
       <div>
-        <p>About this publication</p>
+        <p>About this door</p>
         <h1>Jade Zhao · <span lang="zh-Hans">赵郎溪</span></h1>
       </div>
       <div>
@@ -22,29 +21,36 @@ const base = import.meta.env.BASE_URL;
     <article class="prose">
       <h2>Who writes</h2>
       <p>
-        Jade Zhao. Informatics student at Indiana University. I write from human-centred design and technology, not as a robotics engineer.
-        <span lang="zh-Hans">赵郎溪</span> is an independent essay publication, not Indiana University research and not peer-reviewed work.
-      </p>
-      <h2>Why these questions</h2>
-      <p>
-        Intelligent systems are entering shared life: screens that speak like people, tools that filter choices, institutions that catalogue “digital humans.”
-        This publication asks what that means for trust, interruption, accessibility, and agency ... especially after the demo ends.
-      </p>
-      <h2>How evidence is handled</h2>
-      <p>
-        Essays use four labels: <strong>Observed</strong>, <strong>Reported</strong>, <strong>Interpreted</strong>, and <strong>Open question</strong>.
-        I do not claim fieldwork I did not do. Public catalogues and media coverage are evidence of what institutions publish, not proof that people trust or use a system well.
+        Jade Zhao. Informatics student at Indiana University Luddy, expected May 2027. Minors in Business
+        Technology and user-experience (UX) research. Hudson &amp; Holland Scholar. First-generation
+        college student. I speak English, Fuzhounese, and Spanish.
       </p>
       <p>
-        <a href={`${base}research/evidence-labels.md`}>Read the evidence labels</a> ·
-        <a href={`${base}research.html`}>Research hub</a>
+        I grew up in a family Chinese restaurant in central Indiana (Greenfield, Indiana). The Instagram
+        is <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">@zhao.langxi</a>.
+        The bio is the original story: <em>xiao mao diao yu</em> ... little cat fishing ...
+        <em>pov reformed ipad kid</em>.
       </p>
-      <h2>Where professional work lives</h2>
+      <h2>What this site is doing right now</h2>
       <p>
-        Case studies, code, and employment detail belong on
+        A come-to-IU map. Campus, Indiana, Spain. Social-butterfly notes from a student who already lives
+        here, not a recruitment office. Digital Humans writing is on hiatus. The older essays stay in the
+        <a href={`${base}archive.html`}>archive</a>.
+      </p>
+      <h2>What I do when I am not in a dining hall</h2>
+      <p>
+        Film photography. Gardening. Reading. Walking. Matcha. Hosting get-togethers. A duck-farm
+        throughline that is culture, not a product launch. Spring 2026 I studied at Universidad
+        Complutense de Madrid.
+      </p>
+      <h2>Where the other work lives</h2>
+      <p>
+        Case studies and the résumé belong on
         <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>.
         Coursework and handoff guides belong on
         <a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a>.
+        Hire narrative belongs on
+        <a href="https://www.linkedin.com/in/zhao-langxi/" rel="noopener noreferrer">LinkedIn</a>.
       </p>
       <p>
         <a href="https://jadexzhao.github.io/jadexzhao/resume.pdf" rel="noopener noreferrer">Résumé (PDF)</a> ·

@@ -79,7 +79,8 @@ html {
 .site > nav > div {
   display: flex;
   align-items: baseline;
-  gap: 1.25rem;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
   width: min(40rem, 100% - 2.5rem);
   min-height: 3.4rem;
   margin-inline: auto;
@@ -311,18 +312,18 @@ article li a {
   color: var(--link);
 }
 
-article ol {
+article ol:not(.essay-index) {
   counter-reset: step;
 }
 
-article ol > li {
+article ol:not(.essay-index) > li {
   display: grid;
   grid-template-columns: 2rem minmax(0, 1fr);
   gap: 0.25rem 0.75rem;
   align-items: start;
 }
 
-article ol > li::before {
+article ol:not(.essay-index) > li::before {
   content: counter(step, decimal-leading-zero);
   counter-increment: step;
   padding-top: 0.7rem;
@@ -331,11 +332,11 @@ article ol > li::before {
   font-size: 0.72rem;
 }
 
-article ol > li > * {
+article ol:not(.essay-index) > li > * {
   grid-column: 2;
 }
 
-article ol > li > :first-child {
+article ol:not(.essay-index) > li > :first-child {
   grid-row: 1;
 }
 
@@ -757,17 +758,41 @@ article > p:last-child a:not(:first-child):hover {
   color: var(--accent);
 }
 
+.featured-essay h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.featured-essay h3 a:hover {
+  color: var(--link);
+}
+
+.proof-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.proof-list li {
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--line);
+}
+
 .essay-index {
   margin: 0;
   padding: 0;
   list-style: none;
-  counter-reset: essay;
 }
 
 .essay-index-item {
-  counter-increment: essay;
+  display: block;
   margin-bottom: 0;
+  padding: 0;
   border-top: 1px solid var(--line);
+}
+
+.essay-index-item::before {
+  content: none;
 }
 
 .essay-index-item a {
@@ -908,4 +933,26 @@ article > p:last-child a:not(:first-child):hover {
 .related-reading .next-essay {
   margin: 0;
   font-size: 0.95rem;
+}
+
+.hero-photo {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  margin: 0 0 1.1rem;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.home main > header:has(.hero-photo) {
+  display: block;
+}
+
+.home main > header .hero-photo {
+  max-width: none;
+  aspect-ratio: 16 / 10;
 }
