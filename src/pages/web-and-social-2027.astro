@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Base.astro";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
+
+const html = readFileSync(resolve(process.cwd(), "legacy-html/web-and-social-2027.html"), "utf8");
+const main = html.match(/<main[\s\S]*?<\/main>/)?.[0];
+if (!main) throw new Error("legacy-html/web-and-social-2027.html is missing a main element");
+---
+<Layout
+  title="2027 年，社交媒体和网页设计还重要吗 · 赵郎溪"
+  description="为什么到 2027 年社交媒体和网页设计仍然重要；生成式工具 改变了什么、没改变什么；常用工具类别；以及交接清单。赵郎溪 · Jade Zhao · 随笔，非产品页。"
+  canonical="https://zhao-langxi.github.io/zhao-langxi/web-and-social-2027.html"
+  lang="zh-Hans"
+  skipLabel="跳到正文"
+  ogTitle="2027 年，社交媒体和网页设计还重要吗 · 赵郎溪"
+  ogDescription="AI 加速草稿；信任、可访问性和品牌一致性仍要人判断。工具分类与交接清单。"
+>
+  <Fragment set:html={main} />
+</Layout>

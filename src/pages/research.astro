@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Base.astro";
+
+const base = import.meta.env.BASE_URL;
+---
+<Layout
+  title="Research hub"
+  description="Bibliography, evidence labels, and reading library for zhao-langxi HRI essays."
+  canonical="https://zhao-langxi.github.io/zhao-langxi/research.html"
+  current="research"
+>
+  <main id="main" tabindex="-1">
+    <header>
+      <p>Research and methods</p>
+      <h1>Research hub</h1>
+      <p>Each file below supports the essays. Open the one that matches what you need: reading lists, citation rules, or draft review notes.</p>
+    </header>
+    <article>
+      <ul class="resource-list">
+        <li>
+          <h2><a href={`${base}research/evidence-labels.md`}>Evidence labels</a></h2>
+          <p>Read this first if you are new. It defines <strong>Observed</strong>, <strong>Reported</strong>, <strong>Interpreted</strong>, and <strong>Open question</strong> on every essay.</p>
+        </li>
+        <li>
+          <h2><a href={`${base}research/bibliography.md`}>Open bibliography</a></h2>
+          <p>Cited and candidate sources with stable links. Use when you want to check a claim or suggest a reference via GitHub.</p>
+        </li>
+        <li>
+          <h2><a href={`${base}research/reading-library.md`}>HRI reading library</a></h2>
+          <p>Papers, tools, and open robotics projects grouped for essay research ... not a course syllabus.</p>
+        </li>
+        <li>
+          <h2><a href={`${base}editorial/essay-reviews.md`}>Essay reviews</a></h2>
+          <p>Editorial notes on existing drafts (argument, repetition, HRI bridge). No silent overwrites of essay HTML.</p>
+        </li>
+        <li>
+          <h2><a href={`${base}editorial/flagship-plan.md`}>Flagship essay plan</a></h2>
+          <p>Working outline for <em>The right to interrupt</em> ... interruption, accessibility, and authority in shared spaces.</p>
+        </li>
+        <li>
+          <h2><a href={`${base}research/notes/README.md`}>Research notes folder</a></h2>
+          <p>Scratch notes and reading logs that may feed future essays. Informal; not published as finished work.</p>
+        </li>
+      </ul>
+      <h2>Contributing references</h2>
+      <p>
+        Use GitHub Issues (template: research reference) or a pull request that adds a row to <code>bibliography.md</code> with a stable link.
+        Do not paste paywalled full text without permission.
+      </p>
+      <p><a href={base}>← Home</a></p>
+    </article>
+  </main>
+</Layout>

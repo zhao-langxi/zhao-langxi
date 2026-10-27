@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Base.astro";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
+
+const html = readFileSync(resolve(process.cwd(), "legacy-html/places.html"), "utf8");
+const main = html.match(/<main[\s\S]*?<\/main>/)?.[0];
+if (!main) throw new Error("legacy-html/places.html is missing a main element");
+---
+<Layout
+  title="Places and evidence"
+  description="Looking human is not the product. Hong Kong public Digital Human catalogues as evidence for student research. Limits first."
+  canonical="https://zhao-langxi.github.io/zhao-langxi/places.html"
+  ogTitle="Hong Kong Digital Humans · Jade Zhao"
+  ogDescription="Looking human is not the product. The consumer test is trust, disclosure, and coming back."
+>
+  <Fragment set:html={main} />
+</Layout>

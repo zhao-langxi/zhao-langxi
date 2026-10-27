@@ -1,0 +1,114 @@
+---
+import "../styles/rivet.css";
+
+const base = import.meta.env.BASE_URL;
+const {
+  title,
+  description,
+  canonical,
+  lang = "en-GB",
+  current = "",
+  ogTitle = title,
+  ogDescription = description,
+  robots = "index, follow",
+  skipLabel = "Skip to main content",
+} = Astro.props;
+
+const pageTitle = title.includes("zhao-langxi") ? title : `${title} · zhao-langxi`;
+const canonicalUrl = canonical ?? `https://zhao-langxi.github.io${Astro.url.pathname}`;
+const ogImage = "https://zhao-langxi.github.io/zhao-langxi/og-image.jpg";
+---
+<!DOCTYPE html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content={robots} />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta name="author" content="Jade Zhao" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="zhao-langxi · Jade Zhao" />
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={ogDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Jade Zhao fishing on a boat · zhao-langxi" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image:alt" content="Jade Zhao fishing on a boat · zhao-langxi" />
+    <link rel="icon" href={`${base}favicon.ico`} sizes="any" />
+    <link rel="icon" type="image/png" sizes="16x16" href={`${base}favicon-16x16.png`} />
+    <link rel="icon" type="image/png" sizes="32x32" href={`${base}favicon-32x32.png`} />
+    <link rel="icon" type="image/png" sizes="192x192" href={`${base}favicon-192x192.png`} />
+    <link rel="icon" type="image/png" sizes="512x512" href={`${base}favicon-512x512.png`} />
+    <link rel="apple-touch-icon" sizes="180x180" href={`${base}apple-touch-icon.png`} />
+    <link rel="manifest" href={`${base}site.webmanifest`} />
+    <meta name="theme-color" content="#e4ebe6" />
+  </head>
+  <body class:list={["site", Astro.props.bodyClass]}>
+    <a class="skip-link" href="#main">{skipLabel}</a>
+    <nav aria-label={lang === "zh-Hans" ? "站点导航" : "Site"}>
+      <div>
+        <a aria-label="赵郎溪, home" href={base}><span lang="zh-Hans">赵郎溪</span></a>
+        <ul>
+          <li><a href={base} aria-current={current === "home" ? "page" : undefined}>Home</a></li>
+          <li><a href={`${base}#essays`}>Essays</a></li>
+          <li><a href={`${base}research.html`} aria-current={current === "research" ? "page" : undefined}>Research</a></li>
+          <li><a href={`${base}#themes`}>Themes</a></li>
+          <li><a href={`${base}about.html`} aria-current={current === "about" ? "page" : undefined}>About</a></li>
+        </ul>
+        <span class="contrast">
+          <input class="high-contrast-control" id="high-contrast" type="checkbox" />
+          <label class="theme-toggle" for="high-contrast">High contrast</label>
+        </span>
+      </div>
+    </nav>
+    <slot />
+    <footer>
+      <div>
+        <div>
+          <div>
+            <h2>{lang === "zh-Hans" ? "本站" : "On this door"}</h2>
+            <ul>
+              <li><a href={base} aria-current={current === "home" ? "page" : undefined}>Home</a></li>
+              <li><a href={`${base}question.html`}>The concierge question</a></li>
+              <li><a href={`${base}places.html`}>Places and evidence</a></li>
+              <li><a href={`${base}web-and-social-2027.html`}>网页与社交</a></li>
+              <li><a href={`${base}research.html`}>Research</a></li>
+              <li><a href={`${base}about.html`} aria-current={current === "about" ? "page" : undefined}>About</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>{lang === "zh-Hans" ? "别处" : "Elsewhere"}</h2>
+            <ul>
+              <li><a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a></li>
+              <li><a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a></li>
+              <li><a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">Instagram @zhao.langxi</a></li>
+              <li><a href="https://github.com/zhao-langxi" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="mailto:jlzhao@iu.edu">Email</a></li>
+            </ul>
+          </div>
+        </div>
+        <nav aria-label={lang === "zh-Hans" ? "其他站点" : "Other sites"}>
+          <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>
+          <a href="https://matchaxmoxie.github.io/matchaxmoxie/">matchaxmoxie</a>
+          <a aria-current="page" href="https://zhao-langxi.github.io/zhao-langxi/">zhao-langxi</a>
+        </nav>
+        <div>
+          <p>
+            {
+              lang === "zh-Hans"
+                ? "公开发布的独立出版物。非印第安纳大学背书，亦非同行评议论文。正式开放许可待定（见 README）。"
+                : "Public, independently maintained publication. Not IU-endorsed or peer-reviewed. Source on GitHub; formal open licences pending confirmation (see README)."
+            }
+          </p>
+        </div>
+        <p><span lang="zh-Hans">赵郎溪</span> · Jade Zhao</p>
+      </div>
+    </footer>
+  </body>
+</html>

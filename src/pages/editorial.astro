@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Base.astro";
+
+const base = import.meta.env.BASE_URL;
+---
+<Layout
+  title="Editorial"
+  description="Internal editorial roadmap for zhao-langxi HRI essays; not part of the public reading path."
+  canonical="https://zhao-langxi.github.io/zhao-langxi/editorial.html"
+  robots="noindex, follow"
+>
+  <main id="main" tabindex="-1">
+    <header>
+      <p>For collaborators</p>
+      <h1>Editorial roadmap</h1>
+      <p>Process notes live here so the homepage can stay reader-first.</p>
+    </header>
+    <article class="prose">
+      <h2>Current priorities</h2>
+      <ol>
+        <li>Publish flagship essay <em>The right to interrupt</em> (<a href={`${base}editorial/flagship-plan.md`}>flagship-plan.md</a>).</li>
+        <li>Tighten <a href={`${base}question.html`}>The concierge question</a> without changing its public URL.</li>
+        <li>Review drafts (<a href={`${base}editorial/essay-reviews.md`}>essay-reviews.md</a>) before any silent overwrite.</li>
+      </ol>
+      <p><a href={base}>← Home</a></p>
+    </article>
+  </main>
+</Layout>

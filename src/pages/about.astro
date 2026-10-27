@@ -1,0 +1,55 @@
+---
+import Layout from "../layouts/Base.astro";
+
+const base = import.meta.env.BASE_URL;
+---
+<Layout
+  title="About"
+  description="Who writes zhao-langxi, why these human-robot interaction questions matter, how evidence is labelled, and where to find professional work."
+  canonical="https://zhao-langxi.github.io/zhao-langxi/about.html"
+  current="about"
+>
+  <main id="main" tabindex="-1">
+    <header>
+      <div>
+        <p>About this publication</p>
+        <h1>Jade Zhao · <span lang="zh-Hans">赵郎溪</span></h1>
+      </div>
+      <div>
+        <img alt="Jade Zhao, profile photo." class="author-avatar" decoding="async" height="120" src={`${base}assets/site-pfp.jpg`} width="120" />
+      </div>
+    </header>
+    <article class="prose">
+      <h2>Who writes</h2>
+      <p>
+        Jade Zhao. Informatics student at Indiana University. I write from human-centred design and technology, not as a robotics engineer.
+        <span lang="zh-Hans">赵郎溪</span> is an independent essay publication, not Indiana University research and not peer-reviewed work.
+      </p>
+      <h2>Why these questions</h2>
+      <p>
+        Intelligent systems are entering shared life: screens that speak like people, tools that filter choices, institutions that catalogue “digital humans.”
+        This publication asks what that means for trust, interruption, accessibility, and agency ... especially after the demo ends.
+      </p>
+      <h2>How evidence is handled</h2>
+      <p>
+        Essays use four labels: <strong>Observed</strong>, <strong>Reported</strong>, <strong>Interpreted</strong>, and <strong>Open question</strong>.
+        I do not claim fieldwork I did not do. Public catalogues and media coverage are evidence of what institutions publish, not proof that people trust or use a system well.
+      </p>
+      <p>
+        <a href={`${base}research/evidence-labels.md`}>Read the evidence labels</a> ·
+        <a href={`${base}research.html`}>Research hub</a>
+      </p>
+      <h2>Where professional work lives</h2>
+      <p>
+        Case studies, code, and employment detail belong on
+        <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>.
+        Coursework and handoff guides belong on
+        <a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a>.
+      </p>
+      <p>
+        <a href="https://jadexzhao.github.io/jadexzhao/resume.pdf" rel="noopener noreferrer">Résumé (PDF)</a> ·
+        <a href="mailto:jlzhao@iu.edu">jlzhao@iu.edu</a>
+      </p>
+    </article>
+  </main>
+</Layout>

@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Base.astro";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
+
+const html = readFileSync(resolve(process.cwd(), "legacy-html/question.html"), "utf8");
+const main = html.match(/<main[\s\S]*?<\/main>/)?.[0];
+if (!main) throw new Error("legacy-html/question.html is missing a main element");
+---
+<Layout
+  title="The concierge question · AI and human choice · Jade Zhao"
+  description="A working research note on private AI concierges, agent-to-agent first passes, consent, explainable choices, and human control. The AI filters friction. People keep the final say."
+  canonical="https://zhao-langxi.github.io/zhao-langxi/question.html"
+  ogTitle="The concierge question · AI and human choice · Jade Zhao"
+  ogDescription="A working note on private AI concierges, agent-to-agent first passes, consent, explainable choices, and human control."
+>
+  <Fragment set:html={main} />
+</Layout>

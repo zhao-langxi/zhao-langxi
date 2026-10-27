@@ -1,0 +1,97 @@
+---
+import Layout from "../layouts/Base.astro";
+
+const base = import.meta.env.BASE_URL;
+---
+<Layout
+  title="赵郎溪 · zhao-langxi · HRI essays"
+  description="Independent publication on human-robot interaction and everyday life with intelligent machines. Essays and research notes by Jade Zhao (赵郎溪)."
+  canonical="https://zhao-langxi.github.io/zhao-langxi/"
+  current="home"
+  bodyClass="home"
+>
+  <main id="main" tabindex="-1">
+    <header>
+      <p>Independent publication · human-robot interaction</p>
+      <h1>What changes when intelligent machines share our spaces?</h1>
+      <blockquote class="guiding-question">
+        <p>We keep asking what robots will be capable of doing. What should we be asking about the people who will have to live alongside them?</p>
+      </blockquote>
+      <p>
+        I write from human-centred design and technology, not as a robotics engineer.
+        Essays use evidence labels so readers can see what is observed, reported, or interpreted.
+      </p>
+      <p class="section-kicker">
+        <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a> (work) ·
+        <a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a> (coursework) ·
+        <a href={`${base}about.html`}>About this publication</a>
+      </p>
+    </header>
+    <article>
+      <section id="featured" aria-labelledby="featured-heading">
+        <h2 id="featured-heading">Featured essay · in progress</h2>
+        <div class="featured-essay">
+          <p class="essay-kicker">Human First · planned</p>
+          <h3><em>The right to interrupt</em></h3>
+          <p>Human control should mean more than an emergency stop. When a robot enters a workplace, museum or shared public space, who gets to tell it to stop? What happens when a person cannot move out of its way, does not understand its intentions, or needs human assistance?</p>
+          <p class="meta">Outline and reading list: <a href={`${base}editorial/flagship-plan.md`}>editorial/flagship-plan.md</a>. The essay will publish here when drafted and reviewed.</p>
+        </div>
+      </section>
+      <section id="essays" aria-labelledby="essays-heading">
+        <h2 id="essays-heading">Recent writing</h2>
+        <ol class="essay-index">
+          <li class="essay-index-item">
+            <a href={`${base}question.html`}>
+              <span class="essay-kicker">Human First · English · draft</span>
+              <span class="essay-title">The concierge question</span>
+              <span class="essay-dek">Trust, disclosure, and human control when an intelligent layer mediates choices.</span>
+              <time class="essay-date" datetime="2026-10">Last updated October 2026</time>
+            </a>
+          </li>
+          <li class="essay-index-item">
+            <a href={`${base}places.html`}>
+              <span class="essay-kicker">Robots in the Wild · English</span>
+              <span class="essay-title">Places and evidence</span>
+              <span class="essay-dek">Public catalogues and face-forward machines as institutional design, not proof of trust.</span>
+              <time class="essay-date" datetime="2026-09-28">Last updated 28 September 2026</time>
+            </a>
+          </li>
+          <li class="essay-index-item">
+            <a href={`${base}web-and-social-2027.html`}>
+              <span class="essay-kicker">Human First · 中文</span>
+              <span class="essay-title">网页与社交 · 2027</span>
+              <span class="essay-dek">When drafts are cheap, judgment, handoffs, and accessibility still belong to people.</span>
+              <time class="essay-date" datetime="2026-10">Last updated October 2026</time>
+            </a>
+          </li>
+        </ol>
+      </section>
+      <section id="themes" aria-labelledby="themes-heading">
+        <h2 id="themes-heading">Explore by theme</h2>
+        <ul class="direction-list">
+          <li>
+            <h3>Human First</h3>
+            <p>Consent, trust, accessibility, interruption, responsibility, and the boundaries of automation.</p>
+          </li>
+          <li>
+            <h3>Robots in the Wild</h3>
+            <p>Robots in museums, hospitals, workplaces, and public space ... using published evidence, not implied fieldwork.</p>
+          </li>
+          <li>
+            <h3>After the Demo</h3>
+            <p>What a demonstration proves, what it hides, and what would need to happen for everyday reliability.</p>
+          </li>
+        </ul>
+      </section>
+      <section id="research" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research and methods</h2>
+        <p>Bibliography, evidence standards, and notes that sit behind the essays.</p>
+        <ul class="proof-list">
+          <li><a href={`${base}research/evidence-labels.md`}>How to read evidence labels</a></li>
+          <li><a href={`${base}research.html`}>Research hub</a></li>
+          <li><a href={`${base}editorial.html`}>Editorial roadmap</a> (for collaborators)</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+</Layout>
