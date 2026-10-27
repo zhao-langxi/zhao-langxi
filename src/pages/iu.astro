@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Base.astro";
+import InstagramEmbed from "../components/InstagramEmbed.astro";
 import { base } from "../lib/site";
 ---
 <Layout
@@ -172,6 +173,21 @@ import { base } from "../lib/site";
         </ul>
       </section>
 
+      <section aria-labelledby="ig-heading">
+        <h2 id="ig-heading">From Instagram @zhao.langxi</h2>
+        <p>Memorial Stadium, twice. Once in a penguin onesie. Once at night. The rest of the grid is on the account.</p>
+        <div class="ig-grid">
+          <InstagramEmbed
+            href="https://www.instagram.com/p/De-VPhSltw0/"
+            title="Memorial Stadium · penguin onesie"
+          />
+          <InstagramEmbed
+            href="https://www.instagram.com/p/De5Z4fPlpze/"
+            title="Memorial Stadium at night"
+          />
+        </div>
+      </section>
+
       <section aria-labelledby="official-heading">
         <h2 id="official-heading">Official starting points</h2>
         <ul class="proof-list">
@@ -182,6 +198,7 @@ import { base } from "../lib/site";
         </ul>
         <p>
           <a href={`${base}indiana.html`}>Indiana, beyond the gates</a>
+          <a href={`${base}days.html`}>Days · BeReal</a>
           <a href={`${base}`}>Home</a>
         </p>
       </section>

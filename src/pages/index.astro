@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Base.astro";
+import InstagramEmbed from "../components/InstagramEmbed.astro";
 import { base } from "../lib/site";
 ---
 <Layout
@@ -67,6 +68,29 @@ import { base } from "../lib/site";
         </p>
       </section>
 
+      <section id="instagram" aria-labelledby="ig-heading">
+        <h2 id="ig-heading">From Instagram @zhao.langxi</h2>
+        <p>
+          The live grid, not a recap. Memorial Stadium in a penguin onesie. Night game lights. Friends.
+          More days on
+          <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">@zhao.langxi</a>.
+        </p>
+        <div class="ig-grid">
+          <InstagramEmbed
+            href="https://www.instagram.com/p/De-VPhSltw0/"
+            title="Memorial Stadium · penguin onesie"
+          />
+          <InstagramEmbed
+            href="https://www.instagram.com/p/Dey2zHiFo0F/"
+            title="A Tuesday with people I like"
+          />
+          <InstagramEmbed
+            href="https://www.instagram.com/p/De5Z4fPlpze/"
+            title="Memorial Stadium at night"
+          />
+        </div>
+      </section>
+
       <section id="doors" aria-labelledby="doors-heading">
         <h2 id="doors-heading">Where you can go</h2>
         <ol class="essay-index">
@@ -89,6 +113,13 @@ import { base } from "../lib/site";
               <span class="essay-kicker">Study abroad · Spring 2026</span>
               <span class="essay-title">Spain</span>
               <span class="essay-dek">Universidad Complutense de Madrid, then Segovia, Cáceres, Trujillo, Tenerife.</span>
+            </a>
+          </li>
+          <li class="essay-index-item">
+            <a href={`${base}days.html`}>
+              <span class="essay-kicker">BeReal · the pictures</span>
+              <span class="essay-title">Days</span>
+              <span class="essay-dek">Fourteen frames from Downloads: campus, Kirkwood, Madrid sidewalks.</span>
             </a>
           </li>
         </ol>

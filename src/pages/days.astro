@@ -1,0 +1,146 @@
+---
+import Layout from "../layouts/Base.astro";
+import { base } from "../lib/site";
+
+const days = [
+  {
+    place: "IU",
+    file: "iu-stadium-night.jpg",
+    title: "Memorial Stadium at night",
+    alt: "BeReal. Memorial Stadium lit gold at night, parking lot in front. Jade in the inset selfie.",
+  },
+  {
+    place: "IU",
+    file: "iu-limestone-house.jpg",
+    title: "Limestone and a red door",
+    alt: "BeReal. A limestone campus house with a red door under a clear blue sky. Jade in the inset selfie, glasses and a white jacket.",
+  },
+  {
+    place: "IU",
+    file: "iu-campus-plaza.jpg",
+    title: "Brick plaza, empty on purpose",
+    alt: "BeReal. A brick campus plaza and a brick building under a huge blue sky. Jade in the inset selfie.",
+  },
+  {
+    place: "IU",
+    file: "iu-tree-walk.jpg",
+    title: "The tree in the median",
+    alt: "BeReal. A single tree in a median on a campus road. Jade walking with a backpack in the inset selfie.",
+  },
+  {
+    place: "IU",
+    file: "iu-hoosier-lobby.jpg",
+    title: "Hoosier shirt, campus lobby",
+    alt: "BeReal. A campus lobby kiosk and a red public-health poster. Jade in a crimson Hoosier shirt in the inset selfie.",
+  },
+  {
+    place: "IU",
+    file: "iu-peer-mentor-table.jpg",
+    title: "Peer mentor table",
+    alt: "BeReal. A campus table with candy, pens, and a sign that says request a peer mentor. Jade in the inset selfie.",
+  },
+  {
+    place: "Indiana",
+    file: "indiana-canes.jpg",
+    title: "Raising Cane's",
+    alt: "BeReal. Raising Cane's brick wall and logo, empty booth, Indiana jersey on the wall. Jade in the inset selfie.",
+  },
+  {
+    place: "Indiana",
+    file: "indiana-ritas.jpg",
+    title: "Rita's · the upstairs pub",
+    alt: "BeReal. Rita's The Upstairs Pub sign against a blue sky. Jade in a pink jacket in the inset selfie.",
+  },
+  {
+    place: "Indiana",
+    file: "indiana-brothers.jpg",
+    title: "Brothers, Kirkwood",
+    alt: "BeReal. An empty Brothers booth and a neon Indiana Hoosiers sign. Jade in a red shirt in the inset selfie.",
+  },
+  {
+    place: "Indiana",
+    file: "indiana-desk-coke.jpg",
+    title: "Diet Coke and a terminal",
+    alt: "BeReal. A Diet Coke cup beside an open laptop. Jade in a black Michigan sweatshirt in the inset selfie.",
+  },
+  {
+    place: "Indiana",
+    file: "indiana-planter.jpg",
+    title: "Someone else's planter, my plant",
+    alt: "BeReal. A tall planter of purple flowers against a brick wall. Jade holding a small potted plant in the inset selfie.",
+  },
+  {
+    place: "Spain",
+    file: "spain-residence-sun.jpg",
+    title: "Residence walk, sun in the lens",
+    alt: "BeReal. A cobbled walk between residence buildings, sun flaring. Jade with glasses in the inset selfie.",
+  },
+  {
+    place: "Spain",
+    file: "spain-sidewalk-bus.jpg",
+    title: "Sidewalk, bus, grey sky",
+    alt: "BeReal. A Madrid sidewalk, a tree, a blue bus, cars. Jade in a dark sweater in the inset selfie.",
+  },
+  {
+    place: "Spain",
+    file: "spain-ivy-lot.jpg",
+    title: "Ivy and a wet lot",
+    alt: "BeReal. Ivy in the foreground and a wet parking lot in winter. Jade in an olive coat in the inset selfie.",
+  },
+];
+---
+<Layout
+  title="Days · BeReal"
+  description="A BeReal portfolio of IU, Indiana, and Spain days. Not a brand campaign. The pictures I actually took."
+  canonical="https://zhao-langxi.github.io/zhao-langxi/days.html"
+  current="days"
+>
+  <main id="main" tabindex="-1">
+    <header>
+      <p>BeReal · IU · Indiana · Spain</p>
+      <h1>The days, as they looked</h1>
+      <p>
+        Downloads, not a moodboard. These are BeReals I already took: campus walks, Kirkwood food,
+        a lobby table, a Madrid sidewalk. This is the content style, not a client campaign I invented.
+      </p>
+      <p>
+        I left out bars packed with other people, friends who did not ask to be on this site, and
+        anything that belongs on the hire door.
+        Ships stay on <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>.
+      </p>
+    </header>
+    <article>
+      <section aria-labelledby="grid-heading">
+        <h2 id="grid-heading">Fourteen frames</h2>
+        <ul class="bereal-grid">
+          {
+            days.map((day) => (
+              <li>
+                <figure class="bereal-card">
+                  <img
+                    src={`${base}assets/bereal/${day.file}`}
+                    alt={day.alt}
+                    width="1080"
+                    height="1440"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption>
+                    <span class="bereal-place">{day.place}</span>
+                    <span class="bereal-title">{day.title}</span>
+                  </figcaption>
+                </figure>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+      <p>
+        <a href={`${base}iu.html`}>IU</a>
+        <a href={`${base}indiana.html`}>Indiana</a>
+        <a href={`${base}spain.html`}>Spain</a>
+        <a href={`${base}`}>Home</a>
+      </p>
+    </article>
+  </main>
+</Layout>

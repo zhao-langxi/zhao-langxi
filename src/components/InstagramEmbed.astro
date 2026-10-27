@@ -1,0 +1,23 @@
+---
+interface Props {
+  href: string;
+  title: string;
+  kind?: "post" | "reel";
+}
+
+const { href, title, kind = "post" } = Astro.props;
+const permalink = href.replace(/\?.*$/, "").replace(/\/$/, "");
+const embedSrc = `${permalink}/embed`;
+---
+<figure class:list={["ig-embed", kind === "reel" && "ig-embed--reel"]}>
+  <iframe
+    src={embedSrc}
+    title={title}
+    loading="lazy"
+    allowtransparency="true"
+    allow="encrypted-media"
+  ></iframe>
+  <figcaption>
+    <a href={permalink} rel="noopener noreferrer">{title}</a>
+  </figcaption>
+</figure>

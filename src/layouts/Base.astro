@@ -9,6 +9,7 @@ const {
   current = "",
   ogTitle = title,
   ogDescription = description,
+  ogImageAlt = "Jade Zhao fishing on a boat · zhao-langxi",
   robots = "index, follow",
   skipLabel = "Skip to main content",
 } = Astro.props;
@@ -16,6 +17,14 @@ const {
 const pageTitle = title.includes("zhao-langxi") ? title : `${title} · zhao-langxi`;
 const canonicalUrl = canonical ?? `https://zhao-langxi.github.io${Astro.url.pathname}`;
 const ogImage = "https://zhao-langxi.github.io/zhao-langxi/og-image.jpg";
+const navItems = [
+  { id: "home", href: base, label: "Home" },
+  { id: "iu", href: `${base}iu.html`, label: "IU" },
+  { id: "indiana", href: `${base}indiana.html`, label: "Indiana" },
+  { id: "spain", href: `${base}spain.html`, label: "Spain" },
+  { id: "days", href: `${base}days.html`, label: "Days" },
+  { id: "about", href: `${base}about.html`, label: "About" },
+];
 ---
 <!DOCTYPE html>
 <html lang={lang}>
@@ -28,6 +37,7 @@ const ogImage = "https://zhao-langxi.github.io/zhao-langxi/og-image.jpg";
     <link rel="canonical" href={canonicalUrl} />
     <meta name="author" content="Jade Zhao" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
     <meta property="og:site_name" content="zhao-langxi · Jade Zhao" />
     <meta property="og:title" content={ogTitle} />
     <meta property="og:description" content={ogDescription} />
@@ -35,10 +45,12 @@ const ogImage = "https://zhao-langxi.github.io/zhao-langxi/og-image.jpg";
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Jade Zhao fishing on a boat · zhao-langxi" />
+    <meta property="og:image:alt" content={ogImageAlt} />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={ogTitle} />
+    <meta name="twitter:description" content={ogDescription} />
     <meta name="twitter:image" content={ogImage} />
-    <meta name="twitter:image:alt" content="Jade Zhao fishing on a boat · zhao-langxi" />
+    <meta name="twitter:image:alt" content={ogImageAlt} />
     <link rel="icon" href={`${base}favicon.ico`} sizes="any" />
     <link rel="icon" type="image/png" sizes="16x16" href={`${base}favicon-16x16.png`} />
     <link rel="icon" type="image/png" sizes="32x32" href={`${base}favicon-32x32.png`} />
@@ -46,68 +58,48 @@ const ogImage = "https://zhao-langxi.github.io/zhao-langxi/og-image.jpg";
     <link rel="icon" type="image/png" sizes="512x512" href={`${base}favicon-512x512.png`} />
     <link rel="apple-touch-icon" sizes="180x180" href={`${base}apple-touch-icon.png`} />
     <link rel="manifest" href={`${base}site.webmanifest`} />
-    <meta name="theme-color" content="#e4ebe6" />
+    <meta name="theme-color" content="#e8efe6" />
   </head>
   <body class:list={["site", Astro.props.bodyClass]}>
     <a class="skip-link" href="#main">{skipLabel}</a>
-    <nav aria-label={lang === "zh-Hans" ? "站点导航" : "Site"}>
-      <div>
-        <a aria-label="赵郎溪, home" href={base}><span lang="zh-Hans">赵郎溪</span></a>
+    <header class="mast">
+      <nav aria-label={lang === "zh-Hans" ? "站点导航" : "Site"}>
+        <a class="mast-mark" aria-label="赵郎溪, home" href={base}><span lang="zh-Hans">赵郎溪</span></a>
         <ul>
-          <li><a href={base} aria-current={current === "home" ? "page" : undefined}>Home</a></li>
-          <li><a href={`${base}iu.html`} aria-current={current === "iu" ? "page" : undefined}>IU</a></li>
-          <li><a href={`${base}indiana.html`} aria-current={current === "indiana" ? "page" : undefined}>Indiana</a></li>
-          <li><a href={`${base}spain.html`} aria-current={current === "spain" ? "page" : undefined}>Spain</a></li>
-          <li><a href={`${base}about.html`} aria-current={current === "about" ? "page" : undefined}>About</a></li>
+          {
+            navItems.map((item) => (
+              <li>
+                <a href={item.href} aria-current={current === item.id ? "page" : undefined}>
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
         </ul>
         <span class="contrast">
           <input class="high-contrast-control" id="high-contrast" type="checkbox" />
           <label class="theme-toggle" for="high-contrast">High contrast</label>
         </span>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <slot />
     <footer>
       <div>
-        <div>
-          <div>
-            <h2>{lang === "zh-Hans" ? "本站" : "On this door"}</h2>
-            <ul>
-              <li><a href={base} aria-current={current === "home" ? "page" : undefined}>Home</a></li>
-              <li><a href={`${base}iu.html`} aria-current={current === "iu" ? "page" : undefined}>IU</a></li>
-              <li><a href={`${base}indiana.html`} aria-current={current === "indiana" ? "page" : undefined}>Indiana</a></li>
-              <li><a href={`${base}spain.html`} aria-current={current === "spain" ? "page" : undefined}>Spain</a></li>
-              <li><a href={`${base}about.html`} aria-current={current === "about" ? "page" : undefined}>About</a></li>
-              <li><a href={`${base}archive.html`} aria-current={current === "archive" ? "page" : undefined}>Writing, on hiatus</a></li>
-            </ul>
-          </div>
-          <div>
-            <h2>{lang === "zh-Hans" ? "别处" : "Elsewhere"}</h2>
-            <ul>
-              <li><a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">Instagram @zhao.langxi</a></li>
-              <li><a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a></li>
-              <li><a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a></li>
-              <li><a href="https://www.linkedin.com/in/zhao-langxi/" rel="noopener noreferrer">LinkedIn</a></li>
-              <li><a href="https://github.com/zhao-langxi" rel="noopener noreferrer">GitHub</a></li>
-              <li><a href="mailto:jlzhao@iu.edu">Email</a></li>
-            </ul>
-          </div>
-        </div>
-        <nav aria-label={lang === "zh-Hans" ? "其他站点" : "Other sites"}>
-          <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>
-          <a href="https://matchaxmoxie.github.io/matchaxmoxie/">matchaxmoxie</a>
+        <p class="footer-mark"><span lang="zh-Hans">赵郎溪</span> · Jade Zhao · <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">@zhao.langxi</a></p>
+        <nav aria-label={lang === "zh-Hans" ? "其他站点" : "Other doors"}>
+          <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>
+          <a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a>
           <a aria-current="page" href="https://zhao-langxi.github.io/zhao-langxi/">zhao-langxi</a>
         </nav>
-        <div>
-          <p>
-            {
-              lang === "zh-Hans"
-                ? "独立站点。来 IU 的学生生活笔记，不是招生简章，也不是印第安纳大学背书。"
-                : "Independent notes on student life. Not an admissions brochure, and not IU-endorsed."
-            }
-          </p>
-        </div>
-        <p><span lang="zh-Hans">赵郎溪</span> · Jade Zhao · <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">@zhao.langxi</a></p>
+        <p class="footer-note">
+          {
+            lang === "zh-Hans"
+              ? "个人生活笔记。不是招生简章，也不是印第安纳大学背书。"
+              : "A personal journal. Not an admissions brochure, and not IU-endorsed."
+          }
+          {" "}
+          <a href={`${base}archive.html`}>Older writing, on hiatus</a>.
+        </p>
       </div>
     </footer>
     <script is:inline>
