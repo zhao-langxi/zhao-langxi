@@ -1,0 +1,211 @@
+---
+interface Props {
+  idPrefix?: string;
+  showFishing?: boolean;
+}
+
+const { idPrefix = "xiaomao", showFishing = false } = Astro.props;
+---
+<section class="xiaomao" data-xiaomao={idPrefix} aria-labelledby={`${idPrefix}-heading`}>
+  <h2 id={`${idPrefix}-heading`}>小猫钓鱼 · The Little Cat Goes Fishing</h2>
+  <p class="xiaomao__lede">
+    A well-known Chinese children's story. One famous modern telling is by
+    <span lang="zh-Hans">金近</span> (Jīn Jìn). What follows is my own retelling of the lesson,
+    not a copy of any published picture book.
+  </p>
+
+  <div class="xiaomao__stage">
+    <div class="xiaomao__art" aria-hidden="true" data-scene-art>
+      <svg class="xiaomao__svg" viewBox="0 0 360 180" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id={`${idPrefix}-sky`} x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#EAF7FF" />
+            <stop offset="100%" stop-color="#C8E8E5" />
+          </linearGradient>
+          <linearGradient id={`${idPrefix}-water`} x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#8ECBE8" />
+            <stop offset="100%" stop-color="#254B70" />
+          </linearGradient>
+        </defs>
+        <rect width="360" height="180" fill={`url(#${idPrefix}-sky)`} />
+        <ellipse class="xiaomao__cloud" cx="70" cy="36" rx="28" ry="12" fill="#FAFDFF" />
+        <ellipse class="xiaomao__cloud" cx="92" cy="40" rx="18" ry="9" fill="#FAFDFF" />
+        <ellipse class="xiaomao__cloud" cx="260" cy="28" rx="32" ry="12" fill="#FAFDFF" />
+        <rect y="118" width="360" height="62" fill={`url(#${idPrefix}-water)`} />
+        <path class="xiaomao__ripple" d="M20 140c20 6 40 6 60 0s40-6 60 0 40 6 60 0 40-6 60 0 40 6 60 0" fill="none" stroke="#FAFDFF" stroke-width="1.2" opacity="0.55" />
+        <ellipse cx="86" cy="122" rx="26" ry="6" fill="#F7F0E6" />
+        <g class="xiaomao__mama">
+          <ellipse cx="78" cy="108" rx="16" ry="12" fill="#E8D9C4" stroke="#254B70" stroke-width="1.2" />
+          <path d="M66 98l-3-8 8 3M90 98l3-8-8 3" fill="#E8D9C4" stroke="#254B70" stroke-width="1.1" />
+          <circle cx="74" cy="106" r="1.1" fill="#254B70" />
+          <path d="M94 104c18-8 36-4 48 8" fill="none" stroke="#254B70" stroke-width="1.2" />
+        </g>
+        <g class="xiaomao__kit" data-kit>
+          <ellipse cx="128" cy="112" rx="11" ry="9" fill="#F7F0E6" stroke="#254B70" stroke-width="1.2" />
+          <path d="M120 104l-2-6 6 2M136 104l2-6-6 2" fill="#F7F0E6" stroke="#254B70" stroke-width="1.1" />
+          <circle cx="125" cy="110" r="1" fill="#254B70" />
+          <path d="M138 110c12-4 22 0 28 8" fill="none" stroke="#254B70" stroke-width="1.1" />
+        </g>
+        <g class="xiaomao__bugs" data-bugs>
+          <ellipse cx="210" cy="58" rx="10" ry="4" fill="#8ECBE8" opacity="0.85" />
+          <ellipse cx="218" cy="56" rx="10" ry="4" fill="#C8E8E5" opacity="0.85" />
+          <circle cx="206" cy="58" r="1.4" fill="#254B70" />
+          <path d="M250 48c6-8 16-8 18 0-8 2-12 2-18 0z" fill="#3A7CA5" opacity="0.7" />
+          <path d="M268 48c6-8 16-8 18 0-8 2-12 2-18 0z" fill="#254B70" opacity="0.45" />
+        </g>
+        <g class="xiaomao__fish" data-fish>
+          <ellipse cx="300" cy="150" rx="12" ry="6" fill="#F7F0E6" />
+          <path d="M288 150l-8-5v10z" fill="#F7F0E6" />
+        </g>
+      </svg>
+    </div>
+
+    <p class="xiaomao__zh" lang="zh-Hans" data-zh></p>
+    <p class="xiaomao__py" data-py></p>
+    <p class="xiaomao__en" data-en></p>
+
+    <p class="xiaomao__status" data-status aria-live="polite"></p>
+
+    <div class="xiaomao__controls">
+      <button type="button" data-prev>Previous scene</button>
+      <button type="button" data-kit-btn>Pet the kitten</button>
+      <button type="button" data-next>Next scene</button>
+    </div>
+    <p class="xiaomao__progress">
+      Scene <span data-num>1</span> of 4
+    </p>
+  </div>
+
+  <blockquote class="xiaomao__lesson">
+    <p lang="zh-Hans">做事要一心一意</p>
+    <p>Zuò shì yào yì xīn yí yì</p>
+    <p>When you do something, give it your full attention.</p>
+  </blockquote>
+
+  {showFishing && (
+    <div class="xiaomao__fish-game" data-fish-game>
+      <h3>A small fishing practice</h3>
+      <p>
+        The lesson is patience. Cast the line, then wait. If you chase a butterfly, the fish slips away.
+      </p>
+      <p class="xiaomao__status" data-fish-status aria-live="polite">The water is quiet. Cast when you are ready.</p>
+      <div class="xiaomao__controls">
+        <button type="button" data-cast>Cast the line</button>
+        <button type="button" data-butterfly>Chase a butterfly</button>
+      </div>
+    </div>
+  )}
+</section>
+
+<script>
+  type Scene = { zh: string; py: string; en: string; art: string };
+
+  const scenes: Scene[] = [
+    {
+      zh: "猫妈妈带着小猫去河边钓鱼。",
+      py: "Māo māma dàizhe xiǎo māo qù hébiān diào yú.",
+      en: "Mother Cat takes Little Cat to the river to fish.",
+      art: "shore",
+    },
+    {
+      zh: "一只蝴蝶飞来。小猫放下鱼竿，追了过去。",
+      py: "Yì zhī húdié fēi lái. Xiǎo māo fàngxià yúgān, zhuī le guòqù.",
+      en: "A butterfly passes. Little Cat drops the rod and runs after it.",
+      art: "chase",
+    },
+    {
+      zh: "猫妈妈说：做事要一心一意。",
+      py: "Māo māma shuō: zuò shì yào yì xīn yí yì.",
+      en: "Mother Cat says: when you do a thing, give it your whole heart.",
+      art: "listen",
+    },
+    {
+      zh: "小猫坐下。水静了。鱼来了。",
+      py: "Xiǎo māo zuò xià. Shuǐ jìng le. Yú lái le.",
+      en: "Little Cat sits. The water stills. A fish comes.",
+      art: "catch",
+    },
+  ];
+
+  const reactions = [
+    "mrrp ... still watching the water.",
+    "A butterfly! ... then back to the rod.",
+    "一心一意. One thing at a time.",
+  ];
+
+  function initStory(root: HTMLElement) {
+    let index = 0;
+    let reaction = 0;
+    const zh = root.querySelector("[data-zh]");
+    const py = root.querySelector("[data-py]");
+    const en = root.querySelector("[data-en]");
+    const num = root.querySelector("[data-num]");
+    const status = root.querySelector("[data-status]");
+    const art = root.querySelector("[data-scene-art]");
+    const prev = root.querySelector("[data-prev]");
+    const next = root.querySelector("[data-next]");
+    const kitBtn = root.querySelector("[data-kit-btn]");
+
+    function render() {
+      const scene = scenes[index];
+      if (zh) zh.textContent = scene.zh;
+      if (py) py.textContent = scene.py;
+      if (en) en.textContent = scene.en;
+      if (num) num.textContent = String(index + 1);
+      art?.setAttribute("data-pose", scene.art);
+      if (prev instanceof HTMLButtonElement) prev.disabled = index === 0;
+      if (next instanceof HTMLButtonElement) next.disabled = index === scenes.length - 1;
+    }
+
+    prev?.addEventListener("click", () => {
+      index = Math.max(0, index - 1);
+      if (status) status.textContent = "";
+      render();
+    });
+    next?.addEventListener("click", () => {
+      index = Math.min(scenes.length - 1, index + 1);
+      if (status) status.textContent = "";
+      render();
+    });
+    kitBtn?.addEventListener("click", () => {
+      if (status) status.textContent = reactions[reaction % reactions.length];
+      reaction += 1;
+    });
+
+    render();
+  }
+
+  function initFishing(root: HTMLElement) {
+    const status = root.querySelector("[data-fish-status]");
+    const cast = root.querySelector("[data-cast]");
+    const butterfly = root.querySelector("[data-butterfly]");
+    let waiting = false;
+    let timer: number | undefined;
+
+    function reset(message: string) {
+      waiting = false;
+      window.clearTimeout(timer);
+      if (status) status.textContent = message;
+    }
+
+    cast?.addEventListener("click", () => {
+      if (waiting) return;
+      waiting = true;
+      if (status) status.textContent = "The line is in. Sit with it. Do not chase the butterfly.";
+      timer = window.setTimeout(() => {
+        waiting = false;
+        if (status) status.textContent = "A fish. Patience did the work.";
+      }, 4000);
+    });
+
+    butterfly?.addEventListener("click", () => {
+      reset("The butterfly wins, the fish leaves. Cast again when you can stay.");
+    });
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-xiaomao]").forEach((root) => {
+    initStory(root);
+    const game = root.querySelector<HTMLElement>("[data-fish-game]");
+    if (game) initFishing(game);
+  });
+</script>

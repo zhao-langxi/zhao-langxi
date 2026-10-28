@@ -1,0 +1,111 @@
+---
+import Layout from "../layouts/Base.astro";
+import XiaoMaoStory from "../components/XiaoMaoStory.astro";
+import { base } from "../lib/site";
+---
+<Layout
+  title="小猫钓鱼 · what attention is for"
+  description="A retelling of 小猫钓鱼, then an analogy (not a technical proof) about large language models, attention, and staying with a task."
+  canonical="https://zhao-langxi.github.io/zhao-langxi/xiao-mao-diao-yu.html"
+  current="xiaomao"
+  bodyClass="story-page"
+  ogTitle="小猫钓鱼 · The Little Cat Goes Fishing"
+  ogDescription="A Chinese childhood story about focus, and what it can (and cannot) teach us about large language models."
+>
+  <main id="main" tabindex="-1">
+    <header>
+      <p>赵郎溪 · a picture-book lesson</p>
+      <h1>小猫钓鱼</h1>
+      <p>
+        The Little Cat Goes Fishing. A story I keep coming back to, then a clearly marked analogy
+        about large language models (LLMs). The story is the story. The comparison is not a lecture
+        on how transformers work.
+      </p>
+    </header>
+
+    <article>
+      <XiaoMaoStory idPrefix="storypage" showFishing={true} />
+
+      <section id="llm" aria-labelledby="llm-heading">
+        <h2 id="llm-heading">The LLM connection</h2>
+        <p>
+          <strong>Interpreted, as an analogy.</strong>
+          This is not a literal explanation of transformer attention, and it is not a research paper.
+          The childhood lesson is about giving one task your whole heart. Building reliable AI is
+          about knowing what deserves attention.
+        </p>
+        <blockquote class="xiaomao__lesson">
+          <p>
+            小猫钓鱼 taught us the importance of paying attention. Building reliable AI teaches us
+            the importance of knowing what deserves attention.
+          </p>
+        </blockquote>
+        <table class="xiaomao__table">
+          <caption>How I hold the two pictures side by side</caption>
+          <thead>
+            <tr>
+              <th scope="col">In the story</th>
+              <th scope="col">In an LLM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>The kitten goes fishing</td>
+              <td>The model receives a task or prompt</td>
+            </tr>
+            <tr>
+              <td>Butterflies distract the kitten</td>
+              <td>Irrelevant information sits in the same context</td>
+            </tr>
+            <tr>
+              <td>The kitten forgets the rod</td>
+              <td>The answer can drift from the instruction</td>
+            </tr>
+            <tr>
+              <td>Mother Cat asks for 一心一意</td>
+              <td>Clear goals and checks help keep the work on the task</td>
+            </tr>
+            <tr>
+              <td>The kitten sits, and a fish comes</td>
+              <td>The model returns something that actually helps</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Attention is not the same as understanding</h3>
+        <p>
+          Many modern LLMs are built on transformers. Those models use a mechanism also called
+          attention: a way of weighting which pieces of the available text matter when producing
+          the next piece. That is a calculation over tokens. It is not the kitten deciding to sit
+          still. Weights do not guarantee that a system understands a person's goal.
+        </p>
+
+        <h3>Context can contain butterflies</h3>
+        <p>
+          If you ask for an explanation of Python loops and also pour in movies, restaurant hours,
+          and a stack of unrelated notes, the model can still read the pile. The extra material can
+          still pull the answer off course. Useful prompting is often just: keep what the task needs,
+          leave the rest on the bank.
+        </p>
+
+        <h3>Agents wander too</h3>
+        <p>
+          An AI agent might search, draft, test, and revise. Like the kitten, it can take a step
+          that does not move the original goal. Clear objectives, checkpoints, and a look back at
+          the work are how you keep a line in the water.
+        </p>
+        <p>
+          I am an Informatics student, not publishing a lab result here. If you want the hire-facing
+          ships, they live on
+          <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>.
+        </p>
+      </section>
+
+      <p>
+        <a href={base}>← Home</a>
+        <a href={`${base}about.html`}>About</a>
+        <a href={`${base}archive.html`}>Older writing</a>
+      </p>
+    </article>
+  </main>
+</Layout>

@@ -1,16 +1,17 @@
 ---
 import Layout from "../layouts/Base.astro";
 import InstagramEmbed from "../components/InstagramEmbed.astro";
+import XiaoMaoStory from "../components/XiaoMaoStory.astro";
 import { base } from "../lib/site";
 ---
 <Layout
-  title="赵郎溪 · come to IU"
-  description="The original story of @zhao.langxi, then things you can do as an Indiana University student ... on campus, across Indiana, and in Spain."
+  title="赵郎溪 · xiao mao diao yu"
+  description="Curious cats, ocean blues, and thoughts on technology, culture, and everything in between. Jade Zhao · 赵郎溪."
   canonical="https://zhao-langxi.github.io/zhao-langxi/"
   current="home"
   bodyClass="home"
-  ogTitle="zhao-langxi · come to IU"
-  ogDescription="xiao mao diao yu. A social-butterfly guide to IU, Indiana, and Spain, starting from the original Instagram story."
+  ogTitle="赵郎溪 · little cat fishing"
+  ogDescription="A little corner of the internet for Chinese storytelling, personal reflections, and questions about what deserves attention."
 >
   <main id="main" tabindex="-1">
     <header>
@@ -22,30 +23,66 @@ import { base } from "../lib/site";
         height="540"
         decoding="async"
       />
-      <p>赵郎溪 · @zhao.langxi · come to IU</p>
+      <p>赵郎溪 · @zhao.langxi</p>
       <h1>xiao mao diao yu</h1>
-      <blockquote class="guiding-question">
-        <p>Little cat, fishing. Reformed iPad kid. Then Bloomington stopped feeling like a visit.</p>
-      </blockquote>
+      <p class="home-tagline">
+        Curious cats, ocean blues, and thoughts on technology, culture, and everything in between.
+      </p>
       <p>
-        This is the social-butterfly door. Things you can actually do as an Indiana University (IU) student ...
-        on campus, around Indiana, and in Spain when a semester takes you there.
+        Hi, I'm Jade! I'm an Informatics student at Indiana University who loves exploring the
+        connections between technology, culture, and storytelling.
+      </p>
+      <p>
+        One story I keep coming back to is <em lang="zh-Hans">小猫钓鱼</em> (The Little Cat Goes Fishing),
+        a Chinese children's tale about a curious kitten learning the importance of focus and patience.
+        As I have explored large language models and AI, I have found myself thinking about that
+        lesson in a new way: how do we build systems that pay attention to what matters without
+        getting lost in distractions?
+      </p>
+      <p>
+        Zhao Langxi is my little corner of the internet for exploring questions like that, sharing
+        personal reflections, and collecting the things that inspire me. Expect a little technology,
+        a little Chinese storytelling, plenty of ocean blue, and, of course, cats.
       </p>
       <p class="section-kicker">
-        Photos and days live on
-        <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">Instagram @zhao.langxi</a>.
         Ships live on <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>.
         Classroom notes live on
         <a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a>.
+        Days live on
+        <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">Instagram @zhao.langxi</a>.
       </p>
     </header>
+
     <article>
-      <section id="story" aria-labelledby="story-heading">
-        <h2 id="story-heading">The original story</h2>
+      <XiaoMaoStory idPrefix="home" />
+      <p class="xiaomao__more">
+        Stay for the analogy:
+        <a href={`${base}xiao-mao-diao-yu.html#llm`}>what this story can (and cannot) teach us about AI</a>.
+      </p>
+
+      <section id="name" aria-labelledby="name-heading">
+        <h2 id="name-heading">The story behind my name · <span lang="zh-Hans">我的名字</span></h2>
         <p>
-          <span lang="zh-Hans">赵郎溪</span> is the name I wanted to grow into. On Instagram it is
-          <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">@zhao.langxi</a>.
-          The bio is still the true one: <em>xiao mao diao yu</em> ... little cat fishing ...
+          The characters on this door are <strong lang="zh-Hans">赵郎溪</strong>.
+          In pinyin that is <strong>Zhào Lángxī</strong> ... ordinary dictionary readings, not a
+          family lecture I am inventing here.
+        </p>
+        <ul class="name-list">
+          <li><span lang="zh-Hans">赵</span> · Zhào · the family surname.</li>
+          <li><span lang="zh-Hans">郎溪</span> · Lángxī · the given name as written on this site.</li>
+          <li>Jade Zhao is the English name I use. <span lang="zh-Hans">赵郎溪</span> is the name I wanted to grow into.</li>
+        </ul>
+        <p class="placeholder-note">
+          Why those two given-name characters were chosen, and any family story behind them, is
+          still waiting for me to write it in my own words. I am not filling that gap with a pretty
+          guess.
+        </p>
+      </section>
+
+      <section id="story" aria-labelledby="story-heading">
+        <h2 id="story-heading">How I got to the river</h2>
+        <p>
+          On Instagram the bio is still the true one: <em>xiao mao diao yu</em> ... little cat fishing ...
           <em>pov reformed ipad kid</em>. The fishing photo is not a brand exercise. It is me, on a boat,
           before anyone asked for a résumé line.
         </p>
@@ -61,38 +98,10 @@ import { base } from "../lib/site";
           your Sunday person, a squirrel winning against a peanut-butter jar. Then Bloomington stopped
           feeling like a place I was visiting.
         </p>
-        <p>
-          I host get-togethers. I take the picture anyway. I go home when I can. I cheer at a game because
-          I actually care about the score now, not just the outfit. If you are deciding whether to come to
-          IU, this door is for you. Not a brochure. A map of days that already happened.
-        </p>
-      </section>
-
-      <section id="instagram" aria-labelledby="ig-heading">
-        <h2 id="ig-heading">From Instagram @zhao.langxi</h2>
-        <p>
-          The live grid, not a recap. Memorial Stadium in a penguin onesie. Night game lights. Friends.
-          More days on
-          <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">@zhao.langxi</a>.
-        </p>
-        <div class="ig-grid">
-          <InstagramEmbed
-            href="https://www.instagram.com/p/De-VPhSltw0/"
-            title="Memorial Stadium · penguin onesie"
-          />
-          <InstagramEmbed
-            href="https://www.instagram.com/p/Dey2zHiFo0F/"
-            title="A Tuesday with people I like"
-          />
-          <InstagramEmbed
-            href="https://www.instagram.com/p/De5Z4fPlpze/"
-            title="Memorial Stadium at night"
-          />
-        </div>
       </section>
 
       <section id="doors" aria-labelledby="doors-heading">
-        <h2 id="doors-heading">Where you can go</h2>
+        <h2 id="doors-heading">Days already lived</h2>
         <ol class="essay-index">
           <li class="essay-index-item">
             <a href={`${base}iu.html`}>
@@ -125,11 +134,32 @@ import { base } from "../lib/site";
         </ol>
       </section>
 
-      <section id="hiatus" aria-labelledby="hiatus-heading">
-        <h2 id="hiatus-heading">Digital Humans, on hiatus</h2>
+      <section id="instagram" aria-labelledby="ig-heading">
+        <h2 id="ig-heading">From Instagram @zhao.langxi</h2>
         <p>
-          The older essays on human-robot interaction and Digital Humans are parked, not deleted.
-          This door is student life first. If you came for the hire story, that lives on
+          The live grid, not a recap. Memorial Stadium in a penguin onesie. Night game lights. Friends.
+        </p>
+        <div class="ig-grid">
+          <InstagramEmbed
+            href="https://www.instagram.com/p/De-VPhSltw0/"
+            title="Memorial Stadium · penguin onesie"
+          />
+          <InstagramEmbed
+            href="https://www.instagram.com/p/Dey2zHiFo0F/"
+            title="A Tuesday with people I like"
+          />
+          <InstagramEmbed
+            href="https://www.instagram.com/p/De5Z4fPlpze/"
+            title="Memorial Stadium at night"
+          />
+        </div>
+      </section>
+
+      <section id="hiatus" aria-labelledby="hiatus-heading">
+        <h2 id="hiatus-heading">Older essays, still here</h2>
+        <p>
+          Digital Humans and human-robot interaction pieces are parked, not deleted.
+          If you came for ships and a résumé, that lives on
           <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>.
         </p>
         <p><a href={`${base}archive.html`}>Writing archive</a></p>
