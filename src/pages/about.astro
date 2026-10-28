@@ -4,63 +4,77 @@ import { base } from "../lib/site";
 ---
 <Layout
   title="About"
-  description="Jade Zhao, 赵郎溪, Indiana University student. The person behind @zhao.langxi, and why this door is a come-to-IU map right now."
+  description="Jade Zhao · 赵郎溪 · Zhào Lángxī. A personal journal of photographs, days, and the habit of looking twice."
   canonical="https://zhao-langxi.github.io/zhao-langxi/about.html"
   current="about"
 >
   <main id="main" tabindex="-1">
-    <header>
+    <header class="about-hero">
       <div>
-        <p>About this door</p>
-        <h1>Jade Zhao · <span lang="zh-Hans">赵郎溪</span></h1>
+        <p>About · 关于</p>
+        <h1><span lang="zh-Hans">赵郎溪</span></h1>
+        <p class="home-tagline">Zhào Lángxī · Jade Zhao</p>
       </div>
-      <div>
-        <img alt="Jade Zhao, profile photo." class="author-avatar" decoding="async" height="120" src={`${base}assets/site-pfp.jpg`} width="120" />
-      </div>
+      <img
+        alt="Jade Zhao on a boat, stylised from the fishing photograph."
+        class="author-avatar"
+        decoding="async"
+        height="120"
+        src={`${base}assets/site-pfp.jpg`}
+        width="120"
+      />
     </header>
     <article class="prose">
-      <h2>Who writes</h2>
+      <h2>Who is looking</h2>
       <p>
-        Hi, I'm Jade. Informatics student at Indiana University Luddy, expected May 2027. Minors in
-        Business Technology and user-experience (UX) research. Hudson &amp; Holland Scholar.
-        First-generation college student. I speak English, Fuzhounese, and Spanish.
+        I look at rooms the way I look at water: wait, then notice. This door is a personal journal,
+        not a studio and not a list of jobs. Photography here is a habit. Film when I remember the
+        camera. A phone when the light is already happening. BeReal days because those are pictures
+        I actually took.
       </p>
       <p>
-        I grew up in a family Chinese restaurant in central Indiana (Greenfield, Indiana). The Instagram
-        is <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">@zhao.langxi</a>.
+        The Instagram is
+        <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">@zhao.langxi</a>.
         The bio is the original story: <em>xiao mao diao yu</em> ... little cat fishing ...
         <em>pov reformed ipad kid</em>.
       </p>
+      <h2>The name</h2>
       <p>
-        <span lang="zh-Hans">小猫钓鱼</span> is the childhood story I keep beside questions about
-        large language models: what deserves attention, and what is only a butterfly. The full
-        retelling lives on the
-        <a href={`${base}xiao-mao-diao-yu.html`}>小猫钓鱼</a> page. I do not keep a cat biography
-        here. The kitten is a picture-book companion, not a pet claim.
+        <span lang="zh-Hans">赵郎溪</span> is how this door is written.
+        In pinyin that is Zhào Lángxī ... ordinary dictionary readings.
+        Jade Zhao is the English name I use.
       </p>
-      <h2>What this site is doing right now</h2>
-      <p>
-        A come-to-IU map. Campus, Indiana, Spain. Social-butterfly notes from a student who already lives
-        here, not a recruitment office. Digital Humans writing is on hiatus. The older essays stay in the
-        <a href={`${base}archive.html`}>archive</a>.
+      <p class="placeholder-note">
+        Why those two given-name characters were chosen, and any family story behind them, is
+        still waiting for me to write it in my own words. I am not filling that gap with a pretty
+        guess.
       </p>
-      <h2>What I do when I am not in a dining hall</h2>
+      <h2>Where the days come from</h2>
       <p>
-        Film photography. Gardening. Reading. Walking. Matcha. Hosting get-togethers. A duck-farm
-        throughline that is culture, not a product launch. Spring 2026 I studied at Universidad
-        Complutense de Madrid.
+        Chinese American. I grew up in a family Chinese restaurant in central Indiana
+        (Greenfield, Indiana). I study at Indiana University in Bloomington. Spring 2026 I lived
+        a semester at Universidad Complutense de Madrid. I speak English, Fuzhounese, and Spanish.
       </p>
-      <h2>Where the other work lives</h2>
       <p>
-        Case studies and the résumé belong on
+        When I am not walking somewhere: film photography, gardening, reading, matcha, a duck-farm
+        throughline that is culture, not a product.
+      </p>
+      <h2><span lang="zh-Hans">小猫钓鱼</span></h2>
+      <p>
+        The childhood story I keep beside questions about attention: what deserves a still line,
+        and what is only a butterfly. The kitten is a picture-book companion, not a pet I am
+        claiming. The full retelling lives on the
+        <a href={`${base}xiao-mao-diao-yu.html`}>小猫钓鱼</a> page.
+      </p>
+      <h2>The other doors</h2>
+      <p>
+        What I have built lives on
         <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>.
-        Coursework and handoff guides belong on
+        What I have taught lives on
         <a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a>.
-        Hire narrative belongs on
-        <a href="https://www.linkedin.com/in/zhao-langxi/" rel="noopener noreferrer">LinkedIn</a>.
+        This door is how I see.
       </p>
       <p>
-        <a href="https://jadexzhao.github.io/jadexzhao/resume.pdf" rel="noopener noreferrer">Résumé (PDF)</a> ·
         <a href="mailto:jlzhao@iu.edu">jlzhao@iu.edu</a>
       </p>
     </article>

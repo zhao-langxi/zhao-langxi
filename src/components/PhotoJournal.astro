@@ -1,0 +1,150 @@
+---
+import { base } from "../lib/site";
+import type { JournalPhoto } from "../lib/photos";
+
+interface Props {
+  photos: JournalPhoto[];
+  variant?: "board" | "masonry" | "strip";
+  idPrefix?: string;
+  eagerCount?: number;
+}
+
+const { photos, variant = "masonry", idPrefix = "journal", eagerCount = 2 } = Astro.props;
+const dialogId = `${idPrefix}-lightbox`;
+const headingId = `${idPrefix}-lightbox-title`;
+---
+
+{
+  photos.length > 0 && (
+    <div class:list={["journal", `journal--${variant}`]} data-journal={idPrefix}>
+      <ul class:list={["journal-grid", `journal-grid--${variant}`]}>
+        {photos.map((photo, index) => (
+          <li>
+            <button type="button" class="journal-tile" data-open data-index={String(index)}>
+              <img
+                src={`${base}${photo.src}`}
+                alt={photo.alt}
+                width={photo.width}
+                height={photo.height}
+                loading={index < eagerCount ? "eager" : "lazy"}
+                decoding="async"
+              />
+              <span class="journal-meta">
+                <span class="bereal-place">{photo.place}</span>
+                <span class="bereal-title">{photo.title}</span>
+              </span>
+            </button>
+          </li>
+        ))}
+      </ul>
+
+      <dialog class="lightbox" id={dialogId} aria-labelledby={headingId}>
+        <div class="lightbox__panel">
+          <h2 class="lightbox__title" id={headingId} data-title></h2>
+          <img data-frame alt="" width="1080" height="1440" />
+          <p class="lightbox__cap" data-cap></p>
+          <div class="lightbox__bar">
+            <button type="button" data-prev>
+              Previous
+            </button>
+            <button type="button" data-close>
+              Close
+            </button>
+            <button type="button" data-next>
+              Next
+            </button>
+          </div>
+        </div>
+      </dialog>
+    </div>
+  )
+}
+
+<script>
+  type PhotoRecord = { src: string; alt: string; title: string; place: string };
+
+  function initJournal(root: HTMLElement) {
+    const dialog = root.querySelector("dialog");
+    const frame = root.querySelector<HTMLImageElement>("[data-frame]");
+    const titleEl = root.querySelector("[data-title]");
+    const capEl = root.querySelector("[data-cap]");
+    const closeBtn = root.querySelector("[data-close]");
+    const prevBtn = root.querySelector("[data-prev]");
+    const nextBtn = root.querySelector("[data-next]");
+    const tiles = Array.from(root.querySelectorAll<HTMLButtonElement>("[data-open]"));
+    if (!dialog || !frame || tiles.length === 0) return;
+
+    const photos: PhotoRecord[] = tiles.map((tile) => {
+      const img = tile.querySelector("img");
+      const place = tile.querySelector(".bereal-place")?.textContent ?? "";
+      const title = tile.querySelector(".bereal-title")?.textContent ?? "";
+      return {
+        src: img?.getAttribute("src") ?? "",
+        alt: img?.getAttribute("alt") ?? "",
+        title,
+        place,
+      };
+    });
+
+    let index = 0;
+    let lastTile: HTMLButtonElement | null = null;
+
+    function render() {
+      const photo = photos[index];
+      if (!photo) return;
+      frame.src = photo.src;
+      frame.alt = photo.alt;
+      if (titleEl) titleEl.textContent = photo.title;
+      if (capEl) capEl.textContent = `${photo.place} · ${photo.title}`;
+      if (prevBtn instanceof HTMLButtonElement) prevBtn.disabled = index === 0;
+      if (nextBtn instanceof HTMLButtonElement) nextBtn.disabled = index === photos.length - 1;
+    }
+
+    function openAt(nextIndex: number, tile: HTMLButtonElement) {
+      index = nextIndex;
+      lastTile = tile;
+      render();
+      if (!dialog.open) dialog.showModal();
+      if (closeBtn instanceof HTMLButtonElement) closeBtn.focus();
+    }
+
+    function closeLightbox() {
+      dialog.close();
+    }
+
+    tiles.forEach((tile, tileIndex) => {
+      tile.addEventListener("click", () => openAt(tileIndex, tile));
+    });
+
+    closeBtn?.addEventListener("click", closeLightbox);
+    prevBtn?.addEventListener("click", () => {
+      index = Math.max(0, index - 1);
+      render();
+    });
+    nextBtn?.addEventListener("click", () => {
+      index = Math.min(photos.length - 1, index + 1);
+      render();
+    });
+
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) closeLightbox();
+    });
+
+    dialog.addEventListener("close", () => {
+      lastTile?.focus();
+    });
+
+    dialog.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") {
+        index = Math.max(0, index - 1);
+        render();
+      }
+      if (event.key === "ArrowRight") {
+        index = Math.min(photos.length - 1, index + 1);
+        render();
+      }
+    });
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-journal]").forEach(initJournal);
+</script>

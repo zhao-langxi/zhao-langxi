@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Base.astro";
-import InstagramEmbed from "../components/InstagramEmbed.astro";
+import PhotoJournal from "../components/PhotoJournal.astro";
+import { photosByPlace } from "../lib/photos";
 import { base } from "../lib/site";
 ---
 <Layout
@@ -8,6 +9,7 @@ import { base } from "../lib/site";
   description="Things you can do as an Indiana University Bloomington student: Welcome Week, student organisations, Little 500, IUDM, Sample Gates, and ordinary campus days."
   canonical="https://zhao-langxi.github.io/zhao-langxi/iu.html"
   current="iu"
+  bodyClass="chapter"
 >
   <main id="main" tabindex="-1">
     <header>
@@ -23,6 +25,7 @@ import { base } from "../lib/site";
       </p>
     </header>
     <article>
+      <PhotoJournal photos={photosByPlace("IU", 3)} variant="strip" idPrefix="iu" eagerCount={1} />
       <section aria-labelledby="first-year-heading">
         <h2 id="first-year-heading">First year, if you are coming</h2>
         <p>
@@ -175,17 +178,13 @@ import { base } from "../lib/site";
 
       <section aria-labelledby="ig-heading">
         <h2 id="ig-heading">From Instagram @zhao.langxi</h2>
-        <p>Memorial Stadium, twice. Once in a penguin onesie. Once at night. The rest of the grid is on the account.</p>
-        <div class="ig-grid">
-          <InstagramEmbed
-            href="https://www.instagram.com/p/De-VPhSltw0/"
-            title="Memorial Stadium · penguin onesie"
-          />
-          <InstagramEmbed
-            href="https://www.instagram.com/p/De5Z4fPlpze/"
-            title="Memorial Stadium at night"
-          />
-        </div>
+        <p>
+          Memorial Stadium, twice. Once in a penguin onesie. Once at night.
+          The live grid is on
+          <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">@zhao.langxi</a>.
+          The night frame is also in
+          <a href={`${base}days.html`}>Days</a>.
+        </p>
       </section>
 
       <section aria-labelledby="official-heading">

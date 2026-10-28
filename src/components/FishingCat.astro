@@ -2,9 +2,11 @@
 interface Props {
   size?: number;
   title?: string;
+  markId?: string;
 }
 
-const { size = 56, title = "A little fishing cat" } = Astro.props;
+const { size = 56, title = "A little fishing cat", markId = "mark" } = Astro.props;
+const titleId = `fishing-cat-title-${markId}`;
 ---
 <svg
   class="fishing-cat"
@@ -12,9 +14,9 @@ const { size = 56, title = "A little fishing cat" } = Astro.props;
   height={size}
   viewBox="0 0 64 64"
   role="img"
-  aria-labelledby="fishing-cat-title"
+  aria-labelledby={titleId}
 >
-  <title id="fishing-cat-title">{title}</title>
+  <title id={titleId}>{title}</title>
   <ellipse cx="32" cy="52" rx="18" ry="4" fill="#8ECBE8" opacity="0.45" />
   <path d="M20 28c0-10 6-18 12-18s12 8 12 18-5 16-12 16-12-6-12-16z" fill="#F7F0E6" stroke="#254B70" stroke-width="1.4" />
   <path d="M22 16l-4-8 8 4M42 16l4-8-8 4" fill="#F7F0E6" stroke="#254B70" stroke-width="1.4" stroke-linejoin="round" />

@@ -1,5 +1,6 @@
 ---
 import "../styles/rivet.css";
+import FishingCat from "../components/FishingCat.astro";
 import { base } from "../lib/site";
 const {
   title,
@@ -39,7 +40,7 @@ const navItems = [
     <meta name="author" content="Jade Zhao" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_GB" />
-    <meta property="og:site_name" content="zhao-langxi · Jade Zhao" />
+    <meta property="og:site_name" content="赵郎溪 · Zhao Langxi" />
     <meta property="og:title" content={ogTitle} />
     <meta property="og:description" content={ogDescription} />
     <meta property="og:url" content={canonicalUrl} />
@@ -86,7 +87,10 @@ const navItems = [
     <slot />
     <footer>
       <div>
-        <p class="footer-mark"><span lang="zh-Hans">赵郎溪</span> · Jade Zhao · <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">@zhao.langxi</a></p>
+        <p class="footer-mark">
+          <FishingCat size={44} title="A little cat by the water" markId="footer" />
+          <span lang="zh-Hans">赵郎溪</span> · Jade Zhao · <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">@zhao.langxi</a>
+        </p>
         <nav aria-label={lang === "zh-Hans" ? "其他站点" : "Other doors"}>
           <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>
           <a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a>

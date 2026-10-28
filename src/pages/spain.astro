@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Base.astro";
-import InstagramEmbed from "../components/InstagramEmbed.astro";
+import PhotoJournal from "../components/PhotoJournal.astro";
+import { photosByPlace } from "../lib/photos";
 import { base } from "../lib/site";
 ---
 <Layout
@@ -8,6 +9,7 @@ import { base } from "../lib/site";
   description="IU study abroad at Universidad Complutense de Madrid, plus Segovia, Cáceres, Trujillo, and Tenerife ... a student map, not a postcard."
   canonical="https://zhao-langxi.github.io/zhao-langxi/spain.html"
   current="spain"
+  bodyClass="chapter"
 >
   <main id="main" tabindex="-1">
     <header>
@@ -20,6 +22,7 @@ import { base } from "../lib/site";
       </p>
     </header>
     <article>
+      <PhotoJournal photos={photosByPlace("Spain")} variant="strip" idPrefix="spain" eagerCount={1} />
       <section aria-labelledby="ucm-heading">
         <h2 id="ucm-heading">Complutense is not Sample Gates</h2>
         <p>
@@ -93,22 +96,10 @@ import { base } from "../lib/site";
           or homestays ... you arrange it. The city will not flatten itself into a campus loop.
           That is the gift and the work.
         </p>
-        <div class="ig-reels">
-          <InstagramEmbed
-            href="https://www.instagram.com/reel/DY0HVB_su4t/"
-            title="Reel · Segovia aqueduct"
-            kind="reel"
-          />
-          <InstagramEmbed
-            href="https://www.instagram.com/reel/DY0I1jHMEC6/"
-            title="Reel · stone ruins"
-            kind="reel"
-          />
-        </div>
         <p>
-          Those two reels live on
-          <a href="https://www.instagram.com/jadexzhao/" rel="noopener noreferrer">@jadexzhao</a>.
-          The highlight folders (madrid, segovia, tenerife, caceres, trujillo) live on
+          Two Spain reels live on
+          <a href="https://www.instagram.com/jadexzhao/" rel="noopener noreferrer">@jadexzhao</a>
+          (Segovia aqueduct, stone ruins). The highlight folders (madrid, segovia, tenerife, caceres, trujillo) live on
           <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">@zhao.langxi</a>.
         </p>
         <ul class="proof-list">

@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Base.astro";
+import PhotoJournal from "../components/PhotoJournal.astro";
+import { photosByPlace } from "../lib/photos";
 import { base } from "../lib/site";
 ---
 <Layout
@@ -7,6 +9,7 @@ import { base } from "../lib/site";
   description="Things an IU student can do in Bloomington and across Indiana: Kirkwood, Lake Monroe, College Mall, and the drive home to central Indiana."
   canonical="https://zhao-langxi.github.io/zhao-langxi/indiana.html"
   current="indiana"
+  bodyClass="chapter"
 >
   <main id="main" tabindex="-1">
     <header>
@@ -18,6 +21,7 @@ import { base } from "../lib/site";
       </p>
     </header>
     <article>
+      <PhotoJournal photos={photosByPlace("Indiana", 3)} variant="strip" idPrefix="indiana" eagerCount={1} />
       <section aria-labelledby="origin-heading">
         <h2 id="origin-heading">Where I started</h2>
         <p>

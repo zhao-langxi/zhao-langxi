@@ -1,67 +1,72 @@
 ---
 import Layout from "../layouts/Base.astro";
-import InstagramEmbed from "../components/InstagramEmbed.astro";
-import XiaoMaoStory from "../components/XiaoMaoStory.astro";
+import PhotoJournal from "../components/PhotoJournal.astro";
+import FishingCat from "../components/FishingCat.astro";
+import { featuredPhotos, fishingPhoto } from "../lib/photos";
 import { base } from "../lib/site";
 ---
 <Layout
-  title="赵郎溪 · xiao mao diao yu"
-  description="Curious cats, ocean blues, and thoughts on technology, culture, and everything in between. Jade Zhao · 赵郎溪."
+  title="赵郎溪"
+  description="Zhao Langxi · 赵郎溪. A personal visual journal: ocean light, campus days, and the habit of looking twice."
   canonical="https://zhao-langxi.github.io/zhao-langxi/"
   current="home"
   bodyClass="home"
-  ogTitle="赵郎溪 · little cat fishing"
-  ogDescription="A little corner of the internet for Chinese storytelling, personal reflections, and questions about what deserves attention."
+  ogTitle="赵郎溪 · Zhao Langxi"
+  ogDescription="A personal journal of photographs and days. Jade Zhao · 赵郎溪 · @zhao.langxi."
 >
   <main id="main" tabindex="-1">
-    <header>
+    <header class="hero">
       <img
         class="hero-photo"
-        src={`${base}assets/fishing.jpg`}
-        alt="Jade Zhao on a boat, holding a fishing rod, open water behind her."
-        width="960"
-        height="540"
+        src={`${base}${fishingPhoto.src}`}
+        alt={fishingPhoto.alt}
+        width={fishingPhoto.width}
+        height={fishingPhoto.height}
         decoding="async"
       />
-      <p>赵郎溪 · @zhao.langxi</p>
-      <h1>xiao mao diao yu</h1>
-      <p class="home-tagline">
-        Curious cats, ocean blues, and thoughts on technology, culture, and everything in between.
-      </p>
-      <p>
-        Hi, I'm Jade! I'm an Informatics student at Indiana University who loves exploring the
-        connections between technology, culture, and storytelling.
-      </p>
-      <p>
-        One story I keep coming back to is <em lang="zh-Hans">小猫钓鱼</em> (The Little Cat Goes Fishing),
-        a Chinese children's tale about a curious kitten learning the importance of focus and patience.
-        As I have explored large language models and AI, I have found myself thinking about that
-        lesson in a new way: how do we build systems that pay attention to what matters without
-        getting lost in distractions?
-      </p>
-      <p>
-        Zhao Langxi is my little corner of the internet for exploring questions like that, sharing
-        personal reflections, and collecting the things that inspire me. Expect a little technology,
-        a little Chinese storytelling, plenty of ocean blue, and, of course, cats.
-      </p>
-      <p class="section-kicker">
-        Ships live on <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>.
-        Classroom notes live on
-        <a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a>.
-        Days live on
-        <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">Instagram @zhao.langxi</a>.
-      </p>
+      <div class="hero-copy">
+        <p>Zhào Lángxī · @zhao.langxi</p>
+        <h1 lang="zh-Hans">赵郎溪</h1>
+        <p class="home-tagline">
+          How I see the world. Ocean light, a fishing line, and the days in between.
+        </p>
+        <p>
+          Jade Zhao. A visual journal from Indiana University, home weekends, and a spring in Spain.
+          Not a studio, and not a résumé.
+        </p>
+      </div>
     </header>
 
     <article>
-      <XiaoMaoStory idPrefix="home" />
-      <p class="xiaomao__more">
-        Stay for the analogy:
-        <a href={`${base}xiao-mao-diao-yu.html#llm`}>what this story can (and cannot) teach us about AI</a>.
-      </p>
+      <section class="feature-block" aria-labelledby="journal-heading">
+        <div class="feature-head">
+          <h2 id="journal-heading">From the journal</h2>
+          <p>
+            Six frames I actually took. The rest of the days live in one journal, not empty rooms.
+          </p>
+        </div>
+        <PhotoJournal photos={featuredPhotos} variant="board" idPrefix="home" eagerCount={2} />
+        <p class="feature-more">
+          <a href={`${base}days.html`}>All fourteen days</a>
+        </p>
+      </section>
+
+      <section id="story" aria-labelledby="story-heading">
+        <h2 id="story-heading">How I got to the river</h2>
+        <p>
+          On Instagram the bio is still the true one: <em>xiao mao diao yu</em> ... little cat fishing ...
+          <em>pov reformed ipad kid</em>. The fishing photo is not a brand exercise. It is me, on a boat,
+          before anyone asked for a résumé line.
+        </p>
+        <p>
+          I am Jade Zhao. Chinese American. I grew up in a family Chinese restaurant in central Indiana
+          (Greenfield, Indiana). IU felt mutual. Spain was a semester of learning a city that was never
+          designed around me.
+        </p>
+      </section>
 
       <section id="name" aria-labelledby="name-heading">
-        <h2 id="name-heading">The story behind my name · <span lang="zh-Hans">我的名字</span></h2>
+        <h2 id="name-heading">The name · <span lang="zh-Hans">我的名字</span></h2>
         <p>
           The characters on this door are <strong lang="zh-Hans">赵郎溪</strong>.
           In pinyin that is <strong>Zhào Lángxī</strong> ... ordinary dictionary readings, not a
@@ -79,91 +84,47 @@ import { base } from "../lib/site";
         </p>
       </section>
 
-      <section id="story" aria-labelledby="story-heading">
-        <h2 id="story-heading">How I got to the river</h2>
-        <p>
-          On Instagram the bio is still the true one: <em>xiao mao diao yu</em> ... little cat fishing ...
-          <em>pov reformed ipad kid</em>. The fishing photo is not a brand exercise. It is me, on a boat,
-          before anyone asked for a résumé line.
-        </p>
-        <p>
-          I am Jade Zhao. Chinese American. I grew up in a family Chinese restaurant in central Indiana
-          (Greenfield, Indiana). Mum drove Greenfield into Indianapolis so I could reach libraries, camps,
-          and classrooms that did not exist on our street. A system either survives a real customer or it
-          does not. That is still how I read a room.
-        </p>
-        <p>
-          IU felt mutual. I came. The campus kept me. Sample Gates stopped being a postcard. Teter Hall,
-          room 102, became the infinite sleepover ... new names in the group chat, a roommate who turns into
-          your Sunday person, a squirrel winning against a peanut-butter jar. Then Bloomington stopped
-          feeling like a place I was visiting.
-        </p>
-      </section>
-
-      <section id="doors" aria-labelledby="doors-heading">
-        <h2 id="doors-heading">Days already lived</h2>
-        <ol class="essay-index">
-          <li class="essay-index-item">
+      <section id="places" aria-labelledby="places-heading">
+        <h2 id="places-heading">Places the days happened</h2>
+        <ol class="place-index">
+          <li>
             <a href={`${base}iu.html`}>
               <span class="essay-kicker">Campus · Bloomington</span>
               <span class="essay-title">IU</span>
-              <span class="essay-dek">Welcome Week, 900+ organisations, Little 500, IUDM, Sample Gates, and the ordinary Tuesdays in between.</span>
             </a>
           </li>
-          <li class="essay-index-item">
+          <li>
             <a href={`${base}indiana.html`}>
               <span class="essay-kicker">College town · home weekends</span>
               <span class="essay-title">Indiana</span>
-              <span class="essay-dek">Kirkwood, Lake Monroe, College Mall, and the drive home to the restaurant.</span>
             </a>
           </li>
-          <li class="essay-index-item">
+          <li>
             <a href={`${base}spain.html`}>
               <span class="essay-kicker">Study abroad · Spring 2026</span>
               <span class="essay-title">Spain</span>
-              <span class="essay-dek">Universidad Complutense de Madrid, then Segovia, Cáceres, Trujillo, Tenerife.</span>
-            </a>
-          </li>
-          <li class="essay-index-item">
-            <a href={`${base}days.html`}>
-              <span class="essay-kicker">BeReal · the pictures</span>
-              <span class="essay-title">Days</span>
-              <span class="essay-dek">Fourteen frames from Downloads: campus, Kirkwood, Madrid sidewalks.</span>
             </a>
           </li>
         </ol>
       </section>
 
-      <section id="instagram" aria-labelledby="ig-heading">
-        <h2 id="ig-heading">From Instagram @zhao.langxi</h2>
-        <p>
-          The live grid, not a recap. Memorial Stadium in a penguin onesie. Night game lights. Friends.
-        </p>
-        <div class="ig-grid">
-          <InstagramEmbed
-            href="https://www.instagram.com/p/De-VPhSltw0/"
-            title="Memorial Stadium · penguin onesie"
-          />
-          <InstagramEmbed
-            href="https://www.instagram.com/p/Dey2zHiFo0F/"
-            title="A Tuesday with people I like"
-          />
-          <InstagramEmbed
-            href="https://www.instagram.com/p/De5Z4fPlpze/"
-            title="Memorial Stadium at night"
-          />
+      <section class="cat-mark" aria-labelledby="cat-heading">
+        <FishingCat size={64} title="A little cat by the water" markId="home" />
+        <div>
+          <h2 id="cat-heading"><span lang="zh-Hans">小猫钓鱼</span></h2>
+          <p>
+            The picture-book lesson I keep: curiosity, patience, watching the water.
+            <a href={`${base}xiao-mao-diao-yu.html`}>Read the story</a>.
+          </p>
         </div>
       </section>
 
-      <section id="hiatus" aria-labelledby="hiatus-heading">
-        <h2 id="hiatus-heading">Older essays, still here</h2>
-        <p>
-          Digital Humans and human-robot interaction pieces are parked, not deleted.
-          If you came for ships and a résumé, that lives on
-          <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>.
-        </p>
-        <p><a href={`${base}archive.html`}>Writing archive</a></p>
-      </section>
+      <p class="quiet-links">
+        Days also live on
+        <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">Instagram @zhao.langxi</a>.
+        Older writing is
+        <a href={`${base}archive.html`}>on hiatus in the archive</a>.
+      </p>
     </article>
   </main>
 </Layout>
