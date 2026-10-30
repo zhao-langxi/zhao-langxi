@@ -1,3 +1,7 @@
+export type PhotoOrigin = "original" | "licensed";
+
+export type RelatedPage = "home" | "days" | "iu" | "indiana" | "spain" | "about";
+
 export type JournalPhoto = {
   id: string;
   src: string;
@@ -6,7 +10,23 @@ export type JournalPhoto = {
   alt: string;
   width: number;
   height: number;
+  origin: PhotoOrigin;
+  related: RelatedPage[];
+  creator?: string;
+  license?: string;
+  licenseUrl?: string;
+  creditHtml?: string;
+  takenNote?: string;
 };
+
+const featuredIds = [
+  "iu-stadium-night",
+  "iu-limestone-house",
+  "iu-campus-plaza",
+  "iu-tree-walk",
+  "indiana-planter",
+  "spain-residence-sun",
+] as const;
 
 export const fishingPhoto: JournalPhoto = {
   id: "fishing",
@@ -16,6 +36,8 @@ export const fishingPhoto: JournalPhoto = {
   alt: "Jade Zhao on a boat, holding a fishing rod, a small fish on the line, open water behind her.",
   width: 1152,
   height: 2048,
+  origin: "original",
+  related: ["home"],
 };
 
 export const journalPhotos: JournalPhoto[] = [
@@ -27,6 +49,8 @@ export const journalPhotos: JournalPhoto[] = [
     alt: "BeReal. Memorial Stadium lit gold at night, parking lot in front. Jade in the inset selfie.",
     width: 1080,
     height: 1440,
+    origin: "original",
+    related: ["days", "iu", "home"],
   },
   {
     id: "iu-limestone-house",
@@ -36,6 +60,8 @@ export const journalPhotos: JournalPhoto[] = [
     alt: "BeReal. A limestone campus house with a red door under a clear blue sky. Jade in the inset selfie, glasses and a white jacket.",
     width: 1080,
     height: 1440,
+    origin: "original",
+    related: ["days", "iu", "home"],
   },
   {
     id: "iu-campus-plaza",
@@ -45,6 +71,8 @@ export const journalPhotos: JournalPhoto[] = [
     alt: "BeReal. A brick campus plaza and a brick building under a huge blue sky. Jade in the inset selfie.",
     width: 1080,
     height: 1440,
+    origin: "original",
+    related: ["days", "iu", "home"],
   },
   {
     id: "iu-tree-walk",
@@ -54,6 +82,8 @@ export const journalPhotos: JournalPhoto[] = [
     alt: "BeReal. A single tree in a median on a campus road. Jade walking with a backpack in the inset selfie.",
     width: 1080,
     height: 1440,
+    origin: "original",
+    related: ["days", "iu", "home"],
   },
   {
     id: "iu-hoosier-lobby",
@@ -63,6 +93,8 @@ export const journalPhotos: JournalPhoto[] = [
     alt: "BeReal. A campus lobby kiosk and a red public-health poster. Jade in a crimson Hoosier shirt in the inset selfie.",
     width: 1080,
     height: 1440,
+    origin: "original",
+    related: ["days", "iu"],
   },
   {
     id: "iu-peer-mentor-table",
@@ -72,6 +104,8 @@ export const journalPhotos: JournalPhoto[] = [
     alt: "BeReal. A campus table with candy, pens, and a sign that says request a peer mentor. Jade in the inset selfie.",
     width: 1080,
     height: 1440,
+    origin: "original",
+    related: ["days", "iu"],
   },
   {
     id: "indiana-canes",
@@ -81,6 +115,8 @@ export const journalPhotos: JournalPhoto[] = [
     alt: "BeReal. Raising Cane's brick wall and logo, empty booth, Indiana jersey on the wall. Jade in the inset selfie.",
     width: 1080,
     height: 1440,
+    origin: "original",
+    related: ["days", "indiana"],
   },
   {
     id: "indiana-ritas",
@@ -90,6 +126,8 @@ export const journalPhotos: JournalPhoto[] = [
     alt: "BeReal. Rita's The Upstairs Pub sign against a blue sky. Jade in a pink jacket in the inset selfie.",
     width: 1080,
     height: 1440,
+    origin: "original",
+    related: ["days", "indiana"],
   },
   {
     id: "indiana-brothers",
@@ -99,6 +137,8 @@ export const journalPhotos: JournalPhoto[] = [
     alt: "BeReal. An empty Brothers booth and a neon Indiana Hoosiers sign. Jade in a red shirt in the inset selfie.",
     width: 1080,
     height: 1440,
+    origin: "original",
+    related: ["days", "indiana"],
   },
   {
     id: "indiana-desk-coke",
@@ -108,6 +148,8 @@ export const journalPhotos: JournalPhoto[] = [
     alt: "BeReal. A Diet Coke cup beside an open laptop. Jade in a black Michigan sweatshirt in the inset selfie.",
     width: 1080,
     height: 1440,
+    origin: "original",
+    related: ["days", "indiana"],
   },
   {
     id: "indiana-planter",
@@ -117,6 +159,8 @@ export const journalPhotos: JournalPhoto[] = [
     alt: "BeReal. A tall planter of purple flowers against a brick wall. Jade holding a small potted plant in the inset selfie.",
     width: 1080,
     height: 1440,
+    origin: "original",
+    related: ["days", "indiana", "home"],
   },
   {
     id: "spain-residence-sun",
@@ -126,6 +170,8 @@ export const journalPhotos: JournalPhoto[] = [
     alt: "BeReal. A cobbled walk between residence buildings, sun flaring. Jade with glasses in the inset selfie.",
     width: 1080,
     height: 1440,
+    origin: "original",
+    related: ["days", "spain", "home"],
   },
   {
     id: "spain-sidewalk-bus",
@@ -135,6 +181,8 @@ export const journalPhotos: JournalPhoto[] = [
     alt: "BeReal. A Madrid sidewalk, a tree, a blue bus, cars. Jade in a dark sweater in the inset selfie.",
     width: 1080,
     height: 1440,
+    origin: "original",
+    related: ["days", "spain"],
   },
   {
     id: "spain-ivy-lot",
@@ -144,17 +192,10 @@ export const journalPhotos: JournalPhoto[] = [
     alt: "BeReal. Ivy in the foreground and a wet parking lot in winter. Jade in an olive coat in the inset selfie.",
     width: 1080,
     height: 1440,
+    origin: "original",
+    related: ["days", "spain"],
   },
 ];
-
-const featuredIds = [
-  "iu-stadium-night",
-  "iu-limestone-house",
-  "iu-campus-plaza",
-  "iu-tree-walk",
-  "indiana-planter",
-  "spain-residence-sun",
-] as const;
 
 export const featuredPhotos: JournalPhoto[] = featuredIds.map((id) => {
   const photo = journalPhotos.find((item) => item.id === id);
@@ -167,4 +208,9 @@ export const featuredPhotos: JournalPhoto[] = featuredIds.map((id) => {
 export function photosByPlace(place: string, limit?: number): JournalPhoto[] {
   const matched = journalPhotos.filter((item) => item.place === place);
   return typeof limit === "number" ? matched.slice(0, limit) : matched;
+}
+
+export function photosRelatedTo(page: RelatedPage): JournalPhoto[] {
+  const all = [fishingPhoto, ...journalPhotos];
+  return all.filter((photo) => photo.related.includes(page));
 }

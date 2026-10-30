@@ -1,10 +1,37 @@
 ---
 import Layout from "../layouts/Base.astro";
-import PhotoJournal from "../components/PhotoJournal.astro";
 import FishingCat from "../components/FishingCat.astro";
-import XiaoMaoStory from "../components/XiaoMaoStory.astro";
-import { featuredPhotos, fishingPhoto } from "../lib/photos";
+import { fishingPhoto, journalPhotos } from "../lib/photos";
 import { base } from "../lib/site";
+
+function photoById(id: string) {
+  const photo = journalPhotos.find((item) => item.id === id);
+  if (!photo) {
+    throw new Error(`Missing homepage photo: ${id}`);
+  }
+  return photo;
+}
+
+const placeEntries = [
+  {
+    href: `${base}iu.html`,
+    label: "IU",
+    kicker: "Campus · Bloomington",
+    photo: photoById("iu-stadium-night"),
+  },
+  {
+    href: `${base}indiana.html`,
+    label: "Indiana",
+    kicker: "College town · home weekends",
+    photo: photoById("indiana-planter"),
+  },
+  {
+    href: `${base}spain.html`,
+    label: "Spain",
+    kicker: "Study abroad · Spring 2026",
+    photo: photoById("spain-residence-sun"),
+  },
+];
 ---
 <Layout
   title="赵郎溪"
@@ -16,31 +43,24 @@ import { base } from "../lib/site";
   ogDescription="小猫钓鱼 and a personal journal of photographs. Jade Zhao · 赵郎溪 · @zhao.langxi."
 >
   <main id="main" tabindex="-1">
-    <header class="hero">
+    <header class="home-cover">
       <img
-        class="hero-photo"
+        class="home-cover__photo"
         src={`${base}${fishingPhoto.src}`}
         alt={fishingPhoto.alt}
         width={fishingPhoto.width}
         height={fishingPhoto.height}
         decoding="async"
       />
-      <div class="hero-copy">
-        <p>Zhào Lángxī · @zhao.langxi</p>
+      <div class="home-cover__copy">
+        <p class="home-cover__kicker">Zhào Lángxī</p>
         <h1 lang="zh-Hans">赵郎溪</h1>
-        <p class="home-tagline">
+        <p class="home-cover__line">
           <span lang="zh-Hans">小猫钓鱼</span>. Sit with the water. Leave the butterfly.
-        </p>
-        <p>
-          Jade Zhao. A personal journal from Indiana University, home weekends, and a spring in
-          Spain. The Instagram bio is still the true one: <em>xiao mao diao yu</em> ... little cat
-          fishing.
-        </p>
-        <p>
-          <a href={`${base}xiao-mao-diao-yu.html`}>The story, then retrieve versus generate</a>.
         </p>
       </div>
     </header>
+
     <div class="ocean-band" aria-hidden="true">
       <svg viewBox="0 0 720 28" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
         <path class="ocean-band__wave" d="M0 16c40 8 80 8 120 0s80-8 120 0 80 8 120 0 80-8 120 0 80 8 120 0 80-8 120 0v12H0z" fill="#8ECBE8" opacity="0.45" />
@@ -49,90 +69,49 @@ import { base } from "../lib/site";
     </div>
 
     <article>
-      <section class="feature-block" aria-labelledby="journal-heading">
-        <div class="feature-head">
-          <h2 id="journal-heading">From the journal</h2>
+      <section class="home-places" aria-labelledby="places-heading">
+        <div class="home-places__head">
+          <h2 id="places-heading">The days</h2>
           <p>
-            Six frames I actually took. The rest of the days live in one journal, not empty rooms.
+            <a href={`${base}days.html`}>Fourteen frames</a>
           </p>
         </div>
-        <PhotoJournal photos={featuredPhotos} variant="board" idPrefix="home" eagerCount={2} />
-        <p class="feature-more">
-          <a href={`${base}days.html`}>All fourteen days</a>
-        </p>
-      </section>
-
-      <section id="story" aria-labelledby="story-heading">
-        <h2 id="story-heading">How I got to the river</h2>
-        <p>
-          The fishing photo is not a brand exercise. It is me, on a boat, before anyone asked for a
-          résumé line. I grew up in a family Chinese restaurant in central Indiana (Greenfield,
-          Indiana). IU felt mutual. Spain was a semester of learning a city that was never designed
-          around me.
-        </p>
-        <XiaoMaoStory idPrefix="home" showFishing={false} />
-      </section>
-
-      <section id="name" aria-labelledby="name-heading">
-        <h2 id="name-heading">The name · <span lang="zh-Hans">我的名字</span></h2>
-        <p>
-          The characters on this door are <strong lang="zh-Hans">赵郎溪</strong>.
-          In pinyin that is <strong>Zhào Lángxī</strong> ... ordinary dictionary readings, not a
-          family lecture I am inventing here.
-        </p>
-        <ul class="name-list">
-          <li><span lang="zh-Hans">赵</span> · Zhào · the family surname.</li>
-          <li><span lang="zh-Hans">郎溪</span> · Lángxī · the given name as written on this site.</li>
-          <li>Jade Zhao is the English name I use. <span lang="zh-Hans">赵郎溪</span> is the name I wanted to grow into.</li>
-        </ul>
-        <p class="placeholder-note">
-          Why those two given-name characters were chosen, and any family story behind them, is
-          still waiting for me to write it in my own words. I am not filling that gap with a pretty
-          guess.
-        </p>
-      </section>
-
-      <section id="places" aria-labelledby="places-heading">
-        <h2 id="places-heading">Places the days happened</h2>
-        <ol class="place-index">
-          <li>
-            <a href={`${base}iu.html`}>
-              <span class="essay-kicker">Campus · Bloomington</span>
-              <span class="essay-title">IU</span>
-            </a>
-          </li>
-          <li>
-            <a href={`${base}indiana.html`}>
-              <span class="essay-kicker">College town · home weekends</span>
-              <span class="essay-title">Indiana</span>
-            </a>
-          </li>
-          <li>
-            <a href={`${base}spain.html`}>
-              <span class="essay-kicker">Study abroad · Spring 2026</span>
-              <span class="essay-title">Spain</span>
-            </a>
-          </li>
+        <ol class="home-places__list">
+          {
+            placeEntries.map((entry) => (
+              <li>
+                <a href={entry.href}>
+                  <img
+                    src={`${base}${entry.photo.src}`}
+                    alt={entry.photo.alt}
+                    width={entry.photo.width}
+                    height={entry.photo.height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="essay-kicker">{entry.kicker}</span>
+                  <span class="essay-title">{entry.label}</span>
+                </a>
+              </li>
+            ))
+          }
         </ol>
       </section>
 
-      <section class="cat-mark" aria-labelledby="cat-heading">
-        <FishingCat size={64} title="A little cat by the water" markId="home" />
+      <section class="home-story" aria-labelledby="cat-heading">
+        <FishingCat size={88} title="A little cat by the water" markId="home" />
         <div>
-          <h2 id="cat-heading">Retrieve, then speak</h2>
+          <h2 id="cat-heading" lang="zh-Hans">小猫钓鱼</h2>
           <p>
-            On the story page you can cast into a tiny pond of notes, or guess without looking.
-            That is retrieve versus generate. It is a demo, not a model.
-            <a href={`${base}xiao-mao-diao-yu.html#pond`}>Open the pond</a>.
+            The picture book, then a clearly marked analogy.
+            <a href={`${base}xiao-mao-diao-yu.html`}>Open the story</a>.
           </p>
         </div>
       </section>
 
       <p class="quiet-links">
-        Days also live on
-        <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">Instagram @zhao.langxi</a>.
-        Older writing is
-        <a href={`${base}archive.html`}>on hiatus in the archive</a>.
+        <a href={`${base}about.html`}>About</a>
+        <a href={`${base}archive.html`}>Writing, on hiatus</a>
       </p>
     </article>
   </main>
