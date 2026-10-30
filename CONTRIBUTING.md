@@ -1,20 +1,25 @@
 # Contributing
 
-Thank you for reading zhao-langxi. This is a public independent publication. Formal reuse licences are **pending** author approval (see README).
+Thank you for reading zhao-langxi. This is a personal journal. Formal reuse licences are **pending** author approval (see README). Do not treat the site as open source yet.
 
 ## Ways to help
 
-- **Corrections:** GitHub Issue (correction template) with page URL and suggested fix.
-- **References:** Issue or PR adding a row to `research/bibliography.md` with a stable link.
+- **Corrections:** GitHub Issue with the page URL and the suggested fix (a typo, a broken link, a wrong date).
 - **Accessibility:** Issue if contrast, keyboard path, or screen reader behaviour fails.
+- **References (archive essays only):** Issue or pull request adding a row to `research/bibliography.md` with a stable link.
 
-## Licences (proposed ... confirm on main README before reuse)
+## Please do not
 
-- Site code: MIT (pending author approval).  
-- Essays and markdown notes: CC BY 4.0 (pending author approval).
+- Invent captions, memories, or a family story for the name 郎溪
+- Rewrite a photograph note to sound more poetic
+- Add hire-facing résumé language to About
+- Contribute third-party text or pictures without permission
 
-Do not contribute third-party text without permission.
+## Local check
 
-## Jade Zhao
+```bash
+npm install
+npm run build
+```
 
-Essays and interpretation remain the author’s responsibility. `jlzhao@iu.edu`
+Essays and interpretation remain Jade Zhao's responsibility. `jlzhao@iu.edu`

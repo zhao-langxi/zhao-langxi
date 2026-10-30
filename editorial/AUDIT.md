@@ -1,7 +1,15 @@
-# zhao-langxi · editorial audit (Oct 2026)
+# zhao-langxi · editorial audit
 
-**Scope:** Homepage, About, three essays, research hub, navigation, SEO, licensing.  
-**Shipped:** 26 Oct 2026 (`64ad77c`).  
+**Scope:** Homepage, About, days, place pages, three parked essays, research hub, navigation, SEO, licensing.
+
+## Addendum · 30 Oct 2026
+
+- Front door is the visual journal (days, IU / Indiana / Spain, 小猫钓鱼). HRI essays stay in `archive.html`.
+- `npm run build` is the current publish gate. `node scripts/check-site.mjs` may still be stale if it walks repo-root HTML.
+- Do not call the site open source until licence files exist.
+- `resume.pdf` at repo root should keep pointing readers to jadexzhao.
+
+**Earlier ship:** 26 Oct 2026 (`64ad77c`) reader-first home and essay bridges.  
 **Not certified:** Full visual, screen-reader, or mobile QA (manual checks listed below).
 
 | Sev | Finding | Evidence | Fix status |
@@ -31,4 +39,4 @@
 - [ ] Flagship essay *The right to interrupt* (draft in `editorial/flagship-plan.md`)
 - [ ] Official job titles on About if re-expanded
 
-Run before publish: `node scripts/check-site.mjs`
+Run before publish: `npm run build`. Treat `node scripts/check-site.mjs` as inconclusive if it still walks repo-root HTML.

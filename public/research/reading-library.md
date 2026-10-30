@@ -1,4 +1,6 @@
-# HRI reading library
+# Reading library (archive)
+
+Starter list for the parked human-robot interaction essays. Not an endorsement list. Not the front door of the journal.
 
 Start with the [open bibliography](./bibliography.html) for sources already used in essays.
 
