@@ -20,7 +20,15 @@ const headingId = `${idPrefix}-lightbox-title`;
       <ul class:list={["journal-grid", `journal-grid--${variant}`]}>
         {photos.map((photo, index) => (
           <li>
-            <button type="button" class="journal-tile" data-open data-index={String(index)}>
+            <button
+              type="button"
+              class="journal-tile"
+              data-open
+              data-index={String(index)}
+              data-caption={photo.caption ?? ""}
+              data-note={photo.note ?? ""}
+              data-credit={photo.creditHtml ?? ""}
+            >
               <img
                 src={`${base}${photo.src}`}
                 alt={photo.alt}
@@ -42,7 +50,9 @@ const headingId = `${idPrefix}-lightbox-title`;
         <div class="lightbox__panel">
           <h2 class="lightbox__title" id={headingId} data-title></h2>
           <img data-frame alt="" width="1080" height="1440" />
-          <p class="lightbox__cap" data-cap></p>
+          <p class="lightbox__cap" data-cap hidden></p>
+          <p class="lightbox__note" data-note hidden></p>
+          <p class="lightbox__credit" data-credit hidden></p>
           <div class="lightbox__bar">
             <button type="button" data-prev>
               Previous
@@ -61,13 +71,29 @@ const headingId = `${idPrefix}-lightbox-title`;
 }
 
 <script>
-  type PhotoRecord = { src: string; alt: string; title: string; place: string };
+  type PhotoRecord = {
+    src: string;
+    alt: string;
+    title: string;
+    place: string;
+    caption: string;
+    note: string;
+    credit: string;
+  };
+
+  function setText(el: Element | null, value: string) {
+    if (!(el instanceof HTMLElement)) return;
+    el.textContent = value;
+    el.hidden = value.length === 0;
+  }
 
   function initJournal(root: HTMLElement) {
     const dialog = root.querySelector("dialog");
     const frame = root.querySelector<HTMLImageElement>("[data-frame]");
     const titleEl = root.querySelector("[data-title]");
-    const capEl = root.querySelector("[data-cap]");
+    const capEl = root.querySelector(".lightbox__cap");
+    const noteEl = root.querySelector(".lightbox__note");
+    const creditEl = root.querySelector(".lightbox__credit");
     const closeBtn = root.querySelector("[data-close]");
     const prevBtn = root.querySelector("[data-prev]");
     const nextBtn = root.querySelector("[data-next]");
@@ -83,6 +109,9 @@ const headingId = `${idPrefix}-lightbox-title`;
         alt: img?.getAttribute("alt") ?? "",
         title,
         place,
+        caption: tile.getAttribute("data-caption") ?? "",
+        note: tile.getAttribute("data-note") ?? "",
+        credit: tile.getAttribute("data-credit") ?? "",
       };
     });
 
@@ -95,7 +124,9 @@ const headingId = `${idPrefix}-lightbox-title`;
       frame.src = photo.src;
       frame.alt = photo.alt;
       if (titleEl) titleEl.textContent = photo.title;
-      if (capEl) capEl.textContent = `${photo.place} · ${photo.title}`;
+      setText(capEl, photo.caption);
+      setText(noteEl, photo.note);
+      setText(creditEl, photo.credit);
       if (prevBtn instanceof HTMLButtonElement) prevBtn.disabled = index === 0;
       if (nextBtn instanceof HTMLButtonElement) nextBtn.disabled = index === photos.length - 1;
     }

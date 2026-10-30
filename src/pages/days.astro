@@ -3,29 +3,87 @@ import Layout from "../layouts/Base.astro";
 import PhotoJournal from "../components/PhotoJournal.astro";
 import { journalPhotos } from "../lib/photos";
 import { base } from "../lib/site";
+
+const becoming = journalPhotos.slice(0, 6);
+const familiar = journalPhotos.slice(6, 10);
+const littleThings = journalPhotos.slice(10, 12);
+const somewhereNew = journalPhotos.slice(12, 14);
 ---
 <Layout
-  title="Days"
-  description="A visual journal of IU, Indiana, and Spain days. Fourteen frames I actually took. Not a brand campaign."
+  title="The Days in Between"
+  description="A photographic journal by Jade Zhao · 赵郎溪. Fourteen ordinary days from IU, Indiana, and Madrid."
   canonical="https://zhao-langxi.github.io/zhao-langxi/days.html"
   current="days"
   bodyClass="journal-page"
 >
   <main id="main" tabindex="-1">
     <header>
-      <p>Visual journal · IU · Indiana · Spain</p>
-      <h1>The days, as they looked</h1>
-      <p>
-        One journal. Fourteen frames from campus walks, Kirkwood food, a lobby table, a Madrid
-        sidewalk. I left out packed bars, friends who did not ask to be here, and anything that
-        belongs on another door.
-      </p>
+      <p>A photographic journal by Jade Zhao · 赵郎溪</p>
+      <h1>The Days in Between</h1>
     </header>
     <article>
-      <section aria-labelledby="grid-heading">
-        <h2 id="grid-heading">Fourteen frames</h2>
-        <PhotoJournal photos={journalPhotos} variant="masonry" idPrefix="days" eagerCount={2} />
+      <div class="journal-lede">
+        <p>
+          I used to think photographs were for the big things. The places you travel to, the people
+          you meet, and the moments you know you'll want to remember.
+        </p>
+        <p>But looking through my camera roll, I keep coming back to the ordinary days.</p>
+        <p>
+          A walk across campus. A restaurant booth. Flowers growing beside a building. A street in
+          Madrid that probably looked completely unremarkable to everyone else.
+        </p>
+        <p>
+          I grew up in Indiana, went to college not too far from home, and eventually found myself
+          studying across the ocean. Somewhere between those places, I started collecting little
+          pieces of everyday life.
+        </p>
+        <p>
+          These photographs aren't really about where I've been. They're about the things I noticed
+          while I was there.
+        </p>
+        <p>
+          And maybe that's what <span lang="zh-Hans">小猫钓鱼</span> means to me now: learning to
+          stay with the moment long enough to see what's right in front of me.
+        </p>
+      </div>
+
+      <section aria-labelledby="becoming-heading">
+        <h2 id="becoming-heading">Indiana University · Becoming</h2>
+        <PhotoJournal photos={becoming} variant="masonry" idPrefix="becoming" eagerCount={2} />
       </section>
+
+      <section aria-labelledby="familiar-heading">
+        <h2 id="familiar-heading">Indiana · The Familiar Things</h2>
+        <PhotoJournal photos={familiar} variant="masonry" idPrefix="familiar" eagerCount={1} />
+      </section>
+
+      <section aria-labelledby="little-heading">
+        <h2 id="little-heading">The Little Things · Paying Attention</h2>
+        <PhotoJournal photos={littleThings} variant="masonry" idPrefix="little" eagerCount={1} />
+      </section>
+
+      <section aria-labelledby="spain-heading">
+        <h2 id="spain-heading">Spain · Somewhere New</h2>
+        <PhotoJournal photos={somewhereNew} variant="masonry" idPrefix="somewhere" eagerCount={1} />
+      </section>
+
+      <section class="journal-close" aria-labelledby="note-heading">
+        <h2 id="note-heading">A Small Note to Myself</h2>
+        <p>
+          I don't think I took these photographs knowing exactly what they would mean later.
+        </p>
+        <p>
+          Some were taken because the light was nice. Others because something looked familiar,
+          funny, or worth remembering for reasons I couldn't quite explain.
+        </p>
+        <p>Looking back, I like that they're ordinary.</p>
+        <p>
+          They remind me that growing up isn't always one big turning point. Sometimes it's a
+          collection of little moments that only start making sense when you put them together.
+        </p>
+        <p>And I'm still collecting them.</p>
+      </section>
+
       <p>
         <a href={`${base}iu.html`}>IU</a>
         <a href={`${base}indiana.html`}>Indiana</a>

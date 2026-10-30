@@ -1,6 +1,5 @@
 ---
 import "../styles/rivet.css";
-import FishingCat from "../components/FishingCat.astro";
 import { base } from "../lib/site";
 const {
   title,
@@ -25,9 +24,8 @@ const writingCurrent =
 
 const labels = {
   site: isZh ? "站点导航" : "Site",
-  home: isZh ? "首页" : "Home",
   places: isZh ? "地方" : "Places",
-  days: isZh ? "日子" : "Days",
+  journal: isZh ? "日记" : "Journal",
   story: "小猫钓鱼",
   about: isZh ? "关于" : "About",
   writing: isZh ? "写作" : "Writing",
@@ -35,8 +33,12 @@ const labels = {
   close: isZh ? "关闭菜单" : "Close menu",
   contrast: isZh ? "高对比" : "High contrast",
   otherDoors: isZh ? "其他站点" : "Other doors",
-  journals: isZh ? "日记" : "Journals",
   crumb: isZh ? "当前位置" : "Breadcrumb",
+  closeLine: isZh ? "照片、地方，还有那些日子。" : "Photographs, places, and the days in between.",
+  copy: "© 2026 Jade Zhao",
+  instagram: "Instagram",
+  archive: isZh ? "档案" : "Archive",
+  contact: isZh ? "联系" : "Contact",
 };
 
 const leaf = (Astro.url.pathname.split("/").filter(Boolean).pop() ?? "").replace(/\/$/, "");
@@ -96,9 +98,9 @@ if (leaf in writingLeaves) {
     <a class="skip-link" href="#main">{skipLabel}</a>
     <header class="mast">
       <nav class="mast-bar" aria-label={labels.site}>
-        <a class="mast-mark" aria-label="赵郎溪, home" href={base}>
-          <FishingCat size={28} title="A little cat by the water" markId="mast" />
-          <span lang="zh-Hans">赵郎溪</span>
+        <a class="mast-mark" href={base} aria-current={current === "home" ? "page" : undefined}>
+          <span class="mast-mark__zh" lang="zh-Hans">赵郎溪</span>
+          <span class="mast-mark__en">ZHAO LANGXI</span>
         </a>
         <div class="mast-tools">
           <button
@@ -119,7 +121,7 @@ if (leaf in writingLeaves) {
         <div class="mast-menu" id="site-menu">
           <ul class="mast-list">
             <li>
-              <a href={base} aria-current={current === "home" ? "page" : undefined}>{labels.home}</a>
+              <a href={`${base}days.html`} aria-current={current === "days" ? "page" : undefined}>{labels.journal}</a>
             </li>
             <li class="mast-group">
               <details class="mast-places" data-places>
@@ -138,18 +140,15 @@ if (leaf in writingLeaves) {
               </details>
             </li>
             <li>
-              <a href={`${base}days.html`} aria-current={current === "days" ? "page" : undefined}>{labels.days}</a>
-            </li>
-            <li>
               <a href={`${base}xiao-mao-diao-yu.html`} aria-current={current === "xiaomao" ? "page" : undefined}>
                 {labels.story}
               </a>
             </li>
             <li>
-              <a href={`${base}about.html`} aria-current={current === "about" ? "page" : undefined}>{labels.about}</a>
+              <a href={`${base}archive.html`} aria-current={writingCurrent ? "page" : undefined}>{labels.writing}</a>
             </li>
             <li>
-              <a href={`${base}archive.html`} aria-current={writingCurrent ? "page" : undefined}>{labels.writing}</a>
+              <a href={`${base}about.html`} aria-current={current === "about" ? "page" : undefined}>{labels.about}</a>
             </li>
           </ul>
         </div>
@@ -171,46 +170,19 @@ if (leaf in writingLeaves) {
     <slot />
     <footer>
       <div>
-        <p class="footer-mark">
-          <FishingCat size={44} title="A little cat by the water" markId="footer" />
-          <span lang="zh-Hans">赵郎溪</span>
-          · Jade Zhao ·
-          <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">@zhao.langxi</a>
+        <p class="footer-name" lang="zh-Hans">赵郎溪</p>
+        <p class="footer-line">{labels.closeLine}</p>
+        <p class="footer-meta">
+          <span>{labels.copy}</span>
+          <span class="footer-links" aria-label={labels.site}>
+            <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">{labels.instagram}</a>
+            <a href={`${base}archive.html`}>{labels.archive}</a>
+            <a href="mailto:jlzhao@iu.edu">{labels.contact}</a>
+          </span>
         </p>
-        <div class="footer-cols">
-          <nav aria-label={labels.site}>
-            <a href={base}>{labels.home}</a>
-            <a href={`${base}days.html`}>{labels.days}</a>
-            <a href={`${base}xiao-mao-diao-yu.html`}>{labels.story}</a>
-            <a href={`${base}about.html`}>{labels.about}</a>
-            <a href={`${base}archive.html`}>{labels.writing}</a>
-          </nav>
-          <nav aria-label={labels.journals}>
-            <a href={`${base}iu.html`}>IU</a>
-            <a href={`${base}indiana.html`}>Indiana</a>
-            <a href={`${base}spain.html`}>Spain</a>
-            <a href={`${base}days.html`}>{labels.days}</a>
-          </nav>
-          <nav aria-label={labels.otherDoors}>
-            <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>
-            <a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a>
-            <a aria-current="page" href="https://zhao-langxi.github.io/zhao-langxi/">zhao-langxi</a>
-          </nav>
-        </div>
-        <p class="footer-note">
-          {
-            isZh
-              ? "个人生活笔记。不是招生简章，也不是印第安纳大学背书。"
-              : "A personal journal. Not an admissions brochure, and not IU-endorsed."
-          }
-          {" "}
-          <a href={`${base}archive.html`}>{isZh ? "旧稿在档案里，已暂停。" : "Older writing, on hiatus."}</a>
-          {" "}
-          {
-            isZh
-              ? "研究随笔 Places and evidence 也在档案里，不是 IU、Indiana、Spain 日记。"
-              : "The research essay Places and evidence lives in the archive. It is not the IU, Indiana, or Spain journals."
-          }
+        <p class="footer-doors" aria-label={labels.otherDoors}>
+          <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>
+          <a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a>
         </p>
       </div>
     </footer>

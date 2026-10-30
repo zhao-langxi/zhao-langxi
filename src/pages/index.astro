@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Base.astro";
-import FishingCat from "../components/FishingCat.astro";
 import { fishingPhoto, journalPhotos } from "../lib/photos";
 import { base } from "../lib/site";
 
@@ -61,13 +60,6 @@ const placeEntries = [
       </div>
     </header>
 
-    <div class="ocean-band" aria-hidden="true">
-      <svg viewBox="0 0 720 28" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path class="ocean-band__wave" d="M0 16c40 8 80 8 120 0s80-8 120 0 80 8 120 0 80-8 120 0 80 8 120 0 80-8 120 0v12H0z" fill="#8ECBE8" opacity="0.45" />
-        <path class="ocean-band__wave ocean-band__wave--late" d="M0 20c36 6 72 6 108 0s72-6 108 0 72 6 108 0 72-6 108 0 72 6 108 0 72-6 108 0v8H0z" fill="#3A7CA5" opacity="0.28" />
-      </svg>
-    </div>
-
     <article>
       <section class="home-places" aria-labelledby="places-heading">
         <div class="home-places__head">
@@ -99,14 +91,11 @@ const placeEntries = [
       </section>
 
       <section class="home-story" aria-labelledby="cat-heading">
-        <FishingCat size={88} title="A little cat by the water" markId="home" />
-        <div>
-          <h2 id="cat-heading" lang="zh-Hans">小猫钓鱼</h2>
-          <p>
-            The picture book, then a clearly marked analogy.
-            <a href={`${base}xiao-mao-diao-yu.html`}>Open the story</a>.
-          </p>
-        </div>
+        <h2 id="cat-heading" lang="zh-Hans">小猫钓鱼</h2>
+        <p>
+          Sit with the water. Leave the butterfly.
+          <a href={`${base}xiao-mao-diao-yu.html`}>Open the story</a>.
+        </p>
       </section>
 
       <p class="quiet-links">
