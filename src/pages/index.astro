@@ -2,17 +2,18 @@
 import Layout from "../layouts/Base.astro";
 import PhotoJournal from "../components/PhotoJournal.astro";
 import FishingCat from "../components/FishingCat.astro";
+import XiaoMaoStory from "../components/XiaoMaoStory.astro";
 import { featuredPhotos, fishingPhoto } from "../lib/photos";
 import { base } from "../lib/site";
 ---
 <Layout
   title="赵郎溪"
-  description="Zhao Langxi · 赵郎溪. A personal visual journal: ocean light, campus days, and the habit of looking twice."
+  description="Zhao Langxi · 赵郎溪. 小猫钓鱼, ocean light, campus days, and a small lesson about attention."
   canonical="https://zhao-langxi.github.io/zhao-langxi/"
   current="home"
   bodyClass="home"
   ogTitle="赵郎溪 · Zhao Langxi"
-  ogDescription="A personal journal of photographs and days. Jade Zhao · 赵郎溪 · @zhao.langxi."
+  ogDescription="小猫钓鱼 and a personal journal of photographs. Jade Zhao · 赵郎溪 · @zhao.langxi."
 >
   <main id="main" tabindex="-1">
     <header class="hero">
@@ -28,14 +29,24 @@ import { base } from "../lib/site";
         <p>Zhào Lángxī · @zhao.langxi</p>
         <h1 lang="zh-Hans">赵郎溪</h1>
         <p class="home-tagline">
-          How I see the world. Ocean light, a fishing line, and the days in between.
+          <span lang="zh-Hans">小猫钓鱼</span>. Sit with the water. Leave the butterfly.
         </p>
         <p>
-          Jade Zhao. A visual journal from Indiana University, home weekends, and a spring in Spain.
-          Not a studio, and not a résumé.
+          Jade Zhao. A personal journal from Indiana University, home weekends, and a spring in
+          Spain. The Instagram bio is still the true one: <em>xiao mao diao yu</em> ... little cat
+          fishing.
+        </p>
+        <p>
+          <a href={`${base}xiao-mao-diao-yu.html`}>The story, then retrieve versus generate</a>.
         </p>
       </div>
     </header>
+    <div class="ocean-band" aria-hidden="true">
+      <svg viewBox="0 0 720 28" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path class="ocean-band__wave" d="M0 16c40 8 80 8 120 0s80-8 120 0 80 8 120 0 80-8 120 0 80 8 120 0 80-8 120 0v12H0z" fill="#8ECBE8" opacity="0.45" />
+        <path class="ocean-band__wave ocean-band__wave--late" d="M0 20c36 6 72 6 108 0s72-6 108 0 72 6 108 0 72-6 108 0 72 6 108 0 72-6 108 0v8H0z" fill="#3A7CA5" opacity="0.28" />
+      </svg>
+    </div>
 
     <article>
       <section class="feature-block" aria-labelledby="journal-heading">
@@ -54,15 +65,12 @@ import { base } from "../lib/site";
       <section id="story" aria-labelledby="story-heading">
         <h2 id="story-heading">How I got to the river</h2>
         <p>
-          On Instagram the bio is still the true one: <em>xiao mao diao yu</em> ... little cat fishing ...
-          <em>pov reformed ipad kid</em>. The fishing photo is not a brand exercise. It is me, on a boat,
-          before anyone asked for a résumé line.
+          The fishing photo is not a brand exercise. It is me, on a boat, before anyone asked for a
+          résumé line. I grew up in a family Chinese restaurant in central Indiana (Greenfield,
+          Indiana). IU felt mutual. Spain was a semester of learning a city that was never designed
+          around me.
         </p>
-        <p>
-          I am Jade Zhao. Chinese American. I grew up in a family Chinese restaurant in central Indiana
-          (Greenfield, Indiana). IU felt mutual. Spain was a semester of learning a city that was never
-          designed around me.
-        </p>
+        <XiaoMaoStory idPrefix="home" showFishing={false} />
       </section>
 
       <section id="name" aria-labelledby="name-heading">
@@ -111,10 +119,11 @@ import { base } from "../lib/site";
       <section class="cat-mark" aria-labelledby="cat-heading">
         <FishingCat size={64} title="A little cat by the water" markId="home" />
         <div>
-          <h2 id="cat-heading"><span lang="zh-Hans">小猫钓鱼</span></h2>
+          <h2 id="cat-heading">Retrieve, then speak</h2>
           <p>
-            The picture-book lesson I keep: curiosity, patience, watching the water.
-            <a href={`${base}xiao-mao-diao-yu.html`}>Read the story</a>.
+            On the story page you can cast into a tiny pond of notes, or guess without looking.
+            That is retrieve versus generate. It is a demo, not a model.
+            <a href={`${base}xiao-mao-diao-yu.html#pond`}>Open the pond</a>.
           </p>
         </div>
       </section>

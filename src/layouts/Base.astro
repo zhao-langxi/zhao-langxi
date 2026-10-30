@@ -18,15 +18,45 @@ const {
 const pageTitle = title.includes("zhao-langxi") ? title : `${title} · zhao-langxi`;
 const canonicalUrl = canonical ?? `https://zhao-langxi.github.io${Astro.url.pathname}`;
 const ogImage = "https://zhao-langxi.github.io/zhao-langxi/og-image.jpg";
-const navItems = [
-  { id: "home", href: base, label: "Home" },
-  { id: "xiaomao", href: `${base}xiao-mao-diao-yu.html`, label: "小猫钓鱼" },
-  { id: "iu", href: `${base}iu.html`, label: "IU" },
-  { id: "indiana", href: `${base}indiana.html`, label: "Indiana" },
-  { id: "spain", href: `${base}spain.html`, label: "Spain" },
-  { id: "days", href: `${base}days.html`, label: "Days" },
-  { id: "about", href: `${base}about.html`, label: "About" },
-];
+const isZh = lang === "zh-Hans";
+const placesCurrent = current === "iu" || current === "indiana" || current === "spain";
+const writingCurrent =
+  current === "archive" || current === "research" || current === "essays" || current === "editorial";
+
+const labels = {
+  site: isZh ? "站点导航" : "Site",
+  home: isZh ? "首页" : "Home",
+  places: isZh ? "地方" : "Places",
+  days: isZh ? "日子" : "Days",
+  story: "小猫钓鱼",
+  about: isZh ? "关于" : "About",
+  writing: isZh ? "写作" : "Writing",
+  menu: isZh ? "打开菜单" : "Open menu",
+  close: isZh ? "关闭菜单" : "Close menu",
+  contrast: isZh ? "高对比" : "High contrast",
+  otherDoors: isZh ? "其他站点" : "Other doors",
+  journals: isZh ? "日记" : "Journals",
+  crumb: isZh ? "当前位置" : "Breadcrumb",
+};
+
+const leaf = (Astro.url.pathname.split("/").filter(Boolean).pop() ?? "").replace(/\/$/, "");
+const writingLeaves: Record<string, string> = {
+  "research.html": isZh ? "研究" : "Research hub",
+  "evidence-labels.html": isZh ? "证据标签" : "Evidence labels",
+  "bibliography.html": isZh ? "参考文献" : "Open bibliography",
+  "question.html": "The concierge question",
+  "places.html": "Places and evidence",
+  "web-and-social-2027.html": "网页与社交 · 2027",
+  "editorial.html": isZh ? "编辑" : "Editorial",
+};
+const crumbs: { href?: string; label: string }[] = [];
+if (leaf in writingLeaves) {
+  crumbs.push({ href: `${base}archive.html`, label: labels.writing });
+  if (leaf === "evidence-labels.html" || leaf === "bibliography.html") {
+    crumbs.push({ href: `${base}research.html`, label: isZh ? "研究" : "Research" });
+  }
+  crumbs.push({ label: writingLeaves[leaf] });
+}
 ---
 <!DOCTYPE html>
 <html lang={lang}>
@@ -65,59 +95,166 @@ const navItems = [
   <body class:list={["site", Astro.props.bodyClass]}>
     <a class="skip-link" href="#main">{skipLabel}</a>
     <header class="mast">
-      <nav aria-label={lang === "zh-Hans" ? "站点导航" : "Site"}>
-        <a class="mast-mark" aria-label="赵郎溪, home" href={base}><span lang="zh-Hans">赵郎溪</span></a>
-        <ul>
-          {
-            navItems.map((item) => (
-              <li>
-                <a href={item.href} aria-current={current === item.id ? "page" : undefined}>
-                  {item.label}
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-        <span class="contrast">
-          <input class="high-contrast-control" id="high-contrast" type="checkbox" />
-          <label class="theme-toggle" for="high-contrast">High contrast</label>
-        </span>
+      <nav class="mast-bar" aria-label={labels.site}>
+        <a class="mast-mark" aria-label="赵郎溪, home" href={base}>
+          <FishingCat size={28} title="A little cat by the water" markId="mast" />
+          <span lang="zh-Hans">赵郎溪</span>
+        </a>
+        <div class="mast-tools">
+          <button
+            class="mast-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-menu"
+            data-open-label={labels.menu}
+            data-close-label={labels.close}
+          >
+            {labels.menu}
+          </button>
+          <span class="contrast">
+            <input class="high-contrast-control" id="high-contrast" type="checkbox" />
+            <label class="theme-toggle" for="high-contrast">{labels.contrast}</label>
+          </span>
+        </div>
+        <div class="mast-menu" id="site-menu">
+          <ul class="mast-list">
+            <li>
+              <a href={base} aria-current={current === "home" ? "page" : undefined}>{labels.home}</a>
+            </li>
+            <li class="mast-group">
+              <details class="mast-places" data-places>
+                <summary aria-current={placesCurrent ? "true" : undefined}>{labels.places}</summary>
+                <ul>
+                  <li>
+                    <a href={`${base}iu.html`} aria-current={current === "iu" ? "page" : undefined}>IU</a>
+                  </li>
+                  <li>
+                    <a href={`${base}indiana.html`} aria-current={current === "indiana" ? "page" : undefined}>Indiana</a>
+                  </li>
+                  <li>
+                    <a href={`${base}spain.html`} aria-current={current === "spain" ? "page" : undefined}>Spain</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <a href={`${base}days.html`} aria-current={current === "days" ? "page" : undefined}>{labels.days}</a>
+            </li>
+            <li>
+              <a href={`${base}xiao-mao-diao-yu.html`} aria-current={current === "xiaomao" ? "page" : undefined}>
+                {labels.story}
+              </a>
+            </li>
+            <li>
+              <a href={`${base}about.html`} aria-current={current === "about" ? "page" : undefined}>{labels.about}</a>
+            </li>
+            <li>
+              <a href={`${base}archive.html`} aria-current={writingCurrent ? "page" : undefined}>{labels.writing}</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
+    {
+      crumbs.length > 0 && (
+        <nav class="crumbs" aria-label={labels.crumb}>
+          <ol>
+            {crumbs.map((crumb) => (
+              <li>
+                {crumb.href ? <a href={crumb.href}>{crumb.label}</a> : <span aria-current="page">{crumb.label}</span>}
+              </li>
+            ))}
+          </ol>
+        </nav>
+      )
+    }
     <slot />
     <footer>
       <div>
         <p class="footer-mark">
           <FishingCat size={44} title="A little cat by the water" markId="footer" />
-          <span lang="zh-Hans">赵郎溪</span> · Jade Zhao · <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">@zhao.langxi</a>
+          <span lang="zh-Hans">赵郎溪</span>
+          · Jade Zhao ·
+          <a href="https://www.instagram.com/zhao.langxi" rel="noopener noreferrer">@zhao.langxi</a>
         </p>
-        <nav aria-label={lang === "zh-Hans" ? "其他站点" : "Other doors"}>
-          <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>
-          <a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a>
-          <a aria-current="page" href="https://zhao-langxi.github.io/zhao-langxi/">zhao-langxi</a>
-        </nav>
+        <div class="footer-cols">
+          <nav aria-label={labels.site}>
+            <a href={base}>{labels.home}</a>
+            <a href={`${base}days.html`}>{labels.days}</a>
+            <a href={`${base}xiao-mao-diao-yu.html`}>{labels.story}</a>
+            <a href={`${base}about.html`}>{labels.about}</a>
+            <a href={`${base}archive.html`}>{labels.writing}</a>
+          </nav>
+          <nav aria-label={labels.journals}>
+            <a href={`${base}iu.html`}>IU</a>
+            <a href={`${base}indiana.html`}>Indiana</a>
+            <a href={`${base}spain.html`}>Spain</a>
+            <a href={`${base}days.html`}>{labels.days}</a>
+          </nav>
+          <nav aria-label={labels.otherDoors}>
+            <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>
+            <a href="https://matchaxmoxie.github.io/matchaxmoxie/" rel="noopener noreferrer">matchaxmoxie</a>
+            <a aria-current="page" href="https://zhao-langxi.github.io/zhao-langxi/">zhao-langxi</a>
+          </nav>
+        </div>
         <p class="footer-note">
           {
-            lang === "zh-Hans"
+            isZh
               ? "个人生活笔记。不是招生简章，也不是印第安纳大学背书。"
               : "A personal journal. Not an admissions brochure, and not IU-endorsed."
           }
           {" "}
-          <a href={`${base}archive.html`}>Older writing, on hiatus</a>.
+          <a href={`${base}archive.html`}>{isZh ? "旧稿在档案里，已暂停。" : "Older writing, on hiatus."}</a>
+          {" "}
+          {
+            isZh
+              ? "研究随笔 Places and evidence 也在档案里，不是 IU、Indiana、Spain 日记。"
+              : "The research essay Places and evidence lives in the archive. It is not the IU, Indiana, or Spain journals."
+          }
         </p>
       </div>
     </footer>
     <script is:inline>
       (function () {
         var box = document.getElementById("high-contrast");
-        if (!box) return;
-        try {
-          box.checked = window.localStorage.getItem("zhao-langxi-contrast") === "on";
-        } catch (err) {}
-        box.addEventListener("change", function () {
+        if (box) {
           try {
-            window.localStorage.setItem("zhao-langxi-contrast", box.checked ? "on" : "off");
+            box.checked = window.localStorage.getItem("zhao-langxi-contrast") === "on";
           } catch (err) {}
+          box.addEventListener("change", function () {
+            try {
+              window.localStorage.setItem("zhao-langxi-contrast", box.checked ? "on" : "off");
+            } catch (err) {}
+          });
+        }
+
+        var mast = document.querySelector(".mast");
+        var toggle = document.querySelector(".mast-toggle");
+        var panel = document.getElementById("site-menu");
+        var places = document.querySelector("[data-places]");
+        if (!mast || !toggle || !panel) return;
+
+        function setOpen(open) {
+          mast.classList.toggle("is-open", open);
+          toggle.setAttribute("aria-expanded", open ? "true" : "false");
+          toggle.textContent = open ? toggle.getAttribute("data-close-label") : toggle.getAttribute("data-open-label");
+          if (places) places.open = open || window.matchMedia("(min-width: 901px)").matches;
+          if (open) {
+            var first = panel.querySelector("a");
+            if (first) first.focus();
+          } else {
+            toggle.focus();
+          }
+        }
+
+        toggle.addEventListener("click", function () {
+          setOpen(toggle.getAttribute("aria-expanded") !== "true");
+        });
+
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+            setOpen(false);
+          }
         });
       })();
     </script>

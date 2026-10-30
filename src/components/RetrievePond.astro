@@ -1,0 +1,166 @@
+---
+interface Props {
+  idPrefix?: string;
+}
+
+const { idPrefix = "pond" } = Astro.props;
+---
+<section class="pond" data-pond={idPrefix} aria-labelledby={`${idPrefix}-heading`}>
+  <h2 id={`${idPrefix}-heading`}>
+    <span lang="zh-Hans">检索</span> and <span lang="zh-Hans">生成</span>
+  </h2>
+  <p>
+    A small educational experiment. Cast the line into a pond of notes that are
+    actually on this page. That is <strong>retrieve</strong>
+    (<span lang="zh-Hans">检索</span>, jiǎnsuǒ): look first. Or guess without
+    looking. That is <strong>generate</strong>
+    (<span lang="zh-Hans">生成</span>, shēngchéng): a fluent sentence that was
+    written for this demo, not fetched from the pond.
+  </p>
+  <p>
+    This is not a live language model, and it is not the Python BM25 ranker.
+    The real keyword search lives on
+    <a href="https://jadexzhao.github.io/jadexzhao/bm25.html" rel="noopener noreferrer"
+      >jadexzhao · BM25</a
+    >. The kitten story is still a metaphor. It does not explain transformer
+    attention.
+  </p>
+
+  <fieldset class="pond__box">
+    <legend>Ask the pond</legend>
+    <label for={`${idPrefix}-q`}>Query</label>
+    <input
+      id={`${idPrefix}-q`}
+      type="search"
+      data-q
+      value="what does the kitten learn"
+      autocomplete="off"
+    />
+    <p class="pond__presets">
+      Try:
+      <button type="button" data-preset="what does the kitten learn">the lesson</button>
+      <button type="button" data-preset="what is the given name on this door">the name</button>
+      <button type="button" data-preset="what are tonight's restaurant specials">specials</button>
+    </p>
+    <div class="xiaomao__controls">
+      <button type="button" data-retrieve>Cast to retrieve</button>
+      <button type="button" data-generate>Guess without looking</button>
+    </div>
+  </fieldset>
+
+  <div class="pond__out" data-out aria-live="polite"></div>
+</section>
+
+<script>
+  type Note = { id: string; title: string; text: string };
+
+  const pond: Note[] = [
+    {
+      id: "lesson",
+      title: "The lesson on this page",
+      text: "做事要一心一意. When you do something, give it your full attention. Little Cat sits. The water stills. A fish comes.",
+    },
+    {
+      id: "name",
+      title: "The name on this door",
+      text: "赵郎溪 is how this door is written. In pinyin that is Zhao Langxi. Jade Zhao is the English name I use. Why those two given-name characters were chosen is still waiting for me to write it.",
+    },
+    {
+      id: "limit",
+      title: "What this pond does not hold",
+      text: "This pond does not contain a restaurant menu, tonight's specials, a user study, or a Digital Humans deployment.",
+    },
+  ];
+
+  const guesses: Record<string, string> = {
+    "what does the kitten learn":
+      "A fluent guess: the kitten learns how transformers weight tokens, and that is why large language models understand a person's goal. This sentence was written for the demo. It is not in the pond, and it overclaims.",
+    "what is the given name on this door":
+      "A fluent guess: Langxi was chosen to mean a bright stream beside a scholar's house. This sentence was written for the demo. The About page says I will not fill that gap with a pretty guess.",
+    "what are tonight's restaurant specials":
+      "A fluent guess: tonight the kitchen is serving salt-and-pepper squid and a secret orange chicken. This sentence was written for the demo. The pond has no menu.",
+  };
+
+  function tokenize(text: string): string[] {
+    return (text.toLowerCase().match(/[a-z0-9]+/g) ?? []).filter((t) => t.length > 1);
+  }
+
+  function scoreNote(queryTokens: string[], note: Note): number {
+    const bag = tokenize(`${note.title} ${note.text}`);
+    let score = 0;
+    for (const q of queryTokens) {
+      const hits = bag.filter((t) => t === q).length;
+      if (hits) score += 1 + Math.log(1 + hits);
+    }
+    return score;
+  }
+
+  function retrieve(query: string): { note: Note; score: number }[] {
+    const queryTokens = tokenize(query);
+    return pond
+      .map((note) => ({ note, score: scoreNote(queryTokens, note) }))
+      .filter((row) => row.score > 0)
+      .sort((a, b) => b.score - a.score);
+  }
+
+  function guessFor(query: string): string {
+    const key = query.trim().toLowerCase();
+    return (
+      guesses[key] ??
+      "A fluent guess: I can write a confident sentence without opening the pond. That is the point of this button. It is not evidence."
+    );
+  }
+
+  function initPond(root: HTMLElement) {
+    const input = root.querySelector<HTMLInputElement>("[data-q]");
+    const out = root.querySelector("[data-out]");
+    const retrieveBtn = root.querySelector("[data-retrieve]");
+    const generateBtn = root.querySelector("[data-generate]");
+
+    root.querySelectorAll<HTMLButtonElement>("[data-preset]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        if (input) input.value = btn.dataset.preset ?? "";
+        input?.focus();
+      });
+    });
+
+    retrieveBtn?.addEventListener("click", () => {
+      const query = input?.value.trim() ?? "";
+      if (!out) return;
+      if (!query) {
+        out.innerHTML = "<p>Ask something first. An empty line catches nothing.</p>";
+        return;
+      }
+      const hits = retrieve(query);
+      if (!hits.length) {
+        out.innerHTML = `<p><strong>Retrieve.</strong> Nothing in this pond matched <q></q>.</p><p>A generated answer could still sound sure. That is the butterfly.</p>`;
+        const q = out.querySelector("q");
+        if (q) q.textContent = query;
+        return;
+      }
+      const items = hits
+        .map((row) => {
+          const title = row.note.title.replace(/</g, "&lt;");
+          const text = row.note.text.replace(/</g, "&lt;");
+          return `<li><strong>${title}</strong> · overlap score ${row.score.toFixed(2)}<br />${text}</li>`;
+        })
+        .join("");
+      out.innerHTML = `<p><strong>Retrieve.</strong> Notes that share words with the query, ranked by a tiny overlap score in this browser. Not BM25, not a model.</p><ol>${items}</ol>`;
+    });
+
+    generateBtn?.addEventListener("click", () => {
+      const query = input?.value.trim() ?? "";
+      if (!out) return;
+      if (!query) {
+        out.innerHTML = "<p>Ask something first.</p>";
+        return;
+      }
+      const guess = guessFor(query);
+      out.innerHTML = `<p><strong>Generate.</strong> A written guess. It did not read the pond.</p><p></p>`;
+      const p = out.querySelectorAll("p")[1];
+      if (p) p.textContent = guess;
+    });
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-pond]").forEach(initPond);
+</script>

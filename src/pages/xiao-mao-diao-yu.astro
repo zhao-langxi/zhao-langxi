@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Base.astro";
 import XiaoMaoStory from "../components/XiaoMaoStory.astro";
+import RetrievePond from "../components/RetrievePond.astro";
 import { base } from "../lib/site";
 ---
 <Layout
@@ -99,6 +100,36 @@ import { base } from "../lib/site";
           ships, they live on
           <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>.
         </p>
+      </section>
+
+      <section id="pond">
+        <RetrievePond idPrefix="storypond" />
+      </section>
+
+      <section id="notebook" aria-labelledby="notebook-heading">
+        <h2 id="notebook-heading">Notes that actually exist</h2>
+        <p>
+          I am not inventing a research diary for this redesign. These are the pages I can open.
+        </p>
+        <ul>
+          <li>
+            This page: the story, the analogy, and the pond demo.
+          </li>
+          <li>
+            <a href={`${base}archive.html`}>Archive</a> ... older Digital Humans and
+            human-robot interaction essays, on hiatus.
+          </li>
+          <li>
+            <a href={`${base}research.html`}>Research hub</a> ... evidence labels and an
+            open bibliography. Not new findings.
+          </li>
+          <li>
+            <a href="https://jadexzhao.github.io/jadexzhao/bm25.html" rel="noopener noreferrer"
+              >BM25 notes search</a
+            >
+            ... inspectable keyword ranking on jadexzhao.
+          </li>
+        </ul>
       </section>
 
       <p>
