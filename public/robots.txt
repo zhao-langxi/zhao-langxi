@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://zhao-langxi.github.io/zhao-langxi/sitemap.xml
