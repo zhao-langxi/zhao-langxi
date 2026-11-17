@@ -5,6 +5,10 @@ on:
     branches: [main]
     paths:
       - "index.html"
+      - "photos.html"
+      - "portfolio.pdf"
+      - "css/**"
+      - "photos/**"
       - ".nojekyll"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
@@ -27,9 +31,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          mkdir -p _site
-          cp index.html _site/
-          cp .nojekyll _site/
+          mkdir -p _site/css _site/photos
+          cp index.html photos.html portfolio.pdf .nojekyll _site/
+          cp -R css/. _site/css/
+          cp -R photos/. _site/photos/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
