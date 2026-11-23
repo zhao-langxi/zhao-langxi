@@ -10,7 +10,7 @@ Live: [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-lan
 - `photos.html` … curated Madrid study-abroad gallery
 - `xiaohui.html` … INFO-I 453 brief on Hong Kong Customs’ digital human XiaoHui, with a short Madrid note
 - `photos/madrid/` … web-optimised JPG + WebP
-- `portfolio.pdf` … short 3-page scrapbook
+- `portfolio.pdf` … The Madrid table, an 18-page plate book from the study-abroad photographs
 - `css/site.css` … Rivet-ish greys / cream / navy / crimson accents
 
 ## Other doors
