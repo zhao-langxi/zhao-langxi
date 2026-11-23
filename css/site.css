@@ -50,6 +50,29 @@ a:hover {
   color: var(--crimson);
 }
 
+a:focus-visible {
+  outline: 2px solid var(--navy);
+  outline-offset: 2px;
+}
+
+.skip {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  background: #fff;
+  color: var(--navy);
+  padding: 0.4rem 0.7rem;
+  z-index: 5;
+}
+
+.skip:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 .wrap {
   width: min(100% - 2rem, var(--max));
   margin-inline: auto;
