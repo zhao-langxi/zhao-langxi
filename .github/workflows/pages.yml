@@ -6,6 +6,7 @@ on:
     paths:
       - "index.html"
       - "photos.html"
+      - "xiaohui.html"
       - "portfolio.pdf"
       - "css/**"
       - "photos/**"
@@ -32,7 +33,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: |
           mkdir -p _site/css _site/photos
-          cp index.html photos.html portfolio.pdf .nojekyll _site/
+          cp index.html photos.html xiaohui.html portfolio.pdf .nojekyll _site/
           cp -R css/. _site/css/
           cp -R photos/. _site/photos/
       - uses: actions/configure-pages@v5
